@@ -1,0 +1,478 @@
+\hypertarget{classSQLiteConnection}{
+\subsection{SQLite\-Connection Class Reference}
+\label{classSQLiteConnection}\index{SQLiteConnection@{SQLiteConnection}}
+}
+{\tt \#include $<$sqliteconnection.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+SQLite does not provide a C++ API, only a C API, so I had to write one for C++. It is basically a wrapper that encapsulates the sqlitedb pointer and provides a simple way to access the db and execute transactions. There are a few things that have to be pointed out about the use of this class. After you create the class, transactions have to be enabled with \hyperlink{classSQLiteConnection_SQLiteConnectiona6}{begin\-Transaction()} and disabled with disable\-Transaction(). A transaction is commited with \hyperlink{classSQLiteConnection_SQLiteConnectiona7}{commit\-Transaction()}. This class also provides a logging facility. All SQL commands are also recorded into date-named files in directory TRANSLOGPATH. In the event of an error, it possible to reconstruct the db from these files with the reconstructdb command. 
+
+
+
+Definition at line 52 of file sqliteconnection.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classSQLiteConnection_SQLiteConnectiona0}{SQLite\-Connection} (string dbname, \hyperlink{classLogger}{Logger} $\ast$mylogger, bool usetranslog=false)
+\begin{CompactList}\small\item\em Constructor that uses a string as input.\item\end{CompactList}\item 
+\hyperlink{classSQLiteConnection_SQLiteConnectiona1}{SQLite\-Connection} (char $\ast$dbname, \hyperlink{classLogger}{Logger} $\ast$mylogger, bool usetranslog=false)
+\begin{CompactList}\small\item\em Constructor that uses a normal C string as input.\item\end{CompactList}\item 
+\hyperlink{classSQLiteConnection_SQLiteConnectiona2}{$\sim$SQLite\-Connection} ()
+\begin{CompactList}\small\item\em Default destructor.\item\end{CompactList}\item 
+sqlite $\ast$ \hyperlink{classSQLiteConnection_SQLiteConnectiona3}{getdb} ()
+\begin{CompactList}\small\item\em Returns the pointer to the sqlite handler.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona4}{is\-Ready} ()
+\begin{CompactList}\small\item\em Is the db ready? That is, are we open?\item\end{CompactList}\item 
+void \hyperlink{classSQLiteConnection_SQLiteConnectiona5}{reconnect} ()
+\begin{CompactList}\small\item\em Close and Reopen the database.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona6}{begin\-Transaction} ()
+\begin{CompactList}\small\item\em Begins the transaction.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona7}{commit\-Transaction} ()
+\begin{CompactList}\small\item\em Commit the transaction.\item\end{CompactList}\item 
+void \hyperlink{classSQLiteConnection_SQLiteConnectiona8}{enable\-Transactions} ()
+\begin{CompactList}\small\item\em Enable the transactions.\item\end{CompactList}\item 
+void \hyperlink{classSQLiteConnection_SQLiteConnectiona9}{disable\-Transactions} (bool commit=do\-Commit)
+\begin{CompactList}\small\item\em Disable (and optionally commit) the current transaction.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona10}{transactions\-Enabled} ()
+\begin{CompactList}\small\item\em Returns true if transactions are enabled.\item\end{CompactList}\item 
+void \hyperlink{classSQLiteConnection_SQLiteConnectiona11}{log\-Transaction} (string cmdstr)
+\begin{CompactList}\small\item\em Logs the current transaction to the date-named file.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona12}{exists\-Table} (string tablename)
+\begin{CompactList}\small\item\em Checks for the existence of an SQL table.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiona13}{exists\-Index} (string index, string tablename)
+\begin{CompactList}\small\item\em Checks for the existence of an index for a table.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLiteConnection_SQLiteConnectiona14}{get\-Transactions} ()
+\begin{CompactList}\small\item\em Returns the number of SQL commands in the current transaction.\item\end{CompactList}\item 
+string \hyperlink{classSQLiteConnection_SQLiteConnectiona15}{pick\-Filename} ()
+\begin{CompactList}\small\item\em Automatically picks a filename for the SQL log files.\item\end{CompactList}\item 
+void \hyperlink{classSQLiteConnection_SQLiteConnectiona16}{change\-Log\-Filename} ()
+\begin{CompactList}\small\item\em Change the current log filename.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu0}{transactions\_\-threshold} =  100, 
+\hyperlink{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu1}{max\_\-conflicts} =  10
+ \}
+\begin{CompactList}\small\item\em some enumerations that keep some default values\item\end{CompactList}\item 
+enum \{ \hyperlink{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu2}{do\-Commit} =  true, 
+\hyperlink{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu3}{dont\-Commit} =  false
+ \}
+\begin{CompactList}\small\item\em Instead of using true/false, we use the do\-Commit/dont\-Commit enums.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+sqlite $\ast$ \hyperlink{classSQLiteConnection_SQLiteConnectiono0}{sqlitedb}
+\begin{CompactList}\small\item\em The pointer to the sqlite handler.\item\end{CompactList}\item 
+char $\ast$ \hyperlink{classSQLiteConnection_SQLiteConnectiono1}{z\-Err\-Msg}
+\begin{CompactList}\small\item\em This string holds the actuall SQLite message in the event of an error.\item\end{CompactList}\item 
+\hyperlink{classLogger}{Logger} $\ast$ \hyperlink{classSQLiteConnection_SQLiteConnectiono2}{logger}
+\begin{CompactList}\small\item\em Pointer to the original \hyperlink{classLogger}{Logger} object and the private one.\item\end{CompactList}\item 
+\hyperlink{classLogger}{Logger} $\ast$ \hyperlink{classSQLiteConnection_SQLiteConnectiono3}{transactions\_\-log}
+\begin{CompactList}\small\item\em Pointer to the original \hyperlink{classLogger}{Logger} object and the private one.\item\end{CompactList}\item 
+string \hyperlink{classSQLiteConnection_SQLiteConnectiono4}{DBname}
+\begin{CompactList}\small\item\em The name of the DB file.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLiteConnection_SQLiteConnectiono5}{transactions}
+\begin{CompactList}\small\item\em The number of transactions held and the conflicts.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLiteConnection_SQLiteConnectiono6}{conflicts}
+\begin{CompactList}\small\item\em The number of transactions held and the conflicts.\item\end{CompactList}\item 
+stringstream \hyperlink{classSQLiteConnection_SQLiteConnectiono7}{transactioncmd}
+\begin{CompactList}\small\item\em The complete SQL transaction that is going to be executed.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiono8}{transactions\_\-enabled}
+\begin{CompactList}\small\item\em Booleans that decide if transactions are going to be used and logged.\item\end{CompactList}\item 
+bool \hyperlink{classSQLiteConnection_SQLiteConnectiono9}{use\_\-transactions\_\-log}
+\begin{CompactList}\small\item\em Booleans that decide if transactions are going to be used and logged.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Friends}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classSQLiteConnection_SQLiteConnectionl0}{SQLTable}
+\begin{CompactList}\small\item\em Declare \hyperlink{classSQLTable}{SQLTable} class as a friend so that it can access private members.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classSQLiteConnection_SQLiteConnectionu4}{
+\paragraph["@8]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectionu4}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{transactions_threshold@{transactions\_\-threshold}!SQLiteConnection@{SQLiteConnection}}\index{SQLiteConnection@{SQLiteConnection}!transactions_threshold@{transactions\_\-threshold}}\item[{\em 
+\hypertarget{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu0}{
+{\em transactions\_\-threshold}}
+\label{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu0}
+}]\index{max_conflicts@{max\_\-conflicts}!SQLiteConnection@{SQLiteConnection}}\index{SQLiteConnection@{SQLiteConnection}!max_conflicts@{max\_\-conflicts}}\item[{\em 
+\hypertarget{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu1}{
+{\em max\_\-conflicts}}
+\label{classSQLiteConnection_SQLiteConnectionu4SQLiteConnectionu1}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 54 of file sqliteconnection.h.\hypertarget{classSQLiteConnection_SQLiteConnectionu5}{
+\paragraph["@9]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectionu5}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{doCommit@{doCommit}!SQLiteConnection@{SQLiteConnection}}\index{SQLiteConnection@{SQLiteConnection}!doCommit@{doCommit}}\item[{\em 
+\hypertarget{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu2}{
+{\em do\-Commit}}
+\label{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu2}
+}]\index{dontCommit@{dontCommit}!SQLiteConnection@{SQLiteConnection}}\index{SQLiteConnection@{SQLiteConnection}!dontCommit@{dontCommit}}\item[{\em 
+\hypertarget{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu3}{
+{\em dont\-Commit}}
+\label{classSQLiteConnection_SQLiteConnectionu5SQLiteConnectionu3}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 57 of file sqliteconnection.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classSQLiteConnection_SQLiteConnectiona0}{
+\index{SQLiteConnection@{SQLite\-Connection}!SQLiteConnection@{SQLiteConnection}}
+\index{SQLiteConnection@{SQLiteConnection}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[SQLiteConnection]{\setlength{\rightskip}{0pt plus 5cm}SQLite\-Connection::SQLite\-Connection (string {\em dbname}, \hyperlink{classLogger}{Logger} $\ast$ {\em mylogger}, bool {\em usetranslog} = false)}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona0}
+
+
+This constructor allows the use of string name for the dbname, instead of just plain C strings. 
+
+Definition at line 17 of file sqliteconnection.cpp.\hypertarget{classSQLiteConnection_SQLiteConnectiona1}{
+\index{SQLiteConnection@{SQLite\-Connection}!SQLiteConnection@{SQLiteConnection}}
+\index{SQLiteConnection@{SQLiteConnection}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[SQLiteConnection]{\setlength{\rightskip}{0pt plus 5cm}SQLite\-Connection::SQLite\-Connection (char $\ast$ {\em dbname}, \hyperlink{classLogger}{Logger} $\ast$ {\em mylogger}, bool {\em usetranslog} = false)}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona1}
+
+
+The default constructor. It opens the SQLite DB (residing in the file dbname), Initializes the transactions logger object and the transactions logfiles. It also resets the counters transactions and conflicts. Transactions are disabled by default. 
+
+Definition at line 28 of file sqliteconnection.cpp.
+
+References conflicts, logger, Logger::log\-Msg(), Logger::open(), OUTPUT\_\-FILEONLY, pick\-Filename(), sqlitedb, transactions, transactions\_\-enabled, transactions\_\-log, and z\-Err\-Msg.\hypertarget{classSQLiteConnection_SQLiteConnectiona2}{
+\index{SQLiteConnection@{SQLite\-Connection}!~SQLiteConnection@{$\sim$SQLiteConnection}}
+\index{~SQLiteConnection@{$\sim$SQLiteConnection}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[$\sim$SQLiteConnection]{\setlength{\rightskip}{0pt plus 5cm}SQLite\-Connection::$\sim$SQLite\-Connection ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona2}
+
+
+Closes the DB connection. 
+
+Definition at line 52 of file sqliteconnection.cpp.
+
+References sqlitedb.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classSQLiteConnection_SQLiteConnectiona6}{
+\index{SQLiteConnection@{SQLite\-Connection}!beginTransaction@{beginTransaction}}
+\index{beginTransaction@{beginTransaction}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[beginTransaction]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::begin\-Transaction ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona6}
+
+
+Begins the current transaction. Basically insert 'BEGIN TRANSACTION' in the transaction string. 
+
+Definition at line 169 of file sqliteconnection.cpp.
+
+References transactioncmd, and transactions.
+
+Referenced by SQLTable$<$ key, data $>$::insert\-Object(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiona16}{
+\index{SQLiteConnection@{SQLite\-Connection}!changeLogFilename@{changeLogFilename}}
+\index{changeLogFilename@{changeLogFilename}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[changeLogFilename]{\setlength{\rightskip}{0pt plus 5cm}void SQLite\-Connection::change\-Log\-Filename ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona16}
+
+
+If transaction logging is enabled then set the log filename using the method in \hyperlink{classSQLiteConnection_SQLiteConnectiona15}{pick\-Filename()}. 
+
+Definition at line 84 of file sqliteconnection.cpp.
+
+References pick\-Filename(), Logger::set\-Log\-File\-Name(), and transactions\_\-log.
+
+Referenced by Contest::handle\_\-timeout().\hypertarget{classSQLiteConnection_SQLiteConnectiona7}{
+\index{SQLiteConnection@{SQLite\-Connection}!commitTransaction@{commitTransaction}}
+\index{commitTransaction@{commitTransaction}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[commitTransaction]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::commit\-Transaction ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona7}
+
+
+Commits the current transaction.  Error handling: if there are no available file descriptors or there is an error with the execution of the command executed (SQLITE\_\-MISUSE or SQLITE\_\-CANTOPEN) then the DB is reopened with \hyperlink{classSQLiteConnection_SQLiteConnectiona5}{reconnect()}. Then the command is re-executed after a period of one second. If the number of conflicts exceeds max\_\-conflicts then the program gives up with executing this transaction. The number of conflicts is reset after each successfull transaction. 
+
+Definition at line 189 of file sqliteconnection.cpp.
+
+References conflicts, logger, Logger::log\-Msg(), log\-Transaction(), max\_\-conflicts, reconnect(), sqlitedb, transactioncmd, transactions, and z\-Err\-Msg.
+
+Referenced by disable\-Transactions(), SQLTable$<$ key, data $>$::insert\-Object(), Processor::process\_\-i(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiona9}{
+\index{SQLiteConnection@{SQLite\-Connection}!disableTransactions@{disableTransactions}}
+\index{disableTransactions@{disableTransactions}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[disableTransactions]{\setlength{\rightskip}{0pt plus 5cm}void SQLite\-Connection::disable\-Transactions (bool {\em commit} = do\-Commit)}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona9}
+
+
+Disables transactions. Optionally, commits the current transaction Before disabling. 
+
+Definition at line 147 of file sqliteconnection.cpp.
+
+References commit\-Transaction(), transactioncmd, transactions, and transactions\_\-enabled.
+
+Referenced by Contest::handle\_\-timeout().\hypertarget{classSQLiteConnection_SQLiteConnectiona8}{
+\index{SQLiteConnection@{SQLite\-Connection}!enableTransactions@{enableTransactions}}
+\index{enableTransactions@{enableTransactions}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[enableTransactions]{\setlength{\rightskip}{0pt plus 5cm}void SQLite\-Connection::enable\-Transactions ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona8}
+
+
+Enables the transactions. Resets counters and sets transactions\_\-enabled to true. 
+
+Definition at line 135 of file sqliteconnection.cpp.
+
+References transactioncmd, transactions, and transactions\_\-enabled.
+
+Referenced by Contest::handle\_\-timeout(), and Contest::init\-DB().\hypertarget{classSQLiteConnection_SQLiteConnectiona13}{
+\index{SQLiteConnection@{SQLite\-Connection}!existsIndex@{existsIndex}}
+\index{existsIndex@{existsIndex}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[existsIndex]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::exists\-Index (string {\em index}, string {\em tablename})}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona13}
+
+
+Returns true if the specified index for the table exists in the database. 
+
+Definition at line 300 of file sqliteconnection.cpp.
+
+References sqlitedb.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices().\hypertarget{classSQLiteConnection_SQLiteConnectiona12}{
+\index{SQLiteConnection@{SQLite\-Connection}!existsTable@{existsTable}}
+\index{existsTable@{existsTable}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[existsTable]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::exists\-Table (string {\em tablename})}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona12}
+
+
+Returns true if the specified table exists in the database. 
+
+Definition at line 274 of file sqliteconnection.cpp.
+
+References sqlitedb.
+
+Referenced by Contest::init\-DB().\hypertarget{classSQLiteConnection_SQLiteConnectiona3}{
+\index{SQLiteConnection@{SQLite\-Connection}!getdb@{getdb}}
+\index{getdb@{getdb}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[getdb]{\setlength{\rightskip}{0pt plus 5cm}sqlite $\ast$ SQLite\-Connection::getdb ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona3}
+
+
+Returns the pointer to the SQLite connection. 
+
+Definition at line 93 of file sqliteconnection.cpp.
+
+References sqlitedb.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::drop(), SQLTable$<$ key, data $>$::insert\-Object(), SQLTable$<$ key, data $>$::select\-All\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Object(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiona14}{
+\index{SQLiteConnection@{SQLite\-Connection}!getTransactions@{getTransactions}}
+\index{getTransactions@{getTransactions}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[getTransactions]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SQLite\-Connection::get\-Transactions ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona14}
+
+
+Returns the number of SQL commands in the transaction string. 
+
+Definition at line 257 of file sqliteconnection.cpp.
+
+References transactions.\hypertarget{classSQLiteConnection_SQLiteConnectiona4}{
+\index{SQLiteConnection@{SQLite\-Connection}!isReady@{isReady}}
+\index{isReady@{isReady}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[isReady]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::is\-Ready ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona4}
+
+
+Returns true if the connection is successful. 
+
+Definition at line 101 of file sqliteconnection.cpp.
+
+Referenced by Contest::init\-DB().\hypertarget{classSQLiteConnection_SQLiteConnectiona11}{
+\index{SQLiteConnection@{SQLite\-Connection}!logTransaction@{logTransaction}}
+\index{logTransaction@{logTransaction}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[logTransaction]{\setlength{\rightskip}{0pt plus 5cm}void SQLite\-Connection::log\-Transaction (string {\em cmdstr})}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona11}
+
+
+Logs the current transaction to the transaction logfile. 
+
+Definition at line 265 of file sqliteconnection.cpp.
+
+References Logger::log\-Msg(), and transactions\_\-log.
+
+Referenced by commit\-Transaction(), SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::drop(), SQLTable$<$ key, data $>$::insert\-Object(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiona15}{
+\index{SQLiteConnection@{SQLite\-Connection}!pickFilename@{pickFilename}}
+\index{pickFilename@{pickFilename}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[pickFilename]{\setlength{\rightskip}{0pt plus 5cm}string SQLite\-Connection::pick\-Filename ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona15}
+
+
+Returns a filename to be used for logging. Its path will be on directory TRANSLOGPATH, and the basename will be the current date (YYYYMMDD format). There will be no overwriting of existing files, instead a counter appended to the filename will be used. the suffix will be TRANSLOGSUFFIX (default .sql). 
+
+Definition at line 66 of file sqliteconnection.cpp.
+
+References TRANSLOGPATH, and TRANSLOGSUFFIX.
+
+Referenced by change\-Log\-Filename(), and SQLite\-Connection().\hypertarget{classSQLiteConnection_SQLiteConnectiona5}{
+\index{SQLiteConnection@{SQLite\-Connection}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[reconnect]{\setlength{\rightskip}{0pt plus 5cm}void SQLite\-Connection::reconnect ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona5}
+
+
+Closes and reopens the database. Should be used if a problem occurs with the execution of some SQL commands. Also resets the counters. 
+
+Definition at line 115 of file sqliteconnection.cpp.
+
+References DBname, logger, Logger::log\-Msg(), sqlitedb, transactioncmd, transactions, and z\-Err\-Msg.
+
+Referenced by commit\-Transaction(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::insert\-Object(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiona10}{
+\index{SQLiteConnection@{SQLite\-Connection}!transactionsEnabled@{transactionsEnabled}}
+\index{transactionsEnabled@{transactionsEnabled}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[transactionsEnabled]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::transactions\-Enabled ()}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiona10}
+
+
+Returns true if transactions are enabled. 
+
+Definition at line 160 of file sqliteconnection.cpp.
+
+References transactions\_\-enabled.
+
+Referenced by Contest::handle\_\-timeout().
+
+\subsubsection{Friends And Related Function Documentation}
+\hypertarget{classSQLiteConnection_SQLiteConnectionl0}{
+\index{SQLiteConnection@{SQLite\-Connection}!SQLTable@{SQLTable}}
+\index{SQLTable@{SQLTable}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[SQLTable]{\setlength{\rightskip}{0pt plus 5cm}friend class SQLTable\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectionl0}
+
+
+
+
+Definition at line 81 of file sqliteconnection.h.
+
+\subsubsection{Field Documentation}
+\hypertarget{classSQLiteConnection_SQLiteConnectiono6}{
+\index{SQLiteConnection@{SQLite\-Connection}!conflicts@{conflicts}}
+\index{conflicts@{conflicts}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[conflicts]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SQLite\-Connection::conflicts\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono6}
+
+
+
+
+Definition at line 72 of file sqliteconnection.h.
+
+Referenced by commit\-Transaction(), SQLTable$<$ key, data $>$::insert\-Object(), SQLite\-Connection(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiono4}{
+\index{SQLiteConnection@{SQLite\-Connection}!DBname@{DBname}}
+\index{DBname@{DBname}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[DBname]{\setlength{\rightskip}{0pt plus 5cm}string SQLite\-Connection::DBname\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono4}
+
+
+
+
+Definition at line 69 of file sqliteconnection.h.
+
+Referenced by reconnect().\hypertarget{classSQLiteConnection_SQLiteConnectiono2}{
+\index{SQLiteConnection@{SQLite\-Connection}!logger@{logger}}
+\index{logger@{logger}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[logger]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classLogger}{Logger}$\ast$ SQLite\-Connection::logger\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono2}
+
+
+
+
+Definition at line 66 of file sqliteconnection.h.
+
+Referenced by commit\-Transaction(), SQLTable$<$ key, data $>$::log\-Msg(), reconnect(), and SQLite\-Connection().\hypertarget{classSQLiteConnection_SQLiteConnectiono0}{
+\index{SQLiteConnection@{SQLite\-Connection}!sqlitedb@{sqlitedb}}
+\index{sqlitedb@{sqlitedb}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[sqlitedb]{\setlength{\rightskip}{0pt plus 5cm}sqlite$\ast$ SQLite\-Connection::sqlitedb\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono0}
+
+
+
+
+Definition at line 60 of file sqliteconnection.h.
+
+Referenced by commit\-Transaction(), exists\-Index(), exists\-Table(), getdb(), reconnect(), SQLite\-Connection(), and $\sim$SQLite\-Connection().\hypertarget{classSQLiteConnection_SQLiteConnectiono7}{
+\index{SQLiteConnection@{SQLite\-Connection}!transactioncmd@{transactioncmd}}
+\index{transactioncmd@{transactioncmd}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[transactioncmd]{\setlength{\rightskip}{0pt plus 5cm}stringstream SQLite\-Connection::transactioncmd\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono7}
+
+
+
+
+Definition at line 75 of file sqliteconnection.h.
+
+Referenced by begin\-Transaction(), commit\-Transaction(), disable\-Transactions(), enable\-Transactions(), SQLTable$<$ key, data $>$::insert\-Object(), reconnect(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiono5}{
+\index{SQLiteConnection@{SQLite\-Connection}!transactions@{transactions}}
+\index{transactions@{transactions}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[transactions]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t SQLite\-Connection::transactions\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono5}
+
+
+
+
+Definition at line 72 of file sqliteconnection.h.
+
+Referenced by begin\-Transaction(), commit\-Transaction(), disable\-Transactions(), enable\-Transactions(), get\-Transactions(), SQLTable$<$ key, data $>$::insert\-Object(), reconnect(), SQLite\-Connection(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiono8}{
+\index{SQLiteConnection@{SQLite\-Connection}!transactions_enabled@{transactions\_\-enabled}}
+\index{transactions_enabled@{transactions\_\-enabled}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[transactions\_\-enabled]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::transactions\_\-enabled\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono8}
+
+
+
+
+Definition at line 78 of file sqliteconnection.h.
+
+Referenced by disable\-Transactions(), enable\-Transactions(), SQLTable$<$ key, data $>$::insert\-Object(), SQLite\-Connection(), transactions\-Enabled(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLiteConnection_SQLiteConnectiono3}{
+\index{SQLiteConnection@{SQLite\-Connection}!transactions_log@{transactions\_\-log}}
+\index{transactions_log@{transactions\_\-log}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[transactions\_\-log]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classLogger}{Logger} $\ast$ SQLite\-Connection::transactions\_\-log\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono3}
+
+
+
+
+Definition at line 66 of file sqliteconnection.h.
+
+Referenced by change\-Log\-Filename(), log\-Transaction(), and SQLite\-Connection().\hypertarget{classSQLiteConnection_SQLiteConnectiono9}{
+\index{SQLiteConnection@{SQLite\-Connection}!use_transactions_log@{use\_\-transactions\_\-log}}
+\index{use_transactions_log@{use\_\-transactions\_\-log}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[use\_\-transactions\_\-log]{\setlength{\rightskip}{0pt plus 5cm}bool SQLite\-Connection::use\_\-transactions\_\-log\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono9}
+
+
+
+
+Definition at line 78 of file sqliteconnection.h.\hypertarget{classSQLiteConnection_SQLiteConnectiono1}{
+\index{SQLiteConnection@{SQLite\-Connection}!zErrMsg@{zErrMsg}}
+\index{zErrMsg@{zErrMsg}!SQLiteConnection@{SQLite\-Connection}}
+\paragraph[zErrMsg]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ SQLite\-Connection::z\-Err\-Msg\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLiteConnection_SQLiteConnectiono1}
+
+
+
+
+Definition at line 63 of file sqliteconnection.h.
+
+Referenced by commit\-Transaction(), reconnect(), and SQLite\-Connection().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{sqliteconnection_8h}{sqliteconnection.h}\item 
+\hyperlink{sqliteconnection_8cpp}{sqliteconnection.cpp}\end{CompactItemize}

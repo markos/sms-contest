@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?><!DOCTYPE KDevPrjSession ><KDevPrjSession>
+ <LastCompileConfig>(Default)</LastCompileConfig>
+ <Mainframe MaximizeMode="1" />
+ <DocsAndViews NumberOfDocuments="10" >
+  <Doc0 CursorPosLine="104" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="19" FileName="/home/markos/Source/evalsim/evalsim/connectionthread.h" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc0>
+  <Doc1 CursorPosLine="13" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/simtraffic.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc1>
+  <Doc2 CursorPosLine="141" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/simtraffic.h" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc2>
+  <Doc3 CursorPosLine="33" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="17" FileName="/home/markos/Source/evalsim/evalsim/main.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc3>
+  <Doc4 CursorPosLine="54" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/timestamp.h" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc4>
+  <Doc5 CursorPosLine="14" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/timestamp.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc5>
+  <Doc6 CursorPosLine="48" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/simconnectionhandler.h" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc6>
+  <Doc7 CursorPosLine="82" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="11" FileName="/home/markos/Source/evalsim/evalsim/simconnectionhandler.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc7>
+  <Doc8 CursorPosLine="135" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="0" FileName="/home/markos/Source/evalsim/evalsim/connectionthread.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="0" Type="KWriteView" MinMaxMode="0" />
+  </Doc8>
+  <Doc9 CursorPosLine="97" Type="KWriteDoc" NumberOfViews="1" CursorPosCol="6" FileName="/home/markos/Source/evalsim/evalsim/timerhandle.cpp" >
+   <View0 Top="0" Width="735" Attach="1" Height="372" Left="0" Focus="1" Type="KWriteView" MinMaxMode="0" />
+  </Doc9>
+ </DocsAndViews>
+</KDevPrjSession>

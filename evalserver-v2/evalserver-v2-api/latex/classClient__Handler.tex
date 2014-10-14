@@ -1,0 +1,370 @@
+\hypertarget{classClient__Handler}{
+\subsection{Client\_\-Handler Class Reference}
+\label{classClient__Handler}\index{Client_Handler@{Client\_\-Handler}}
+}
+{\tt \#include $<$client\_\-handler.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+Another feature of ACE\_\-Svc\_\-Handler is it's ability to present the ACE\_\-Task$<$$>$ interface as well. That's what the ACE\_\-NULL\_\-SYNCH parameter below is all about. That's beyond our scope here but we'll come back to it in the next tutorial when we start looking at concurrency options. 
+
+
+
+Definition at line 42 of file client\_\-handler.h.\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef ACE\_\-Svc\_\-Handler$<$ ACE\_\-SOCK\_\-STREAM, ACE\_\-NULL\_\-SYNCH $>$ \hyperlink{classClient__Handler_Client__Handlers0}{inherited}
+\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classClient__Handler_Client__Handlera0}{Client\_\-Handler} (void)
+\begin{CompactList}\small\item\em Constructor...\item\end{CompactList}\item 
+void \hyperlink{classClient__Handler_Client__Handlera1}{destroy} (void)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlera2}{open} (void $\ast$acceptor)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlera3}{close} (u\_\-long flags=0)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlera4}{handle\_\-close} (ACE\_\-HANDLE handle, ACE\_\-Reactor\_\-Mask mask)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input} (ACE\_\-HANDLE handle)
+\item 
+void \hyperlink{classClient__Handler_Client__Handlera6}{set\-Contest} (\hyperlink{classContest}{Contest} $\ast$cur\-Contest)
+\begin{CompactList}\small\item\em Sets the parent\-Contest pointer with the given one.\item\end{CompactList}\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classClient__Handler_Client__Handlera7}{get\-Contest} ()
+\begin{CompactList}\small\item\em Returns the parent\-Contest pointer.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Protected Methods}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classClient__Handler_Client__Handlerb0}{svc} (void)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlerb1}{process} (unsigned char $\ast$rdbuf, size\_\-t rdbuf\_\-len)
+\item 
+\hyperlink{classClient__Handler_Client__Handlerb2}{$\sim$Client\_\-Handler} (void)
+\item 
+\hyperlink{classClient__Acceptor}{Client\_\-Acceptor} $\ast$ \hyperlink{classClient__Handler_Client__Handlerb3}{client\_\-acceptor} (void)
+\item 
+void \hyperlink{classClient__Handler_Client__Handlerb4}{client\_\-acceptor} (\hyperlink{classClient__Acceptor}{Client\_\-Acceptor} $\ast$\_\-client\_\-acceptor)
+\item 
+int \hyperlink{classClient__Handler_Client__Handlerb5}{concurrency} (void)
+\item 
+\hyperlink{classThread__Pool}{Thread\_\-Pool} $\ast$ \hyperlink{classClient__Handler_Client__Handlerb6}{thread\_\-pool} (void)
+\end{CompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+ACE\_\-Thread\_\-Mutex \hyperlink{classClient__Handler_Client__Handlern0}{mutex\_\-}
+\begin{CompactList}\small\item\em A basic Thread\_\-Mutex class that will ensure safe access to data.\item\end{CompactList}\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classClient__Handler_Client__Handlern1}{parent\-Contest}
+\begin{CompactList}\small\item\em Pointer to the parent \hyperlink{classContest}{Contest} object;.\item\end{CompactList}\item 
+unsigned char $\ast$ \hyperlink{classClient__Handler_Client__Handlern2}{data}
+\begin{CompactList}\small\item\em Data to hold the \hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} object.\item\end{CompactList}\item 
+int \hyperlink{classClient__Handler_Client__Handlern3}{srv\_\-counter}
+\begin{CompactList}\small\item\em Counter to keep the active servers.\item\end{CompactList}\item 
+\hyperlink{classClient__Acceptor}{Client\_\-Acceptor} $\ast$ \hyperlink{classClient__Handler_Client__Handlern4}{client\_\-acceptor\_\-}
+\item 
+ACE\_\-thread\_\-t \hyperlink{classClient__Handler_Client__Handlern5}{creator\_\-}
+\end{CompactItemize}
+\subsubsection*{Private Types}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{classClient__Handler_Client__Handleru2}{response\-ID} \{ \hyperlink{classClient__Handler_Client__Handleru2Client__Handleru0}{ID\_\-CRC\_\-OK} = 1, 
+\hyperlink{classClient__Handler_Client__Handleru2Client__Handleru1}{ID\_\-CRC\_\-ERROR} = -1
+ \}
+\begin{CompactList}\small\item\em Basic enum type for error checking.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classClient__Handler_Client__Handlers0}{
+\index{Client_Handler@{Client\_\-Handler}!inherited@{inherited}}
+\index{inherited@{inherited}!Client_Handler@{Client\_\-Handler}}
+\paragraph[inherited]{\setlength{\rightskip}{0pt plus 5cm}typedef ACE\_\-Svc\_\-Handler$<$ACE\_\-SOCK\_\-STREAM, ACE\_\-NULL\_\-SYNCH$>$ Client\_\-Handler::inherited}\hfill}
+\label{classClient__Handler_Client__Handlers0}
+
+
+
+
+Definition at line 47 of file client\_\-handler.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classClient__Handler_Client__Handleru2}{
+\index{Client_Handler@{Client\_\-Handler}!responseID@{responseID}}
+\index{responseID@{responseID}!Client_Handler@{Client\_\-Handler}}
+\paragraph[responseID]{\setlength{\rightskip}{0pt plus 5cm}enum Client\_\-Handler::response\-ID\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handleru2}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{ID_CRC_OK@{ID\_\-CRC\_\-OK}!Client_Handler@{Client\_\-Handler}}\index{Client_Handler@{Client\_\-Handler}!ID_CRC_OK@{ID\_\-CRC\_\-OK}}\item[{\em 
+\hypertarget{classClient__Handler_Client__Handleru2Client__Handleru0}{
+{\em ID\_\-CRC\_\-OK}}
+\label{classClient__Handler_Client__Handleru2Client__Handleru0}
+}]\index{ID_CRC_ERROR@{ID\_\-CRC\_\-ERROR}!Client_Handler@{Client\_\-Handler}}\index{Client_Handler@{Client\_\-Handler}!ID_CRC_ERROR@{ID\_\-CRC\_\-ERROR}}\item[{\em 
+\hypertarget{classClient__Handler_Client__Handleru2Client__Handleru1}{
+{\em ID\_\-CRC\_\-ERROR}}
+\label{classClient__Handler_Client__Handleru2Client__Handleru1}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 45 of file client\_\-handler.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classClient__Handler_Client__Handlera0}{
+\index{Client_Handler@{Client\_\-Handler}!Client_Handler@{Client\_\-Handler}}
+\index{Client_Handler@{Client\_\-Handler}!Client_Handler@{Client\_\-Handler}}
+\paragraph[Client\_\-Handler]{\setlength{\rightskip}{0pt plus 5cm}Client\_\-Handler::Client\_\-Handler (void)}\hfill}
+\label{classClient__Handler_Client__Handlera0}
+
+
+Our constructor still doesn't really do anything. We simply initialize the acceptor pointer to \char`\"{}null\char`\"{} and get our current thread id. The static self() method of ACE\_\-Thread will return you a thread id native to your platform. 
+
+Definition at line 21 of file client\_\-handler.cpp.
+
+References data, connection\-Msg\-Block::DATASIZE, and srv\_\-counter.\hypertarget{classClient__Handler_Client__Handlerb2}{
+\index{Client_Handler@{Client\_\-Handler}!~Client_Handler@{$\sim$Client\_\-Handler}}
+\index{~Client_Handler@{$\sim$Client\_\-Handler}!Client_Handler@{Client\_\-Handler}}
+\paragraph[$\sim$Client\_\-Handler]{\setlength{\rightskip}{0pt plus 5cm}Client\_\-Handler::$\sim$Client\_\-Handler (void)\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb2}
+
+
+We don't really do anything in our destructor but we've declared it to be protected to prevent casual deletion of this object. As I said above, I really would prefer that everyone goes through the \hyperlink{classClient__Handler_Client__Handlera1}{destroy()} method to get rid of us. 
+
+Definition at line 29 of file client\_\-handler.cpp.
+
+References data.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classClient__Handler_Client__Handlerb4}{
+\index{Client_Handler@{Client\_\-Handler}!client_acceptor@{client\_\-acceptor}}
+\index{client_acceptor@{client\_\-acceptor}!Client_Handler@{Client\_\-Handler}}
+\paragraph[client\_\-acceptor]{\setlength{\rightskip}{0pt plus 5cm}void Client\_\-Handler::client\_\-acceptor (\hyperlink{classClient__Acceptor}{Client\_\-Acceptor} $\ast$ {\em \_\-client\_\-acceptor})\hspace{0.3cm}{\tt  \mbox{[}inline, protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb4}
+
+
+And since you shouldn't access a member variable directly, neither should you set (mutate) it. Although it might seem silly to do it this way, you'll thank yourself for it later. 
+
+Definition at line 158 of file client\_\-handler.h.
+
+References client\_\-acceptor\_\-.\hypertarget{classClient__Handler_Client__Handlerb3}{
+\index{Client_Handler@{Client\_\-Handler}!client_acceptor@{client\_\-acceptor}}
+\index{client_acceptor@{client\_\-acceptor}!Client_Handler@{Client\_\-Handler}}
+\paragraph[client\_\-acceptor]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classClient__Acceptor}{Client\_\-Acceptor}$\ast$ Client\_\-Handler::client\_\-acceptor (void)\hspace{0.3cm}{\tt  \mbox{[}inline, protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb3}
+
+
+When we get to the definition of Client\_\-Handler we'll see that there are several places where we go back to the \hyperlink{classClient__Acceptor}{Client\_\-Acceptor} for information. It is generally a good idea to do that through an accesor rather than using the member variable directly. 
+
+Definition at line 150 of file client\_\-handler.h.
+
+References client\_\-acceptor\_\-.
+
+Referenced by concurrency(), open(), and thread\_\-pool().\hypertarget{classClient__Handler_Client__Handlera3}{
+\index{Client_Handler@{Client\_\-Handler}!close@{close}}
+\index{close@{close}!Client_Handler@{Client\_\-Handler}}
+\paragraph[close]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::close (u\_\-long {\em flags} = 0)}\hfill}
+\label{classClient__Handler_Client__Handlera3}
+
+
+When an ACE\_\-Task$<$$>$ object falls out of the \hyperlink{classClient__Handler_Client__Handlerb0}{svc()} method, the framework will call the \hyperlink{classClient__Handler_Client__Handlera3}{close()} method. That's where we want to cleanup ourselves if we're running in either thread-per-connection or thread-pool mode. 
+
+Definition at line 89 of file client\_\-handler.cpp.
+
+References destroy().\hypertarget{classClient__Handler_Client__Handlerb5}{
+\index{Client_Handler@{Client\_\-Handler}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Client_Handler@{Client\_\-Handler}}
+\paragraph[concurrency]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::concurrency (void)\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb5}
+
+
+The \hyperlink{classClient__Handler_Client__Handlerb5}{concurrency()} accessor tells us the current concurrency strategy. It actually queries the \hyperlink{classClient__Acceptor}{Client\_\-Acceptor} for it but by having the accessor in place, we could change our implementation without affecting everything that needs to know. 
+
+Definition at line 39 of file client\_\-handler.cpp.
+
+References client\_\-acceptor(), and Client\_\-Acceptor::concurrency().
+
+Referenced by handle\_\-input(), and open().\hypertarget{classClient__Handler_Client__Handlera1}{
+\index{Client_Handler@{Client\_\-Handler}!destroy@{destroy}}
+\index{destroy@{destroy}!Client_Handler@{Client\_\-Handler}}
+\paragraph[destroy]{\setlength{\rightskip}{0pt plus 5cm}void Client\_\-Handler::destroy (void)}\hfill}
+\label{classClient__Handler_Client__Handlera1}
+
+
+The \hyperlink{classClient__Handler_Client__Handlera1}{destroy()} method is our preferred method of destruction. We could have overloaded the delete operator but that is neither easy nor intuitive (at least to me). Instead, we provide a new method of destruction and we make our destructor protected so that only ourselves, our derivatives and our friends can delete us. It's a nice compromise. 
+
+Definition at line 80 of file client\_\-handler.cpp.
+
+References REMOVE\_\-MASK.
+
+Referenced by close().\hypertarget{classClient__Handler_Client__Handlera7}{
+\index{Client_Handler@{Client\_\-Handler}!getContest@{getContest}}
+\index{getContest@{getContest}!Client_Handler@{Client\_\-Handler}}
+\paragraph[getContest]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classContest}{Contest} $\ast$ Client\_\-Handler::get\-Contest ()}\hfill}
+\label{classClient__Handler_Client__Handlera7}
+
+
+
+
+Definition at line 250 of file client\_\-handler.cpp.
+
+References parent\-Contest.\hypertarget{classClient__Handler_Client__Handlera4}{
+\index{Client_Handler@{Client\_\-Handler}!handle_close@{handle\_\-close}}
+\index{handle_close@{handle\_\-close}!Client_Handler@{Client\_\-Handler}}
+\paragraph[handle\_\-close]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::handle\_\-close (ACE\_\-HANDLE {\em handle}, ACE\_\-Reactor\_\-Mask {\em mask})}\hfill}
+\label{classClient__Handler_Client__Handlera4}
+
+
+When there is activity on a registered handler, the \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input()} method of the handler will be invoked. If that method returns an error code (eg -- -1) then the reactor will invoke \hyperlink{classClient__Handler_Client__Handlera4}{handle\_\-close()} to allow the object to clean itself up. Since an event handler can be registered for more than one type of callback, the callback mask is provided to inform \hyperlink{classClient__Handler_Client__Handlera4}{handle\_\-close()} exactly which method failed. That way, you don't have to maintain state information between your handle\_\-$\ast$ method calls. The $<$handle$>$ parameter is explained below... As a side-effect, the reactor will also invoke remove\_\-handler() for the object on the mask that caused the -1 return. This means that we don't have to do that ourselves! 
+
+Definition at line 110 of file client\_\-handler.cpp.\hypertarget{classClient__Handler_Client__Handlera5}{
+\index{Client_Handler@{Client\_\-Handler}!handle_input@{handle\_\-input}}
+\index{handle_input@{handle\_\-input}!Client_Handler@{Client\_\-Handler}}
+\paragraph[handle\_\-input]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::handle\_\-input (ACE\_\-HANDLE {\em handle})}\hfill}
+\label{classClient__Handler_Client__Handlera5}
+
+
+When we register with the reactor, we're going to tell it that we want to be notified of READ events. When the reactor sees that there is read activity for us, our \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input()} will be invoked. The \_\-handleg provided is the handle (file descriptor in Unix) of the actual connection causing the activity. Since we're derived from ACE\_\-Svc\_\-Handler$<$$>$ and it maintains it's own peer (ACE\_\-SOCK\_\-Stream) object, this is redundant for us. However, if we had been derived directly from ACE\_\-Event\_\-Handler, we may have chosen not to contain the peer. In that case, the $<$handle$>$ would be important to us for reading the client's data. 
+
+Definition at line 135 of file client\_\-handler.cpp.
+
+References concurrency(), creator\_\-, data, connection\-Msg\-Block::DATASIZE, Thread\_\-Pool::enqueue(), process(), REGISTER\_\-MASK, REMOVE\_\-MASK, thread\_\-pool(), and Client\_\-Acceptor::thread\_\-pool\_\-.\hypertarget{classClient__Handler_Client__Handlera2}{
+\index{Client_Handler@{Client\_\-Handler}!open@{open}}
+\index{open@{open}!Client_Handler@{Client\_\-Handler}}
+\paragraph[open]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::open (void $\ast$ {\em acceptor})}\hfill}
+\label{classClient__Handler_Client__Handlera2}
+
+
+Most ACE objects have an \hyperlink{classClient__Handler_Client__Handlera2}{open()} method. That's how you make them ready to do work. ACE\_\-Event\_\-Handler has a virtual \hyperlink{classClient__Handler_Client__Handlera2}{open()} method which allows us to create this overrride. ACE\_\-Acceptor$<$$>$ will invoke this method after creating a new Client\_\-Handler when a client connects. Notice that the parameter to \hyperlink{classClient__Handler_Client__Handlera2}{open()} is a void$\ast$. It just so happens that the pointer points to the acceptor which created us. You would like for the parameter to be an ACE\_\-Acceptor$<$$>$$\ast$ but since ACE\_\-Event\_\-Handler is generic, that would tie it too closely to the ACE\_\-Acceptor$<$$>$ set of objects. In our definition of \hyperlink{classClient__Handler_Client__Handlera2}{open()} you'll see how we get around that. 
+
+Definition at line 54 of file client\_\-handler.cpp.
+
+References client\_\-acceptor(), concurrency(), REGISTER\_\-MASK, and Client\_\-Acceptor::thread\_\-per\_\-connection\_\-.\hypertarget{classClient__Handler_Client__Handlerb1}{
+\index{Client_Handler@{Client\_\-Handler}!process@{process}}
+\index{process@{process}!Client_Handler@{Client\_\-Handler}}
+\paragraph[process]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::process (unsigned char $\ast$ {\em rdbuf}, size\_\-t {\em rdbuf\_\-len})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb1}
+
+
+This has nothing at all to do with ACE. I've added this here as a worker function which I will call from \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input()}. That allows me to introduce concurrencly in later tutorials with a no changes to the worker function. You can think of \hyperlink{classClient__Handler_Client__Handlerb1}{process()} as application-level code and everything elase as application-framework code. 
+
+Definition at line 200 of file client\_\-handler.cpp.
+
+References ID\_\-CRC\_\-ERROR, connection\-Msg\-Block::is\-Valid(), Contest::logger, Logger::log\-Msg(), parent\-Contest, Processor::process(), Contest::processor, and srv\_\-counter.
+
+Referenced by handle\_\-input(), and svc().\hypertarget{classClient__Handler_Client__Handlera6}{
+\index{Client_Handler@{Client\_\-Handler}!setContest@{setContest}}
+\index{setContest@{setContest}!Client_Handler@{Client\_\-Handler}}
+\paragraph[setContest]{\setlength{\rightskip}{0pt plus 5cm}void Client\_\-Handler::set\-Contest (\hyperlink{classContest}{Contest} $\ast$ {\em cur\-Contest})}\hfill}
+\label{classClient__Handler_Client__Handlera6}
+
+
+
+
+Definition at line 245 of file client\_\-handler.cpp.
+
+References parent\-Contest.
+
+Referenced by Client\_\-Acceptor::make\_\-svc\_\-handler().\hypertarget{classClient__Handler_Client__Handlerb0}{
+\index{Client_Handler@{Client\_\-Handler}!svc@{svc}}
+\index{svc@{svc}!Client_Handler@{Client\_\-Handler}}
+\paragraph[svc]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::svc (void)\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb0}
+
+
+If the \hyperlink{classClient__Acceptor}{Client\_\-Acceptor} which created us has chosen a thread-per-connection strategy then our \hyperlink{classClient__Handler_Client__Handlera2}{open()} method will activate us into a dedicate thread. The \hyperlink{classClient__Handler_Client__Handlerb0}{svc()} method will then execute in that thread performing some of the functions we used to leave up to the reactor. 
+
+Definition at line 191 of file client\_\-handler.cpp.
+
+References data, connection\-Msg\-Block::DATASIZE, and process().\hypertarget{classClient__Handler_Client__Handlerb6}{
+\index{Client_Handler@{Client\_\-Handler}!thread_pool@{thread\_\-pool}}
+\index{thread_pool@{thread\_\-pool}!Client_Handler@{Client\_\-Handler}}
+\paragraph[thread\_\-pool]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classThread__Pool}{Thread\_\-Pool} $\ast$ Client\_\-Handler::thread\_\-pool (void)\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlerb6}
+
+
+Likewise for access to the \hyperlink{classThread__Pool}{Thread\_\-Pool} that we belong to. 
+
+Definition at line 46 of file client\_\-handler.cpp.
+
+References client\_\-acceptor(), and Client\_\-Acceptor::thread\_\-pool().
+
+Referenced by handle\_\-input().
+
+\subsubsection{Field Documentation}
+\hypertarget{classClient__Handler_Client__Handlern4}{
+\index{Client_Handler@{Client\_\-Handler}!client_acceptor_@{client\_\-acceptor\_\-}}
+\index{client_acceptor_@{client\_\-acceptor\_\-}!Client_Handler@{Client\_\-Handler}}
+\paragraph[client\_\-acceptor\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classClient__Acceptor}{Client\_\-Acceptor}$\ast$ Client\_\-Handler::client\_\-acceptor\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern4}
+
+
+
+
+Definition at line 172 of file client\_\-handler.h.
+
+Referenced by client\_\-acceptor().\hypertarget{classClient__Handler_Client__Handlern5}{
+\index{Client_Handler@{Client\_\-Handler}!creator_@{creator\_\-}}
+\index{creator_@{creator\_\-}!Client_Handler@{Client\_\-Handler}}
+\paragraph[creator\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-thread\_\-t Client\_\-Handler::creator\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern5}
+
+
+For some reason I didn't create accessor/mutator methods for this. So much for consistency....
+
+This variable is used to remember the thread in which we were created: the \char`\"{}creator\char`\"{} thread in other words. \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input()} needs to know if it is operating in the main reactor thread (which is the one that created us) or if it is operating in one of the thread pool threads. More on this when we get to \hyperlink{classClient__Handler_Client__Handlera5}{handle\_\-input()}. 
+
+Definition at line 182 of file client\_\-handler.h.
+
+Referenced by handle\_\-input().\hypertarget{classClient__Handler_Client__Handlern2}{
+\index{Client_Handler@{Client\_\-Handler}!data@{data}}
+\index{data@{data}!Client_Handler@{Client\_\-Handler}}
+\paragraph[data]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ Client\_\-Handler::data\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern2}
+
+
+
+
+Definition at line 119 of file client\_\-handler.h.
+
+Referenced by Client\_\-Handler(), handle\_\-input(), svc(), and $\sim$Client\_\-Handler().\hypertarget{classClient__Handler_Client__Handlern0}{
+\index{Client_Handler@{Client\_\-Handler}!mutex_@{mutex\_\-}}
+\index{mutex_@{mutex\_\-}!Client_Handler@{Client\_\-Handler}}
+\paragraph[mutex\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Thread\_\-Mutex Client\_\-Handler::mutex\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern0}
+
+
+
+
+Definition at line 113 of file client\_\-handler.h.\hypertarget{classClient__Handler_Client__Handlern1}{
+\index{Client_Handler@{Client\_\-Handler}!parentContest@{parentContest}}
+\index{parentContest@{parentContest}!Client_Handler@{Client\_\-Handler}}
+\paragraph[parentContest]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classContest}{Contest}$\ast$ Client\_\-Handler::parent\-Contest\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern1}
+
+
+
+
+Definition at line 116 of file client\_\-handler.h.
+
+Referenced by get\-Contest(), process(), and set\-Contest().\hypertarget{classClient__Handler_Client__Handlern3}{
+\index{Client_Handler@{Client\_\-Handler}!srv_counter@{srv\_\-counter}}
+\index{srv_counter@{srv\_\-counter}!Client_Handler@{Client\_\-Handler}}
+\paragraph[srv\_\-counter]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Handler::srv\_\-counter\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Handler_Client__Handlern3}
+
+
+
+
+Definition at line 122 of file client\_\-handler.h.
+
+Referenced by Client\_\-Handler(), and process().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{client__handler_8h}{client\_\-handler.h}\item 
+\hyperlink{client__handler_8cpp}{client\_\-handler.cpp}\end{CompactItemize}

@@ -1,0 +1,60 @@
+\hypertarget{logger_8h}{
+\subsection{logger.h File Reference}
+\label{logger_8h}\index{logger.h@{logger.h}}
+}
+{\tt \#include $<$ace/Synch.h$>$}\par
+{\tt \#include $<$ace/Task.h$>$}\par
+{\tt \#include $<$ace/Future.h$>$}\par
+{\tt \#include $<$ace/Activation\_\-Queue.h$>$}\par
+{\tt \#include $<$ace/Method\_\-Object.h$>$}\par
+{\tt \#include $<$string$>$}\par
+{\tt \#include $<$memory$>$}\par
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$iomanip$>$}\par
+{\tt \#include \char`\"{}timestamp.h\char`\"{}}\par
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classLogger}{Logger}
+\begin{CompactList}\small\item\em Log a message to stdout and/or to a file.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{logger_8h_a3}{output\_\-t} \{ \hyperlink{logger_8h_a3a0}{OUTPUT\_\-STDOUT}, 
+\hyperlink{logger_8h_a3a1}{OUTPUT\_\-BOTH}, 
+\hyperlink{logger_8h_a3a2}{OUTPUT\_\-FILEONLY}
+ \}
+\begin{CompactList}\small\item\em Enum to specify the type of the output method.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Enumeration Type Documentation}
+\hypertarget{logger_8h_a3}{
+\index{logger.h@{logger.h}!output_t@{output\_\-t}}
+\index{output_t@{output\_\-t}!logger.h@{logger.h}}
+\paragraph[output\_\-t]{\setlength{\rightskip}{0pt plus 5cm}enum output\_\-t}\hfill}
+\label{logger_8h_a3}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{OUTPUT_STDOUT@{OUTPUT\_\-STDOUT}!logger.h@{logger.h}}\index{logger.h@{logger.h}!OUTPUT_STDOUT@{OUTPUT\_\-STDOUT}}\item[{\em 
+\hypertarget{logger_8h_a3a0}{
+{\em OUTPUT\_\-STDOUT}}
+\label{logger_8h_a3a0}
+}]\index{OUTPUT_BOTH@{OUTPUT\_\-BOTH}!logger.h@{logger.h}}\index{logger.h@{logger.h}!OUTPUT_BOTH@{OUTPUT\_\-BOTH}}\item[{\em 
+\hypertarget{logger_8h_a3a1}{
+{\em OUTPUT\_\-BOTH}}
+\label{logger_8h_a3a1}
+}]\index{OUTPUT_FILEONLY@{OUTPUT\_\-FILEONLY}!logger.h@{logger.h}}\index{logger.h@{logger.h}!OUTPUT_FILEONLY@{OUTPUT\_\-FILEONLY}}\item[{\em 
+\hypertarget{logger_8h_a3a2}{
+{\em OUTPUT\_\-FILEONLY}}
+\label{logger_8h_a3a2}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 42 of file logger.h.
+
+Referenced by Logger::Logger().

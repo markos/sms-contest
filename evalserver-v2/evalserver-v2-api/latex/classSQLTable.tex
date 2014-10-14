@@ -1,0 +1,710 @@
+\hypertarget{classSQLTable}{
+\subsection{SQLTable$<$ key, data $>$ Class Template Reference}
+\label{classSQLTable}\index{SQLTable@{SQLTable}}
+}
+{\tt \#include $<$sqltable.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$class key, class data$>$ class SQLTable$<$ key, data $>$}
+
+This class is one of the most important of the program. It allows a uniform and more or less consistent way of accessing the database independently of the actual information in the tables. It deals with most of the important SQL commands in a consistent way. These include INSERT, UPDATE, DELETE, SELECT. It offers a number of methods to assist programming in most of the usual ways one may call the SQL commands. It is designed to complement the \hyperlink{classSQLiteConnection}{SQLite\-Connection} class and right now it cannot be used with another adapter.
+
+The class is a templated class. It uses two abstract classes, namely a key class and a data class. The key class is the one that is used as the index of the SQL table. It can be a PRIMARY KEY or not, this is declared on the construction of the object (and the creation of the respective table). The only requirement for the key class is to provide a c\_\-str() method that returns a pointer to a C string (that is null-terminated). As for the data class there are a few requirements as well:\begin{CompactItemize}
+\item 
+It must provide a method insert\-String(), which returns the part of the SQL INSERT command, without the key. For example, if the INSERT command would be:\par
+\end{CompactItemize}
+INSERT INTO CODES VALUES('76138768176', 1, '309641768762', 1231444534);\par
+
+
+then the insert\-String() method should return:\par
+
+
+1, '309641768762', 1231444534\par
+
+
+This should then be used to form the complete INSERT command to be executed.\begin{CompactItemize}
+\item 
+Likewise, the data class must provide an update\-String() to be used when calling UPDATE on the data.\item 
+For information reasons only, it may provide a to\-HTMLString() method, that displays a table row of its data.\item 
+Equally important is the existance of two constructors, a dummy that sets a boolean variable \char`\"{}empty\char`\"{} to true, and a constructor that takes as an argument the string representation of the data. The data is first read using a SELECT command, is output in a string as comma-separated values and passed as a parameter to the data class constructor. The constructor should then tokenize the string and use these values to initialize itself. Of course it has to set the empty boolean to false afterwards. It is a generic way and can be used for pretty much any object that can be put in a table. \end{CompactItemize}
+
+
+
+
+Definition at line 69 of file sqltable.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classSQLTable_SQLTablea0}{SQLTable} ()
+\begin{CompactList}\small\item\em Dummy constructor.\item\end{CompactList}\item 
+\hyperlink{classSQLTable_SQLTablea1}{SQLTable} (\hyperlink{classSQLiteConnection}{SQLite\-Connection} $\ast$db, const string \&tname, const string \&iname, const string \&ts, vector$<$ string $>$ \&fnames, vector$<$ string $>$ \&ftypes, vector$<$ string $>$ \&indexnames, bool primarykey)
+\begin{CompactList}\small\item\em The default constructor.\item\end{CompactList}\item 
+\hyperlink{classSQLTable_SQLTablea2}{SQLTable} (const SQLTable \&source)
+\begin{CompactList}\small\item\em Copy constructor, copies a SQLTable object to another.\item\end{CompactList}\item 
+SQLTable \& \hyperlink{classSQLTable_SQLTablea3}{operator=} (const SQLTable \&source)
+\begin{CompactList}\small\item\em We overload the assignment operator. Basically the same procedure as the copy constructor.\item\end{CompactList}\item 
+\hyperlink{classSQLTable_SQLTablea4}{$\sim$SQLTable} ()
+\begin{CompactList}\small\item\em The default destructor.\item\end{CompactList}\item 
+bool \hyperlink{classSQLTable_SQLTablea5}{create\-Indices} ()
+\begin{CompactList}\small\item\em Creates the indices described in the vector indices.\item\end{CompactList}\item 
+bool \hyperlink{classSQLTable_SQLTablea6}{drop} ()
+\begin{CompactList}\small\item\em Drops the current table from the database.\item\end{CompactList}\item 
+pair$<$ key, data $>$ \hyperlink{classSQLTable_SQLTablea7}{select\-Object} (size\_\-t index)
+\begin{CompactList}\small\item\em Returns a key, data pair of the record that exists in the position index.\item\end{CompactList}\item 
+data \hyperlink{classSQLTable_SQLTablea8}{select\-Object} (key val, const string \&iname)
+\begin{CompactList}\small\item\em Returns the data object of the record where the field iname = val.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea9}{select\-Objects} (const key \&from, const key \&to, const string \&iname)
+\begin{CompactList}\small\item\em Returns a map of $<$key, data$>$ objects where iname field is in the range (from, to).\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea10}{select\-Objects} (\hyperlink{classTimePeriod}{Time\-Period} \&tp)
+\begin{CompactList}\small\item\em Returns a map of $<$key, data$>$ objects that have timestamps in the period tp.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea11}{select\-Objects} (\hyperlink{classTimeStamp}{Time\-Stamp} \&ts, const string \&tpprefix, const string \&qtyname)
+\begin{CompactList}\small\item\em Returns a map of $<$key, data$>$ objects that their timeperiods include timestamp ts and qtyname != 0.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea12}{select\-Objects} (vector$<$ key $>$ \&objs, const string \&iname)
+\begin{CompactList}\small\item\em Return a map of $<$key, data$>$ objects where the field iname, has values from the vector objs.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea13}{select\-All\-Objects} ()
+\begin{CompactList}\small\item\em Return a map of $<$key, data$>$ of all objects.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea14}{select\-Distinct\-Objects} (\hyperlink{classTimePeriod}{Time\-Period} \&tp, const string \&iname)
+\begin{CompactList}\small\item\em Return a map of the UNIQUE objects (using field iname) in the timeperiod tp.\item\end{CompactList}\item 
+map$<$ key, data $>$ $\ast$ \hyperlink{classSQLTable_SQLTablea15}{select\-Distinct\-Objects} (const string \&iname)
+\begin{CompactList}\small\item\em Return a map of all UNIQUE objects (using field iname).\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea16}{select\-Distinct\-Objects\-Map} (ostream \&out, \hyperlink{classTimePeriod}{Time\-Period} \&tp, const string \&iname)
+\begin{CompactList}\small\item\em Write the UNIQUE objects (using field iname) in the timeperiod tp in the stream out as HTML.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea17}{select\-Distinct\-Objects\-Map} (ostream \&out, const string \&iname)
+\begin{CompactList}\small\item\em Write all UNIQUE objects (using field iname) in the stream out as HTML.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea18}{insert\-Object} (key val, data \&obj)
+\begin{CompactList}\small\item\em Inserts the object pair (val, obj) in the table.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea19}{insert\-Objects} (map$<$ key, data $>$ \&objs)
+\begin{CompactList}\small\item\em Inserts the given map of objects in the table.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea20}{update\-Object} (const key \&val, data \&obj, const string \&iname)
+\begin{CompactList}\small\item\em Updates the object where field iname has the value val according to the values of data obj.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea21}{update\-Objects} (map$<$ key, data $>$ \&objs, const string \&iname)
+\begin{CompactList}\small\item\em Updates the map of objects, using the index field iname.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea22}{delete\-Object} (key \&val, const string \&iname)
+\begin{CompactList}\small\item\em Deletes the object where field iname has value val.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea23}{delete\-Objects} (const key \&from, const key \&to, const string \&iname)
+\begin{CompactList}\small\item\em Deletes the objects where field iname has values in the range from-to.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea24}{delete\-Objects} (vector$<$ key $>$ \&objs, const string \&iname)
+\begin{CompactList}\small\item\em Delete the objects where the field iname takes values from the vector objs.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea25}{size} (key val, const string \&iname)
+\begin{CompactList}\small\item\em Returns the number of records where field iname has value val.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea26}{size} (key from, key to, const string \&iname)
+\begin{CompactList}\small\item\em Returns the number of records where field iname has value in the range from-to.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea27}{size} (\hyperlink{classTimePeriod}{Time\-Period} \&tp)
+\begin{CompactList}\small\item\em Returns the number of records where the field tsname has values in the timeperiod tp.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea28}{size} (const \hyperlink{classTimeStamp}{Time\-Stamp} \&ts, const string \&tpprefix, const string \&qtyname)
+\begin{CompactList}\small\item\em Returns the number of records where their timeperiods include timestamp ts and qtyname != 0.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea29}{size} ()
+\begin{CompactList}\small\item\em Return the size of the table.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea30}{sizeof\-Distinct\-Objects} (\hyperlink{classTimePeriod}{Time\-Period} \&tp, const string \&iname)
+\begin{CompactList}\small\item\em Return the size of UNIQUE objects (using index iname) in the timeperiod tp.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classSQLTable_SQLTablea31}{sizeof\-Distinct\-Objects} (const string \&iname)
+\begin{CompactList}\small\item\em Return the size of UNIQUE objects (using index iname).\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTablea32}{sum\-Column} (key from, key to, const string \&iname, const string \&colname)
+\begin{CompactList}\small\item\em Return the sum of field colname of records where field iname is in the range from-to.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTablea33}{sum\-Column} (\hyperlink{classTimePeriod}{Time\-Period} \&tp, key val, const string \&iname, const string \&colname)
+\begin{CompactList}\small\item\em Return the sum of field colname of records where field iname is equal to val and in the timeperiod tp.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTablea34}{sum\-Column} (const \hyperlink{classTimeStamp}{Time\-Stamp} \&ts, const string \&tpprefix, key val, const string \&iname, const string \&colname)
+\begin{CompactList}\small\item\em Return the sum of field colname of records where field iname is equal to val and their timeperiods include timestamp ts and qtyname != 0.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTablea35}{sum\-Column} (key val, const string \&iname, const string \&colname)
+\begin{CompactList}\small\item\em Return the sum of field colname of records where field iname is equal to val.\item\end{CompactList}\item 
+data \hyperlink{classSQLTable_SQLTablea36}{operator\mbox{[}$\,$\mbox{]}} (key x)
+\begin{CompactList}\small\item\em Overload the operator\mbox{[}$\,$\mbox{]} to access the object where indexname is equal to x.\item\end{CompactList}\item 
+pair$<$ key, data $>$ \hyperlink{classSQLTable_SQLTablea37}{operator\mbox{[}$\,$\mbox{]}} (size\_\-t ind)
+\begin{CompactList}\small\item\em Overload the operator\mbox{[}$\,$\mbox{]} to access the object in the position ind.\item\end{CompactList}\item 
+bool \hyperlink{classSQLTable_SQLTablea38}{is\-Ready} ()
+\begin{CompactList}\small\item\em Return true if the table is opened and operational.\item\end{CompactList}\item 
+void \hyperlink{classSQLTable_SQLTablea39}{log\-Msg} (string msg)
+\begin{CompactList}\small\item\em Wrapper around logger object's log\-Msg.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Types}
+\begin{CompactItemize}
+\item 
+typedef map$<$ key, vector$<$ data $>$ $>$ \hyperlink{classSQLTable_SQLTableu0}{sqlmap}
+\begin{CompactList}\small\item\em We typedef the map$<$key, vector$<$data$>$ $>$ type to sqlmap.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \hyperlink{classSQLTable_SQLTableo0}{ready}
+\begin{CompactList}\small\item\em This boolean declares whether a table is ready to be used.\item\end{CompactList}\item 
+\hyperlink{classSQLiteConnection}{SQLite\-Connection} $\ast$ \hyperlink{classSQLTable_SQLTableo1}{dbcon}
+\begin{CompactList}\small\item\em Pointer to the \hyperlink{classSQLiteConnection}{SQLite\-Connection} object.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTableo2}{tablename}
+\begin{CompactList}\small\item\em The name of the table.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTableo3}{indexname}
+\begin{CompactList}\small\item\em The name of the key field of the table.\item\end{CompactList}\item 
+string \hyperlink{classSQLTable_SQLTableo4}{tsname}
+\begin{CompactList}\small\item\em The name of the timestamp field.\item\end{CompactList}\item 
+vector$<$ string $>$ \hyperlink{classSQLTable_SQLTableo5}{fieldnames}
+\begin{CompactList}\small\item\em A vector that holds the names of all the fields.\item\end{CompactList}\item 
+vector$<$ string $>$ \hyperlink{classSQLTable_SQLTableo6}{fieldtypes}
+\begin{CompactList}\small\item\em This vector holds the names of the \_\-types)\_\- of the fields.\item\end{CompactList}\item 
+vector$<$ string $>$ \hyperlink{classSQLTable_SQLTableo7}{indices}
+\begin{CompactList}\small\item\em This vector holds the names of the fields to be indexed.\item\end{CompactList}\item 
+bool \hyperlink{classSQLTable_SQLTableo8}{has\-Primary\-Key}
+\begin{CompactList}\small\item\em If true then the index is also a PRIMARY KEY.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classSQLTable_SQLTableu0}{
+\index{SQLTable@{SQLTable}!sqlmap@{sqlmap}}
+\index{sqlmap@{sqlmap}!SQLTable@{SQLTable}}
+\paragraph[sqlmap]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ typedef map$<$key, vector$<$data$>$ $>$ SQLTable$<$ key, data $>$::sqlmap\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableu0}
+
+
+
+
+Definition at line 98 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map().
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classSQLTable_SQLTablea0}{
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\paragraph[SQLTable]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ SQLTable$<$ key, data $>$::SQLTable ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTablea0}
+
+
+
+
+Definition at line 102 of file sqltable.h.\hypertarget{classSQLTable_SQLTablea1}{
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\paragraph[SQLTable]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ SQLTable$<$ key, data $>$::SQLTable$<$ key, data $>$ (\hyperlink{classSQLiteConnection}{SQLite\-Connection} $\ast$ {\em db}, const string \& {\em tname}, const string \& {\em iname}, const string \& {\em ts}, vector$<$ string $>$ \& {\em fnames}, vector$<$ string $>$ \& {\em ftypes}, vector$<$ string $>$ \& {\em indexnames}, bool {\em primarykey})}\hfill}
+\label{classSQLTable_SQLTablea1}
+
+
+This is the constructor. Apart from initializing the member variables dbcon, tablename, indexname, tsname, fieldnames, fieldtypes and has\-Primary\-Key, it is responsible to check for the existense of the table and create it if needed. The creation of the table uses the following information:\begin{CompactItemize}
+\item 
+The key of the table (the first field) is indexname\item 
+It is declared as PRIMARY KEY if has\-Primary\-Key is set to true\item 
+All the fields are created using the names and types in fieldnames and types vectors Upon successfull creation the ready flag is set to true. \end{CompactItemize}
+\hypertarget{classSQLTable_SQLTablea2}{
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\index{SQLTable@{SQLTable}!SQLTable@{SQLTable}}
+\paragraph[SQLTable]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ SQLTable$<$ key, data $>$::SQLTable (const SQLTable$<$ key, data $>$ \& {\em source})}\hfill}
+\label{classSQLTable_SQLTablea2}
+
+
+This is the copy constructor, copies the contents of a source SQLTable to another 
+
+Definition at line 237 of file sqltable.h.\hypertarget{classSQLTable_SQLTablea4}{
+\index{SQLTable@{SQLTable}!~SQLTable@{$\sim$SQLTable}}
+\index{~SQLTable@{$\sim$SQLTable}!SQLTable@{SQLTable}}
+\paragraph[$\sim$SQLTable]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ SQLTable$<$ key, data $>$::$\sim$SQLTable ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTablea4}
+
+
+
+
+Definition at line 117 of file sqltable.h.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classSQLTable_SQLTablea5}{
+\index{SQLTable@{SQLTable}!createIndices@{createIndices}}
+\index{createIndices@{createIndices}!SQLTable@{SQLTable}}
+\paragraph[createIndices]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ bool SQLTable$<$ key, data $>$::create\-Indices ()}\hfill}
+\label{classSQLTable_SQLTablea5}
+
+
+This method creates the necessary indices for the current table, if needed. First it checks for the existence of the indices with exists\-Index(). If it exists it does a CREATE INDEX on the table, using a UNIQUE index if the field is a PRIMARY KEY. Upon successfull creation the ready flag is set to true. The indices are VERY important to the performance of the database, esp. with very large datasets. 
+
+Definition at line 353 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::exists\-Index(), SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::has\-Primary\-Key, SQLTable$<$ key, data $>$::indexname, SQLTable$<$ key, data $>$::indices, SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea22}{
+\index{SQLTable@{SQLTable}!deleteObject@{deleteObject}}
+\index{deleteObject@{deleteObject}!SQLTable@{SQLTable}}
+\paragraph[deleteObject]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::delete\-Object (key \& {\em val}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea22}
+
+
+Deletes the object where field has value val from the table. The key class is required to provide a c\_\-str() method. 
+
+Definition at line 1105 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), SQLite\-Connection::reconnect(), and SQLTable$<$ key, data $>$::tablename.
+
+Referenced by SQLTable$<$ key, data $>$::delete\-Objects().\hypertarget{classSQLTable_SQLTablea24}{
+\index{SQLTable@{SQLTable}!deleteObjects@{deleteObjects}}
+\index{deleteObjects@{deleteObjects}!SQLTable@{SQLTable}}
+\paragraph[deleteObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::delete\-Objects (vector$<$ key $>$ \& {\em objs}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea24}
+
+
+Deletes the objects included in the given vector objs from the table. Calls \hyperlink{classSQLTable_SQLTablea22}{delete\-Object()} for each object. 
+
+Definition at line 1201 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::delete\-Object(), and SQLTable$<$ key, data $>$::indexname.\hypertarget{classSQLTable_SQLTablea23}{
+\index{SQLTable@{SQLTable}!deleteObjects@{deleteObjects}}
+\index{deleteObjects@{deleteObjects}!SQLTable@{SQLTable}}
+\paragraph[deleteObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::delete\-Objects (const key \& {\em from}, const key \& {\em to}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea23}
+
+
+Deletes the object where field has value val in the range (from,to). The key class is required to provide a c\_\-str() method. 
+
+Definition at line 1156 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea6}{
+\index{SQLTable@{SQLTable}!drop@{drop}}
+\index{drop@{drop}!SQLTable@{SQLTable}}
+\paragraph[drop]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ bool SQLTable$<$ key, data $>$::drop ()}\hfill}
+\label{classSQLTable_SQLTablea6}
+
+
+Drops the table, NOT a destuctor. The destructor should not delete the table from the database. 
+
+Definition at line 413 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea18}{
+\index{SQLTable@{SQLTable}!insertObject@{insertObject}}
+\index{insertObject@{insertObject}!SQLTable@{SQLTable}}
+\paragraph[insertObject]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::insert\-Object (key {\em val}, data \& {\em obj})}\hfill}
+\label{classSQLTable_SQLTablea18}
+
+
+Inserts the object (val, obj.insert\-String()) to the table. The data class is required to provide an insert\-String() method. The key class is required to provide a c\_\-str() method. The same procedure is followed as in \hyperlink{classSQLiteConnection_SQLiteConnectiona7}{SQLite\-Connection::commit\-Transaction()}. 
+
+Definition at line 1018 of file sqltable.h.
+
+References SQLite\-Connection::begin\-Transaction(), SQLite\-Connection::commit\-Transaction(), SQLite\-Connection::conflicts, SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), SQLite\-Connection::max\_\-conflicts, SQLite\-Connection::reconnect(), SQLTable$<$ key, data $>$::tablename, SQLite\-Connection::transactioncmd, SQLite\-Connection::transactions, SQLite\-Connection::transactions\_\-enabled, and SQLite\-Connection::transactions\_\-threshold.
+
+Referenced by SQLTable$<$ key, data $>$::insert\-Objects().\hypertarget{classSQLTable_SQLTablea19}{
+\index{SQLTable@{SQLTable}!insertObjects@{insertObjects}}
+\index{insertObjects@{insertObjects}!SQLTable@{SQLTable}}
+\paragraph[insertObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::insert\-Objects (map$<$ key, data $>$ \& {\em objs})}\hfill}
+\label{classSQLTable_SQLTablea19}
+
+
+Inserts the objects (val, obj.insert\-String()) included in the given map to the table. Calls \hyperlink{classSQLTable_SQLTablea18}{insert\-Object()} for each object. 
+
+Definition at line 1090 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::insert\-Object().\hypertarget{classSQLTable_SQLTablea38}{
+\index{SQLTable@{SQLTable}!isReady@{isReady}}
+\index{isReady@{isReady}!SQLTable@{SQLTable}}
+\paragraph[isReady]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ bool SQLTable$<$ key, data $>$::is\-Ready ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTablea38}
+
+
+
+
+Definition at line 225 of file sqltable.h.\hypertarget{classSQLTable_SQLTablea39}{
+\index{SQLTable@{SQLTable}!logMsg@{logMsg}}
+\index{logMsg@{logMsg}!SQLTable@{SQLTable}}
+\paragraph[logMsg]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::log\-Msg (string {\em msg})}\hfill}
+\label{classSQLTable_SQLTablea39}
+
+
+Instead of using directly the logmsg method from the logger object, we wrap it with another one, so that if it (the logger) is not available (at the start or the end of execution) we will still have a logging mechanism available via cout. 
+
+Definition at line 1666 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::logger, and Logger::log\-Msg().
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::drop(), SQLTable$<$ key, data $>$::insert\-Object(), SQLTable$<$ key, data $>$::select\-All\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Object(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLTable_SQLTablea3}{
+\index{SQLTable@{SQLTable}!operator=@{operator=}}
+\index{operator=@{operator=}!SQLTable@{SQLTable}}
+\paragraph[operator=]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ SQLTable$<$ key, data $>$ \& SQLTable$<$ key, data $>$::operator= (const SQLTable$<$ key, data $>$ \& {\em source})}\hfill}
+\label{classSQLTable_SQLTablea3}
+
+
+This is the assignment operator=, works just like the copy constructor 
+
+Definition at line 253 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLTable$<$ key, data $>$::fieldnames, SQLTable$<$ key, data $>$::fieldtypes, SQLTable$<$ key, data $>$::has\-Primary\-Key, SQLTable$<$ key, data $>$::indexname, SQLTable$<$ key, data $>$::indices, SQLTable$<$ key, data $>$::ready, SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea37}{
+\index{SQLTable@{SQLTable}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!SQLTable@{SQLTable}}
+\paragraph[operator[]]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ pair$<$key, data$>$ SQLTable$<$ key, data $>$::operator\mbox{[}$\,$\mbox{]} (size\_\-t {\em ind})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTablea37}
+
+
+
+
+Definition at line 220 of file sqltable.h.\hypertarget{classSQLTable_SQLTablea36}{
+\index{SQLTable@{SQLTable}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!SQLTable@{SQLTable}}
+\paragraph[operator[]]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ data SQLTable$<$ key, data $>$::operator\mbox{[}$\,$\mbox{]} (key {\em x})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTablea36}
+
+
+
+
+Definition at line 215 of file sqltable.h.\hypertarget{classSQLTable_SQLTablea13}{
+\index{SQLTable@{SQLTable}!selectAllObjects@{selectAllObjects}}
+\index{selectAllObjects@{selectAllObjects}!SQLTable@{SQLTable}}
+\paragraph[selectAllObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-All\-Objects ()}\hfill}
+\label{classSQLTable_SQLTablea13}
+
+
+Returns the map of objects $<$key, data$>$ of all the records. This one should be used with care, esp. with large databases. 
+
+Definition at line 713 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea15}{
+\index{SQLTable@{SQLTable}!selectDistinctObjects@{selectDistinctObjects}}
+\index{selectDistinctObjects@{selectDistinctObjects}!SQLTable@{SQLTable}}
+\paragraph[selectDistinctObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Distinct\-Objects (const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea15}
+
+
+Returns the map of objects $<$key, data$>$ of the UNIQUE records using the field iname. 
+
+Definition at line 820 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea14}{
+\index{SQLTable@{SQLTable}!selectDistinctObjects@{selectDistinctObjects}}
+\index{selectDistinctObjects@{selectDistinctObjects}!SQLTable@{SQLTable}}
+\paragraph[selectDistinctObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Distinct\-Objects (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea14}
+
+
+Returns the map of objects $<$key, data$>$ of the UNIQUE records where the field tsname has values inside the period tp. We check for uniqueness using the field iname. 
+
+Definition at line 766 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea17}{
+\index{SQLTable@{SQLTable}!selectDistinctObjectsMap@{selectDistinctObjectsMap}}
+\index{selectDistinctObjectsMap@{selectDistinctObjectsMap}!SQLTable@{SQLTable}}
+\paragraph[selectDistinctObjectsMap]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map (ostream \& {\em out}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea17}
+
+
+This does not return anything. Instead we provide a filestream descriptor and it writes an HTML table of the UNIQUE records (using the field iname). The class data is required to provide a to\-HTMLString() method. The performance is much greater than creating a map of the objects in RAM, and then writing it to disk. 
+
+Definition at line 948 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::sqlmap, and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea16}{
+\index{SQLTable@{SQLTable}!selectDistinctObjectsMap@{selectDistinctObjectsMap}}
+\index{selectDistinctObjectsMap@{selectDistinctObjectsMap}!SQLTable@{SQLTable}}
+\paragraph[selectDistinctObjectsMap]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map (ostream \& {\em out}, \hyperlink{classTimePeriod}{Time\-Period} \& {\em tp}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea16}
+
+
+This does not return anything. Instead we provide a filestream descriptor and it writes an HTML table of the UNIQUE records (using the field iname) where their tsname field is inside the timeperiod tp. The class data is required to provide a to\-HTMLString() method. The performance is much greater than creating a map of the objects in RAM, and then writing it to disk. 
+
+Definition at line 878 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea8}{
+\index{SQLTable@{SQLTable}!selectObject@{selectObject}}
+\index{selectObject@{selectObject}!SQLTable@{SQLTable}}
+\paragraph[selectObject]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ data SQLTable$<$ key, data $>$::select\-Object (key {\em val}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea8}
+
+
+Returns the pair $<$key, data$>$ of the record where field iname has value val. 
+
+Definition at line 487 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea7}{
+\index{SQLTable@{SQLTable}!selectObject@{selectObject}}
+\index{selectObject@{selectObject}!SQLTable@{SQLTable}}
+\paragraph[selectObject]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ pair$<$ key, data $>$ SQLTable$<$ key, data $>$::select\-Object (size\_\-t {\em index})}\hfill}
+\label{classSQLTable_SQLTablea7}
+
+
+Returns the pair $<$key, data$>$ of the record which is in the position index of the TABLE. Basically it uses the OFFSET parameter in SELECT. 
+
+Definition at line 446 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.
+
+Referenced by SQLTable$<$ string, part\-Details $>$::operator\mbox{[}$\,$\mbox{]}(), and SQLTable$<$ key, data $>$::select\-Objects().\hypertarget{classSQLTable_SQLTablea12}{
+\index{SQLTable@{SQLTable}!selectObjects@{selectObjects}}
+\index{selectObjects@{selectObjects}!SQLTable@{SQLTable}}
+\paragraph[selectObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Objects (vector$<$ key $>$ \& {\em objs}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea12}
+
+
+Returns the map of objects $<$key, data$>$ of the records where the field iname takes values given in the vector$<$key$>$ objs. 
+
+Definition at line 692 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::indexname, and SQLTable$<$ key, data $>$::select\-Object().\hypertarget{classSQLTable_SQLTablea11}{
+\index{SQLTable@{SQLTable}!selectObjects@{selectObjects}}
+\index{selectObjects@{selectObjects}!SQLTable@{SQLTable}}
+\paragraph[selectObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Objects (\hyperlink{classTimeStamp}{Time\-Stamp} \& {\em ts}, const string \& {\em tpprefix}, const string \& {\em qtyname})}\hfill}
+\label{classSQLTable_SQLTablea11}
+
+
+Returns the pair $<$key, data$>$ of the record where the given ts is inside the values of the fields \{tpprefix\}\_\-begin and \{tpprefix\}\_\-end and where the value of the field qtyname is != 0. 
+
+Definition at line 635 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea10}{
+\index{SQLTable@{SQLTable}!selectObjects@{selectObjects}}
+\index{selectObjects@{selectObjects}!SQLTable@{SQLTable}}
+\paragraph[selectObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Objects (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp})}\hfill}
+\label{classSQLTable_SQLTablea10}
+
+
+Returns the pair $<$key, data$>$ of the record where field tsname (which is used to hold timestamp information) is inside the timeperiod tp. 
+
+Definition at line 581 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea9}{
+\index{SQLTable@{SQLTable}!selectObjects@{selectObjects}}
+\index{selectObjects@{selectObjects}!SQLTable@{SQLTable}}
+\paragraph[selectObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ map$<$ key, data $>$ $\ast$ SQLTable$<$ key, data $>$::select\-Objects (const key \& {\em from}, const key \& {\em to}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea9}
+
+
+Returns the pair $<$key, data$>$ of the record where field iname has value in the range (from, to). 
+
+Definition at line 528 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea29}{
+\index{SQLTable@{SQLTable}!size@{size}}
+\index{size@{size}!SQLTable@{SQLTable}}
+\paragraph[size]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::size ()}\hfill}
+\label{classSQLTable_SQLTablea29}
+
+
+Returns the number of all records. 
+
+Definition at line 1495 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea28}{
+\index{SQLTable@{SQLTable}!size@{size}}
+\index{size@{size}!SQLTable@{SQLTable}}
+\paragraph[size]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::size (const \hyperlink{classTimeStamp}{Time\-Stamp} \& {\em ts}, const string \& {\em tpprefix}, const string \& {\em qtyname})}\hfill}
+\label{classSQLTable_SQLTablea28}
+
+
+Returns the number of the records where the given ts is inside the values of the fields \{tpprefix\}\_\-begin and \{tpprefix\}\_\-end and where the value of the field qtyname is != 0. 
+
+Definition at line 1460 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea27}{
+\index{SQLTable@{SQLTable}!size@{size}}
+\index{size@{size}!SQLTable@{SQLTable}}
+\paragraph[size]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::size (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp})}\hfill}
+\label{classSQLTable_SQLTablea27}
+
+
+Returns the number of all the records whom the field tsname (which holds timestamp information) is inside the timeperiod tp. 
+
+Definition at line 1361 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea26}{
+\index{SQLTable@{SQLTable}!size@{size}}
+\index{size@{size}!SQLTable@{SQLTable}}
+\paragraph[size]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::size (key {\em from}, key {\em to}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea26}
+
+
+Returns the number of all the records whom the field iname has value in the range (from, to). 
+
+Definition at line 1331 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea25}{
+\index{SQLTable@{SQLTable}!size@{size}}
+\index{size@{size}!SQLTable@{SQLTable}}
+\paragraph[size]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::size (key {\em val}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea25}
+
+
+Returns the number of all the records whom the field iname has value equal to val. 
+
+Definition at line 1301 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea31}{
+\index{SQLTable@{SQLTable}!sizeofDistinctObjects@{sizeofDistinctObjects}}
+\index{sizeofDistinctObjects@{sizeofDistinctObjects}!SQLTable@{SQLTable}}
+\paragraph[sizeofDistinctObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects (const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea31}
+
+
+Returns the number of all the unique records (using the index iname). 
+
+Definition at line 1426 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea30}{
+\index{SQLTable@{SQLTable}!sizeofDistinctObjects@{sizeofDistinctObjects}}
+\index{sizeofDistinctObjects@{sizeofDistinctObjects}!SQLTable@{SQLTable}}
+\paragraph[sizeofDistinctObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ size\_\-t SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea30}
+
+
+Returns the number of all the unique records (using the index iname) whom the field tsname (whichholds timestamp information) is inside the timeperiod tp. 
+
+Definition at line 1393 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea35}{
+\index{SQLTable@{SQLTable}!sumColumn@{sumColumn}}
+\index{sumColumn@{sumColumn}!SQLTable@{SQLTable}}
+\paragraph[sumColumn]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::sum\-Column (key {\em val}, const string \& {\em iname}, const string \& {\em colname})}\hfill}
+\label{classSQLTable_SQLTablea35}
+
+
+Returns the sum of the field colname, of all the records for which the file iname is equal to val. 
+
+Definition at line 1634 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea34}{
+\index{SQLTable@{SQLTable}!sumColumn@{sumColumn}}
+\index{sumColumn@{sumColumn}!SQLTable@{SQLTable}}
+\paragraph[sumColumn]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::sum\-Column (const \hyperlink{classTimeStamp}{Time\-Stamp} \& {\em ts}, const string \& {\em tpprefix}, key {\em val}, const string \& {\em iname}, const string \& {\em colname})}\hfill}
+\label{classSQLTable_SQLTablea34}
+
+
+Returns the sum of the field colname, of all the records for which the given ts  is inside the values of the fields \{tpprefix\}\_\-begin and \{tpprefix\}\_\-end and where the value of the field qtyname is != 0. 
+
+Definition at line 1592 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea33}{
+\index{SQLTable@{SQLTable}!sumColumn@{sumColumn}}
+\index{sumColumn@{sumColumn}!SQLTable@{SQLTable}}
+\paragraph[sumColumn]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::sum\-Column (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp}, key {\em val}, const string \& {\em iname}, const string \& {\em colname})}\hfill}
+\label{classSQLTable_SQLTablea33}
+
+
+Returns the sum of the field colname, of all the records for which the field iname is equal to val and the field tsname is inside the timeperiod tp. 
+
+Definition at line 1555 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, Time\-Period::get\-Begin\-TS(), SQLite\-Connection::getdb(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::tablename, and SQLTable$<$ key, data $>$::tsname.\hypertarget{classSQLTable_SQLTablea32}{
+\index{SQLTable@{SQLTable}!sumColumn@{sumColumn}}
+\index{sumColumn@{sumColumn}!SQLTable@{SQLTable}}
+\paragraph[sumColumn]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::sum\-Column (key {\em from}, key {\em to}, const string \& {\em iname}, const string \& {\em colname})}\hfill}
+\label{classSQLTable_SQLTablea32}
+
+
+Returns the sum of the field colname, of all the records for which the field iname has value in the range (from, to). 
+
+Definition at line 1523 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::log\-Msg(), and SQLTable$<$ key, data $>$::tablename.\hypertarget{classSQLTable_SQLTablea20}{
+\index{SQLTable@{SQLTable}!updateObject@{updateObject}}
+\index{updateObject@{updateObject}!SQLTable@{SQLTable}}
+\paragraph[updateObject]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::update\-Object (const key \& {\em val}, data \& {\em obj}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea20}
+
+
+Updates the object where field iname has value iname, using the values in the object data. The data class is required to provide for an update\-String() method. The same procedure is followed as in \hyperlink{classSQLiteConnection_SQLiteConnectiona7}{SQLite\-Connection::commit\-Transaction()}. 
+
+Definition at line 1218 of file sqltable.h.
+
+References SQLite\-Connection::begin\-Transaction(), SQLite\-Connection::commit\-Transaction(), SQLite\-Connection::conflicts, SQLTable$<$ key, data $>$::dbcon, SQLite\-Connection::getdb(), SQLTable$<$ key, data $>$::indexname, SQLTable$<$ key, data $>$::log\-Msg(), SQLite\-Connection::log\-Transaction(), SQLite\-Connection::max\_\-conflicts, SQLite\-Connection::reconnect(), SQLTable$<$ key, data $>$::tablename, SQLite\-Connection::transactioncmd, SQLite\-Connection::transactions, SQLite\-Connection::transactions\_\-enabled, and SQLite\-Connection::transactions\_\-threshold.
+
+Referenced by SQLTable$<$ key, data $>$::update\-Objects().\hypertarget{classSQLTable_SQLTablea21}{
+\index{SQLTable@{SQLTable}!updateObjects@{updateObjects}}
+\index{updateObjects@{updateObjects}!SQLTable@{SQLTable}}
+\paragraph[updateObjects]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ void SQLTable$<$ key, data $>$::update\-Objects (map$<$ key, data $>$ \& {\em objs}, const string \& {\em iname})}\hfill}
+\label{classSQLTable_SQLTablea21}
+
+
+Updates the objects (val, obj.update\-String()) included in the given map to the table. Calls \hyperlink{classSQLTable_SQLTablea20}{update\-Object()} for each object. 
+
+Definition at line 1287 of file sqltable.h.
+
+References SQLTable$<$ key, data $>$::indexname, and SQLTable$<$ key, data $>$::update\-Object().
+
+\subsubsection{Field Documentation}
+\hypertarget{classSQLTable_SQLTableo1}{
+\index{SQLTable@{SQLTable}!dbcon@{dbcon}}
+\index{dbcon@{dbcon}!SQLTable@{SQLTable}}
+\paragraph[dbcon]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ \hyperlink{classSQLiteConnection}{SQLite\-Connection}$\ast$ SQLTable$<$ key, data $>$::dbcon\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo1}
+
+
+
+
+Definition at line 74 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::drop(), SQLTable$<$ key, data $>$::insert\-Object(), SQLTable$<$ key, data $>$::log\-Msg(), SQLTable$<$ key, data $>$::operator=(), SQLTable$<$ key, data $>$::select\-All\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Object(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLTable_SQLTableo5}{
+\index{SQLTable@{SQLTable}!fieldnames@{fieldnames}}
+\index{fieldnames@{fieldnames}!SQLTable@{SQLTable}}
+\paragraph[fieldnames]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ vector$<$string$>$ SQLTable$<$ key, data $>$::fieldnames\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo5}
+
+
+
+
+Definition at line 86 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::operator=().\hypertarget{classSQLTable_SQLTableo6}{
+\index{SQLTable@{SQLTable}!fieldtypes@{fieldtypes}}
+\index{fieldtypes@{fieldtypes}!SQLTable@{SQLTable}}
+\paragraph[fieldtypes]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ vector$<$string$>$ SQLTable$<$ key, data $>$::fieldtypes\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo6}
+
+
+
+
+Definition at line 89 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::operator=().\hypertarget{classSQLTable_SQLTableo8}{
+\index{SQLTable@{SQLTable}!hasPrimaryKey@{hasPrimaryKey}}
+\index{hasPrimaryKey@{hasPrimaryKey}!SQLTable@{SQLTable}}
+\paragraph[hasPrimaryKey]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ bool SQLTable$<$ key, data $>$::has\-Primary\-Key\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo8}
+
+
+
+
+Definition at line 95 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), and SQLTable$<$ key, data $>$::operator=().\hypertarget{classSQLTable_SQLTableo3}{
+\index{SQLTable@{SQLTable}!indexname@{indexname}}
+\index{indexname@{indexname}!SQLTable@{SQLTable}}
+\paragraph[indexname]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::indexname\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo3}
+
+
+
+
+Definition at line 80 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::operator=(), SQLTable$<$ string, part\-Details $>$::operator\mbox{[}$\,$\mbox{]}(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::update\-Object(), and SQLTable$<$ key, data $>$::update\-Objects().\hypertarget{classSQLTable_SQLTableo7}{
+\index{SQLTable@{SQLTable}!indices@{indices}}
+\index{indices@{indices}!SQLTable@{SQLTable}}
+\paragraph[indices]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ vector$<$string$>$ SQLTable$<$ key, data $>$::indices\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo7}
+
+
+
+
+Definition at line 92 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), and SQLTable$<$ key, data $>$::operator=().\hypertarget{classSQLTable_SQLTableo0}{
+\index{SQLTable@{SQLTable}!ready@{ready}}
+\index{ready@{ready}!SQLTable@{SQLTable}}
+\paragraph[ready]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ bool SQLTable$<$ key, data $>$::ready\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo0}
+
+
+
+
+Definition at line 71 of file sqltable.h.
+
+Referenced by SQLTable$<$ string, part\-Details $>$::is\-Ready(), SQLTable$<$ key, data $>$::operator=(), and SQLTable$<$ string, part\-Details $>$::SQLTable().\hypertarget{classSQLTable_SQLTableo2}{
+\index{SQLTable@{SQLTable}!tablename@{tablename}}
+\index{tablename@{tablename}!SQLTable@{SQLTable}}
+\paragraph[tablename]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::tablename\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo2}
+
+
+
+
+Definition at line 77 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::create\-Indices(), SQLTable$<$ key, data $>$::delete\-Object(), SQLTable$<$ key, data $>$::delete\-Objects(), SQLTable$<$ key, data $>$::drop(), SQLTable$<$ key, data $>$::insert\-Object(), SQLTable$<$ key, data $>$::operator=(), SQLTable$<$ key, data $>$::select\-All\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Object(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and SQLTable$<$ key, data $>$::update\-Object().\hypertarget{classSQLTable_SQLTableo4}{
+\index{SQLTable@{SQLTable}!tsname@{tsname}}
+\index{tsname@{tsname}!SQLTable@{SQLTable}}
+\paragraph[tsname]{\setlength{\rightskip}{0pt plus 5cm}template$<$class key, class data$>$ string SQLTable$<$ key, data $>$::tsname\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classSQLTable_SQLTableo4}
+
+
+
+
+Definition at line 83 of file sqltable.h.
+
+Referenced by SQLTable$<$ key, data $>$::operator=(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), and SQLTable$<$ key, data $>$::sum\-Column().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+\hyperlink{sqltable_8h}{sqltable.h}\end{CompactItemize}

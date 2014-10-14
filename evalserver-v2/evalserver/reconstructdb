@@ -1,0 +1,8 @@
+#!/bin/sh
+
+files=`ls *.sql`
+
+for i in $files; do
+ echo "Reconstructing from" $i "..."
+ sqlite competition.db < $i
+done

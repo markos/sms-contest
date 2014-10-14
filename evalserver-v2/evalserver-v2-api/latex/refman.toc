@@ -1,0 +1,535 @@
+\contentsline {section}{\numberline {1}Namespace Index}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Namespace List}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Data Structure Index}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Data Structures}{1}{subsection.2.1}
+\contentsline {section}{\numberline {3}File Index}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}File List}{2}{subsection.3.1}
+\contentsline {section}{\numberline {4}Namespace Documentation}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}std Namespace Reference}{4}{subsection.4.1}
+\contentsline {section}{\numberline {5}Data Structure Documentation}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Client\_\discretionary {-}{}{}Acceptor Class Reference}{4}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Member Typedef Documentation}{4}{subsubsection.5.1.1}
+\contentsline {paragraph}{\numberline {5.1.1.1}inherited}{4}{paragraph.5.1.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Member Enumeration Documentation}{5}{subsubsection.5.1.2}
+\contentsline {paragraph}{\numberline {5.1.2.1}concurrency\_\discretionary {-}{}{}t}{5}{paragraph.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.3}Constructor \& Destructor Documentation}{5}{subsubsection.5.1.3}
+\contentsline {paragraph}{\numberline {5.1.3.1}Client\_\discretionary {-}{}{}Acceptor}{5}{paragraph.5.1.3.1}
+\contentsline {paragraph}{\numberline {5.1.3.2}Client\_\discretionary {-}{}{}Acceptor}{5}{paragraph.5.1.3.2}
+\contentsline {paragraph}{\numberline {5.1.3.3}$\sim $Client\_\discretionary {-}{}{}Acceptor}{5}{paragraph.5.1.3.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Member Function Documentation}{5}{subsubsection.5.1.4}
+\contentsline {paragraph}{\numberline {5.1.4.1}close}{5}{paragraph.5.1.4.1}
+\contentsline {paragraph}{\numberline {5.1.4.2}concurrency}{5}{paragraph.5.1.4.2}
+\contentsline {paragraph}{\numberline {5.1.4.3}getContest}{6}{paragraph.5.1.4.3}
+\contentsline {paragraph}{\numberline {5.1.4.4}make\_\discretionary {-}{}{}svc\_\discretionary {-}{}{}handler}{6}{paragraph.5.1.4.4}
+\contentsline {paragraph}{\numberline {5.1.4.5}open}{6}{paragraph.5.1.4.5}
+\contentsline {paragraph}{\numberline {5.1.4.6}setContest}{6}{paragraph.5.1.4.6}
+\contentsline {paragraph}{\numberline {5.1.4.7}thread\_\discretionary {-}{}{}pool}{6}{paragraph.5.1.4.7}
+\contentsline {paragraph}{\numberline {5.1.4.8}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}is\_\discretionary {-}{}{}private}{6}{paragraph.5.1.4.8}
+\contentsline {subsubsection}{\numberline {5.1.5}Field Documentation}{7}{subsubsection.5.1.5}
+\contentsline {paragraph}{\numberline {5.1.5.1}concurrency\_\discretionary {-}{}{}}{7}{paragraph.5.1.5.1}
+\contentsline {paragraph}{\numberline {5.1.5.2}parentContest}{7}{paragraph.5.1.5.2}
+\contentsline {paragraph}{\numberline {5.1.5.3}private\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}{7}{paragraph.5.1.5.3}
+\contentsline {paragraph}{\numberline {5.1.5.4}the\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}{7}{paragraph.5.1.5.4}
+\contentsline {subsection}{\numberline {5.2}Client\_\discretionary {-}{}{}Handler Class Reference}{7}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Detailed Description}{7}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Member Typedef Documentation}{8}{subsubsection.5.2.2}
+\contentsline {paragraph}{\numberline {5.2.2.1}inherited}{8}{paragraph.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.3}Member Enumeration Documentation}{9}{subsubsection.5.2.3}
+\contentsline {paragraph}{\numberline {5.2.3.1}responseID}{9}{paragraph.5.2.3.1}
+\contentsline {subsubsection}{\numberline {5.2.4}Constructor \& Destructor Documentation}{9}{subsubsection.5.2.4}
+\contentsline {paragraph}{\numberline {5.2.4.1}Client\_\discretionary {-}{}{}Handler}{9}{paragraph.5.2.4.1}
+\contentsline {paragraph}{\numberline {5.2.4.2}$\sim $Client\_\discretionary {-}{}{}Handler}{9}{paragraph.5.2.4.2}
+\contentsline {subsubsection}{\numberline {5.2.5}Member Function Documentation}{9}{subsubsection.5.2.5}
+\contentsline {paragraph}{\numberline {5.2.5.1}client\_\discretionary {-}{}{}acceptor}{9}{paragraph.5.2.5.1}
+\contentsline {paragraph}{\numberline {5.2.5.2}client\_\discretionary {-}{}{}acceptor}{9}{paragraph.5.2.5.2}
+\contentsline {paragraph}{\numberline {5.2.5.3}close}{10}{paragraph.5.2.5.3}
+\contentsline {paragraph}{\numberline {5.2.5.4}concurrency}{10}{paragraph.5.2.5.4}
+\contentsline {paragraph}{\numberline {5.2.5.5}destroy}{10}{paragraph.5.2.5.5}
+\contentsline {paragraph}{\numberline {5.2.5.6}getContest}{10}{paragraph.5.2.5.6}
+\contentsline {paragraph}{\numberline {5.2.5.7}handle\_\discretionary {-}{}{}close}{10}{paragraph.5.2.5.7}
+\contentsline {paragraph}{\numberline {5.2.5.8}handle\_\discretionary {-}{}{}input}{10}{paragraph.5.2.5.8}
+\contentsline {paragraph}{\numberline {5.2.5.9}open}{11}{paragraph.5.2.5.9}
+\contentsline {paragraph}{\numberline {5.2.5.10}process}{11}{paragraph.5.2.5.10}
+\contentsline {paragraph}{\numberline {5.2.5.11}setContest}{11}{paragraph.5.2.5.11}
+\contentsline {paragraph}{\numberline {5.2.5.12}svc}{11}{paragraph.5.2.5.12}
+\contentsline {paragraph}{\numberline {5.2.5.13}thread\_\discretionary {-}{}{}pool}{11}{paragraph.5.2.5.13}
+\contentsline {subsubsection}{\numberline {5.2.6}Field Documentation}{12}{subsubsection.5.2.6}
+\contentsline {paragraph}{\numberline {5.2.6.1}client\_\discretionary {-}{}{}acceptor\_\discretionary {-}{}{}}{12}{paragraph.5.2.6.1}
+\contentsline {paragraph}{\numberline {5.2.6.2}creator\_\discretionary {-}{}{}}{12}{paragraph.5.2.6.2}
+\contentsline {paragraph}{\numberline {5.2.6.3}data}{12}{paragraph.5.2.6.3}
+\contentsline {paragraph}{\numberline {5.2.6.4}mutex\_\discretionary {-}{}{}}{12}{paragraph.5.2.6.4}
+\contentsline {paragraph}{\numberline {5.2.6.5}parentContest}{12}{paragraph.5.2.6.5}
+\contentsline {paragraph}{\numberline {5.2.6.6}srv\_\discretionary {-}{}{}counter}{12}{paragraph.5.2.6.6}
+\contentsline {subsection}{\numberline {5.3}connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block Class Reference}{12}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Detailed Description}{13}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Member Enumeration Documentation}{14}{subsubsection.5.3.2}
+\contentsline {paragraph}{\numberline {5.3.2.1}"@0}{14}{paragraph.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.3}Constructor \& Destructor Documentation}{14}{subsubsection.5.3.3}
+\contentsline {paragraph}{\numberline {5.3.3.1}connectionMsgBlock}{14}{paragraph.5.3.3.1}
+\contentsline {paragraph}{\numberline {5.3.3.2}connectionMsgBlock}{14}{paragraph.5.3.3.2}
+\contentsline {paragraph}{\numberline {5.3.3.3}$\sim $connectionMsgBlock}{14}{paragraph.5.3.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Member Function Documentation}{14}{subsubsection.5.3.4}
+\contentsline {paragraph}{\numberline {5.3.4.1}getData}{14}{paragraph.5.3.4.1}
+\contentsline {paragraph}{\numberline {5.3.4.2}getParticipant}{15}{paragraph.5.3.4.2}
+\contentsline {paragraph}{\numberline {5.3.4.3}getParticipantStr}{15}{paragraph.5.3.4.3}
+\contentsline {paragraph}{\numberline {5.3.4.4}isValid}{15}{paragraph.5.3.4.4}
+\contentsline {paragraph}{\numberline {5.3.4.5}operator==}{15}{paragraph.5.3.4.5}
+\contentsline {paragraph}{\numberline {5.3.4.6}retrieveCRC}{15}{paragraph.5.3.4.6}
+\contentsline {subsubsection}{\numberline {5.3.5}Field Documentation}{16}{subsubsection.5.3.5}
+\contentsline {paragraph}{\numberline {5.3.5.1}crc32}{16}{paragraph.5.3.5.1}
+\contentsline {paragraph}{\numberline {5.3.5.2}data}{16}{paragraph.5.3.5.2}
+\contentsline {subsection}{\numberline {5.4}Contest Class Reference}{16}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Member Enumeration Documentation}{19}{subsubsection.5.4.1}
+\contentsline {paragraph}{\numberline {5.4.1.1}"@1}{19}{paragraph.5.4.1.1}
+\contentsline {paragraph}{\numberline {5.4.1.2}"@2}{19}{paragraph.5.4.1.2}
+\contentsline {paragraph}{\numberline {5.4.1.3}"@3}{20}{paragraph.5.4.1.3}
+\contentsline {subsubsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{20}{subsubsection.5.4.2}
+\contentsline {paragraph}{\numberline {5.4.2.1}Contest}{20}{paragraph.5.4.2.1}
+\contentsline {paragraph}{\numberline {5.4.2.2}$\sim $Contest}{20}{paragraph.5.4.2.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Member Function Documentation}{20}{subsubsection.5.4.3}
+\contentsline {paragraph}{\numberline {5.4.3.1}getContestDays}{20}{paragraph.5.4.3.1}
+\contentsline {paragraph}{\numberline {5.4.3.2}getCurrentDay}{20}{paragraph.5.4.3.2}
+\contentsline {paragraph}{\numberline {5.4.3.3}getLastDay}{20}{paragraph.5.4.3.3}
+\contentsline {paragraph}{\numberline {5.4.3.4}giftIsGiven}{21}{paragraph.5.4.3.4}
+\contentsline {paragraph}{\numberline {5.4.3.5}handle\_\discretionary {-}{}{}signal}{21}{paragraph.5.4.3.5}
+\contentsline {paragraph}{\numberline {5.4.3.6}handle\_\discretionary {-}{}{}timeout}{21}{paragraph.5.4.3.6}
+\contentsline {paragraph}{\numberline {5.4.3.7}init}{21}{paragraph.5.4.3.7}
+\contentsline {paragraph}{\numberline {5.4.3.8}initDB}{22}{paragraph.5.4.3.8}
+\contentsline {paragraph}{\numberline {5.4.3.9}initLogger}{22}{paragraph.5.4.3.9}
+\contentsline {paragraph}{\numberline {5.4.3.10}initProcessor}{22}{paragraph.5.4.3.10}
+\contentsline {paragraph}{\numberline {5.4.3.11}initSignal}{22}{paragraph.5.4.3.11}
+\contentsline {paragraph}{\numberline {5.4.3.12}initThreads}{22}{paragraph.5.4.3.12}
+\contentsline {paragraph}{\numberline {5.4.3.13}initTimers}{22}{paragraph.5.4.3.13}
+\contentsline {paragraph}{\numberline {5.4.3.14}logMsg}{23}{paragraph.5.4.3.14}
+\contentsline {paragraph}{\numberline {5.4.3.15}preparetoShutdown}{23}{paragraph.5.4.3.15}
+\contentsline {paragraph}{\numberline {5.4.3.16}setupPrizes}{23}{paragraph.5.4.3.16}
+\contentsline {paragraph}{\numberline {5.4.3.17}shutdown}{23}{paragraph.5.4.3.17}
+\contentsline {paragraph}{\numberline {5.4.3.18}start}{24}{paragraph.5.4.3.18}
+\contentsline {subsubsection}{\numberline {5.4.4}Field Documentation}{24}{subsubsection.5.4.4}
+\contentsline {paragraph}{\numberline {5.4.4.1}basethreadpid}{24}{paragraph.5.4.4.1}
+\contentsline {paragraph}{\numberline {5.4.4.2}ContestDays}{24}{paragraph.5.4.4.2}
+\contentsline {paragraph}{\numberline {5.4.4.3}Counters}{24}{paragraph.5.4.4.3}
+\contentsline {paragraph}{\numberline {5.4.4.4}current\_\discretionary {-}{}{}day}{24}{paragraph.5.4.4.4}
+\contentsline {paragraph}{\numberline {5.4.4.5}current\_\discretionary {-}{}{}month}{24}{paragraph.5.4.4.5}
+\contentsline {paragraph}{\numberline {5.4.4.6}current\_\discretionary {-}{}{}week}{24}{paragraph.5.4.4.6}
+\contentsline {paragraph}{\numberline {5.4.4.7}dbconnection}{24}{paragraph.5.4.4.7}
+\contentsline {paragraph}{\numberline {5.4.4.8}EOC}{24}{paragraph.5.4.4.8}
+\contentsline {paragraph}{\numberline {5.4.4.9}EOD}{25}{paragraph.5.4.4.9}
+\contentsline {paragraph}{\numberline {5.4.4.10}EOM}{25}{paragraph.5.4.4.10}
+\contentsline {paragraph}{\numberline {5.4.4.11}EOW}{25}{paragraph.5.4.4.11}
+\contentsline {paragraph}{\numberline {5.4.4.12}iaddr}{25}{paragraph.5.4.4.12}
+\contentsline {paragraph}{\numberline {5.4.4.13}logger}{25}{paragraph.5.4.4.13}
+\contentsline {paragraph}{\numberline {5.4.4.14}mutex\_\discretionary {-}{}{}}{25}{paragraph.5.4.4.14}
+\contentsline {paragraph}{\numberline {5.4.4.15}Participants}{25}{paragraph.5.4.4.15}
+\contentsline {paragraph}{\numberline {5.4.4.16}peer\_\discretionary {-}{}{}acceptor}{25}{paragraph.5.4.4.16}
+\contentsline {paragraph}{\numberline {5.4.4.17}PrizeNames}{25}{paragraph.5.4.4.17}
+\contentsline {paragraph}{\numberline {5.4.4.18}Prizes}{26}{paragraph.5.4.4.18}
+\contentsline {paragraph}{\numberline {5.4.4.19}processor}{26}{paragraph.5.4.4.19}
+\contentsline {paragraph}{\numberline {5.4.4.20}reactor}{26}{paragraph.5.4.4.20}
+\contentsline {paragraph}{\numberline {5.4.4.21}ReadyToShutdown}{26}{paragraph.5.4.4.21}
+\contentsline {paragraph}{\numberline {5.4.4.22}SetupPrizes}{26}{paragraph.5.4.4.22}
+\contentsline {paragraph}{\numberline {5.4.4.23}SOC}{26}{paragraph.5.4.4.23}
+\contentsline {paragraph}{\numberline {5.4.4.24}Subscribers}{26}{paragraph.5.4.4.24}
+\contentsline {paragraph}{\numberline {5.4.4.25}Winners}{26}{paragraph.5.4.4.25}
+\contentsline {subsection}{\numberline {5.5}Count Class Reference}{26}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Constructor \& Destructor Documentation}{27}{subsubsection.5.5.1}
+\contentsline {paragraph}{\numberline {5.5.1.1}Count}{27}{paragraph.5.5.1.1}
+\contentsline {paragraph}{\numberline {5.5.1.2}Count}{27}{paragraph.5.5.1.2}
+\contentsline {paragraph}{\numberline {5.5.1.3}Count}{27}{paragraph.5.5.1.3}
+\contentsline {subsubsection}{\numberline {5.5.2}Member Function Documentation}{27}{subsubsection.5.5.2}
+\contentsline {paragraph}{\numberline {5.5.2.1}insertString}{27}{paragraph.5.5.2.1}
+\contentsline {paragraph}{\numberline {5.5.2.2}operator++}{28}{paragraph.5.5.2.2}
+\contentsline {paragraph}{\numberline {5.5.2.3}operator--}{28}{paragraph.5.5.2.3}
+\contentsline {paragraph}{\numberline {5.5.2.4}set}{28}{paragraph.5.5.2.4}
+\contentsline {paragraph}{\numberline {5.5.2.5}updateString}{28}{paragraph.5.5.2.5}
+\contentsline {paragraph}{\numberline {5.5.2.6}val}{28}{paragraph.5.5.2.6}
+\contentsline {subsubsection}{\numberline {5.5.3}Field Documentation}{28}{subsubsection.5.5.3}
+\contentsline {paragraph}{\numberline {5.5.3.1}counter\_\discretionary {-}{}{}}{28}{paragraph.5.5.3.1}
+\contentsline {subsection}{\numberline {5.6}Counter\_\discretionary {-}{}{}Guard Class Reference}{29}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Constructor \& Destructor Documentation}{29}{subsubsection.5.6.1}
+\contentsline {paragraph}{\numberline {5.6.1.1}Counter\_\discretionary {-}{}{}Guard}{29}{paragraph.5.6.1.1}
+\contentsline {paragraph}{\numberline {5.6.1.2}$\sim $Counter\_\discretionary {-}{}{}Guard}{29}{paragraph.5.6.1.2}
+\contentsline {subsubsection}{\numberline {5.6.2}Field Documentation}{29}{subsubsection.5.6.2}
+\contentsline {paragraph}{\numberline {5.6.2.1}counter\_\discretionary {-}{}{}}{29}{paragraph.5.6.2.1}
+\contentsline {subsection}{\numberline {5.7}CRC\_\discretionary {-}{}{}32 Class Reference}{29}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Detailed Description}{29}{subsubsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.2}Constructor \& Destructor Documentation}{30}{subsubsection.5.7.2}
+\contentsline {paragraph}{\numberline {5.7.2.1}CRC\_\discretionary {-}{}{}32}{30}{paragraph.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.3}Member Function Documentation}{30}{subsubsection.5.7.3}
+\contentsline {paragraph}{\numberline {5.7.3.1}getCRC}{30}{paragraph.5.7.3.1}
+\contentsline {paragraph}{\numberline {5.7.3.2}reflect}{30}{paragraph.5.7.3.2}
+\contentsline {subsubsection}{\numberline {5.7.4}Field Documentation}{30}{subsubsection.5.7.4}
+\contentsline {paragraph}{\numberline {5.7.4.1}crc32\_\discretionary {-}{}{}table}{30}{paragraph.5.7.4.1}
+\contentsline {subsection}{\numberline {5.8}Day Class Reference}{31}{subsection.5.8}
+\contentsline {subsubsection}{\numberline {5.8.1}Detailed Description}{31}{subsubsection.5.8.1}
+\contentsline {subsubsection}{\numberline {5.8.2}Member Enumeration Documentation}{33}{subsubsection.5.8.2}
+\contentsline {paragraph}{\numberline {5.8.2.1}"@4}{33}{paragraph.5.8.2.1}
+\contentsline {paragraph}{\numberline {5.8.2.2}"@5}{33}{paragraph.5.8.2.2}
+\contentsline {subsubsection}{\numberline {5.8.3}Constructor \& Destructor Documentation}{34}{subsubsection.5.8.3}
+\contentsline {paragraph}{\numberline {5.8.3.1}Day}{34}{paragraph.5.8.3.1}
+\contentsline {paragraph}{\numberline {5.8.3.2}Day}{34}{paragraph.5.8.3.2}
+\contentsline {paragraph}{\numberline {5.8.3.3}Day}{34}{paragraph.5.8.3.3}
+\contentsline {subsubsection}{\numberline {5.8.4}Member Function Documentation}{34}{subsubsection.5.8.4}
+\contentsline {paragraph}{\numberline {5.8.4.1}assignPrizes}{34}{paragraph.5.8.4.1}
+\contentsline {paragraph}{\numberline {5.8.4.2}calculateEstNoMsgs}{34}{paragraph.5.8.4.2}
+\contentsline {paragraph}{\numberline {5.8.4.3}executeDraw}{35}{paragraph.5.8.4.3}
+\contentsline {paragraph}{\numberline {5.8.4.4}getCounter}{35}{paragraph.5.8.4.4}
+\contentsline {paragraph}{\numberline {5.8.4.5}getEstNoMsgs}{35}{paragraph.5.8.4.5}
+\contentsline {paragraph}{\numberline {5.8.4.6}getNoPrizes}{35}{paragraph.5.8.4.6}
+\contentsline {paragraph}{\numberline {5.8.4.7}getTimePeriod}{35}{paragraph.5.8.4.7}
+\contentsline {paragraph}{\numberline {5.8.4.8}getUniqueCounter}{36}{paragraph.5.8.4.8}
+\contentsline {paragraph}{\numberline {5.8.4.9}insertString}{36}{paragraph.5.8.4.9}
+\contentsline {paragraph}{\numberline {5.8.4.10}isEmpty}{36}{paragraph.5.8.4.10}
+\contentsline {paragraph}{\numberline {5.8.4.11}setCounter}{36}{paragraph.5.8.4.11}
+\contentsline {paragraph}{\numberline {5.8.4.12}setTimePeriod}{36}{paragraph.5.8.4.12}
+\contentsline {paragraph}{\numberline {5.8.4.13}updateString}{36}{paragraph.5.8.4.13}
+\contentsline {subsubsection}{\numberline {5.8.5}Friends And Related Function Documentation}{36}{subsubsection.5.8.5}
+\contentsline {paragraph}{\numberline {5.8.5.1}Processor}{36}{paragraph.5.8.5.1}
+\contentsline {subsubsection}{\numberline {5.8.6}Field Documentation}{37}{subsubsection.5.8.6}
+\contentsline {paragraph}{\numberline {5.8.6.1}counter}{37}{paragraph.5.8.6.1}
+\contentsline {paragraph}{\numberline {5.8.6.2}day\_\discretionary {-}{}{}period}{37}{paragraph.5.8.6.2}
+\contentsline {paragraph}{\numberline {5.8.6.3}DayMessages}{37}{paragraph.5.8.6.3}
+\contentsline {paragraph}{\numberline {5.8.6.4}empty}{37}{paragraph.5.8.6.4}
+\contentsline {paragraph}{\numberline {5.8.6.5}estNoMsgs}{37}{paragraph.5.8.6.5}
+\contentsline {paragraph}{\numberline {5.8.6.6}parentContest}{37}{paragraph.5.8.6.6}
+\contentsline {paragraph}{\numberline {5.8.6.7}prizes}{37}{paragraph.5.8.6.7}
+\contentsline {paragraph}{\numberline {5.8.6.8}unique\_\discretionary {-}{}{}counter}{37}{paragraph.5.8.6.8}
+\contentsline {subsection}{\numberline {5.9}gift\discretionary {-}{}{}Details Class Reference}{38}{subsection.5.9}
+\contentsline {subsubsection}{\numberline {5.9.1}Detailed Description}{38}{subsubsection.5.9.1}
+\contentsline {subsubsection}{\numberline {5.9.2}Member Enumeration Documentation}{39}{subsubsection.5.9.2}
+\contentsline {paragraph}{\numberline {5.9.2.1}"@6}{39}{paragraph.5.9.2.1}
+\contentsline {subsubsection}{\numberline {5.9.3}Constructor \& Destructor Documentation}{40}{subsubsection.5.9.3}
+\contentsline {paragraph}{\numberline {5.9.3.1}giftDetails}{40}{paragraph.5.9.3.1}
+\contentsline {paragraph}{\numberline {5.9.3.2}giftDetails}{40}{paragraph.5.9.3.2}
+\contentsline {paragraph}{\numberline {5.9.3.3}giftDetails}{40}{paragraph.5.9.3.3}
+\contentsline {paragraph}{\numberline {5.9.3.4}$\sim $giftDetails}{40}{paragraph.5.9.3.4}
+\contentsline {subsubsection}{\numberline {5.9.4}Member Function Documentation}{40}{subsubsection.5.9.4}
+\contentsline {paragraph}{\numberline {5.9.4.1}getCurrentQuantity}{40}{paragraph.5.9.4.1}
+\contentsline {paragraph}{\numberline {5.9.4.2}getGiftDuration}{41}{paragraph.5.9.4.2}
+\contentsline {paragraph}{\numberline {5.9.4.3}getGiftId}{41}{paragraph.5.9.4.3}
+\contentsline {paragraph}{\numberline {5.9.4.4}getInitialQuantity}{41}{paragraph.5.9.4.4}
+\contentsline {paragraph}{\numberline {5.9.4.5}getName}{41}{paragraph.5.9.4.5}
+\contentsline {paragraph}{\numberline {5.9.4.6}insertString}{41}{paragraph.5.9.4.6}
+\contentsline {paragraph}{\numberline {5.9.4.7}isEmpty}{41}{paragraph.5.9.4.7}
+\contentsline {paragraph}{\numberline {5.9.4.8}operator--}{41}{paragraph.5.9.4.8}
+\contentsline {paragraph}{\numberline {5.9.4.9}setCurrentQuantity}{42}{paragraph.5.9.4.9}
+\contentsline {paragraph}{\numberline {5.9.4.10}setInitialQuantity}{42}{paragraph.5.9.4.10}
+\contentsline {paragraph}{\numberline {5.9.4.11}setName}{42}{paragraph.5.9.4.11}
+\contentsline {paragraph}{\numberline {5.9.4.12}updateString}{42}{paragraph.5.9.4.12}
+\contentsline {subsubsection}{\numberline {5.9.5}Field Documentation}{42}{subsubsection.5.9.5}
+\contentsline {paragraph}{\numberline {5.9.5.1}empty}{42}{paragraph.5.9.5.1}
+\contentsline {paragraph}{\numberline {5.9.5.2}giftid}{42}{paragraph.5.9.5.2}
+\contentsline {paragraph}{\numberline {5.9.5.3}giftName}{42}{paragraph.5.9.5.3}
+\contentsline {paragraph}{\numberline {5.9.5.4}initial}{43}{paragraph.5.9.5.4}
+\contentsline {paragraph}{\numberline {5.9.5.5}period}{43}{paragraph.5.9.5.5}
+\contentsline {paragraph}{\numberline {5.9.5.6}remaining}{43}{paragraph.5.9.5.6}
+\contentsline {subsection}{\numberline {5.10}Logger Class Reference}{43}{subsection.5.10}
+\contentsline {subsubsection}{\numberline {5.10.1}Detailed Description}{43}{subsubsection.5.10.1}
+\contentsline {subsubsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{44}{subsubsection.5.10.2}
+\contentsline {paragraph}{\numberline {5.10.2.1}Logger}{44}{paragraph.5.10.2.1}
+\contentsline {paragraph}{\numberline {5.10.2.2}$\sim $Logger}{44}{paragraph.5.10.2.2}
+\contentsline {subsubsection}{\numberline {5.10.3}Member Function Documentation}{45}{subsubsection.5.10.3}
+\contentsline {paragraph}{\numberline {5.10.3.1}close}{45}{paragraph.5.10.3.1}
+\contentsline {paragraph}{\numberline {5.10.3.2}getLogFileName}{45}{paragraph.5.10.3.2}
+\contentsline {paragraph}{\numberline {5.10.3.3}logMsg}{45}{paragraph.5.10.3.3}
+\contentsline {paragraph}{\numberline {5.10.3.4}logMsg\_\discretionary {-}{}{}i}{45}{paragraph.5.10.3.4}
+\contentsline {paragraph}{\numberline {5.10.3.5}open}{45}{paragraph.5.10.3.5}
+\contentsline {paragraph}{\numberline {5.10.3.6}setLogFileName}{45}{paragraph.5.10.3.6}
+\contentsline {paragraph}{\numberline {5.10.3.7}svc}{46}{paragraph.5.10.3.7}
+\contentsline {subsubsection}{\numberline {5.10.4}Field Documentation}{46}{subsubsection.5.10.4}
+\contentsline {paragraph}{\numberline {5.10.4.1}activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}{46}{paragraph.5.10.4.1}
+\contentsline {paragraph}{\numberline {5.10.4.2}logFile}{46}{paragraph.5.10.4.2}
+\contentsline {paragraph}{\numberline {5.10.4.3}logfilename\_\discretionary {-}{}{}}{46}{paragraph.5.10.4.3}
+\contentsline {paragraph}{\numberline {5.10.4.4}mutex\_\discretionary {-}{}{}}{46}{paragraph.5.10.4.4}
+\contentsline {paragraph}{\numberline {5.10.4.5}out\_\discretionary {-}{}{}}{46}{paragraph.5.10.4.5}
+\contentsline {subsection}{\numberline {5.11}log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO Class Reference}{46}{subsection.5.11}
+\contentsline {subsubsection}{\numberline {5.11.1}Detailed Description}{46}{subsubsection.5.11.1}
+\contentsline {subsubsection}{\numberline {5.11.2}Constructor \& Destructor Documentation}{47}{subsubsection.5.11.2}
+\contentsline {paragraph}{\numberline {5.11.2.1}logMsg\_\discretionary {-}{}{}MO}{47}{paragraph.5.11.2.1}
+\contentsline {paragraph}{\numberline {5.11.2.2}$\sim $logMsg\_\discretionary {-}{}{}MO}{47}{paragraph.5.11.2.2}
+\contentsline {subsubsection}{\numberline {5.11.3}Member Function Documentation}{47}{subsubsection.5.11.3}
+\contentsline {paragraph}{\numberline {5.11.3.1}call}{47}{paragraph.5.11.3.1}
+\contentsline {subsubsection}{\numberline {5.11.4}Field Documentation}{48}{subsubsection.5.11.4}
+\contentsline {paragraph}{\numberline {5.11.4.1}future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}{48}{paragraph.5.11.4.1}
+\contentsline {paragraph}{\numberline {5.11.4.2}logger\_\discretionary {-}{}{}}{48}{paragraph.5.11.4.2}
+\contentsline {paragraph}{\numberline {5.11.4.3}msg\_\discretionary {-}{}{}}{48}{paragraph.5.11.4.3}
+\contentsline {subsection}{\numberline {5.12}Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard Class Reference}{48}{subsection.5.12}
+\contentsline {subsubsection}{\numberline {5.12.1}Constructor \& Destructor Documentation}{48}{subsubsection.5.12.1}
+\contentsline {paragraph}{\numberline {5.12.1.1}Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}{48}{paragraph.5.12.1.1}
+\contentsline {paragraph}{\numberline {5.12.1.2}$\sim $Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}{48}{paragraph.5.12.1.2}
+\contentsline {subsubsection}{\numberline {5.12.2}Field Documentation}{49}{subsubsection.5.12.2}
+\contentsline {paragraph}{\numberline {5.12.2.1}mb\_\discretionary {-}{}{}}{49}{paragraph.5.12.2.1}
+\contentsline {subsection}{\numberline {5.13}part\discretionary {-}{}{}Details Class Reference}{49}{subsection.5.13}
+\contentsline {subsubsection}{\numberline {5.13.1}Detailed Description}{49}{subsubsection.5.13.1}
+\contentsline {subsubsection}{\numberline {5.13.2}Member Enumeration Documentation}{51}{subsubsection.5.13.2}
+\contentsline {paragraph}{\numberline {5.13.2.1}"@7}{51}{paragraph.5.13.2.1}
+\contentsline {subsubsection}{\numberline {5.13.3}Constructor \& Destructor Documentation}{51}{subsubsection.5.13.3}
+\contentsline {paragraph}{\numberline {5.13.3.1}partDetails}{51}{paragraph.5.13.3.1}
+\contentsline {paragraph}{\numberline {5.13.3.2}partDetails}{51}{paragraph.5.13.3.2}
+\contentsline {paragraph}{\numberline {5.13.3.3}partDetails}{51}{paragraph.5.13.3.3}
+\contentsline {paragraph}{\numberline {5.13.3.4}$\sim $partDetails}{51}{paragraph.5.13.3.4}
+\contentsline {subsubsection}{\numberline {5.13.4}Member Function Documentation}{51}{subsubsection.5.13.4}
+\contentsline {paragraph}{\numberline {5.13.4.1}getGiftId}{51}{paragraph.5.13.4.1}
+\contentsline {paragraph}{\numberline {5.13.4.2}getMSISDN}{52}{paragraph.5.13.4.2}
+\contentsline {paragraph}{\numberline {5.13.4.3}getMSISDNStr}{52}{paragraph.5.13.4.3}
+\contentsline {paragraph}{\numberline {5.13.4.4}getTimestamp}{52}{paragraph.5.13.4.4}
+\contentsline {paragraph}{\numberline {5.13.4.5}insertString}{52}{paragraph.5.13.4.5}
+\contentsline {paragraph}{\numberline {5.13.4.6}isEmpty}{52}{paragraph.5.13.4.6}
+\contentsline {paragraph}{\numberline {5.13.4.7}setGiftId}{52}{paragraph.5.13.4.7}
+\contentsline {paragraph}{\numberline {5.13.4.8}setMSISDN}{52}{paragraph.5.13.4.8}
+\contentsline {paragraph}{\numberline {5.13.4.9}setTimestamp}{53}{paragraph.5.13.4.9}
+\contentsline {paragraph}{\numberline {5.13.4.10}toHTMLString}{53}{paragraph.5.13.4.10}
+\contentsline {paragraph}{\numberline {5.13.4.11}updateString}{53}{paragraph.5.13.4.11}
+\contentsline {subsubsection}{\numberline {5.13.5}Friends And Related Function Documentation}{53}{subsubsection.5.13.5}
+\contentsline {paragraph}{\numberline {5.13.5.1}operator$<$$<$}{53}{paragraph.5.13.5.1}
+\contentsline {subsubsection}{\numberline {5.13.6}Field Documentation}{53}{subsubsection.5.13.6}
+\contentsline {paragraph}{\numberline {5.13.6.1}empty}{53}{paragraph.5.13.6.1}
+\contentsline {paragraph}{\numberline {5.13.6.2}giftid}{53}{paragraph.5.13.6.2}
+\contentsline {paragraph}{\numberline {5.13.6.3}msisdn}{53}{paragraph.5.13.6.3}
+\contentsline {paragraph}{\numberline {5.13.6.4}timestamp}{54}{paragraph.5.13.6.4}
+\contentsline {subsection}{\numberline {5.14}Processor Class Reference}{54}{subsection.5.14}
+\contentsline {subsubsection}{\numberline {5.14.1}Detailed Description}{54}{subsubsection.5.14.1}
+\contentsline {subsubsection}{\numberline {5.14.2}Constructor \& Destructor Documentation}{55}{subsubsection.5.14.2}
+\contentsline {paragraph}{\numberline {5.14.2.1}Processor}{55}{paragraph.5.14.2.1}
+\contentsline {paragraph}{\numberline {5.14.2.2}$\sim $Processor}{55}{paragraph.5.14.2.2}
+\contentsline {subsubsection}{\numberline {5.14.3}Member Function Documentation}{55}{subsubsection.5.14.3}
+\contentsline {paragraph}{\numberline {5.14.3.1}close}{55}{paragraph.5.14.3.1}
+\contentsline {paragraph}{\numberline {5.14.3.2}open}{55}{paragraph.5.14.3.2}
+\contentsline {paragraph}{\numberline {5.14.3.3}process}{55}{paragraph.5.14.3.3}
+\contentsline {paragraph}{\numberline {5.14.3.4}process\_\discretionary {-}{}{}i}{56}{paragraph.5.14.3.4}
+\contentsline {paragraph}{\numberline {5.14.3.5}svc}{56}{paragraph.5.14.3.5}
+\contentsline {subsubsection}{\numberline {5.14.4}Field Documentation}{56}{subsubsection.5.14.4}
+\contentsline {paragraph}{\numberline {5.14.4.1}activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}{56}{paragraph.5.14.4.1}
+\contentsline {paragraph}{\numberline {5.14.4.2}mutex\_\discretionary {-}{}{}}{56}{paragraph.5.14.4.2}
+\contentsline {paragraph}{\numberline {5.14.4.3}parentContest}{56}{paragraph.5.14.4.3}
+\contentsline {subsection}{\numberline {5.15}processor\_\discretionary {-}{}{}MO Class Reference}{57}{subsection.5.15}
+\contentsline {subsubsection}{\numberline {5.15.1}Detailed Description}{57}{subsubsection.5.15.1}
+\contentsline {subsubsection}{\numberline {5.15.2}Constructor \& Destructor Documentation}{58}{subsubsection.5.15.2}
+\contentsline {paragraph}{\numberline {5.15.2.1}processor\_\discretionary {-}{}{}MO}{58}{paragraph.5.15.2.1}
+\contentsline {paragraph}{\numberline {5.15.2.2}$\sim $processor\_\discretionary {-}{}{}MO}{58}{paragraph.5.15.2.2}
+\contentsline {subsubsection}{\numberline {5.15.3}Member Function Documentation}{58}{subsubsection.5.15.3}
+\contentsline {paragraph}{\numberline {5.15.3.1}call}{58}{paragraph.5.15.3.1}
+\contentsline {subsubsection}{\numberline {5.15.4}Field Documentation}{58}{subsubsection.5.15.4}
+\contentsline {paragraph}{\numberline {5.15.4.1}cmb\_\discretionary {-}{}{}}{58}{paragraph.5.15.4.1}
+\contentsline {paragraph}{\numberline {5.15.4.2}future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}{58}{paragraph.5.15.4.2}
+\contentsline {paragraph}{\numberline {5.15.4.3}processor\_\discretionary {-}{}{}}{58}{paragraph.5.15.4.3}
+\contentsline {subsection}{\numberline {5.16}SQLite\discretionary {-}{}{}Connection Class Reference}{58}{subsection.5.16}
+\contentsline {subsubsection}{\numberline {5.16.1}Detailed Description}{59}{subsubsection.5.16.1}
+\contentsline {subsubsection}{\numberline {5.16.2}Member Enumeration Documentation}{61}{subsubsection.5.16.2}
+\contentsline {paragraph}{\numberline {5.16.2.1}"@8}{61}{paragraph.5.16.2.1}
+\contentsline {paragraph}{\numberline {5.16.2.2}"@9}{61}{paragraph.5.16.2.2}
+\contentsline {subsubsection}{\numberline {5.16.3}Constructor \& Destructor Documentation}{61}{subsubsection.5.16.3}
+\contentsline {paragraph}{\numberline {5.16.3.1}SQLiteConnection}{61}{paragraph.5.16.3.1}
+\contentsline {paragraph}{\numberline {5.16.3.2}SQLiteConnection}{61}{paragraph.5.16.3.2}
+\contentsline {paragraph}{\numberline {5.16.3.3}$\sim $SQLiteConnection}{62}{paragraph.5.16.3.3}
+\contentsline {subsubsection}{\numberline {5.16.4}Member Function Documentation}{62}{subsubsection.5.16.4}
+\contentsline {paragraph}{\numberline {5.16.4.1}beginTransaction}{62}{paragraph.5.16.4.1}
+\contentsline {paragraph}{\numberline {5.16.4.2}changeLogFilename}{62}{paragraph.5.16.4.2}
+\contentsline {paragraph}{\numberline {5.16.4.3}commitTransaction}{62}{paragraph.5.16.4.3}
+\contentsline {paragraph}{\numberline {5.16.4.4}disableTransactions}{62}{paragraph.5.16.4.4}
+\contentsline {paragraph}{\numberline {5.16.4.5}enableTransactions}{62}{paragraph.5.16.4.5}
+\contentsline {paragraph}{\numberline {5.16.4.6}existsIndex}{63}{paragraph.5.16.4.6}
+\contentsline {paragraph}{\numberline {5.16.4.7}existsTable}{63}{paragraph.5.16.4.7}
+\contentsline {paragraph}{\numberline {5.16.4.8}getdb}{63}{paragraph.5.16.4.8}
+\contentsline {paragraph}{\numberline {5.16.4.9}getTransactions}{63}{paragraph.5.16.4.9}
+\contentsline {paragraph}{\numberline {5.16.4.10}isReady}{63}{paragraph.5.16.4.10}
+\contentsline {paragraph}{\numberline {5.16.4.11}logTransaction}{63}{paragraph.5.16.4.11}
+\contentsline {paragraph}{\numberline {5.16.4.12}pickFilename}{64}{paragraph.5.16.4.12}
+\contentsline {paragraph}{\numberline {5.16.4.13}reconnect}{64}{paragraph.5.16.4.13}
+\contentsline {paragraph}{\numberline {5.16.4.14}transactionsEnabled}{64}{paragraph.5.16.4.14}
+\contentsline {subsubsection}{\numberline {5.16.5}Friends And Related Function Documentation}{64}{subsubsection.5.16.5}
+\contentsline {paragraph}{\numberline {5.16.5.1}SQLTable}{64}{paragraph.5.16.5.1}
+\contentsline {subsubsection}{\numberline {5.16.6}Field Documentation}{64}{subsubsection.5.16.6}
+\contentsline {paragraph}{\numberline {5.16.6.1}conflicts}{64}{paragraph.5.16.6.1}
+\contentsline {paragraph}{\numberline {5.16.6.2}DBname}{64}{paragraph.5.16.6.2}
+\contentsline {paragraph}{\numberline {5.16.6.3}logger}{65}{paragraph.5.16.6.3}
+\contentsline {paragraph}{\numberline {5.16.6.4}sqlitedb}{65}{paragraph.5.16.6.4}
+\contentsline {paragraph}{\numberline {5.16.6.5}transactioncmd}{65}{paragraph.5.16.6.5}
+\contentsline {paragraph}{\numberline {5.16.6.6}transactions}{65}{paragraph.5.16.6.6}
+\contentsline {paragraph}{\numberline {5.16.6.7}transactions\_\discretionary {-}{}{}enabled}{65}{paragraph.5.16.6.7}
+\contentsline {paragraph}{\numberline {5.16.6.8}transactions\_\discretionary {-}{}{}log}{65}{paragraph.5.16.6.8}
+\contentsline {paragraph}{\numberline {5.16.6.9}use\_\discretionary {-}{}{}transactions\_\discretionary {-}{}{}log}{65}{paragraph.5.16.6.9}
+\contentsline {paragraph}{\numberline {5.16.6.10}zErrMsg}{65}{paragraph.5.16.6.10}
+\contentsline {subsection}{\numberline {5.17}SQLTable$<$ key, data $>$ Class Template Reference}{66}{subsection.5.17}
+\contentsline {subsubsection}{\numberline {5.17.1}Detailed Description}{66}{subsubsection.5.17.1}
+\contentsline {subsubsection}{\numberline {5.17.2}Member Typedef Documentation}{70}{subsubsection.5.17.2}
+\contentsline {paragraph}{\numberline {5.17.2.1}sqlmap}{70}{paragraph.5.17.2.1}
+\contentsline {subsubsection}{\numberline {5.17.3}Constructor \& Destructor Documentation}{70}{subsubsection.5.17.3}
+\contentsline {paragraph}{\numberline {5.17.3.1}SQLTable}{70}{paragraph.5.17.3.1}
+\contentsline {paragraph}{\numberline {5.17.3.2}SQLTable}{70}{paragraph.5.17.3.2}
+\contentsline {paragraph}{\numberline {5.17.3.3}SQLTable}{70}{paragraph.5.17.3.3}
+\contentsline {paragraph}{\numberline {5.17.3.4}$\sim $SQLTable}{70}{paragraph.5.17.3.4}
+\contentsline {subsubsection}{\numberline {5.17.4}Member Function Documentation}{70}{subsubsection.5.17.4}
+\contentsline {paragraph}{\numberline {5.17.4.1}createIndices}{70}{paragraph.5.17.4.1}
+\contentsline {paragraph}{\numberline {5.17.4.2}deleteObject}{71}{paragraph.5.17.4.2}
+\contentsline {paragraph}{\numberline {5.17.4.3}deleteObjects}{71}{paragraph.5.17.4.3}
+\contentsline {paragraph}{\numberline {5.17.4.4}deleteObjects}{71}{paragraph.5.17.4.4}
+\contentsline {paragraph}{\numberline {5.17.4.5}drop}{71}{paragraph.5.17.4.5}
+\contentsline {paragraph}{\numberline {5.17.4.6}insertObject}{71}{paragraph.5.17.4.6}
+\contentsline {paragraph}{\numberline {5.17.4.7}insertObjects}{72}{paragraph.5.17.4.7}
+\contentsline {paragraph}{\numberline {5.17.4.8}isReady}{72}{paragraph.5.17.4.8}
+\contentsline {paragraph}{\numberline {5.17.4.9}logMsg}{72}{paragraph.5.17.4.9}
+\contentsline {paragraph}{\numberline {5.17.4.10}operator=}{72}{paragraph.5.17.4.10}
+\contentsline {paragraph}{\numberline {5.17.4.11}operator[}{73}{paragraph.5.17.4.11}
+\contentsline {paragraph}{\numberline {5.17.4.12}operator[}{73}{paragraph.5.17.4.12}
+\contentsline {paragraph}{\numberline {5.17.4.13}selectAllObjects}{73}{paragraph.5.17.4.13}
+\contentsline {paragraph}{\numberline {5.17.4.14}selectDistinctObjects}{73}{paragraph.5.17.4.14}
+\contentsline {paragraph}{\numberline {5.17.4.15}selectDistinctObjects}{73}{paragraph.5.17.4.15}
+\contentsline {paragraph}{\numberline {5.17.4.16}selectDistinctObjectsMap}{73}{paragraph.5.17.4.16}
+\contentsline {paragraph}{\numberline {5.17.4.17}selectDistinctObjectsMap}{74}{paragraph.5.17.4.17}
+\contentsline {paragraph}{\numberline {5.17.4.18}selectObject}{74}{paragraph.5.17.4.18}
+\contentsline {paragraph}{\numberline {5.17.4.19}selectObject}{74}{paragraph.5.17.4.19}
+\contentsline {paragraph}{\numberline {5.17.4.20}selectObjects}{74}{paragraph.5.17.4.20}
+\contentsline {paragraph}{\numberline {5.17.4.21}selectObjects}{74}{paragraph.5.17.4.21}
+\contentsline {paragraph}{\numberline {5.17.4.22}selectObjects}{75}{paragraph.5.17.4.22}
+\contentsline {paragraph}{\numberline {5.17.4.23}selectObjects}{75}{paragraph.5.17.4.23}
+\contentsline {paragraph}{\numberline {5.17.4.24}size}{75}{paragraph.5.17.4.24}
+\contentsline {paragraph}{\numberline {5.17.4.25}size}{75}{paragraph.5.17.4.25}
+\contentsline {paragraph}{\numberline {5.17.4.26}size}{75}{paragraph.5.17.4.26}
+\contentsline {paragraph}{\numberline {5.17.4.27}size}{75}{paragraph.5.17.4.27}
+\contentsline {paragraph}{\numberline {5.17.4.28}size}{76}{paragraph.5.17.4.28}
+\contentsline {paragraph}{\numberline {5.17.4.29}sizeofDistinctObjects}{76}{paragraph.5.17.4.29}
+\contentsline {paragraph}{\numberline {5.17.4.30}sizeofDistinctObjects}{76}{paragraph.5.17.4.30}
+\contentsline {paragraph}{\numberline {5.17.4.31}sumColumn}{76}{paragraph.5.17.4.31}
+\contentsline {paragraph}{\numberline {5.17.4.32}sumColumn}{76}{paragraph.5.17.4.32}
+\contentsline {paragraph}{\numberline {5.17.4.33}sumColumn}{76}{paragraph.5.17.4.33}
+\contentsline {paragraph}{\numberline {5.17.4.34}sumColumn}{77}{paragraph.5.17.4.34}
+\contentsline {paragraph}{\numberline {5.17.4.35}updateObject}{77}{paragraph.5.17.4.35}
+\contentsline {paragraph}{\numberline {5.17.4.36}updateObjects}{77}{paragraph.5.17.4.36}
+\contentsline {subsubsection}{\numberline {5.17.5}Field Documentation}{77}{subsubsection.5.17.5}
+\contentsline {paragraph}{\numberline {5.17.5.1}dbcon}{77}{paragraph.5.17.5.1}
+\contentsline {paragraph}{\numberline {5.17.5.2}fieldnames}{78}{paragraph.5.17.5.2}
+\contentsline {paragraph}{\numberline {5.17.5.3}fieldtypes}{78}{paragraph.5.17.5.3}
+\contentsline {paragraph}{\numberline {5.17.5.4}hasPrimaryKey}{78}{paragraph.5.17.5.4}
+\contentsline {paragraph}{\numberline {5.17.5.5}indexname}{78}{paragraph.5.17.5.5}
+\contentsline {paragraph}{\numberline {5.17.5.6}indices}{78}{paragraph.5.17.5.6}
+\contentsline {paragraph}{\numberline {5.17.5.7}ready}{78}{paragraph.5.17.5.7}
+\contentsline {paragraph}{\numberline {5.17.5.8}tablename}{78}{paragraph.5.17.5.8}
+\contentsline {paragraph}{\numberline {5.17.5.9}tsname}{79}{paragraph.5.17.5.9}
+\contentsline {subsection}{\numberline {5.18}Thread\_\discretionary {-}{}{}Pool Class Reference}{79}{subsection.5.18}
+\contentsline {subsubsection}{\numberline {5.18.1}Detailed Description}{79}{subsubsection.5.18.1}
+\contentsline {subsubsection}{\numberline {5.18.2}Member Typedef Documentation}{80}{subsubsection.5.18.2}
+\contentsline {paragraph}{\numberline {5.18.2.1}counter\_\discretionary {-}{}{}t}{80}{paragraph.5.18.2.1}
+\contentsline {paragraph}{\numberline {5.18.2.2}inherited}{80}{paragraph.5.18.2.2}
+\contentsline {subsubsection}{\numberline {5.18.3}Member Enumeration Documentation}{80}{subsubsection.5.18.3}
+\contentsline {paragraph}{\numberline {5.18.3.1}size\_\discretionary {-}{}{}t}{80}{paragraph.5.18.3.1}
+\contentsline {subsubsection}{\numberline {5.18.4}Constructor \& Destructor Documentation}{80}{subsubsection.5.18.4}
+\contentsline {paragraph}{\numberline {5.18.4.1}Thread\_\discretionary {-}{}{}Pool}{80}{paragraph.5.18.4.1}
+\contentsline {subsubsection}{\numberline {5.18.5}Member Function Documentation}{80}{subsubsection.5.18.5}
+\contentsline {paragraph}{\numberline {5.18.5.1}enqueue}{80}{paragraph.5.18.5.1}
+\contentsline {paragraph}{\numberline {5.18.5.2}start}{81}{paragraph.5.18.5.2}
+\contentsline {paragraph}{\numberline {5.18.5.3}stop}{81}{paragraph.5.18.5.3}
+\contentsline {paragraph}{\numberline {5.18.5.4}svc}{81}{paragraph.5.18.5.4}
+\contentsline {subsubsection}{\numberline {5.18.6}Field Documentation}{81}{subsubsection.5.18.6}
+\contentsline {paragraph}{\numberline {5.18.6.1}active\_\discretionary {-}{}{}threads\_\discretionary {-}{}{}}{81}{paragraph.5.18.6.1}
+\contentsline {subsection}{\numberline {5.19}Time\discretionary {-}{}{}Period Class Reference}{81}{subsection.5.19}
+\contentsline {subsubsection}{\numberline {5.19.1}Detailed Description}{81}{subsubsection.5.19.1}
+\contentsline {subsubsection}{\numberline {5.19.2}Constructor \& Destructor Documentation}{82}{subsubsection.5.19.2}
+\contentsline {paragraph}{\numberline {5.19.2.1}TimePeriod}{82}{paragraph.5.19.2.1}
+\contentsline {paragraph}{\numberline {5.19.2.2}TimePeriod}{82}{paragraph.5.19.2.2}
+\contentsline {paragraph}{\numberline {5.19.2.3}TimePeriod}{83}{paragraph.5.19.2.3}
+\contentsline {paragraph}{\numberline {5.19.2.4}$\sim $TimePeriod}{83}{paragraph.5.19.2.4}
+\contentsline {subsubsection}{\numberline {5.19.3}Member Function Documentation}{83}{subsubsection.5.19.3}
+\contentsline {paragraph}{\numberline {5.19.3.1}dateInPeriod}{83}{paragraph.5.19.3.1}
+\contentsline {paragraph}{\numberline {5.19.3.2}dateInPeriod}{83}{paragraph.5.19.3.2}
+\contentsline {paragraph}{\numberline {5.19.3.3}getBeginTS}{83}{paragraph.5.19.3.3}
+\contentsline {paragraph}{\numberline {5.19.3.4}getEndTS}{83}{paragraph.5.19.3.4}
+\contentsline {paragraph}{\numberline {5.19.3.5}toString}{84}{paragraph.5.19.3.5}
+\contentsline {subsubsection}{\numberline {5.19.4}Field Documentation}{84}{subsubsection.5.19.4}
+\contentsline {paragraph}{\numberline {5.19.4.1}beginTimeStamp}{84}{paragraph.5.19.4.1}
+\contentsline {paragraph}{\numberline {5.19.4.2}endTimeStamp}{84}{paragraph.5.19.4.2}
+\contentsline {subsection}{\numberline {5.20}Time\discretionary {-}{}{}Stamp Class Reference}{84}{subsection.5.20}
+\contentsline {subsubsection}{\numberline {5.20.1}Detailed Description}{84}{subsubsection.5.20.1}
+\contentsline {subsubsection}{\numberline {5.20.2}Constructor \& Destructor Documentation}{86}{subsubsection.5.20.2}
+\contentsline {paragraph}{\numberline {5.20.2.1}TimeStamp}{86}{paragraph.5.20.2.1}
+\contentsline {paragraph}{\numberline {5.20.2.2}TimeStamp}{86}{paragraph.5.20.2.2}
+\contentsline {paragraph}{\numberline {5.20.2.3}TimeStamp}{86}{paragraph.5.20.2.3}
+\contentsline {paragraph}{\numberline {5.20.2.4}TimeStamp}{86}{paragraph.5.20.2.4}
+\contentsline {paragraph}{\numberline {5.20.2.5}$\sim $TimeStamp}{86}{paragraph.5.20.2.5}
+\contentsline {subsubsection}{\numberline {5.20.3}Member Function Documentation}{87}{subsubsection.5.20.3}
+\contentsline {paragraph}{\numberline {5.20.3.1}getTimeStamp}{87}{paragraph.5.20.3.1}
+\contentsline {paragraph}{\numberline {5.20.3.2}nextDay}{87}{paragraph.5.20.3.2}
+\contentsline {paragraph}{\numberline {5.20.3.3}nextMonth}{87}{paragraph.5.20.3.3}
+\contentsline {paragraph}{\numberline {5.20.3.4}nextWeek}{87}{paragraph.5.20.3.4}
+\contentsline {paragraph}{\numberline {5.20.3.5}operator"!=}{87}{paragraph.5.20.3.5}
+\contentsline {paragraph}{\numberline {5.20.3.6}operator"!=}{87}{paragraph.5.20.3.6}
+\contentsline {paragraph}{\numberline {5.20.3.7}operator++}{88}{paragraph.5.20.3.7}
+\contentsline {paragraph}{\numberline {5.20.3.8}operator$<$}{88}{paragraph.5.20.3.8}
+\contentsline {paragraph}{\numberline {5.20.3.9}operator$<$}{88}{paragraph.5.20.3.9}
+\contentsline {paragraph}{\numberline {5.20.3.10}operator==}{88}{paragraph.5.20.3.10}
+\contentsline {paragraph}{\numberline {5.20.3.11}operator==}{88}{paragraph.5.20.3.11}
+\contentsline {paragraph}{\numberline {5.20.3.12}operator$>$}{88}{paragraph.5.20.3.12}
+\contentsline {paragraph}{\numberline {5.20.3.13}operator$>$}{89}{paragraph.5.20.3.13}
+\contentsline {paragraph}{\numberline {5.20.3.14}previousDay}{89}{paragraph.5.20.3.14}
+\contentsline {paragraph}{\numberline {5.20.3.15}setTimeStamp}{89}{paragraph.5.20.3.15}
+\contentsline {paragraph}{\numberline {5.20.3.16}toString}{89}{paragraph.5.20.3.16}
+\contentsline {subsubsection}{\numberline {5.20.4}Field Documentation}{89}{subsubsection.5.20.4}
+\contentsline {paragraph}{\numberline {5.20.4.1}timeinfo}{89}{paragraph.5.20.4.1}
+\contentsline {paragraph}{\numberline {5.20.4.2}timestamp}{89}{paragraph.5.20.4.2}
+\contentsline {section}{\numberline {6}File Documentation}{90}{section.6}
+\contentsline {subsection}{\numberline {6.1}client\_\discretionary {-}{}{}acceptor.cpp File Reference}{90}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}client\_\discretionary {-}{}{}acceptor.h File Reference}{90}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Typedef Documentation}{90}{subsubsection.6.2.1}
+\contentsline {paragraph}{\numberline {6.2.1.1}Client\_\discretionary {-}{}{}Acceptor\_\discretionary {-}{}{}Base}{90}{paragraph.6.2.1.1}
+\contentsline {subsection}{\numberline {6.3}client\_\discretionary {-}{}{}handler.cpp File Reference}{90}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Define Documentation}{91}{subsubsection.6.3.1}
+\contentsline {paragraph}{\numberline {6.3.1.1}REGISTER\_\discretionary {-}{}{}MASK}{91}{paragraph.6.3.1.1}
+\contentsline {paragraph}{\numberline {6.3.1.2}REMOVE\_\discretionary {-}{}{}MASK}{91}{paragraph.6.3.1.2}
+\contentsline {subsection}{\numberline {6.4}client\_\discretionary {-}{}{}handler.h File Reference}{91}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}config.h File Reference}{91}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Define Documentation}{91}{subsubsection.6.5.1}
+\contentsline {paragraph}{\numberline {6.5.1.1}HAVE\_\discretionary {-}{}{}TEMPLATE\_\discretionary {-}{}{}REPOSITORY}{91}{paragraph.6.5.1.1}
+\contentsline {paragraph}{\numberline {6.5.1.2}PACKAGE}{91}{paragraph.6.5.1.2}
+\contentsline {paragraph}{\numberline {6.5.1.3}VERSION}{92}{paragraph.6.5.1.3}
+\contentsline {subsection}{\numberline {6.6}connectionmsgblock.cpp File Reference}{92}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}connectionmsgblock.h File Reference}{92}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}contest.cpp File Reference}{92}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}contest.h File Reference}{92}{subsection.6.9}
+\contentsline {subsubsection}{\numberline {6.9.1}Define Documentation}{93}{subsubsection.6.9.1}
+\contentsline {paragraph}{\numberline {6.9.1.1}DBNAME}{93}{paragraph.6.9.1.1}
+\contentsline {paragraph}{\numberline {6.9.1.2}LOGFILENAME}{93}{paragraph.6.9.1.2}
+\contentsline {subsection}{\numberline {6.10}Count.h File Reference}{93}{subsection.6.10}
+\contentsline {subsubsection}{\numberline {6.10.1}Typedef Documentation}{94}{subsubsection.6.10.1}
+\contentsline {paragraph}{\numberline {6.10.1.1}counter\_\discretionary {-}{}{}t}{94}{paragraph.6.10.1.1}
+\contentsline {subsection}{\numberline {6.11}crc\_\discretionary {-}{}{}32.cpp File Reference}{94}{subsection.6.11}
+\contentsline {subsection}{\numberline {6.12}crc\_\discretionary {-}{}{}32.h File Reference}{94}{subsection.6.12}
+\contentsline {subsection}{\numberline {6.13}day.cpp File Reference}{94}{subsection.6.13}
+\contentsline {subsection}{\numberline {6.14}day.h File Reference}{94}{subsection.6.14}
+\contentsline {subsection}{\numberline {6.15}giftdetails.cpp File Reference}{95}{subsection.6.15}
+\contentsline {subsection}{\numberline {6.16}giftdetails.h File Reference}{95}{subsection.6.16}
+\contentsline {subsection}{\numberline {6.17}logger.cpp File Reference}{95}{subsection.6.17}
+\contentsline {subsection}{\numberline {6.18}logger.h File Reference}{95}{subsection.6.18}
+\contentsline {subsubsection}{\numberline {6.18.1}Enumeration Type Documentation}{96}{subsubsection.6.18.1}
+\contentsline {paragraph}{\numberline {6.18.1.1}output\_\discretionary {-}{}{}t}{96}{paragraph.6.18.1.1}
+\contentsline {subsection}{\numberline {6.19}logmsg\_\discretionary {-}{}{}mo.cpp File Reference}{96}{subsection.6.19}
+\contentsline {subsection}{\numberline {6.20}logmsg\_\discretionary {-}{}{}mo.h File Reference}{96}{subsection.6.20}
+\contentsline {subsection}{\numberline {6.21}main.cpp File Reference}{96}{subsection.6.21}
+\contentsline {subsubsection}{\numberline {6.21.1}Function Documentation}{97}{subsubsection.6.21.1}
+\contentsline {paragraph}{\numberline {6.21.1.1}main}{97}{paragraph.6.21.1.1}
+\contentsline {subsection}{\numberline {6.22}partdetails.cpp File Reference}{97}{subsection.6.22}
+\contentsline {subsubsection}{\numberline {6.22.1}Function Documentation}{97}{subsubsection.6.22.1}
+\contentsline {paragraph}{\numberline {6.22.1.1}operator$<$$<$}{97}{paragraph.6.22.1.1}
+\contentsline {subsection}{\numberline {6.23}partdetails.h File Reference}{97}{subsection.6.23}
+\contentsline {subsection}{\numberline {6.24}processor.cpp File Reference}{98}{subsection.6.24}
+\contentsline {subsection}{\numberline {6.25}processor.h File Reference}{98}{subsection.6.25}
+\contentsline {subsection}{\numberline {6.26}processor\_\discretionary {-}{}{}mo.cpp File Reference}{98}{subsection.6.26}
+\contentsline {subsection}{\numberline {6.27}processor\_\discretionary {-}{}{}mo.h File Reference}{98}{subsection.6.27}
+\contentsline {subsection}{\numberline {6.28}sqliteconnection.cpp File Reference}{98}{subsection.6.28}
+\contentsline {subsection}{\numberline {6.29}sqliteconnection.h File Reference}{99}{subsection.6.29}
+\contentsline {subsubsection}{\numberline {6.29.1}Define Documentation}{99}{subsubsection.6.29.1}
+\contentsline {paragraph}{\numberline {6.29.1.1}TRANSLOGPATH}{99}{paragraph.6.29.1.1}
+\contentsline {paragraph}{\numberline {6.29.1.2}TRANSLOGSUFFIX}{99}{paragraph.6.29.1.2}
+\contentsline {subsection}{\numberline {6.30}sqltable.cpp File Reference}{99}{subsection.6.30}
+\contentsline {subsection}{\numberline {6.31}sqltable.h File Reference}{100}{subsection.6.31}
+\contentsline {subsection}{\numberline {6.32}strtokenizer.cpp File Reference}{100}{subsection.6.32}
+\contentsline {subsubsection}{\numberline {6.32.1}Function Documentation}{100}{subsubsection.6.32.1}
+\contentsline {paragraph}{\numberline {6.32.1.1}strTokenizer}{100}{paragraph.6.32.1.1}
+\contentsline {subsection}{\numberline {6.33}strtokenizer.h File Reference}{100}{subsection.6.33}
+\contentsline {subsubsection}{\numberline {6.33.1}Function Documentation}{101}{subsubsection.6.33.1}
+\contentsline {paragraph}{\numberline {6.33.1.1}strTokenizer}{101}{paragraph.6.33.1.1}
+\contentsline {subsection}{\numberline {6.34}thread\_\discretionary {-}{}{}pool.cpp File Reference}{101}{subsection.6.34}
+\contentsline {subsection}{\numberline {6.35}thread\_\discretionary {-}{}{}pool.h File Reference}{101}{subsection.6.35}
+\contentsline {subsection}{\numberline {6.36}timeperiod.cpp File Reference}{101}{subsection.6.36}
+\contentsline {subsection}{\numberline {6.37}timeperiod.h File Reference}{101}{subsection.6.37}
+\contentsline {subsection}{\numberline {6.38}timestamp.cpp File Reference}{102}{subsection.6.38}
+\contentsline {subsection}{\numberline {6.39}timestamp.h File Reference}{102}{subsection.6.39}

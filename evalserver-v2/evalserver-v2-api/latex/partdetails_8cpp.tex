@@ -1,0 +1,26 @@
+\hypertarget{partdetails_8cpp}{
+\subsection{partdetails.cpp File Reference}
+\label{partdetails_8cpp}\index{partdetails.cpp@{partdetails.cpp}}
+}
+{\tt \#include \char`\"{}partdetails.h\char`\"{}}\par
+{\tt \#include \char`\"{}strtokenizer.h\char`\"{}}\par
+\subsubsection*{Functions}
+\begin{CompactItemize}
+\item 
+ostream \& \hyperlink{partdetails_8cpp_a0}{operator$<$$<$} (ostream \&out, \hyperlink{classpartDetails}{part\-Details} \&pd)
+\end{CompactItemize}
+
+
+\subsubsection{Function Documentation}
+\hypertarget{partdetails_8cpp_a0}{
+\index{partdetails.cpp@{partdetails.cpp}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!partdetails.cpp@{partdetails.cpp}}
+\paragraph[operator$<$$<$]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em out}, \hyperlink{classpartDetails}{part\-Details} \& {\em pd})}\hfill}
+\label{partdetails_8cpp_a0}
+
+
+We overload the operator$<$$<$ to allow a \hyperlink{classpartDetails}{part\-Details} object to be output to a C++ stream. The output will be of the form: MSISDN$\backslash$t\-GID$\backslash$t\-DATESTRING 
+
+Definition at line 68 of file partdetails.cpp.
+
+References part\-Details::get\-Gift\-Id(), part\-Details::get\-MSISDN(), part\-Details::get\-Timestamp(), and Time\-Stamp::to\-String().

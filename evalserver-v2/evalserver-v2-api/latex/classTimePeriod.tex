@@ -1,0 +1,177 @@
+\hypertarget{classTimePeriod}{
+\subsection{Time\-Period Class Reference}
+\label{classTimePeriod}\index{TimePeriod@{TimePeriod}}
+}
+{\tt \#include $<$timeperiod.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+Since we're not dealing with single timestamps, but with time periods, that is, with pairs of timestamps (begin, end) we needed something more than the \hyperlink{classTimeStamp}{Time\-Stamp} class. Hence the Time\-Period class 
+
+
+
+Definition at line 26 of file timeperiod.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimePeriod_TimePerioda0}{Time\-Period} (const Time\-Period \&source)
+\begin{CompactList}\small\item\em The copy constructor.\item\end{CompactList}\item 
+\hyperlink{classTimePeriod_TimePerioda1}{Time\-Period} (\hyperlink{classTimeStamp}{Time\-Stamp} begints, \hyperlink{classTimeStamp}{Time\-Stamp} endts)
+\begin{CompactList}\small\item\em Constructor, accepting two \hyperlink{classTimeStamp}{Time\-Stamp} objects as parameters.\item\end{CompactList}\item 
+\hyperlink{classTimePeriod_TimePerioda2}{Time\-Period} (long begints=0, long endts=86400)
+\begin{CompactList}\small\item\em Default constructor, accepting two time\_\-t objects as parameters, or no parameters at all.\item\end{CompactList}\item 
+\hyperlink{classTimePeriod_TimePerioda3}{$\sim$Time\-Period} ()
+\begin{CompactList}\small\item\em Dummy destructor.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \& \hyperlink{classTimePeriod_TimePerioda4}{get\-Begin\-TS} ()
+\begin{CompactList}\small\item\em Returns a reference to the begin \hyperlink{classTimeStamp}{Time\-Stamp}.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \& \hyperlink{classTimePeriod_TimePerioda5}{get\-End\-TS} ()
+\begin{CompactList}\small\item\em Returns a reference to the end \hyperlink{classTimeStamp}{Time\-Stamp}.\item\end{CompactList}\item 
+bool \hyperlink{classTimePeriod_TimePerioda6}{date\-In\-Period} (\hyperlink{classTimeStamp}{Time\-Stamp} ts)
+\begin{CompactList}\small\item\em Returns true if given timestamp (\hyperlink{classTimeStamp}{Time\-Stamp} object) is \_\-in\_\- the current Time\-Period object.\item\end{CompactList}\item 
+bool \hyperlink{classTimePeriod_TimePerioda7}{date\-In\-Period} (time\_\-t ts)
+\begin{CompactList}\small\item\em Returns true if given timestamp (time\_\-t) is \_\-in\_\- the current Time\-Period object.\item\end{CompactList}\item 
+string \hyperlink{classTimePeriod_TimePerioda8}{to\-String} (bool short\-String=false)
+\begin{CompactList}\small\item\em Returns a short or long string representation of the time period.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classTimePeriod_TimePeriodo0}{begin\-Time\-Stamp}
+\begin{CompactList}\small\item\em The Timestamp of the start of the period.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classTimePeriod_TimePeriodo1}{end\-Time\-Stamp}
+\begin{CompactList}\small\item\em The Timestamp of the start of the period.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classTimePeriod_TimePerioda0}{
+\index{TimePeriod@{Time\-Period}!TimePeriod@{TimePeriod}}
+\index{TimePeriod@{TimePeriod}!TimePeriod@{Time\-Period}}
+\paragraph[TimePeriod]{\setlength{\rightskip}{0pt plus 5cm}Time\-Period::Time\-Period (const Time\-Period \& {\em source})}\hfill}
+\label{classTimePeriod_TimePerioda0}
+
+
+The copy constructor. Initializes a Time\-Period object using the contents of another. 
+
+Definition at line 17 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, and end\-Time\-Stamp.\hypertarget{classTimePeriod_TimePerioda1}{
+\index{TimePeriod@{Time\-Period}!TimePeriod@{TimePeriod}}
+\index{TimePeriod@{TimePeriod}!TimePeriod@{Time\-Period}}
+\paragraph[TimePeriod]{\setlength{\rightskip}{0pt plus 5cm}Time\-Period::Time\-Period (\hyperlink{classTimeStamp}{Time\-Stamp} {\em begints}, \hyperlink{classTimeStamp}{Time\-Stamp} {\em endts})}\hfill}
+\label{classTimePeriod_TimePerioda1}
+
+
+A constructor. Takes two \hyperlink{classTimeStamp}{Time\-Stamp} objects to create a Time\-Period object. 
+
+Definition at line 27 of file timeperiod.cpp.\hypertarget{classTimePeriod_TimePerioda2}{
+\index{TimePeriod@{Time\-Period}!TimePeriod@{TimePeriod}}
+\index{TimePeriod@{TimePeriod}!TimePeriod@{Time\-Period}}
+\paragraph[TimePeriod]{\setlength{\rightskip}{0pt plus 5cm}Time\-Period::Time\-Period (long {\em begints} = 0, long {\em endts} = 86400)}\hfill}
+\label{classTimePeriod_TimePerioda2}
+
+
+The default constructor. Takes two timestamps (but this time of type time\_\-t) to create a Time\-Period object. These values can be ommitted, taking defaults of 0 and 86400 respectively, meaning the Time\-Period is one day, starting Jan 1, 1970. 
+
+Definition at line 39 of file timeperiod.cpp.\hypertarget{classTimePeriod_TimePerioda3}{
+\index{TimePeriod@{Time\-Period}!~TimePeriod@{$\sim$TimePeriod}}
+\index{~TimePeriod@{$\sim$TimePeriod}!TimePeriod@{Time\-Period}}
+\paragraph[$\sim$TimePeriod]{\setlength{\rightskip}{0pt plus 5cm}Time\-Period::$\sim$Time\-Period ()}\hfill}
+\label{classTimePeriod_TimePerioda3}
+
+
+Dummy destructor. We don't allocate anything dynamically 
+
+Definition at line 47 of file timeperiod.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classTimePeriod_TimePerioda7}{
+\index{TimePeriod@{Time\-Period}!dateInPeriod@{dateInPeriod}}
+\index{dateInPeriod@{dateInPeriod}!TimePeriod@{Time\-Period}}
+\paragraph[dateInPeriod]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Period::date\-In\-Period (time\_\-t {\em ts})}\hfill}
+\label{classTimePeriod_TimePerioda7}
+
+
+If ts (type time\_\-t) is between begin\-Time\-Stamp and end\-Time\-Stamp then the method returns true, otherwise it returns false. 
+
+Definition at line 69 of file timeperiod.cpp.\hypertarget{classTimePeriod_TimePerioda6}{
+\index{TimePeriod@{Time\-Period}!dateInPeriod@{dateInPeriod}}
+\index{dateInPeriod@{dateInPeriod}!TimePeriod@{Time\-Period}}
+\paragraph[dateInPeriod]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Period::date\-In\-Period (\hyperlink{classTimeStamp}{Time\-Stamp} {\em ts})}\hfill}
+\label{classTimePeriod_TimePerioda6}
+
+
+If ts (type \hyperlink{classTimeStamp}{Time\-Stamp} object) is between begin\-Time\-Stamp and end\-Time\-Stamp then the method returns true, otherwise it returns false. 
+
+Definition at line 56 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, and end\-Time\-Stamp.
+
+Referenced by Day::assign\-Prizes().\hypertarget{classTimePeriod_TimePerioda4}{
+\index{TimePeriod@{Time\-Period}!getBeginTS@{getBeginTS}}
+\index{getBeginTS@{getBeginTS}!TimePeriod@{Time\-Period}}
+\paragraph[getBeginTS]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} \& Time\-Period::get\-Begin\-TS ()}\hfill}
+\label{classTimePeriod_TimePerioda4}
+
+
+Returns the beginning of the period \hyperlink{classTimeStamp}{Time\-Stamp} object 
+
+Definition at line 80 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp.
+
+Referenced by Day::assign\-Prizes(), Day::Day(), Contest::gift\-Is\-Given(), gift\-Details::insert\-String(), Processor::process\_\-i(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and gift\-Details::update\-String().\hypertarget{classTimePeriod_TimePerioda5}{
+\index{TimePeriod@{Time\-Period}!getEndTS@{getEndTS}}
+\index{getEndTS@{getEndTS}!TimePeriod@{Time\-Period}}
+\paragraph[getEndTS]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} \& Time\-Period::get\-End\-TS ()}\hfill}
+\label{classTimePeriod_TimePerioda5}
+
+
+Returns the end of the period \hyperlink{classTimeStamp}{Time\-Stamp} object 
+
+Definition at line 88 of file timeperiod.cpp.
+
+References end\-Time\-Stamp.
+
+Referenced by Contest::handle\_\-timeout(), gift\-Details::insert\-String(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and gift\-Details::update\-String().\hypertarget{classTimePeriod_TimePerioda8}{
+\index{TimePeriod@{Time\-Period}!toString@{toString}}
+\index{toString@{toString}!TimePeriod@{Time\-Period}}
+\paragraph[toString]{\setlength{\rightskip}{0pt plus 5cm}string Time\-Period::to\-String (bool {\em short\-String} = false)}\hfill}
+\label{classTimePeriod_TimePerioda8}
+
+
+Returns a string representation of the Time\-Period object. If the parameter short\-String is false, then it just returns the locale string representation of the \hyperlink{classTimeStamp}{Time\-Stamp} objects (just as date command would) separated by '-'. Otherwise the dates are of the form YYYYMMDD. 
+
+Definition at line 100 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, end\-Time\-Stamp, and Time\-Stamp::to\-String().
+
+Referenced by Day::Day().
+
+\subsubsection{Field Documentation}
+\hypertarget{classTimePeriod_TimePeriodo0}{
+\index{TimePeriod@{Time\-Period}!beginTimeStamp@{beginTimeStamp}}
+\index{beginTimeStamp@{beginTimeStamp}!TimePeriod@{Time\-Period}}
+\paragraph[beginTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} Time\-Period::begin\-Time\-Stamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classTimePeriod_TimePeriodo0}
+
+
+
+
+Definition at line 28 of file timeperiod.h.
+
+Referenced by date\-In\-Period(), get\-Begin\-TS(), Time\-Period(), and to\-String().\hypertarget{classTimePeriod_TimePeriodo1}{
+\index{TimePeriod@{Time\-Period}!endTimeStamp@{endTimeStamp}}
+\index{endTimeStamp@{endTimeStamp}!TimePeriod@{Time\-Period}}
+\paragraph[endTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} Time\-Period::end\-Time\-Stamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classTimePeriod_TimePeriodo1}
+
+
+
+
+Definition at line 31 of file timeperiod.h.
+
+Referenced by date\-In\-Period(), get\-End\-TS(), Time\-Period(), and to\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{timeperiod_8h}{timeperiod.h}\item 
+\hyperlink{timeperiod_8cpp}{timeperiod.cpp}\end{CompactItemize}

@@ -1,0 +1,4194 @@
+This is pdfTeX, Version 3.14159-1.10b (Web2C 7.4.5) (format=pdflatex 2003.8.7)  26 AUG 2003 00:01
+**refman.tex
+(./refman.tex{/usr/share/texmf/pdftex/config/pdftex.cfg}
+LaTeX2e <2001/06/01>
+Babel <v3.7h> and hyphenation patterns for american, french, german, ngerman, g
+reek, nohyphenation, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2001/04/21 v1.4e Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size10.clo
+File: size10.clo 2001/04/21 v1.4e Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf/tex/latex/misc/a4wide.sty
+Package: a4wide 1994/08/30
+
+(/usr/share/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+))
+(/usr/share/texmf/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf/tex/latex/fancyhdr/fancyhdr.sty
+\headwidth=\dimen103
+)
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2001/08/31 v1.1 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 80.
+
+(/usr/share/texmf/tex/latex/graphics/pdftex.def
+File: pdftex.def 2002/06/19 v0.03k graphics/color for pdftex
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf/tex/latex/tools/multicol.sty
+Package: multicol 2000/07/10 v1.5z multicolumn formatting (FMi)
+\c@tracingmulticols=\count88
+\mult@box=\box26
+\multicol@leftmargin=\dimen106
+\c@unbalance=\count89
+\c@collectmore=\count90
+\doublecol@number=\count91
+\multicoltolerance=\count92
+\multicolpretolerance=\count93
+\full@width=\dimen107
+\page@free=\dimen108
+\premulticols=\dimen109
+\postmulticols=\dimen110
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count94
+\c@finalcolumnbadness=\count95
+\last@try=\dimen111
+\multicolovershoot=\dimen112
+\multicolundershoot=\dimen113
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(/usr/share/texmf/tex/latex/misc/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks15
+\float@box=\box52
+\@float@everytoks=\toks16
+\@floatcapt=\box53
+)
+(/usr/share/texmf/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf/tex/latex/psnfss/times.sty
+Package: times 2002/09/08 PSNFSS-v9.0a (SPQR) 
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2003/01/22 v6.73n Hypertext links for LaTeX
+\@linkdim=\dimen114
+\Hy@linkcounter=\count97
+\Hy@pagecounter=\count98
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2003/01/22 v6.73n Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 1744.
+Package hyperref Info: Hyper figures OFF on input line 1792.
+Package hyperref Info: Link nesting OFF on input line 1797.
+Package hyperref Info: Hyper index ON on input line 1800.
+Package hyperref Info: Plain pages ON on input line 1805.
+Package hyperref Info: Backreferencing ON on input line 1810.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 1916.
+(/usr/share/texmf/tex/latex/hyperref/backref.sty
+Package: backref 2002/06/09 v1.20 Bibliographical back referencing
+)
+(/usr/share/texmf/tex/latex/misc/url.sty
+\Urlmuskip=\muskip10
+Package: url 1999/03/28  ver 1.5x  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 2055.
+\Fld@menulength=\count99
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+\Choice@toks=\toks17
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 2513.
+Package hyperref Info: Link nesting OFF on input line 2518.
+Package hyperref Info: Hyper index ON on input line 2521.
+Package hyperref Info: backreferencing ON on input line 2526.
+Package hyperref Info: Link coloring ON on input line 2531.
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2003/01/22 v6.73n Hyperref driver for pdfTeX
+
+(/usr/share/texmf/tex/latex/psnfss/pifont.sty
+Package: pifont 2002/09/08 PSNFSS-v9.0a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 62.
+
+(/usr/share/texmf/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 63.
+
+(/usr/share/texmf/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\Fld@listcount=\count102
+\@outlinefile=\write3
+) (./doxygen.sty
+Package: doxygen 
+
+(/usr/share/texmf/tex/latex/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count103
+\calc@Bcount=\count104
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 59.
+LaTeX Info: Redefining \addtolength on input line 60.
+\calc@denominator=\count105
+)
+(/usr/share/texmf/tex/latex/tools/array.sty
+Package: array 1998/05/13 v2.3m Tabular extension package (FMi)
+\col@sep=\dimen119
+\extrarowheight=\dimen120
+\NC@list=\toks19
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\tmplength=\skip49
+)
+\@indexfile=\write4
+\openout4 = `refman.idx'.
+
+
+Writing index file refman.idx
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \setlength{\footrulewidth}{0.4pt}
+                                      
+? r
+OK, entering \nonstopmode...
+! Missing number, treated as zero.
+<to be read again> 
+                   \def 
+l.27 \begin{document}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \def 
+l.27 \begin{document}
+                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+(./refman.aux)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 27.
+ (/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+(/usr/share/texmf/tex/context/base/supp-mis.tex
+loading : Context Support Macros / Missing
+\protectiondepth=\count106
+\scratchcounter=\count107
+\scratchtoks=\toks20
+\scratchdimen=\dimen121
+\scratchskip=\skip50
+\scratchmuskip=\muskip11
+\scratchbox=\box54
+\scratchread=\read1
+\scratchwrite=\write5
+\zeropoint=\dimen122
+\minusone=\count108
+\thousandpoint=\dimen123
+\emptytoks=\toks21
+\nextbox=\box55
+\nextdepth=\dimen124
+\everyline=\toks22
+\!!counta=\count109
+\!!countb=\count110
+\recursecounter=\count111
+)
+loading : Context Support Macros / PDF
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPtoPDFconversion=\toks23
+) (/usr/share/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+LaTeX Info: Redefining \color on input line 71.
+
+(/usr/share/texmf/tex/latex/config/color.cfg
+File: color.cfg 2001/08/31 v1.1 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 125.
+)
+Package hyperref Info: Link coloring ON on input line 27.
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2001/01/27 v2.19 Cross-referencing by name of section
+\c@section@level=\count114
+)
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+ (./refman.out) (./refman.out)
+\openout3 = `refman.out'.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
+[1{/usr/share/texmf/dvips/config/pdftex.map}
+
+]
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.37 \end{titlepage}
+                     [1]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+ (./refman.toc)
+\tf@toc=\write6
+\openout6 = `refman.toc'.
+
+ (./namespaces.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+
+Underfull \hbox (badness 10000) detected at line 3
+[][]
+ []
+
+) (./annotated.tex
+Underfull \hbox (badness 10000) detected at line 3
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 4
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 5
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 6
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 7
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 8
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 9
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+! pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \penalty 
+l.15 \item\contentsline
+                       {section}{\hyperlink{classpartDetails}{part\-Details}...
+[1]
+Underfull \hbox (badness 10000) detected at line 15
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 19.
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+) (./files.tex
+Underfull \hbox (badness 10000) detected at line 3
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 4
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 5
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 6
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 7
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 8
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 9
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 15
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 17
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+[2]
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 27
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+) (./namespacestd.tex) (./classClient__Acceptor.tex
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 5.
+
+(/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [3]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 10.
+
+(/usr/share/texmf/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+
+Underfull \hbox (badness 5954) in paragraph at lines 26--28
+[]/ptmr7t/int [][]open[][] (const ACE[]-INET[]-Addr &addr, ACE[]-Reactor $/cmsy
+10/^^C$/ptmr7t/reactor, int pool[]-size=Thread[]-
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 82.
+
+Underfull \hbox (badness 1655) in paragraph at lines 101--103
+ /ptmb7t/5.1.3.1 Client[]-Acceptor::Client[]-Acceptor ([][]Con-test[][] $/cmsy1
+0/^^C$ /ptmbi7t/my-Contest/ptmb7t/, [][]con-cur-rency[]-t[][] /ptmbi7t/con-cur-
+rency /ptmb7t/=
+ []
+
+[5] [6]) (./classClient__Handler.tex
+Underfull \hbox (badness 10000) detected at line 23
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][]
+ []
+
+[7]
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+ /ptmb7t/5.2.2.1 type-def ACE[]-Svc[]-Handler$/cmmi10/<$/ptmb7t/ACE[]-SOCK[]-ST
+REAM, ACE[]-NULL[]-SYNCH$/cmmi10/>$ /ptmb7t/Client[]-
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
+
+ []
+
+
+Underfull \hbox (badness 4647) in paragraph at lines 146--148
+ /ptmb7t/5.2.5.1 void Client[]-Handler::client[]-acceptor ([][]Client[]-Accepto
+r[][] $/cmsy10/^^C$ []/ptmbi7t/-client[]-acceptor/ptmb7t/) []/pcrr7t/inline,
+ []
+
+[9] [10]
+Underfull \hbox (badness 2653) in paragraph at lines 246--249
+[]/ptmr7t/References client[]-acceptor(), con-cur-rency(), REG-IS-TER[]-MASK, a
+nd Client[]-Acceptor::thread[]-per[]-
+ []
+
+[11]) (./classconnectionMsgBlock.tex [12]
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
+[]/ptmr7t/References crc32, data, DATA[]-WO[]-CRC, DATA-SIZE, CRC[]-32::get-CRC
+(), and part-
+ []
+
+[14] [15]) (./classContest.tex
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+[16]
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 55
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 55
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 69
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 69
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+[17]
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 86
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 86
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 111
+[][]
+ []
+
+[18]
+Underfull \hbox (badness 10000) detected at line 113
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 115
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 117
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 117
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 119
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 119
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 121
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 121
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 125
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 125
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+
+ []
+
+[20]
+Underfull \hbox (badness 2753) in paragraph at lines 302--304
+ /ptmb7t/5.4.3.6 int Con-test::handle[]-timeout (const ACE[]-Time[]-Value & /pt
+mbi7t/tv/ptmb7t/, const void $/cmsy10/^^C$ /ptmbi7t/ar-gu-ment/ptmb7t/)
+ []
+
+[21]
+Underfull \hbox (badness 3568) in paragraph at lines 334--335
+[]/ptmr7t/References Coun-ters, db-con-nec-tion, DB-NAME, SQLite-Connection::en
+able-Transactions(), SQLite-
+ []
+
+[22] [23] [24]
+Underfull \hbox (badness 1231) in paragraph at lines 577--580
+[]/ptmr7t/Referenced by Day::assign-Prizes(), Day::execute-Draw(), han-dle[]-ti
+meout(), init-Timers(), and setup-
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 588--591
+[]/ptmr7t/Referenced by Day::assign-Prizes(), Day::execute-Draw(), han-dle[]-ti
+meout(), init-Timers(), and setup-
+ []
+
+[25]) (./classCount.tex [26] [27]) (./classCounter__Guard.tex [28])
+(./classCRC__32.tex
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+[29]
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+[30]) (./classDay.tex
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+[31]
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][]
+ []
+
+[32]
+Underfull \hbox (badness 10000) detected at line 73
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 77
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 77
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 79
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 79
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 81
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 81
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 83
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 83
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 85
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 85
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 87
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 87
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]/ptmr7t/References Con-test::current[]-month, Con-test::current[]-week, Time-
+Period::date-In-Period(), day[]-
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 184--185
+/ptmr7t/period, Day-Messages, Con-test::EOM, Con-test::EOW, Time-Period::get-Be
+gin-TS(), gift-Details::ID[]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+/ptmr7t/MONTHLYPRIZES, gift-Details::ID[]-NOGIFT, gift-Details::ID[]-WEEKLYPRIZ
+ES, Con-test::logger,
+ []
+
+[34]
+Underfull \hbox (badness 7595) in paragraph at lines 197--198
+[]/ptmr7t/References de-fault[]-avg[]-threshold, de-fault[]-est-No-Msgs, Contes
+t::get-Contest-Days(), Con-test::logger,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+[]/ptmr7t/References counter, Con-test::current[]-month, Con-test::current[]-we
+ek, day[]-period, Day-Messages,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+/ptmr7t/Con-test::EOM, Con-test::EOW, part-Details::get-Gift-Id(), Contest::gif
+t-Is-Given(), gift-Details::ID[]-
+ []
+
+[35] [36]) (./classgiftDetails.tex [37]
+Underfull \hbox (badness 10000) detected at line 25
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 25
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+[38]
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 67
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 69
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 69
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 71
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 71
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 73
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 75
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+
+ []
+
+[39]
+Underfull \hbox (badness 2980) in paragraph at lines 164--167
+[]/ptmr7t/References empty, giftid, pe-riod, set-Current-Quantity(), set-Initia
+l-Quantity(), set-Name(), and str-
+ []
+
+[40] [41] [42]) (./classLogger.tex
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+[43]
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 43
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 45
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 113--116
+[]/ptmr7t/Referenced by Day::assign-Prizes(), Day::calculate-Est-No-Msgs(), SQL
+ite-Connection::commit-
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 113--116
+/ptmr7t/Transaction(), Client[]-Handler::process(), Pro-ces-sor::process[]-i(),
+ SQLite-Connection::reconnect(), and
+ []
+
+[45]) (./classlogMsg__MO.tex [46]
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+[47]) (./classMessage__Block__Guard.tex
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+ /ptmb7t/5.12.1.1 Mes-sage[]-Block[]-Guard::Message[]-Block[]-Guard (ACE[]-Mess
+age[]-Block $/cmsy10/^^C$/ptmb7t/& /ptmbi7t/mb/ptmb7t/)
+ []
+
+[48]) (./classpartDetails.tex
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+[49]
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 59
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+
+ []
+
+[50] [51] [52] [53]) (./classProcessor.tex
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 37
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+[]/ptmr7t/References SQLite-Connection::commit-Transaction(), Day::counter, Con
+-test::Counters, Con-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+/ptmr7t/test::dbconnection, Day::execute-Draw(), Time-Period::get-Begin-TS(), C
+ontest::get-Current-Day(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--124
+/ptmr7t/connection-Msg-Block::get-Participant-Str(), Day::get-Time-Period(), gi
+ft-Details::ID[]-USEDCODE,
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 121--124
+/cmmi10/>$/ptmr7t/::select-Object(), SQLTable$/cmmi10/<$ /ptmr7t/string, part-D
+etails $/cmmi10/>$/ptmr7t/::size(), Time-Stamp::to-String(), Day::unique[]-
+ []
+
+[56]) (./classprocessor__MO.tex
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+[57]) (./classSQLiteConnection.tex [58]
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+[59]
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 61
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+[60]
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 89
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 89
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+
+ []
+
+[61] [62]
+Underfull \hbox (badness 1675) in paragraph at lines 276--279
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::create-Indices(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/
+::delete-Object(),
+ []
+
+[63] [64]
+Underfull \hbox (badness 4859) in paragraph at lines 409--412
+[]/ptmr7t/Referenced by commit-Transaction(), exists-Index(), exists-Table(), g
+etdb(), re-con-nect(), SQLite-
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 442--445
+[]/ptmr7t/Referenced by disable-Transactions(), enable-Transactions(), SQLTable
+$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/::insert-Object(),
+ []
+
+[65]) (./classSQLTable.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+[66]
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 60
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 62
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 62
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 64
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 66
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 68
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 70
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 72
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 74
+[][]
+ []
+
+[67]
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 76
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 78
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 80
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 82
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 84
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 86
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 86
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 90
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 92
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 102
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 104
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 106
+[][]
+ []
+
+[68]
+Underfull \hbox (badness 10000) detected at line 108
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 108
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 110
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 110
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 112
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 112
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 116
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 116
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 118
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 118
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 123
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 128
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 128
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 130
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 130
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 132
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 134
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 134
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 136
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 136
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 138
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 138
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 140
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 140
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 142
+[][]
+ []
+
+[69]
+Underfull \hbox (badness 10000) detected at line 142
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 144
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 144
+[][]
+ []
+
+[70] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+[]/ptmr7t/References SQLite-Connection::begin-Transaction(), SQLite-Connection:
+:commit-Transaction(),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+/ptmr7t/SQLite-Connection::conflicts, SQLTable$/cmmi10/<$ /ptmr7t/key, data $/c
+mmi10/>$/ptmr7t/::dbcon, SQLite-Connection::getdb(),
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 272--273
+/ptmr7t/SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/::log-Msg(), S
+QLite-Connection::log-Transaction(), SQLite-Connection::max[]-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+/ptmr7t/conflicts, SQLite-Connection::reconnect(), SQLTable$/cmmi10/<$ /ptmr7t/
+key, data $/cmmi10/>$/ptmr7t/::tablename, SQLite-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 307--310
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::create-Indices(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/
+::delete-Object(),
+ []
+
+[72]
+Underfull \hbox (badness 1616) in paragraph at lines 330--332
+ /ptmb7t/5.17.4.12 ][] /ptmr7t/template$/cmmi10/<$/ptmr7t/class key, class data
+$/cmmi10/>$ /ptmr7t/data SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr
+7t/::operator[]$ $[] (key /ptmri7t/x/ptmr7t/)
+ []
+
+[73] [74] [75] [76]
+Underfull \hbox (badness 2173) in paragraph at lines 591--592
+[]/ptmr7t/References SQLite-Connection::begin-Transaction(), SQLite-Connection:
+:commit-Transaction(), SQLite-
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 618--621
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::create-Indices(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/
+::delete-Object(),
+ []
+
+[77]
+Underfull \hbox (badness 5050) in paragraph at lines 643--645
+ /ptmb7t/5.17.5.4 template$/cmmi10/<$/ptmb7t/class key, class data$/cmmi10/>$ /
+ptmb7t/bool SQLTable$/cmmi10/<$ /ptmb7t/key, data $/cmmi10/>$/ptmb7t/::has-Prim
+ary-Key
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 662--665
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::create-Indices(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/
+::delete-Objects(),
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 665--667
+ /ptmb7t/5.17.5.6 template$/cmmi10/<$/ptmb7t/class key, class data$/cmmi10/>$ /
+ptmb7t/vector$/cmmi10/<$/ptmb7t/string$/cmmi10/>$ /ptmb7t/SQLTable$/cmmi10/<$ /
+ptmb7t/key, data $/cmmi10/>$/ptmb7t/::indices
+ []
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 695--698
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::create-Indices(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/
+::delete-Object(),
+ []
+
+[78]
+Underfull \hbox (badness 4792) in paragraph at lines 706--707
+[]/ptmr7t/Referenced by SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7
+t/::operator=(), SQLTable$/cmmi10/<$ /ptmr7t/key, data $/cmmi10/>$/ptmr7t/::sel
+ect-Distinct-
+ []
+
+) (./classThread__Pool.tex
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+
+ []
+
+[80]) (./classTimePeriod.tex
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+[81]
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 39
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 41
+[][]
+ []
+
+[82] [83]) (./classTimeStamp.tex
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 18
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 22
+[][]
+ []
+
+[84]
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 24
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 26
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 28
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 30
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 34
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 36
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 38
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 40
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 42
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 44
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 46
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 52
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 54
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 56
+[][]
+ []
+
+[85]
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 58
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 65
+[][]
+ []
+
+[86] [87] [88]
+Underfull \hbox (badness 1622) in paragraph at lines 313--314
+[]/ptmr7t/Referenced by Day::Day(), Contest::init-Timers(), operator$/cmmi10/<$
+$<$/ptmr7t/(), Pro-ces-sor::process[]-i(), and Time-
+ []
+
+[89]) (./client__acceptor_8cpp.tex) (./client__acceptor_8h.tex
+Underfull \hbox (badness 10000) detected at line 23
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 23
+[][]
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 30--32
+ /ptmb7t/6.2.1.1 type-def ACE[]-Acceptor$/cmmi10/<$[][]/ptmb7t/Client[]-Handler
+[][], ACE[]-SOCK[]-ACCEPTOR$/cmmi10/>$ /ptmb7t/Client[]-Acceptor[]-
+ []
+
+) (./client__handler_8cpp.tex [90]
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+ /ptmb7t/6.3.1.2 #de-fine RE-MOVE[]-MASK (ACE[]-Event[]-Handler::READ[]-MASK $/
+cmsy10/j$ /ptmb7t/ACE[]-Event[]-
+ []
+
+) (./client__handler_8h.tex) (./config_8h.tex) (./connectionmsgblock_8cpp.tex
+[91]) (./connectionmsgblock_8h.tex
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+) (./contest_8cpp.tex) (./contest_8h.tex [92]
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 31
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 33
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+
+ []
+
+) (./Count_8h.tex [93]) (./crc__32_8cpp.tex) (./crc__32_8h.tex
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+) (./day_8cpp.tex) (./day_8h.tex
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+[94]
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+) (./giftdetails_8cpp.tex) (./giftdetails_8h.tex
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 14
+[][]
+ []
+
+) (./logger_8cpp.tex) (./logger_8h.tex [95]
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 19
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 27
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 27
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+
+ []
+
+) (./logmsg__mo_8cpp.tex) (./logmsg__mo_8h.tex
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+) (./main_8cpp.tex [96]) (./partdetails_8cpp.tex) (./partdetails_8h.tex
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+) (./processor_8cpp.tex [97]) (./processor_8h.tex
+Underfull \hbox (badness 10000) detected at line 15
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 15
+[][]
+ []
+
+) (./processor__mo_8cpp.tex) (./processor__mo_8h.tex
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+) (./sqliteconnection_8cpp.tex) (./sqliteconnection_8h.tex [98]
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 21
+[][]
+ []
+
+) (./sqltable_8cpp.tex) (./sqltable_8h.tex [99]
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 16
+[][]
+ []
+
+) (./strtokenizer_8cpp.tex
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+) (./strtokenizer_8h.tex
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[][]
+ []
+
+[100]) (./thread__pool_8cpp.tex) (./thread__pool_8h.tex
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[][]
+ []
+
+) (./timeperiod_8cpp.tex) (./timeperiod_8h.tex
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][]
+ []
+
+) (./timestamp_8cpp.tex) (./timestamp_8h.tex [101]
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[][]
+ []
+
+)
+No file refman.ind.
+[102] (./refman.aux) ) 
+Here is how much of TeX's memory you used:
+ 4868 strings out of 95433
+ 80767 string characters out of 1190129
+ 122810 words of memory out of 1000001
+ 6492 multiletter control sequences out of 10000+50000
+ 26334 words of font info for 52 fonts, out of 500000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 31i,13n,43p,945b,584s stack positions out of 1500i,500n,5000p,200000b,5000s
+ 2543 PDF objects out of 300000
+ 1193 named destinations out of 131072
+ 58 words of extra memory for PDF output out of 65536
+{/usr/share/texmf/dvips/tetex/aae443f0.enc}</usr/share/te
+xmf/fonts/type1/bluesky/cm/cmmi12.pfb>{/usr/share/texmf/dvips/tetex/bbad153f.en
+c}</usr/share/texmf/fonts/type1/bluesky/cm/cmsy9.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmmi9.pfb>{/usr/share/texmf/dvips/psnfss/8r.enc}</usr/share/texm
+f/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cm
+mi10.pfb>{/usr/share/texmf/dvips/tetex/f7b6d320.enc}</usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmr10.pfb>
+Output written on refman.pdf (104 pages, 612973 bytes).

@@ -1,0 +1,1773 @@
+Initialize Logger...done
+Initialize Processor object...done
+New Contest started
+Initialize Random Number Generator...done
+Initialize Timers...Weekly timers: (arg = 2)
+Tue Jul  1 01:00:00 2003
+Tue Jul  8 01:00:00 2003
+Tue Jul 15 01:00:00 2003
+Tue Jul 22 01:00:00 2003
+Tue Jul 29 01:00:00 2003
+Tue Aug  5 01:00:00 2003
+Tue Aug 12 01:00:00 2003
+Tue Aug 19 01:00:00 2003
+Tue Aug 26 01:00:00 2003
+Tue Sep  2 01:00:00 2003
+Tue Sep  9 01:00:00 2003
+Tue Sep 16 01:00:00 2003
+Tue Sep 23 01:00:00 2003
+Tue Sep 30 01:00:00 2003
+Tue Oct  7 01:00:00 2003
+Tue Oct 14 01:00:00 2003
+Tue Oct 21 01:00:00 2003
+Tue Oct 28 00:00:00 2003
+Tue Nov  4 00:00:00 2003
+Tue Nov 11 00:00:00 2003
+Tue Nov 18 00:00:00 2003
+Tue Nov 25 00:00:00 2003
+Tue Dec  2 00:00:00 2003
+Tue Dec  9 00:00:00 2003
+Tue Dec 16 00:00:00 2003
+Tue Dec 23 00:00:00 2003
+Tue Dec 30 00:00:00 2003
+Monthly timers: (arg = 4)
+Fri Aug  1 01:00:00 2003
+Mon Sep  1 01:00:00 2003
+Wed Oct  1 01:00:00 2003
+Sat Nov  1 00:00:00 2003
+Mon Dec  1 00:00:00 2003
+Thu Jan  1 00:00:00 2004
+Daily timers: (arg = 1)
+Tue Jul  1 01:00:00 2003
+Wed Jul  2 01:00:00 2003
+Thu Jul  3 01:00:00 2003
+Fri Jul  4 01:00:00 2003
+Sat Jul  5 01:00:00 2003
+Sun Jul  6 01:00:00 2003
+Mon Jul  7 01:00:00 2003
+Tue Jul  8 01:00:00 2003
+Wed Jul  9 01:00:00 2003
+Thu Jul 10 01:00:00 2003
+Fri Jul 11 01:00:00 2003
+Sat Jul 12 01:00:00 2003
+Sun Jul 13 01:00:00 2003
+Mon Jul 14 01:00:00 2003
+Tue Jul 15 01:00:00 2003
+Wed Jul 16 01:00:00 2003
+Thu Jul 17 01:00:00 2003
+Fri Jul 18 01:00:00 2003
+Sat Jul 19 01:00:00 2003
+Sun Jul 20 01:00:00 2003
+Mon Jul 21 01:00:00 2003
+Tue Jul 22 01:00:00 2003
+Wed Jul 23 01:00:00 2003
+Thu Jul 24 01:00:00 2003
+Fri Jul 25 01:00:00 2003
+Sat Jul 26 01:00:00 2003
+Sun Jul 27 01:00:00 2003
+Mon Jul 28 01:00:00 2003
+Tue Jul 29 01:00:00 2003
+Wed Jul 30 01:00:00 2003
+Thu Jul 31 01:00:00 2003
+Fri Aug  1 01:00:00 2003
+Sat Aug  2 01:00:00 2003
+Sun Aug  3 01:00:00 2003
+Mon Aug  4 01:00:00 2003
+Tue Aug  5 01:00:00 2003
+Wed Aug  6 01:00:00 2003
+Thu Aug  7 01:00:00 2003
+Fri Aug  8 01:00:00 2003
+Sat Aug  9 01:00:00 2003
+Sun Aug 10 01:00:00 2003
+Mon Aug 11 01:00:00 2003
+Tue Aug 12 01:00:00 2003
+Wed Aug 13 01:00:00 2003
+Thu Aug 14 01:00:00 2003
+Fri Aug 15 01:00:00 2003
+Sat Aug 16 01:00:00 2003
+Sun Aug 17 01:00:00 2003
+Mon Aug 18 01:00:00 2003
+Tue Aug 19 01:00:00 2003
+Wed Aug 20 01:00:00 2003
+Thu Aug 21 01:00:00 2003
+Fri Aug 22 01:00:00 2003
+Sat Aug 23 01:00:00 2003
+Sun Aug 24 01:00:00 2003
+Mon Aug 25 01:00:00 2003
+Tue Aug 26 01:00:00 2003
+Wed Aug 27 01:00:00 2003
+Thu Aug 28 01:00:00 2003
+Fri Aug 29 01:00:00 2003
+Sat Aug 30 01:00:00 2003
+Sun Aug 31 01:00:00 2003
+Mon Sep  1 01:00:00 2003
+Tue Sep  2 01:00:00 2003
+Wed Sep  3 01:00:00 2003
+Thu Sep  4 01:00:00 2003
+Fri Sep  5 01:00:00 2003
+Sat Sep  6 01:00:00 2003
+Sun Sep  7 01:00:00 2003
+Mon Sep  8 01:00:00 2003
+Tue Sep  9 01:00:00 2003
+Wed Sep 10 01:00:00 2003
+Thu Sep 11 01:00:00 2003
+Fri Sep 12 01:00:00 2003
+Sat Sep 13 01:00:00 2003
+Sun Sep 14 01:00:00 2003
+Mon Sep 15 01:00:00 2003
+Tue Sep 16 01:00:00 2003
+Wed Sep 17 01:00:00 2003
+Thu Sep 18 01:00:00 2003
+Fri Sep 19 01:00:00 2003
+Sat Sep 20 01:00:00 2003
+Sun Sep 21 01:00:00 2003
+Mon Sep 22 01:00:00 2003
+Tue Sep 23 01:00:00 2003
+Wed Sep 24 01:00:00 2003
+Thu Sep 25 01:00:00 2003
+Fri Sep 26 01:00:00 2003
+Sat Sep 27 01:00:00 2003
+Sun Sep 28 01:00:00 2003
+Mon Sep 29 01:00:00 2003
+Tue Sep 30 01:00:00 2003
+Wed Oct  1 01:00:00 2003
+Thu Oct  2 01:00:00 2003
+Fri Oct  3 01:00:00 2003
+Sat Oct  4 01:00:00 2003
+Sun Oct  5 01:00:00 2003
+Mon Oct  6 01:00:00 2003
+Tue Oct  7 01:00:00 2003
+Wed Oct  8 01:00:00 2003
+Thu Oct  9 01:00:00 2003
+Fri Oct 10 01:00:00 2003
+Sat Oct 11 01:00:00 2003
+Sun Oct 12 01:00:00 2003
+Mon Oct 13 01:00:00 2003
+Tue Oct 14 01:00:00 2003
+Wed Oct 15 01:00:00 2003
+Thu Oct 16 01:00:00 2003
+Fri Oct 17 01:00:00 2003
+Sat Oct 18 01:00:00 2003
+Sun Oct 19 01:00:00 2003
+Mon Oct 20 01:00:00 2003
+Tue Oct 21 01:00:00 2003
+Wed Oct 22 01:00:00 2003
+Thu Oct 23 01:00:00 2003
+Fri Oct 24 01:00:00 2003
+Sat Oct 25 01:00:00 2003
+Sun Oct 26 01:00:00 2003
+Mon Oct 27 00:00:00 2003
+Tue Oct 28 00:00:00 2003
+Wed Oct 29 00:00:00 2003
+Thu Oct 30 00:00:00 2003
+Fri Oct 31 00:00:00 2003
+Sat Nov  1 00:00:00 2003
+Sun Nov  2 00:00:00 2003
+Mon Nov  3 00:00:00 2003
+Tue Nov  4 00:00:00 2003
+Wed Nov  5 00:00:00 2003
+Thu Nov  6 00:00:00 2003
+Fri Nov  7 00:00:00 2003
+Sat Nov  8 00:00:00 2003
+Sun Nov  9 00:00:00 2003
+Mon Nov 10 00:00:00 2003
+Tue Nov 11 00:00:00 2003
+Wed Nov 12 00:00:00 2003
+Thu Nov 13 00:00:00 2003
+Fri Nov 14 00:00:00 2003
+Sat Nov 15 00:00:00 2003
+Sun Nov 16 00:00:00 2003
+Mon Nov 17 00:00:00 2003
+Tue Nov 18 00:00:00 2003
+Wed Nov 19 00:00:00 2003
+Thu Nov 20 00:00:00 2003
+Fri Nov 21 00:00:00 2003
+Sat Nov 22 00:00:00 2003
+Sun Nov 23 00:00:00 2003
+Mon Nov 24 00:00:00 2003
+Tue Nov 25 00:00:00 2003
+Wed Nov 26 00:00:00 2003
+Thu Nov 27 00:00:00 2003
+Fri Nov 28 00:00:00 2003
+Sat Nov 29 00:00:00 2003
+Sun Nov 30 00:00:00 2003
+Mon Dec  1 00:00:00 2003
+Tue Dec  2 00:00:00 2003
+Wed Dec  3 00:00:00 2003
+Thu Dec  4 00:00:00 2003
+Fri Dec  5 00:00:00 2003
+Sat Dec  6 00:00:00 2003
+Sun Dec  7 00:00:00 2003
+Mon Dec  8 00:00:00 2003
+Tue Dec  9 00:00:00 2003
+Wed Dec 10 00:00:00 2003
+Thu Dec 11 00:00:00 2003
+Fri Dec 12 00:00:00 2003
+Sat Dec 13 00:00:00 2003
+Sun Dec 14 00:00:00 2003
+Mon Dec 15 00:00:00 2003
+Tue Dec 16 00:00:00 2003
+Wed Dec 17 00:00:00 2003
+Thu Dec 18 00:00:00 2003
+Fri Dec 19 00:00:00 2003
+Sat Dec 20 00:00:00 2003
+Sun Dec 21 00:00:00 2003
+Mon Dec 22 00:00:00 2003
+Tue Dec 23 00:00:00 2003
+Wed Dec 24 00:00:00 2003
+Thu Dec 25 00:00:00 2003
+Fri Dec 26 00:00:00 2003
+Sat Dec 27 00:00:00 2003
+Sun Dec 28 00:00:00 2003
+Mon Dec 29 00:00:00 2003
+Tue Dec 30 00:00:00 2003
+Wed Dec 31 00:00:00 2003
+Thu Jan  1 00:00:00 2004
+Start of Contest timer: Tue Jul  1 01:00:00 2003
+End of Contest timer: Thu Jan  1 01:00:00 2004
+done
+Contest::handle_timeout(): Start of Contest timer
+Initialize Database...Table CODES exists
+Index CODES_index_code exists
+Index CODES_index_msisdn exists
+Index CODES_index_ts exists
+Index CODES_index_gid exists
+Table WINNINGCODES exists
+Index WINNINGCODES_index_code exists
+Index WINNINGCODES_index_msisdn exists
+Index WINNINGCODES_index_ts exists
+Index WINNINGCODES_index_gid exists
+Table PRIZES exists
+Index PRIZES_index_ID exists
+Index PRIZES_index_periodbegin exists
+Index PRIZES_index_periodend exists
+Table COUNTERS exists
+Index COUNTERS_index_date exists
+done
+Load codes into RAM...Loaded 418516 codes.done
+Initialize Prizes...Already initialized.
+Started signal handler...done
+Started thread engine...done
+Transactions enabled: false
+Day::day_period = From : 20030701, To   : 20030702 
+Day:: storedday -> 2154, 1500
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030701', 2154, 1500, 1689, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 1500
+Day::DayMessages resized: 1500
+Day::counter set to : 2154
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 1
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030702, To   : 20030703 
+Day:: storedday -> 3351, 1728
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030702', 3351, 1728, 2630, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 1728
+Day::DayMessages resized: 1728
+Day::counter set to : 3351
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 2
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030703, To   : 20030704 
+Day:: storedday -> 5995, 2206
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030703', 5995, 2206, 4385, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 2206
+Day::DayMessages resized: 2206
+Day::counter set to : 5995
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 3
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030704, To   : 20030705 
+Day:: storedday -> 8059, 3073
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030704', 8059, 3073, 5480, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3073
+Day::DayMessages resized: 3073
+Day::counter set to : 8059
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 4
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030705, To   : 20030706 
+Day:: storedday -> 3872, 3920
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030705', 3872, 3920, 2240, 1421);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3920
+Day::DayMessages resized: 3920
+Day::counter set to : 3872
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 5
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030706, To   : 20030707 
+Day:: storedday -> 2749, 3760
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030706', 2749, 3760, 1341, 1048);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3760
+Day::DayMessages resized: 3760
+Day::counter set to : 2749
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 6
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030707, To   : 20030708 
+Day:: storedday -> 5798, 3876
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030707', 5798, 3876, 3577, 1412);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3876
+Day::DayMessages resized: 3876
+Day::counter set to : 5798
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 7
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030708, To   : 20030709 
+Day:: storedday -> 6126, 4237
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030708', 6126, 4237, 3694, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4237
+Day::DayMessages resized: 4237
+Day::counter set to : 6126
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 8
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030709, To   : 20030710 
+Day:: storedday -> 6508, 4258
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030709', 6508, 4258, 3740, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4258
+Day::DayMessages resized: 4258
+Day::counter set to : 6508
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 9
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030710, To   : 20030711 
+Day:: storedday -> 5483, 4012
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030710', 5483, 4012, 2952, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4012
+Day::DayMessages resized: 4012
+Day::counter set to : 5483
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 10
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030711, To   : 20030712 
+Day:: storedday -> 6482, 4270
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030711', 6482, 4270, 3741, 1442);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4270
+Day::DayMessages resized: 4270
+Day::counter set to : 6482
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 11
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030712, To   : 20030713 
+Day:: storedday -> 4633, 4869
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030712', 4633, 4869, 2150, 1117);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4869
+Day::DayMessages resized: 4869
+Day::counter set to : 4633
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 12
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030713, To   : 20030714 
+Day:: storedday -> 4021, 4681
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030713', 4021, 4681, 1722, 1252);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4681
+Day::DayMessages resized: 4681
+Day::counter set to : 4021
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 13
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030714, To   : 20030715 
+Day:: storedday -> 6045, 4348
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030714', 6045, 4348, 2880, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4348
+Day::DayMessages resized: 4348
+Day::counter set to : 6045
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 14
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030715, To   : 20030716 
+Day:: storedday -> 5481, 4276
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030715', 5481, 4276, 2393, 1443);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4276
+Day::DayMessages resized: 4276
+Day::counter set to : 5481
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 15
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030716, To   : 20030717 
+Day:: storedday -> 5900, 4277
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030716', 5900, 4277, 2324, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4277
+Day::DayMessages resized: 4277
+Day::counter set to : 5900
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 16
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030717, To   : 20030718 
+Day:: storedday -> 6111, 4184
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030717', 6111, 4184, 2403, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4184
+Day::DayMessages resized: 4184
+Day::counter set to : 6111
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 17
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030718, To   : 20030719 
+Day:: storedday -> 6629, 4417
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030718', 6629, 4417, 2690, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4417
+Day::DayMessages resized: 4417
+Day::counter set to : 6629
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 18
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030719, To   : 20030720 
+Day:: storedday -> 7005, 4831
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030719', 7005, 4831, 2939, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4831
+Day::DayMessages resized: 4831
+Day::counter set to : 7005
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 19
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030720, To   : 20030721 
+Day:: storedday -> 4526, 4984
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030720', 4526, 4984, 1928, 1305);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4984
+Day::DayMessages resized: 4984
+Day::counter set to : 4526
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 20
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030721, To   : 20030722 
+Day:: storedday -> 6678, 4827
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030721', 6678, 4827, 2750, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4827
+Day::DayMessages resized: 4827
+Day::counter set to : 6678
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 21
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030722, To   : 20030723 
+Day:: storedday -> 8262, 4952
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030722', 8262, 4952, 3349, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4952
+Day::DayMessages resized: 4952
+Day::counter set to : 8262
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 22
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030723, To   : 20030724 
+Day:: storedday -> 8270, 5298
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030723', 8270, 5298, 3253, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5298
+Day::DayMessages resized: 5298
+Day::counter set to : 8270
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 23
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030724, To   : 20030725 
+Day:: storedday -> 7991, 5562
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030724', 7991, 5562, 3019, 1304);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5562
+Day::DayMessages resized: 5562
+Day::counter set to : 7991
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 24
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030725, To   : 20030726 
+Day:: storedday -> 9184, 5716
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030725', 9184, 5716, 3483, 1541);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5716
+Day::DayMessages resized: 5716
+Day::counter set to : 9184
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 25
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030726, To   : 20030727 
+Day:: storedday -> 9053, 6461
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030726', 9053, 6461, 3535, 1541);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6461
+Day::DayMessages resized: 6461
+Day::counter set to : 9053
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 26
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030727, To   : 20030728 
+Day:: storedday -> 8098, 6841
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030727', 8098, 6841, 3074, 1542);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6841
+Day::DayMessages resized: 6841
+Day::counter set to : 8098
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 27
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030728, To   : 20030729 
+Day:: storedday -> 9480, 6815
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030728', 9480, 6815, 3419, 1541);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6815
+Day::DayMessages resized: 6815
+Day::counter set to : 9480
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 28
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030729, To   : 20030730 
+Day:: storedday -> 9077, 7008
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030729', 9077, 7008, 3201, 1541);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7008
+Day::DayMessages resized: 7008
+Day::counter set to : 9077
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 29
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030730, To   : 20030731 
+Day:: storedday -> 9251, 7182
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030730', 9251, 7182, 3122, 1540);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7182
+Day::DayMessages resized: 7182
+Day::counter set to : 9251
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 30
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030731, To   : 20030801 
+Day:: storedday -> 9877, 7192
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030731', 9877, 7192, 3201, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7192
+Day::DayMessages resized: 7192
+Day::counter set to : 9877
+Day::assigning gifts to messages
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 31
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of month timer
+Transactions enabled: false
+Day::day_period = From : 20030801, To   : 20030802 
+Day:: storedday -> 6760, 7324
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030801', 6760, 7324, 2268, 1422);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7324
+Day::DayMessages resized: 7324
+Day::counter set to : 6760
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 32
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030802, To   : 20030803 
+Day:: storedday -> 0, 7111
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030802', 0, 7111, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7111
+Day::DayMessages resized: 7111
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 33
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030803, To   : 20030804 
+Day:: storedday -> 0, 5594
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030803', 0, 5594, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5594
+Day::DayMessages resized: 5594
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+0	4317	/5594	5
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 1 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 34
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030804, To   : 20030805 
+Day:: storedday -> 8552, 4141
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030804', 8552, 4141, 2867, 1461);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4141
+Day::DayMessages resized: 4141
+Day::counter set to : 8552
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 35
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030805, To   : 20030806 
+Day:: storedday -> 9383, 4029
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030805', 9383, 4029, 3037, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4029
+Day::DayMessages resized: 4029
+Day::counter set to : 9383
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 36
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030806, To   : 20030807 
+Day:: storedday -> 9393, 3951
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030806', 9393, 3951, 2956, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3951
+Day::DayMessages resized: 3951
+Day::counter set to : 9393
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 37
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030807, To   : 20030808 
+Day:: storedday -> 9295, 4372
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030807', 9295, 4372, 2827, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4372
+Day::DayMessages resized: 4372
+Day::counter set to : 9295
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 38
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030808, To   : 20030809 
+Day:: storedday -> 8427, 5859
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030808', 8427, 5859, 2485, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5859
+Day::DayMessages resized: 5859
+Day::counter set to : 8427
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 39
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030809, To   : 20030810 
+Day:: storedday -> 0, 7208
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030809', 0, 7208, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7208
+Day::DayMessages resized: 7208
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 40
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030810, To   : 20030811 
+Day:: storedday -> 0, 5839
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030810', 0, 5839, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5839
+Day::DayMessages resized: 5839
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 41
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030811, To   : 20030812 
+Day:: storedday -> 8177, 4338
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030811', 8177, 4338, 2347, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4338
+Day::DayMessages resized: 4338
+Day::counter set to : 8177
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 42
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030812, To   : 20030813 
+Day:: storedday -> 8990, 4143
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030812', 8990, 4143, 2522, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4143
+Day::DayMessages resized: 4143
+Day::counter set to : 8990
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 43
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030813, To   : 20030814 
+Day:: storedday -> 8887, 4094
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030813', 8887, 4094, 2468, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4094
+Day::DayMessages resized: 4094
+Day::counter set to : 8887
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 44
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030814, To   : 20030815 
+Day:: storedday -> 9926, 4168
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030814', 9926, 4168, 2610, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4168
+Day::DayMessages resized: 4168
+Day::counter set to : 9926
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 45
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030815, To   : 20030816 
+Day:: storedday -> 9411, 5756
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030815', 9411, 5756, 2682, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5756
+Day::DayMessages resized: 5756
+Day::counter set to : 9411
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 46
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030816, To   : 20030817 
+Day:: storedday -> 4104, 7262
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030816', 4104, 7262, 1082, 815);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 7262
+Day::DayMessages resized: 7262
+Day::counter set to : 4104
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 47
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030817, To   : 20030818 
+Day:: storedday -> 0, 6610
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030817', 0, 6610, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6610
+Day::DayMessages resized: 6610
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 48
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030818, To   : 20030819 
+Day:: storedday -> 8003, 5172
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030818', 8003, 5172, 2072, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5172
+Day::DayMessages resized: 5172
+Day::counter set to : 8003
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 49
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030819, To   : 20030820 
+Day:: storedday -> 8727, 5030
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030819', 8727, 5030, 2107, 1182);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5030
+Day::DayMessages resized: 5030
+Day::counter set to : 8727
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 50
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030820, To   : 20030821 
+Day:: storedday -> 8398, 4839
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030820', 8398, 4839, 1962, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4839
+Day::DayMessages resized: 4839
+Day::counter set to : 8398
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 51
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030821, To   : 20030822 
+Day:: storedday -> 8123, 4676
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030821', 8123, 4676, 1916, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4676
+Day::DayMessages resized: 4676
+Day::counter set to : 8123
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 52
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030822, To   : 20030823 
+Day:: storedday -> 8623, 5320
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030822', 8623, 5320, 1952, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5320
+Day::DayMessages resized: 5320
+Day::counter set to : 8623
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 53
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030823, To   : 20030824 
+Day:: storedday -> 7866, 6699
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030823', 7866, 6699, 1735, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6699
+Day::DayMessages resized: 6699
+Day::counter set to : 7866
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 54
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030824, To   : 20030825 
+Day:: storedday -> 2086, 6677
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030824', 2086, 6677, 446, 452);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 6677
+Day::DayMessages resized: 6677
+Day::counter set to : 2086
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 55
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030825, To   : 20030826 
+Day:: storedday -> 2093, 5615
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030825', 2093, 5615, 442, 534);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5615
+Day::DayMessages resized: 5615
+Day::counter set to : 2093
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 56
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030826, To   : 20030827 
+Day:: storedday -> 8075, 4606
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030826', 8075, 4606, 1754, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4606
+Day::DayMessages resized: 4606
+Day::counter set to : 8075
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+gid: 4	rem:5	init:5	duration: 7
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 57
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030827, To   : 20030828 
+Day:: storedday -> 7595, 4598
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030827', 7595, 4598, 1612, 1294);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4598
+Day::DayMessages resized: 4598
+Day::counter set to : 7595
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+gid: 4	rem:5	init:5	duration: 7
+gid: 1	rem:147	init:1440	duration: 1
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 58
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030828, To   : 20030829 
+Day:: storedday -> 7889, 5000
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030828', 7889, 5000, 1605, 3449);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5000
+Day::DayMessages resized: 5000
+Day::counter set to : 7889
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+gid: 4	rem:5	init:5	duration: 7
+gid: 1	rem:616	init:4054	duration: 1
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 59
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030829, To   : 20030830 
+Day:: storedday -> 8167, 5000
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030829', 8167, 5000, 1635, 4057);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5000
+Day::DayMessages resized: 5000
+Day::counter set to : 8167
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+gid: 4	rem:5	init:5	duration: 7
+gid: 1	rem:1	init:4054	duration: 1
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 60
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030830, To   : 20030831 
+Day:: storedday -> 4616, 5000
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030830', 4616, 5000, 928, 2945);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5000
+Day::DayMessages resized: 5000
+Day::counter set to : 4616
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+gid: 4	rem:5	init:5	duration: 7
+1	4717	/5000	4
+2	4620	/5000	4
+gid: 1	rem:1109	init:4054	duration: 1
+Distributed 382 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 2 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 61
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030831, To   : 20030901 
+Day:: storedday -> 4882, 5000
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030831', 4882, 5000, 936, 3963);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5000
+Day::DayMessages resized: 5000
+Day::counter set to : 4882
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 31
+0	4951	/5000	5
+gid: 4	rem:5	init:5	duration: 7
+gid: 1	rem:96	init:4053	duration: 1
+Distributed 96 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 1 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 62
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of month timer
+Transactions enabled: false
+Day::day_period = From : 20030901, To   : 20030902 
+Day:: storedday -> 9055, 5303
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030901', 9055, 5303, 1794, 1440);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5303
+Day::DayMessages resized: 5303
+Day::counter set to : 9055
+Day::assigning gifts to messages
+gid: 4	rem:5	init:5	duration: 7
+gid: 1	rem:1	init:1440	duration: 1
+gid: 5	rem:1	init:1	duration: 30
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 63
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030902, To   : 20030903 
+Day:: storedday -> 8588, 5536
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030902', 8588, 5536, 1592, 1441);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5536
+Day::DayMessages resized: 5536
+Day::counter set to : 8588
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+Distributed 0 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 0 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 64
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030903, To   : 20030904 
+Day:: storedday -> 2213, 5648
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030903', 2213, 5648, 406, 562);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 5648
+Day::DayMessages resized: 5648
+Day::counter set to : 2213
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+gid: 1	rem:877	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	5320	/5648	3
+Distributed 877 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 65
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030904, To   : 20030905 
+Day:: storedday -> 0, 4696
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030904', 0, 4696, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 4696
+Day::DayMessages resized: 4696
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	3853	/4696	3
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 66
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030905, To   : 20030906 
+Day:: storedday -> 0, 3957
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030905', 0, 3957, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3957
+Day::DayMessages resized: 3957
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	1236	/3957	3
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 67
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030906, To   : 20030907 
+Day:: storedday -> 0, 3176
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030906', 0, 3176, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 3176
+Day::DayMessages resized: 3176
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	742	/3176	3
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 68
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030907, To   : 20030908 
+Day:: storedday -> 0, 1728
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030907', 0, 1728, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 1728
+Day::DayMessages resized: 1728
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	604	/1728	3
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 69
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Transactions enabled: false
+Day::day_period = From : 20030908, To   : 20030909 
+Day:: storedday -> 0, 1600
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030908', 0, 1600, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 1600
+Day::DayMessages resized: 1600
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 4	rem:1	init:1	duration: 7
+0	644	/1600	4
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	1439	/1600	3
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 1 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 70
+Waiting for today's traffic...
+Contest::handle_timeout(): End of day timer
+Contest::handle_timeout(): End of week timer
+Transactions enabled: false
+Day::day_period = From : 20030909, To   : 20030910 
+Day:: storedday -> 0, 1600
+creating counter object...Unable to INSERT data. Error CODE: 19
+Command executed: INSERT INTO COUNTERS VALUES('20030909', 0, 1600, 0, 0);
+
+Error Msg : uniqueness constraint failed
+done
+Day::estMsgs 1600
+Day::DayMessages resized: 1600
+Day::counter set to : 0
+Day::assigning gifts to messages
+gid: 5	rem:1	init:1	duration: 30
+gid: 1	rem:1440	init:1440	duration: 1
+gid: 3	rem:1	init:1	duration: 1
+0	691	/1600	3
+gid: 4	rem:1	init:1	duration: 7
+Distributed 1440 prizes of type 1
+Distributed 0 prizes of type 2
+Distributed 1 prizes of type 3
+Distributed 0 prizes of type 4
+Distributed 0 prizes of type 5
+Contest::handle_timeout(): ContestDays.size() = 71
+Waiting for today's traffic...
+Received SIGTERM signal. Shutting down gracefully
+Contest:: Shutting down...
+Closing Database...done
+Unregistering Timers...done
+Closing down the Reactor...done

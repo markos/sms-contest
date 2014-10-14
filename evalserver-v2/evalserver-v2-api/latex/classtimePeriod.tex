@@ -1,0 +1,170 @@
+\hypertarget{classtimePeriod}{
+\subsection{time\-Period Class Reference}
+\label{classtimePeriod}\index{timePeriod@{timePeriod}}
+}
+{\tt \#include $<$timeperiod.h$>$}
+
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classtimePeriod_timePerioda0}{time\-Period} (const time\-Period \&source)
+\item 
+\hyperlink{classtimePeriod_timePerioda1}{time\-Period} (\hyperlink{classTimeStamp}{Time\-Stamp} begints, \hyperlink{classTimeStamp}{Time\-Stamp} endts)
+\item 
+\hyperlink{classtimePeriod_timePerioda2}{time\-Period} (long begints=0, long endts=0+86400)
+\item 
+\hyperlink{classtimePeriod_timePerioda3}{$\sim$time\-Period} ()
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \& \hyperlink{classtimePeriod_timePerioda4}{get\-Begin\-TS} ()
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \& \hyperlink{classtimePeriod_timePerioda5}{get\-End\-TS} ()
+\item 
+bool \hyperlink{classtimePeriod_timePerioda6}{date\-In\-Period} (\hyperlink{classTimeStamp}{Time\-Stamp} ts)
+\item 
+bool \hyperlink{classtimePeriod_timePerioda7}{date\-In\-Period} (time\_\-t ts)
+\item 
+string \hyperlink{classtimePeriod_timePerioda8}{to\-String} (bool short\-String=false)
+\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classtimePeriod_timePeriodo0}{begin\-Time\-Stamp}
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classtimePeriod_timePeriodo1}{end\-Time\-Stamp}
+\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classtimePeriod_timePerioda0}{
+\index{timePeriod@{time\-Period}!timePeriod@{timePeriod}}
+\index{timePeriod@{timePeriod}!timePeriod@{time\-Period}}
+\paragraph[timePeriod]{\setlength{\rightskip}{0pt plus 5cm}time\-Period::time\-Period (const time\-Period \& {\em source})}\hfill}
+\label{classtimePeriod_timePerioda0}
+
+
+
+
+Definition at line 12 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, and end\-Time\-Stamp.\hypertarget{classtimePeriod_timePerioda1}{
+\index{timePeriod@{time\-Period}!timePeriod@{timePeriod}}
+\index{timePeriod@{timePeriod}!timePeriod@{time\-Period}}
+\paragraph[timePeriod]{\setlength{\rightskip}{0pt plus 5cm}time\-Period::time\-Period (\hyperlink{classTimeStamp}{Time\-Stamp} {\em begints}, \hyperlink{classTimeStamp}{Time\-Stamp} {\em endts})}\hfill}
+\label{classtimePeriod_timePerioda1}
+
+
+
+
+Definition at line 17 of file timeperiod.cpp.\hypertarget{classtimePeriod_timePerioda2}{
+\index{timePeriod@{time\-Period}!timePeriod@{timePeriod}}
+\index{timePeriod@{timePeriod}!timePeriod@{time\-Period}}
+\paragraph[timePeriod]{\setlength{\rightskip}{0pt plus 5cm}time\-Period::time\-Period (long {\em begints} = 0, long {\em endts} = 0+86400)}\hfill}
+\label{classtimePeriod_timePerioda2}
+
+
+
+
+Definition at line 21 of file timeperiod.cpp.\hypertarget{classtimePeriod_timePerioda3}{
+\index{timePeriod@{time\-Period}!~timePeriod@{$\sim$timePeriod}}
+\index{~timePeriod@{$\sim$timePeriod}!timePeriod@{time\-Period}}
+\paragraph[$\sim$timePeriod]{\setlength{\rightskip}{0pt plus 5cm}time\-Period::$\sim$time\-Period ()}\hfill}
+\label{classtimePeriod_timePerioda3}
+
+
+
+
+Definition at line 25 of file timeperiod.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classtimePeriod_timePerioda7}{
+\index{timePeriod@{time\-Period}!dateInPeriod@{dateInPeriod}}
+\index{dateInPeriod@{dateInPeriod}!timePeriod@{time\-Period}}
+\paragraph[dateInPeriod]{\setlength{\rightskip}{0pt plus 5cm}bool time\-Period::date\-In\-Period (time\_\-t {\em ts})}\hfill}
+\label{classtimePeriod_timePerioda7}
+
+
+
+
+Definition at line 35 of file timeperiod.cpp.\hypertarget{classtimePeriod_timePerioda6}{
+\index{timePeriod@{time\-Period}!dateInPeriod@{dateInPeriod}}
+\index{dateInPeriod@{dateInPeriod}!timePeriod@{time\-Period}}
+\paragraph[dateInPeriod]{\setlength{\rightskip}{0pt plus 5cm}bool time\-Period::date\-In\-Period (\hyperlink{classTimeStamp}{Time\-Stamp} {\em ts})}\hfill}
+\label{classtimePeriod_timePerioda6}
+
+
+
+
+Definition at line 28 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, and end\-Time\-Stamp.
+
+Referenced by Day::assign\-Prizes().\hypertarget{classtimePeriod_timePerioda4}{
+\index{timePeriod@{time\-Period}!getBeginTS@{getBeginTS}}
+\index{getBeginTS@{getBeginTS}!timePeriod@{time\-Period}}
+\paragraph[getBeginTS]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} \& time\-Period::get\-Begin\-TS ()}\hfill}
+\label{classtimePeriod_timePerioda4}
+
+
+
+
+Definition at line 42 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp.
+
+Referenced by Day::assign\-Prizes(), Day::Day(), Contest::gift\-Is\-Given(), gift\-Details::insert\-String(), Processor::process\_\-i(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and gift\-Details::update\-String().\hypertarget{classtimePeriod_timePerioda5}{
+\index{timePeriod@{time\-Period}!getEndTS@{getEndTS}}
+\index{getEndTS@{getEndTS}!timePeriod@{time\-Period}}
+\paragraph[getEndTS]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} \& time\-Period::get\-End\-TS ()}\hfill}
+\label{classtimePeriod_timePerioda5}
+
+
+
+
+Definition at line 46 of file timeperiod.cpp.
+
+References end\-Time\-Stamp.
+
+Referenced by Contest::handle\_\-timeout(), gift\-Details::insert\-String(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and gift\-Details::update\-String().\hypertarget{classtimePeriod_timePerioda8}{
+\index{timePeriod@{time\-Period}!toString@{toString}}
+\index{toString@{toString}!timePeriod@{time\-Period}}
+\paragraph[toString]{\setlength{\rightskip}{0pt plus 5cm}string time\-Period::to\-String (bool {\em short\-String} = false)}\hfill}
+\label{classtimePeriod_timePerioda8}
+
+
+
+
+Definition at line 50 of file timeperiod.cpp.
+
+References begin\-Time\-Stamp, end\-Time\-Stamp, and Time\-Stamp::to\-String().
+
+Referenced by Day::Day().
+
+\subsubsection{Field Documentation}
+\hypertarget{classtimePeriod_timePeriodo0}{
+\index{timePeriod@{time\-Period}!beginTimeStamp@{beginTimeStamp}}
+\index{beginTimeStamp@{beginTimeStamp}!timePeriod@{time\-Period}}
+\paragraph[beginTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} time\-Period::begin\-Time\-Stamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classtimePeriod_timePeriodo0}
+
+
+
+
+Definition at line 22 of file timeperiod.h.
+
+Referenced by date\-In\-Period(), get\-Begin\-TS(), time\-Period(), and to\-String().\hypertarget{classtimePeriod_timePeriodo1}{
+\index{timePeriod@{time\-Period}!endTimeStamp@{endTimeStamp}}
+\index{endTimeStamp@{endTimeStamp}!timePeriod@{time\-Period}}
+\paragraph[endTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} time\-Period::end\-Time\-Stamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classtimePeriod_timePeriodo1}
+
+
+
+
+Definition at line 22 of file timeperiod.h.
+
+Referenced by date\-In\-Period(), get\-End\-TS(), time\-Period(), and to\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{timeperiod_8h}{timeperiod.h}\item 
+\hyperlink{timeperiod_8cpp}{timeperiod.cpp}\end{CompactItemize}

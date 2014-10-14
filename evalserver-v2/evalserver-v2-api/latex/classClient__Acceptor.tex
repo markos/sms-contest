@@ -1,0 +1,278 @@
+\hypertarget{classClient__Acceptor}{
+\subsection{Client\_\-Acceptor Class Reference}
+\label{classClient__Acceptor}\index{Client_Acceptor@{Client\_\-Acceptor}}
+}
+{\tt \#include $<$client\_\-acceptor.h$>$}
+
+\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef \hyperlink{client__acceptor_8h_a0}{Client\_\-Acceptor\_\-Base} \hyperlink{classClient__Acceptor_Client__Acceptors0}{inherited}
+\item 
+enum \hyperlink{classClient__Acceptor_Client__Acceptors4}{concurrency\_\-t} \{ \hyperlink{classClient__Acceptor_Client__Acceptors4Client__Acceptors1}{single\_\-threaded\_\-}, 
+\hyperlink{classClient__Acceptor_Client__Acceptors4Client__Acceptors2}{thread\_\-per\_\-connection\_\-}, 
+\hyperlink{classClient__Acceptor_Client__Acceptors4Client__Acceptors3}{thread\_\-pool\_\-}
+ \}
+\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classClient__Acceptor_Client__Acceptora0}{Client\_\-Acceptor} (\hyperlink{classContest}{Contest} $\ast$my\-Contest, \hyperlink{classClient__Acceptor_Client__Acceptors4}{concurrency\_\-t} concurrency=thread\_\-pool\_\-)
+\item 
+\hyperlink{classClient__Acceptor_Client__Acceptora1}{Client\_\-Acceptor} (\hyperlink{classContest}{Contest} $\ast$my\-Contest, \hyperlink{classThread__Pool}{Thread\_\-Pool} \&thread\_\-pool)
+\item 
+\hyperlink{classClient__Acceptor_Client__Acceptora2}{$\sim$Client\_\-Acceptor} (void)
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptora3}{open} (const ACE\_\-INET\_\-Addr \&addr, ACE\_\-Reactor $\ast$reactor, int pool\_\-size=Thread\_\-Pool::default\_\-pool\_\-size\_\-)
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptora4}{close} (void)
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptora5}{concurrency} (void)
+\item 
+\hyperlink{classThread__Pool}{Thread\_\-Pool} $\ast$ \hyperlink{classClient__Acceptor_Client__Acceptora6}{thread\_\-pool} (void)
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptora7}{thread\_\-pool\_\-is\_\-private} (void)
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptora8}{make\_\-svc\_\-handler} (\hyperlink{classClient__Handler}{Client\_\-Handler} $\ast$\&ch)
+\begin{CompactList}\small\item\em Register the service handler to the acceptor.\item\end{CompactList}\item 
+void \hyperlink{classClient__Acceptor_Client__Acceptora9}{set\-Contest} (\hyperlink{classContest}{Contest} $\ast$cur\-Contest)
+\begin{CompactList}\small\item\em Set parent contest.\item\end{CompactList}\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classClient__Acceptor_Client__Acceptora10}{get\-Contest} ()
+\begin{CompactList}\small\item\em Get parent contest.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classClient__Acceptor_Client__Acceptorn0}{concurrency\_\-}
+\item 
+\hyperlink{classThread__Pool}{Thread\_\-Pool} \hyperlink{classClient__Acceptor_Client__Acceptorn1}{private\_\-thread\_\-pool\_\-}
+\item 
+\hyperlink{classThread__Pool}{Thread\_\-Pool} \& \hyperlink{classClient__Acceptor_Client__Acceptorn2}{the\_\-thread\_\-pool\_\-}
+\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classClient__Acceptor_Client__Acceptorn3}{parent\-Contest}
+\end{CompactItemize}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classClient__Acceptor_Client__Acceptors0}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!inherited@{inherited}}
+\index{inherited@{inherited}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[inherited]{\setlength{\rightskip}{0pt plus 5cm}typedef \hyperlink{client__acceptor_8h_a0}{Client\_\-Acceptor\_\-Base} Client\_\-Acceptor::inherited}\hfill}
+\label{classClient__Acceptor_Client__Acceptors0}
+
+
+
+
+Definition at line 54 of file client\_\-acceptor.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classClient__Acceptor_Client__Acceptors4}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!concurrency_t@{concurrency\_\-t}}
+\index{concurrency_t@{concurrency\_\-t}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[concurrency\_\-t]{\setlength{\rightskip}{0pt plus 5cm}enum Client\_\-Acceptor::concurrency\_\-t}\hfill}
+\label{classClient__Acceptor_Client__Acceptors4}
+
+
+Now that we have more than two strategies, we need more than a boolean to tell us what we're using. A set of enums is a good choice because it allows us to use named values. Another option would be a set of static const integers. \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{single_threaded_@{single\_\-threaded\_\-}!Client_Acceptor@{Client\_\-Acceptor}}\index{Client_Acceptor@{Client\_\-Acceptor}!single_threaded_@{single\_\-threaded\_\-}}\item[{\em 
+\hypertarget{classClient__Acceptor_Client__Acceptors4Client__Acceptors1}{
+{\em single\_\-threaded\_\-}}
+\label{classClient__Acceptor_Client__Acceptors4Client__Acceptors1}
+}]\index{thread_per_connection_@{thread\_\-per\_\-connection\_\-}!Client_Acceptor@{Client\_\-Acceptor}}\index{Client_Acceptor@{Client\_\-Acceptor}!thread_per_connection_@{thread\_\-per\_\-connection\_\-}}\item[{\em 
+\hypertarget{classClient__Acceptor_Client__Acceptors4Client__Acceptors2}{
+{\em thread\_\-per\_\-connection\_\-}}
+\label{classClient__Acceptor_Client__Acceptors4Client__Acceptors2}
+}]\index{thread_pool_@{thread\_\-pool\_\-}!Client_Acceptor@{Client\_\-Acceptor}}\index{Client_Acceptor@{Client\_\-Acceptor}!thread_pool_@{thread\_\-pool\_\-}}\item[{\em 
+\hypertarget{classClient__Acceptor_Client__Acceptors4Client__Acceptors3}{
+{\em thread\_\-pool\_\-}}
+\label{classClient__Acceptor_Client__Acceptors4Client__Acceptors3}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 60 of file client\_\-acceptor.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classClient__Acceptor_Client__Acceptora0}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!Client_Acceptor@{Client\_\-Acceptor}}
+\index{Client_Acceptor@{Client\_\-Acceptor}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[Client\_\-Acceptor]{\setlength{\rightskip}{0pt plus 5cm}Client\_\-Acceptor::Client\_\-Acceptor (\hyperlink{classContest}{Contest} $\ast$ {\em my\-Contest}, \hyperlink{classClient__Acceptor_Client__Acceptors4}{concurrency\_\-t} {\em concurrency} = thread\_\-pool\_\-)}\hfill}
+\label{classClient__Acceptor_Client__Acceptora0}
+
+
+The default constructor allows the programmer to choose the concurrency strategy. Since we want to focus on thread-pool, that's what we'll use if nothing is specified. 
+
+Definition at line 7 of file client\_\-acceptor.cpp.\hypertarget{classClient__Acceptor_Client__Acceptora1}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!Client_Acceptor@{Client\_\-Acceptor}}
+\index{Client_Acceptor@{Client\_\-Acceptor}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[Client\_\-Acceptor]{\setlength{\rightskip}{0pt plus 5cm}Client\_\-Acceptor::Client\_\-Acceptor (\hyperlink{classContest}{Contest} $\ast$ {\em my\-Contest}, \hyperlink{classThread__Pool}{Thread\_\-Pool} \& {\em thread\_\-pool})}\hfill}
+\label{classClient__Acceptor_Client__Acceptora1}
+
+
+Another option is to construct the object with an existing thread pool. The concurrency strategy is pretty obvious at that point. 
+
+Definition at line 16 of file client\_\-acceptor.cpp.\hypertarget{classClient__Acceptor_Client__Acceptora2}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!~Client_Acceptor@{$\sim$Client\_\-Acceptor}}
+\index{~Client_Acceptor@{$\sim$Client\_\-Acceptor}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[$\sim$Client\_\-Acceptor]{\setlength{\rightskip}{0pt plus 5cm}Client\_\-Acceptor::$\sim$Client\_\-Acceptor (void)}\hfill}
+\label{classClient__Acceptor_Client__Acceptora2}
+
+
+Our destructor will take care of shutting down the thread-pool if applicable. 
+
+Definition at line 26 of file client\_\-acceptor.cpp.
+
+References concurrency(), thread\_\-pool(), thread\_\-pool\_\-, and thread\_\-pool\_\-is\_\-private().
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classClient__Acceptor_Client__Acceptora4}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!close@{close}}
+\index{close@{close}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[close]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::close (void)}\hfill}
+\label{classClient__Acceptor_Client__Acceptora4}
+
+
+Close ourselves and our thread pool if applicable 
+
+Definition at line 51 of file client\_\-acceptor.cpp.
+
+References concurrency(), Thread\_\-Pool::stop(), thread\_\-pool(), thread\_\-pool\_\-, and thread\_\-pool\_\-is\_\-private().\hypertarget{classClient__Acceptor_Client__Acceptora5}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!concurrency@{concurrency}}
+\index{concurrency@{concurrency}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[concurrency]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::concurrency (void)\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptora5}
+
+
+What is our concurrency strategy? 
+
+Definition at line 91 of file client\_\-acceptor.h.
+
+References concurrency\_\-.
+
+Referenced by close(), Client\_\-Handler::concurrency(), open(), and $\sim$Client\_\-Acceptor().\hypertarget{classClient__Acceptor_Client__Acceptora10}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!getContest@{getContest}}
+\index{getContest@{getContest}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[getContest]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classContest}{Contest}$\ast$ Client\_\-Acceptor::get\-Contest ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptora10}
+
+
+
+
+Definition at line 123 of file client\_\-acceptor.h.
+
+References parent\-Contest.\hypertarget{classClient__Acceptor_Client__Acceptora8}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!make_svc_handler@{make\_\-svc\_\-handler}}
+\index{make_svc_handler@{make\_\-svc\_\-handler}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[make\_\-svc\_\-handler]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::make\_\-svc\_\-handler (\hyperlink{classClient__Handler}{Client\_\-Handler} $\ast$\& {\em ch})}\hfill}
+\label{classClient__Acceptor_Client__Acceptora8}
+
+
+Registers the \hyperlink{classClient__Handler}{Client\_\-Handler} Reactor to the Acceptor's reactor, while also setting the parent\-Contest object to this-$>$\hyperlink{classClient__Acceptor_Client__Acceptora10}{get\-Contest()}. 
+
+Definition at line 63 of file client\_\-acceptor.cpp.
+
+References Client\_\-Handler::set\-Contest().\hypertarget{classClient__Acceptor_Client__Acceptora3}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!open@{open}}
+\index{open@{open}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[open]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::open (const ACE\_\-INET\_\-Addr \& {\em addr}, ACE\_\-Reactor $\ast$ {\em reactor}, int {\em pool\_\-size} = Thread\_\-Pool::default\_\-pool\_\-size\_\-)}\hfill}
+\label{classClient__Acceptor_Client__Acceptora3}
+
+
+Open ourselves and register with the given reactor. The thread pool size can be specified here if you want to use that concurrency strategy. 
+
+Definition at line 38 of file client\_\-acceptor.cpp.
+
+References concurrency(), Thread\_\-Pool::start(), thread\_\-pool(), thread\_\-pool\_\-, and thread\_\-pool\_\-is\_\-private().
+
+Referenced by Contest::init\-Threads().\hypertarget{classClient__Acceptor_Client__Acceptora9}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!setContest@{setContest}}
+\index{setContest@{setContest}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[setContest]{\setlength{\rightskip}{0pt plus 5cm}void Client\_\-Acceptor::set\-Contest (\hyperlink{classContest}{Contest} $\ast$ {\em cur\-Contest})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptora9}
+
+
+
+
+Definition at line 120 of file client\_\-acceptor.h.
+
+References parent\-Contest.\hypertarget{classClient__Acceptor_Client__Acceptora6}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!thread_pool@{thread\_\-pool}}
+\index{thread_pool@{thread\_\-pool}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[thread\_\-pool]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classThread__Pool}{Thread\_\-Pool}$\ast$ Client\_\-Acceptor::thread\_\-pool (void)\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptora6}
+
+
+Give back a pointer to our thread pool. Our \hyperlink{classClient__Handler}{Client\_\-Handler} objects will need this so that their handle\_\-input() methods can put themselves into the pool. Another alternative would be a globally accessible thread pool. ACE\_\-Singleton$<$$>$ is a way to achieve that. 
+
+Definition at line 101 of file client\_\-acceptor.h.
+
+References the\_\-thread\_\-pool\_\-.
+
+Referenced by close(), open(), Client\_\-Handler::thread\_\-pool(), and $\sim$Client\_\-Acceptor().\hypertarget{classClient__Acceptor_Client__Acceptora7}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!thread_pool_is_private@{thread\_\-pool\_\-is\_\-private}}
+\index{thread_pool_is_private@{thread\_\-pool\_\-is\_\-private}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[thread\_\-pool\_\-is\_\-private]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::thread\_\-pool\_\-is\_\-private (void)\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptora7}
+
+
+Since we can be constructed with a \hyperlink{classThread__Pool}{Thread\_\-Pool} reference, there are times when we need to know if the thread pool we're using is ours or if we're just borrowing it from somebody else. 
+
+Definition at line 108 of file client\_\-acceptor.h.
+
+References private\_\-thread\_\-pool\_\-, and the\_\-thread\_\-pool\_\-.
+
+Referenced by close(), open(), and $\sim$Client\_\-Acceptor().
+
+\subsubsection{Field Documentation}
+\hypertarget{classClient__Acceptor_Client__Acceptorn0}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!concurrency_@{concurrency\_\-}}
+\index{concurrency_@{concurrency\_\-}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[concurrency\_\-]{\setlength{\rightskip}{0pt plus 5cm}int Client\_\-Acceptor::concurrency\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptorn0}
+
+
+
+
+Definition at line 127 of file client\_\-acceptor.h.
+
+Referenced by concurrency().\hypertarget{classClient__Acceptor_Client__Acceptorn3}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!parentContest@{parentContest}}
+\index{parentContest@{parentContest}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[parentContest]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classContest}{Contest}$\ast$ Client\_\-Acceptor::parent\-Contest\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptorn3}
+
+
+
+
+Definition at line 133 of file client\_\-acceptor.h.
+
+Referenced by get\-Contest(), and set\-Contest().\hypertarget{classClient__Acceptor_Client__Acceptorn1}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!private_thread_pool_@{private\_\-thread\_\-pool\_\-}}
+\index{private_thread_pool_@{private\_\-thread\_\-pool\_\-}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[private\_\-thread\_\-pool\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classThread__Pool}{Thread\_\-Pool} Client\_\-Acceptor::private\_\-thread\_\-pool\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptorn1}
+
+
+
+
+Definition at line 129 of file client\_\-acceptor.h.
+
+Referenced by thread\_\-pool\_\-is\_\-private().\hypertarget{classClient__Acceptor_Client__Acceptorn2}{
+\index{Client_Acceptor@{Client\_\-Acceptor}!the_thread_pool_@{the\_\-thread\_\-pool\_\-}}
+\index{the_thread_pool_@{the\_\-thread\_\-pool\_\-}!Client_Acceptor@{Client\_\-Acceptor}}
+\paragraph[the\_\-thread\_\-pool\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classThread__Pool}{Thread\_\-Pool}\& Client\_\-Acceptor::the\_\-thread\_\-pool\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classClient__Acceptor_Client__Acceptorn2}
+
+
+
+
+Definition at line 131 of file client\_\-acceptor.h.
+
+Referenced by thread\_\-pool(), and thread\_\-pool\_\-is\_\-private().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{client__acceptor_8h}{client\_\-acceptor.h}\item 
+\hyperlink{client__acceptor_8cpp}{client\_\-acceptor.cpp}\end{CompactItemize}

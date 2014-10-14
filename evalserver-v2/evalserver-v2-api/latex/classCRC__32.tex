@@ -1,0 +1,91 @@
+\hypertarget{classCRC__32}{
+\subsection{CRC\_\-32 Class Reference}
+\label{classCRC__32}\index{CRC_32@{CRC\_\-32}}
+}
+{\tt \#include $<$crc\_\-32.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+It is used by \hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} class to ensure that data is correctly transferred. Although the chances of data sent incorrectly are quite minimal, especially in this particular case, where the server runs on the same machine as the client, it still is good practice. The usage is simple. After initialization of an object, one can use it to retrieve the CRC of a given buffer with \hyperlink{classCRC__32_CRC__32a1}{get\-CRC()}. 
+
+
+
+Definition at line 42 of file crc\_\-32.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCRC__32_CRC__32a0}{CRC\_\-32} ()
+\begin{CompactList}\small\item\em Basic Constructor, it initializes the crc32\_\-table.\item\end{CompactList}\item 
+int \hyperlink{classCRC__32_CRC__32a1}{get\-CRC} (unsigned char $\ast$data, size\_\-t size)
+\begin{CompactList}\small\item\em Creates a CRC from a data buffer.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Protected Methods}
+\begin{CompactItemize}
+\item 
+u\_\-long \hyperlink{classCRC__32_CRC__32b0}{reflect} (u\_\-long ref, unsigned char ch)
+\begin{CompactList}\small\item\em Reflects CRC bits in the lookup table.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+u\_\-long \hyperlink{classCRC__32_CRC__32n0}{crc32\_\-table} \mbox{[}256\mbox{]}
+\begin{CompactList}\small\item\em Lookup table array.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classCRC__32_CRC__32a0}{
+\index{CRC_32@{CRC\_\-32}!CRC_32@{CRC\_\-32}}
+\index{CRC_32@{CRC\_\-32}!CRC_32@{CRC\_\-32}}
+\paragraph[CRC\_\-32]{\setlength{\rightskip}{0pt plus 5cm}CRC\_\-32::CRC\_\-32 ()}\hfill}
+\label{classCRC__32_CRC__32a0}
+
+
+The constructor. It basically creates the crc32 table used for calculating the checksums. 
+
+Definition at line 17 of file crc\_\-32.cpp.
+
+References crc32\_\-table, and reflect().
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classCRC__32_CRC__32a1}{
+\index{CRC_32@{CRC\_\-32}!getCRC@{getCRC}}
+\index{getCRC@{getCRC}!CRC_32@{CRC\_\-32}}
+\paragraph[getCRC]{\setlength{\rightskip}{0pt plus 5cm}int CRC\_\-32::get\-CRC (unsigned char $\ast$ {\em data}, size\_\-t {\em size})}\hfill}
+\label{classCRC__32_CRC__32a1}
+
+
+The only useful method for the user. \hyperlink{classCRC__32_CRC__32a1}{get\-CRC()} is given a buffer called data for which it calculates and returns the CRC. The buffer MUST be of type unsigned char $\ast$ (casting is ok). 
+
+Definition at line 56 of file crc\_\-32.cpp.
+
+References crc32\_\-table.
+
+Referenced by connection\-Msg\-Block::connection\-Msg\-Block(), and connection\-Msg\-Block::is\-Valid().\hypertarget{classCRC__32_CRC__32b0}{
+\index{CRC_32@{CRC\_\-32}!reflect@{reflect}}
+\index{reflect@{reflect}!CRC_32@{CRC\_\-32}}
+\paragraph[reflect]{\setlength{\rightskip}{0pt plus 5cm}u\_\-long CRC\_\-32::reflect (u\_\-long {\em ref}, unsigned char {\em ch})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classCRC__32_CRC__32b0}
+
+
+Helper method used by the constructor. It swaps the bit orientation in ch, based on ref. 
+
+Definition at line 36 of file crc\_\-32.cpp.
+
+Referenced by CRC\_\-32().
+
+\subsubsection{Field Documentation}
+\hypertarget{classCRC__32_CRC__32n0}{
+\index{CRC_32@{CRC\_\-32}!crc32_table@{crc32\_\-table}}
+\index{crc32_table@{crc32\_\-table}!CRC_32@{CRC\_\-32}}
+\paragraph[crc32\_\-table]{\setlength{\rightskip}{0pt plus 5cm}u\_\-long CRC\_\-32::crc32\_\-table\mbox{[}256\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classCRC__32_CRC__32n0}
+
+
+
+
+Definition at line 45 of file crc\_\-32.h.
+
+Referenced by CRC\_\-32(), and get\-CRC().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{crc__32_8h}{crc\_\-32.h}\item 
+\hyperlink{crc__32_8cpp}{crc\_\-32.cpp}\end{CompactItemize}

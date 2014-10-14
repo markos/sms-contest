@@ -1,0 +1,341 @@
+\hypertarget{classpartDetails}{
+\subsection{part\-Details Class Reference}
+\label{classpartDetails}\index{partDetails@{partDetails}}
+}
+{\tt \#include $<$partdetails.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+This class provides a way to simplify the access and processing of participation data. Along with the other classes \hyperlink{classgiftDetails}{gift\-Details} and \hyperlink{classDay}{Day} it provides an interface to the \hyperlink{classSQLTable}{SQLTable} class, and we use this facility to populate the SQL tables CODES and WINNINGCODES. 
+
+
+
+Definition at line 34 of file partdetails.h.\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classpartDetails_partDetailss1partDetailss0}{MSISDNSIZE} =  13
+ \}
+\begin{CompactList}\small\item\em The size of the string holding the MSISDN is an enum.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classpartDetails_partDetailsa0}{part\-Details} ()
+\begin{CompactList}\small\item\em dummy constructor that just creates an empty structure.\item\end{CompactList}\item 
+\hyperlink{classpartDetails_partDetailsa1}{part\-Details} (string newmsisdn, time\_\-t ts, int gid)
+\begin{CompactList}\small\item\em The default constructor, takes the MSISDN as string, the timestamp and the prize id.\item\end{CompactList}\item 
+\hyperlink{classpartDetails_partDetailsa2}{part\-Details} (string pdstr)
+\begin{CompactList}\small\item\em This constructor builds a part\-Details object from a string representation of the parameters.\item\end{CompactList}\item 
+\hyperlink{classpartDetails_partDetailsa3}{$\sim$part\-Details} ()
+\begin{CompactList}\small\item\em Dummy destructor, we don't allocate anything dynamically.\item\end{CompactList}\item 
+void \hyperlink{classpartDetails_partDetailsa4}{set\-MSISDN} (string newmsisdn)
+\begin{CompactList}\small\item\em Set the MSISDN to the given string.\item\end{CompactList}\item 
+char $\ast$ \hyperlink{classpartDetails_partDetailsa5}{get\-MSISDN} ()
+\begin{CompactList}\small\item\em Returns the MSISDN as a C string (null terminated).\item\end{CompactList}\item 
+string \hyperlink{classpartDetails_partDetailsa6}{get\-MSISDNStr} ()
+\begin{CompactList}\small\item\em Returns the MSISDN as a C++ string object.\item\end{CompactList}\item 
+void \hyperlink{classpartDetails_partDetailsa7}{set\-Timestamp} (time\_\-t ts)
+\begin{CompactList}\small\item\em Sets the timestamp to the given timestamp.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classpartDetails_partDetailsa8}{get\-Timestamp} ()
+\begin{CompactList}\small\item\em Returns the timestamp as a time\_\-t object.\item\end{CompactList}\item 
+void \hyperlink{classpartDetails_partDetailsa9}{set\-Gift\-Id} (int gid)
+\begin{CompactList}\small\item\em Sets the Prize Id to the given one.\item\end{CompactList}\item 
+unsigned char \hyperlink{classpartDetails_partDetailsa10}{get\-Gift\-Id} ()
+\begin{CompactList}\small\item\em Returns the Prize id of the participation.\item\end{CompactList}\item 
+string \hyperlink{classpartDetails_partDetailsa11}{insert\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class' insert$\ast$ methods.\item\end{CompactList}\item 
+string \hyperlink{classpartDetails_partDetailsa12}{update\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class' update$\ast$ methods.\item\end{CompactList}\item 
+string \hyperlink{classpartDetails_partDetailsa13}{to\-HTMLString} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class, to create a HTML table.\item\end{CompactList}\item 
+bool \hyperlink{classpartDetails_partDetailsa14}{is\-Empty} ()
+\begin{CompactList}\small\item\em boolean method to be used in \hyperlink{classSQLTable}{SQLTable}$<$$>$ methods\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+char \hyperlink{classpartDetails_partDetailso0}{msisdn} \mbox{[}MSISDNSIZE+1\mbox{]}
+\begin{CompactList}\small\item\em The MSISDN is kept as a C string.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classpartDetails_partDetailso1}{timestamp}
+\begin{CompactList}\small\item\em The timestamp of the participation.\item\end{CompactList}\item 
+unsigned char \hyperlink{classpartDetails_partDetailso2}{giftid}
+\begin{CompactList}\small\item\em The id of the prize won (see \hyperlink{giftdetails_8h}{giftdetails.h} for details).\item\end{CompactList}\item 
+bool \hyperlink{classpartDetails_partDetailso3}{empty}
+\begin{CompactList}\small\item\em boolean for \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& \hyperlink{classpartDetails_partDetailsl0}{operator$<$$<$} (ostream \&out, part\-Details \&pd)
+\begin{CompactList}\small\item\em We overload the operator$<$$<$ to allow a part\-Details to be output to a C++ stream.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classpartDetails_partDetailss1}{
+\paragraph["@7]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classpartDetails_partDetailss1}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{MSISDNSIZE@{MSISDNSIZE}!partDetails@{partDetails}}\index{partDetails@{partDetails}!MSISDNSIZE@{MSISDNSIZE}}\item[{\em 
+\hypertarget{classpartDetails_partDetailss1partDetailss0}{
+{\em MSISDNSIZE}}
+\label{classpartDetails_partDetailss1partDetailss0}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 37 of file partdetails.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classpartDetails_partDetailsa0}{
+\index{partDetails@{part\-Details}!partDetails@{partDetails}}
+\index{partDetails@{partDetails}!partDetails@{part\-Details}}
+\paragraph[partDetails]{\setlength{\rightskip}{0pt plus 5cm}part\-Details::part\-Details ()}\hfill}
+\label{classpartDetails_partDetailsa0}
+
+
+Dummy constructor. Just creates an empty object. 
+
+Definition at line 17 of file partdetails.cpp.
+
+References empty, and set\-MSISDN().\hypertarget{classpartDetails_partDetailsa1}{
+\index{partDetails@{part\-Details}!partDetails@{partDetails}}
+\index{partDetails@{partDetails}!partDetails@{part\-Details}}
+\paragraph[partDetails]{\setlength{\rightskip}{0pt plus 5cm}part\-Details::part\-Details (string {\em newmsisdn}, time\_\-t {\em ts}, int {\em gid})}\hfill}
+\label{classpartDetails_partDetailsa1}
+
+
+The default constructor. Creates the part\-Details object from the given parameters (msisdn, timestamp and prize id). It also sets the boolean empty to true. 
+
+Definition at line 28 of file partdetails.cpp.
+
+References empty, and set\-MSISDN().\hypertarget{classpartDetails_partDetailsa2}{
+\index{partDetails@{part\-Details}!partDetails@{partDetails}}
+\index{partDetails@{partDetails}!partDetails@{part\-Details}}
+\paragraph[partDetails]{\setlength{\rightskip}{0pt plus 5cm}part\-Details::part\-Details (string {\em pdstr})}\hfill}
+\label{classpartDetails_partDetailsa2}
+
+
+This constructor creates a part\-Details object, given a string representation of the parameters. These must comma-separated and with the following order:\begin{CompactItemize}
+\item 
+giftid\item 
+MSISDN\item 
+timestamp (as type time\_\-t) \end{CompactItemize}
+
+
+Definition at line 43 of file partdetails.cpp.
+
+References empty, set\-Gift\-Id(), set\-MSISDN(), set\-Timestamp(), and str\-Tokenizer().\hypertarget{classpartDetails_partDetailsa3}{
+\index{partDetails@{part\-Details}!~partDetails@{$\sim$partDetails}}
+\index{~partDetails@{$\sim$partDetails}!partDetails@{part\-Details}}
+\paragraph[$\sim$partDetails]{\setlength{\rightskip}{0pt plus 5cm}part\-Details::$\sim$part\-Details ()}\hfill}
+\label{classpartDetails_partDetailsa3}
+
+
+Dummy destructor. We don't allocate anything dynamically. 
+
+Definition at line 59 of file partdetails.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classpartDetails_partDetailsa10}{
+\index{partDetails@{part\-Details}!getGiftId@{getGiftId}}
+\index{getGiftId@{getGiftId}!partDetails@{part\-Details}}
+\paragraph[getGiftId]{\setlength{\rightskip}{0pt plus 5cm}unsigned char part\-Details::get\-Gift\-Id ()}\hfill}
+\label{classpartDetails_partDetailsa10}
+
+
+Return the prize id the partdetails object. 
+
+Definition at line 127 of file partdetails.cpp.
+
+References giftid.
+
+Referenced by Day::execute\-Draw(), insert\-String(), operator$<$$<$(), to\-HTMLString(), and update\-String().\hypertarget{classpartDetails_partDetailsa5}{
+\index{partDetails@{part\-Details}!getMSISDN@{getMSISDN}}
+\index{getMSISDN@{getMSISDN}!partDetails@{part\-Details}}
+\paragraph[getMSISDN]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ part\-Details::get\-MSISDN ()}\hfill}
+\label{classpartDetails_partDetailsa5}
+
+
+Return the MSISDN as a C string (null terminated). 
+
+Definition at line 87 of file partdetails.cpp.
+
+References msisdn.
+
+Referenced by insert\-String(), operator$<$$<$(), to\-HTMLString(), and update\-String().\hypertarget{classpartDetails_partDetailsa6}{
+\index{partDetails@{part\-Details}!getMSISDNStr@{getMSISDNStr}}
+\index{getMSISDNStr@{getMSISDNStr}!partDetails@{part\-Details}}
+\paragraph[getMSISDNStr]{\setlength{\rightskip}{0pt plus 5cm}string part\-Details::get\-MSISDNStr ()}\hfill}
+\label{classpartDetails_partDetailsa6}
+
+
+Return the MSISDN as a string object. 
+
+Definition at line 95 of file partdetails.cpp.
+
+References msisdn.\hypertarget{classpartDetails_partDetailsa8}{
+\index{partDetails@{part\-Details}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!partDetails@{part\-Details}}
+\paragraph[getTimestamp]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t part\-Details::get\-Timestamp ()}\hfill}
+\label{classpartDetails_partDetailsa8}
+
+
+Return the timestamp of the partdetails object. 
+
+Definition at line 111 of file partdetails.cpp.
+
+References timestamp.
+
+Referenced by operator$<$$<$(), and to\-HTMLString().\hypertarget{classpartDetails_partDetailsa11}{
+\index{partDetails@{part\-Details}!insertString@{insertString}}
+\index{insertString@{insertString}!partDetails@{part\-Details}}
+\paragraph[insertString]{\setlength{\rightskip}{0pt plus 5cm}string part\-Details::insert\-String ()}\hfill}
+\label{classpartDetails_partDetailsa11}
+
+
+Returns a string suitable to be used in insert$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 136 of file partdetails.cpp.
+
+References get\-Gift\-Id(), get\-MSISDN(), and timestamp.\hypertarget{classpartDetails_partDetailsa14}{
+\index{partDetails@{part\-Details}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!partDetails@{part\-Details}}
+\paragraph[isEmpty]{\setlength{\rightskip}{0pt plus 5cm}bool part\-Details::is\-Empty ()}\hfill}
+\label{classpartDetails_partDetailsa14}
+
+
+This is to check if a \hyperlink{classgiftDetails}{gift\-Details} object has been created with the dummy constructor gift\-Details(). 
+
+Definition at line 180 of file partdetails.cpp.
+
+References empty.
+
+Referenced by Processor::process\_\-i().\hypertarget{classpartDetails_partDetailsa9}{
+\index{partDetails@{part\-Details}!setGiftId@{setGiftId}}
+\index{setGiftId@{setGiftId}!partDetails@{part\-Details}}
+\paragraph[setGiftId]{\setlength{\rightskip}{0pt plus 5cm}void part\-Details::set\-Gift\-Id (int {\em gid})}\hfill}
+\label{classpartDetails_partDetailsa9}
+
+
+Set the prize id of the partdetails object to the given value. 
+
+Definition at line 119 of file partdetails.cpp.
+
+References giftid.
+
+Referenced by Day::execute\-Draw(), connection\-Msg\-Block::get\-Participant(), and part\-Details().\hypertarget{classpartDetails_partDetailsa4}{
+\index{partDetails@{part\-Details}!setMSISDN@{setMSISDN}}
+\index{setMSISDN@{setMSISDN}!partDetails@{part\-Details}}
+\paragraph[setMSISDN]{\setlength{\rightskip}{0pt plus 5cm}void part\-Details::set\-MSISDN (string {\em newmsisdn})}\hfill}
+\label{classpartDetails_partDetailsa4}
+
+
+Set the MSISDN of the partdetails object to the given string 
+
+Definition at line 79 of file partdetails.cpp.
+
+References msisdn.
+
+Referenced by connection\-Msg\-Block::get\-Participant(), and part\-Details().\hypertarget{classpartDetails_partDetailsa7}{
+\index{partDetails@{part\-Details}!setTimestamp@{setTimestamp}}
+\index{setTimestamp@{setTimestamp}!partDetails@{part\-Details}}
+\paragraph[setTimestamp]{\setlength{\rightskip}{0pt plus 5cm}void part\-Details::set\-Timestamp (time\_\-t {\em ts})}\hfill}
+\label{classpartDetails_partDetailsa7}
+
+
+Set the timestamp of the partdetails object to the given value. 
+
+Definition at line 103 of file partdetails.cpp.
+
+References timestamp.
+
+Referenced by connection\-Msg\-Block::get\-Participant(), and part\-Details().\hypertarget{classpartDetails_partDetailsa13}{
+\index{partDetails@{part\-Details}!toHTMLString@{toHTMLString}}
+\index{toHTMLString@{toHTMLString}!partDetails@{part\-Details}}
+\paragraph[toHTMLString]{\setlength{\rightskip}{0pt plus 5cm}string part\-Details::to\-HTMLString ()}\hfill}
+\label{classpartDetails_partDetailsa13}
+
+
+Returns a string suitable to be used in select$\ast$ methods of \hyperlink{classSQLTable}{SQLTable} class to create a HTML table. 
+
+Definition at line 162 of file partdetails.cpp.
+
+References get\-Gift\-Id(), get\-MSISDN(), and get\-Timestamp().\hypertarget{classpartDetails_partDetailsa12}{
+\index{partDetails@{part\-Details}!updateString@{updateString}}
+\index{updateString@{updateString}!partDetails@{part\-Details}}
+\paragraph[updateString]{\setlength{\rightskip}{0pt plus 5cm}string part\-Details::update\-String ()}\hfill}
+\label{classpartDetails_partDetailsa12}
+
+
+Returns a string suitable to be used in update$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 148 of file partdetails.cpp.
+
+References get\-Gift\-Id(), get\-MSISDN(), and timestamp.
+
+\subsubsection{Friends And Related Function Documentation}
+\hypertarget{classpartDetails_partDetailsl0}{
+\index{partDetails@{part\-Details}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!partDetails@{part\-Details}}
+\paragraph[operator$<$$<$]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em out}, part\-Details \& {\em pd})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}\hfill}
+\label{classpartDetails_partDetailsl0}
+
+
+We overload the operator$<$$<$ to allow a part\-Details object to be output to a C++ stream. The output will be of the form: MSISDN$\backslash$t\-GID$\backslash$t\-DATESTRING 
+
+Definition at line 68 of file partdetails.cpp.
+
+\subsubsection{Field Documentation}
+\hypertarget{classpartDetails_partDetailso3}{
+\index{partDetails@{part\-Details}!empty@{empty}}
+\index{empty@{empty}!partDetails@{part\-Details}}
+\paragraph[empty]{\setlength{\rightskip}{0pt plus 5cm}bool part\-Details::empty\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classpartDetails_partDetailso3}
+
+
+
+
+Definition at line 50 of file partdetails.h.
+
+Referenced by is\-Empty(), and part\-Details().\hypertarget{classpartDetails_partDetailso2}{
+\index{partDetails@{part\-Details}!giftid@{giftid}}
+\index{giftid@{giftid}!partDetails@{part\-Details}}
+\paragraph[giftid]{\setlength{\rightskip}{0pt plus 5cm}unsigned char part\-Details::giftid\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classpartDetails_partDetailso2}
+
+
+
+
+Definition at line 47 of file partdetails.h.
+
+Referenced by get\-Gift\-Id(), and set\-Gift\-Id().\hypertarget{classpartDetails_partDetailso0}{
+\index{partDetails@{part\-Details}!msisdn@{msisdn}}
+\index{msisdn@{msisdn}!partDetails@{part\-Details}}
+\paragraph[msisdn]{\setlength{\rightskip}{0pt plus 5cm}char part\-Details::msisdn\mbox{[}MSISDNSIZE+1\mbox{]}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classpartDetails_partDetailso0}
+
+
+
+
+Definition at line 41 of file partdetails.h.
+
+Referenced by get\-MSISDN(), get\-MSISDNStr(), and set\-MSISDN().\hypertarget{classpartDetails_partDetailso1}{
+\index{partDetails@{part\-Details}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!partDetails@{part\-Details}}
+\paragraph[timestamp]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t part\-Details::timestamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classpartDetails_partDetailso1}
+
+
+
+
+Definition at line 44 of file partdetails.h.
+
+Referenced by get\-Timestamp(), insert\-String(), set\-Timestamp(), and update\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{partdetails_8h}{partdetails.h}\item 
+\hyperlink{partdetails_8cpp}{partdetails.cpp}\end{CompactItemize}

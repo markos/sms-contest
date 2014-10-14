@@ -1,0 +1,848 @@
+\indexentry{std@{std}|hyperpage}{4}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{4}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!inherited@{inherited}|hyperpage}{4}
+\indexentry{inherited@{inherited}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{4}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!concurrency_t@{concurrency\_\discretionary {-}{}{}t}|hyperpage}{5}
+\indexentry{concurrency_t@{concurrency\_\discretionary {-}{}{}t}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{single_threaded_@{single\_\-threaded\_\-}!Client_Acceptor@{Client\_\-Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\-Acceptor}!single_threaded_@{single\_\-threaded\_\-}|hyperpage}{5}
+\indexentry{thread_per_connection_@{thread\_\-per\_\-connection\_\-}!Client_Acceptor@{Client\_\-Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\-Acceptor}!thread_per_connection_@{thread\_\-per\_\-connection\_\-}|hyperpage}{5}
+\indexentry{thread_pool_@{thread\_\-pool\_\-}!Client_Acceptor@{Client\_\-Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\-Acceptor}!thread_pool_@{thread\_\-pool\_\-}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!\nobreakspace  {}Client_Acceptor@{$\sim $Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{\nobreakspace  {}Client_Acceptor@{$\sim $Client\_\discretionary {-}{}{}Acceptor}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!close@{close}|hyperpage}{5}
+\indexentry{close@{close}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!concurrency@{concurrency}|hyperpage}{5}
+\indexentry{concurrency@{concurrency}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{5}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!getContest@{getContest}|hyperpage}{6}
+\indexentry{getContest@{getContest}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!make_svc_handler@{make\_\discretionary {-}{}{}svc\_\discretionary {-}{}{}handler}|hyperpage}{6}
+\indexentry{make_svc_handler@{make\_\discretionary {-}{}{}svc\_\discretionary {-}{}{}handler}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!open@{open}|hyperpage}{6}
+\indexentry{open@{open}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!setContest@{setContest}|hyperpage}{6}
+\indexentry{setContest@{setContest}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!thread_pool@{thread\_\discretionary {-}{}{}pool}|hyperpage}{6}
+\indexentry{thread_pool@{thread\_\discretionary {-}{}{}pool}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!thread_pool_is_private@{thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}is\_\discretionary {-}{}{}private}|hyperpage}{6}
+\indexentry{thread_pool_is_private@{thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}is\_\discretionary {-}{}{}private}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{6}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!concurrency_@{concurrency\_\discretionary {-}{}{}}|hyperpage}{7}
+\indexentry{concurrency_@{concurrency\_\discretionary {-}{}{}}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{7}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!parentContest@{parentContest}|hyperpage}{7}
+\indexentry{parentContest@{parentContest}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{7}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!private_thread_pool_@{private\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}|hyperpage}{7}
+\indexentry{private_thread_pool_@{private\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{7}
+\indexentry{Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}!the_thread_pool_@{the\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}|hyperpage}{7}
+\indexentry{the_thread_pool_@{the\_\discretionary {-}{}{}thread\_\discretionary {-}{}{}pool\_\discretionary {-}{}{}}!Client_Acceptor@{Client\_\discretionary {-}{}{}Acceptor}|hyperpage}{7}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{7}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!inherited@{inherited}|hyperpage}{8}
+\indexentry{inherited@{inherited}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{8}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!responseID@{responseID}|hyperpage}{9}
+\indexentry{responseID@{responseID}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{ID_CRC_OK@{ID\_\-CRC\_\-OK}!Client_Handler@{Client\_\-Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\-Handler}!ID_CRC_OK@{ID\_\-CRC\_\-OK}|hyperpage}{9}
+\indexentry{ID_CRC_ERROR@{ID\_\-CRC\_\-ERROR}!Client_Handler@{Client\_\-Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\-Handler}!ID_CRC_ERROR@{ID\_\-CRC\_\-ERROR}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!\nobreakspace  {}Client_Handler@{$\sim $Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{\nobreakspace  {}Client_Handler@{$\sim $Client\_\discretionary {-}{}{}Handler}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!client_acceptor@{client\_\discretionary {-}{}{}acceptor}|hyperpage}{9}
+\indexentry{client_acceptor@{client\_\discretionary {-}{}{}acceptor}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!client_acceptor@{client\_\discretionary {-}{}{}acceptor}|hyperpage}{9}
+\indexentry{client_acceptor@{client\_\discretionary {-}{}{}acceptor}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!close@{close}|hyperpage}{9}
+\indexentry{close@{close}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{9}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!concurrency@{concurrency}|hyperpage}{10}
+\indexentry{concurrency@{concurrency}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{10}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!destroy@{destroy}|hyperpage}{10}
+\indexentry{destroy@{destroy}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{10}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!getContest@{getContest}|hyperpage}{10}
+\indexentry{getContest@{getContest}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{10}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!handle_close@{handle\_\discretionary {-}{}{}close}|hyperpage}{10}
+\indexentry{handle_close@{handle\_\discretionary {-}{}{}close}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{10}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!handle_input@{handle\_\discretionary {-}{}{}input}|hyperpage}{10}
+\indexentry{handle_input@{handle\_\discretionary {-}{}{}input}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{10}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!open@{open}|hyperpage}{11}
+\indexentry{open@{open}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{11}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!process@{process}|hyperpage}{11}
+\indexentry{process@{process}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{11}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!setContest@{setContest}|hyperpage}{11}
+\indexentry{setContest@{setContest}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{11}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!svc@{svc}|hyperpage}{11}
+\indexentry{svc@{svc}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{11}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!thread_pool@{thread\_\discretionary {-}{}{}pool}|hyperpage}{11}
+\indexentry{thread_pool@{thread\_\discretionary {-}{}{}pool}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{11}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!client_acceptor_@{client\_\discretionary {-}{}{}acceptor\_\discretionary {-}{}{}}|hyperpage}{12}
+\indexentry{client_acceptor_@{client\_\discretionary {-}{}{}acceptor\_\discretionary {-}{}{}}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!creator_@{creator\_\discretionary {-}{}{}}|hyperpage}{12}
+\indexentry{creator_@{creator\_\discretionary {-}{}{}}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!data@{data}|hyperpage}{12}
+\indexentry{data@{data}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!mutex_@{mutex\_\discretionary {-}{}{}}|hyperpage}{12}
+\indexentry{mutex_@{mutex\_\discretionary {-}{}{}}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!parentContest@{parentContest}|hyperpage}{12}
+\indexentry{parentContest@{parentContest}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{Client_Handler@{Client\_\discretionary {-}{}{}Handler}!srv_counter@{srv\_\discretionary {-}{}{}counter}|hyperpage}{12}
+\indexentry{srv_counter@{srv\_\discretionary {-}{}{}counter}!Client_Handler@{Client\_\discretionary {-}{}{}Handler}|hyperpage}{12}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}|hyperpage}{12}
+\indexentry{DATASIZE@{DATASIZE}!connectionMsgBlock@{connectionMsgBlock}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}!DATASIZE@{DATASIZE}|hyperpage}{14}
+\indexentry{DATA_WO_CRC@{DATA\_\-WO\_\-CRC}!connectionMsgBlock@{connectionMsgBlock}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}!DATA_WO_CRC@{DATA\_\-WO\_\-CRC}|hyperpage}{14}
+\indexentry{CRC_OFFSET@{CRC\_\-OFFSET}!connectionMsgBlock@{connectionMsgBlock}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}!CRC_OFFSET@{CRC\_\-OFFSET}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!connectionMsgBlock@{connectionMsgBlock}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!connectionMsgBlock@{connectionMsgBlock}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connectionMsgBlock}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!\nobreakspace  {}connectionMsgBlock@{$\sim $connectionMsgBlock}|hyperpage}{14}
+\indexentry{\nobreakspace  {}connectionMsgBlock@{$\sim $connectionMsgBlock}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!getData@{getData}|hyperpage}{14}
+\indexentry{getData@{getData}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{14}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!getParticipant@{getParticipant}|hyperpage}{15}
+\indexentry{getParticipant@{getParticipant}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{15}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!getParticipantStr@{getParticipantStr}|hyperpage}{15}
+\indexentry{getParticipantStr@{getParticipantStr}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{15}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!isValid@{isValid}|hyperpage}{15}
+\indexentry{isValid@{isValid}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{15}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!operator==@{operator==}|hyperpage}{15}
+\indexentry{operator==@{operator==}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{15}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!retrieveCRC@{retrieveCRC}|hyperpage}{15}
+\indexentry{retrieveCRC@{retrieveCRC}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{15}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!crc32@{crc32}|hyperpage}{16}
+\indexentry{crc32@{crc32}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{16}
+\indexentry{connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}!data@{data}|hyperpage}{16}
+\indexentry{data@{data}!connectionMsgBlock@{connection\discretionary {-}{}{}Msg\discretionary {-}{}{}Block}|hyperpage}{16}
+\indexentry{Contest@{Contest}|hyperpage}{16}
+\indexentry{PORT_NUM@{PORT\_\-NUM}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!PORT_NUM@{PORT\_\-NUM}|hyperpage}{19}
+\indexentry{ID_SOC@{ID\_\-SOC}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!ID_SOC@{ID\_\-SOC}|hyperpage}{19}
+\indexentry{ID_EOD@{ID\_\-EOD}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!ID_EOD@{ID\_\-EOD}|hyperpage}{19}
+\indexentry{ID_EOW@{ID\_\-EOW}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!ID_EOW@{ID\_\-EOW}|hyperpage}{19}
+\indexentry{ID_EOM@{ID\_\-EOM}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!ID_EOM@{ID\_\-EOM}|hyperpage}{19}
+\indexentry{ID_EOC@{ID\_\-EOC}!Contest@{Contest}|hyperpage}{19}
+\indexentry{Contest@{Contest}!ID_EOC@{ID\_\-EOC}|hyperpage}{19}
+\indexentry{MINUTEPRIZES@{MINUTEPRIZES}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!MINUTEPRIZES@{MINUTEPRIZES}|hyperpage}{20}
+\indexentry{HOURLYPRIZES@{HOURLYPRIZES}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!HOURLYPRIZES@{HOURLYPRIZES}|hyperpage}{20}
+\indexentry{DAILYPRIZES@{DAILYPRIZES}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!DAILYPRIZES@{DAILYPRIZES}|hyperpage}{20}
+\indexentry{WEEKLYPRIZES@{WEEKLYPRIZES}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!WEEKLYPRIZES@{WEEKLYPRIZES}|hyperpage}{20}
+\indexentry{MONTHLYPRIZES@{MONTHLYPRIZES}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!MONTHLYPRIZES@{MONTHLYPRIZES}|hyperpage}{20}
+\indexentry{Contest@{Contest}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!\nobreakspace  {}Contest@{$\sim $Contest}|hyperpage}{20}
+\indexentry{\nobreakspace  {}Contest@{$\sim $Contest}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!getContestDays@{getContestDays}|hyperpage}{20}
+\indexentry{getContestDays@{getContestDays}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!getCurrentDay@{getCurrentDay}|hyperpage}{20}
+\indexentry{getCurrentDay@{getCurrentDay}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!getLastDay@{getLastDay}|hyperpage}{20}
+\indexentry{getLastDay@{getLastDay}!Contest@{Contest}|hyperpage}{20}
+\indexentry{Contest@{Contest}!giftIsGiven@{giftIsGiven}|hyperpage}{21}
+\indexentry{giftIsGiven@{giftIsGiven}!Contest@{Contest}|hyperpage}{21}
+\indexentry{Contest@{Contest}!handle_signal@{handle\_\discretionary {-}{}{}signal}|hyperpage}{21}
+\indexentry{handle_signal@{handle\_\discretionary {-}{}{}signal}!Contest@{Contest}|hyperpage}{21}
+\indexentry{Contest@{Contest}!handle_timeout@{handle\_\discretionary {-}{}{}timeout}|hyperpage}{21}
+\indexentry{handle_timeout@{handle\_\discretionary {-}{}{}timeout}!Contest@{Contest}|hyperpage}{21}
+\indexentry{Contest@{Contest}!init@{init}|hyperpage}{21}
+\indexentry{init@{init}!Contest@{Contest}|hyperpage}{21}
+\indexentry{Contest@{Contest}!initDB@{initDB}|hyperpage}{21}
+\indexentry{initDB@{initDB}!Contest@{Contest}|hyperpage}{21}
+\indexentry{Contest@{Contest}!initLogger@{initLogger}|hyperpage}{22}
+\indexentry{initLogger@{initLogger}!Contest@{Contest}|hyperpage}{22}
+\indexentry{Contest@{Contest}!initProcessor@{initProcessor}|hyperpage}{22}
+\indexentry{initProcessor@{initProcessor}!Contest@{Contest}|hyperpage}{22}
+\indexentry{Contest@{Contest}!initSignal@{initSignal}|hyperpage}{22}
+\indexentry{initSignal@{initSignal}!Contest@{Contest}|hyperpage}{22}
+\indexentry{Contest@{Contest}!initThreads@{initThreads}|hyperpage}{22}
+\indexentry{initThreads@{initThreads}!Contest@{Contest}|hyperpage}{22}
+\indexentry{Contest@{Contest}!initTimers@{initTimers}|hyperpage}{22}
+\indexentry{initTimers@{initTimers}!Contest@{Contest}|hyperpage}{22}
+\indexentry{Contest@{Contest}!logMsg@{logMsg}|hyperpage}{23}
+\indexentry{logMsg@{logMsg}!Contest@{Contest}|hyperpage}{23}
+\indexentry{Contest@{Contest}!preparetoShutdown@{preparetoShutdown}|hyperpage}{23}
+\indexentry{preparetoShutdown@{preparetoShutdown}!Contest@{Contest}|hyperpage}{23}
+\indexentry{Contest@{Contest}!setupPrizes@{setupPrizes}|hyperpage}{23}
+\indexentry{setupPrizes@{setupPrizes}!Contest@{Contest}|hyperpage}{23}
+\indexentry{Contest@{Contest}!shutdown@{shutdown}|hyperpage}{23}
+\indexentry{shutdown@{shutdown}!Contest@{Contest}|hyperpage}{23}
+\indexentry{Contest@{Contest}!start@{start}|hyperpage}{23}
+\indexentry{start@{start}!Contest@{Contest}|hyperpage}{23}
+\indexentry{Contest@{Contest}!basethreadpid@{basethreadpid}|hyperpage}{24}
+\indexentry{basethreadpid@{basethreadpid}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!ContestDays@{ContestDays}|hyperpage}{24}
+\indexentry{ContestDays@{ContestDays}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!Counters@{Counters}|hyperpage}{24}
+\indexentry{Counters@{Counters}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!current_day@{current\_\discretionary {-}{}{}day}|hyperpage}{24}
+\indexentry{current_day@{current\_\discretionary {-}{}{}day}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!current_month@{current\_\discretionary {-}{}{}month}|hyperpage}{24}
+\indexentry{current_month@{current\_\discretionary {-}{}{}month}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!current_week@{current\_\discretionary {-}{}{}week}|hyperpage}{24}
+\indexentry{current_week@{current\_\discretionary {-}{}{}week}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!dbconnection@{dbconnection}|hyperpage}{24}
+\indexentry{dbconnection@{dbconnection}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!EOC@{EOC}|hyperpage}{24}
+\indexentry{EOC@{EOC}!Contest@{Contest}|hyperpage}{24}
+\indexentry{Contest@{Contest}!EOD@{EOD}|hyperpage}{25}
+\indexentry{EOD@{EOD}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!EOM@{EOM}|hyperpage}{25}
+\indexentry{EOM@{EOM}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!EOW@{EOW}|hyperpage}{25}
+\indexentry{EOW@{EOW}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!iaddr@{iaddr}|hyperpage}{25}
+\indexentry{iaddr@{iaddr}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!logger@{logger}|hyperpage}{25}
+\indexentry{logger@{logger}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!mutex_@{mutex\_\discretionary {-}{}{}}|hyperpage}{25}
+\indexentry{mutex_@{mutex\_\discretionary {-}{}{}}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!Participants@{Participants}|hyperpage}{25}
+\indexentry{Participants@{Participants}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!peer_acceptor@{peer\_\discretionary {-}{}{}acceptor}|hyperpage}{25}
+\indexentry{peer_acceptor@{peer\_\discretionary {-}{}{}acceptor}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!PrizeNames@{PrizeNames}|hyperpage}{25}
+\indexentry{PrizeNames@{PrizeNames}!Contest@{Contest}|hyperpage}{25}
+\indexentry{Contest@{Contest}!Prizes@{Prizes}|hyperpage}{26}
+\indexentry{Prizes@{Prizes}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!processor@{processor}|hyperpage}{26}
+\indexentry{processor@{processor}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!reactor@{reactor}|hyperpage}{26}
+\indexentry{reactor@{reactor}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!ReadyToShutdown@{ReadyToShutdown}|hyperpage}{26}
+\indexentry{ReadyToShutdown@{ReadyToShutdown}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!SetupPrizes@{SetupPrizes}|hyperpage}{26}
+\indexentry{SetupPrizes@{SetupPrizes}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!SOC@{SOC}|hyperpage}{26}
+\indexentry{SOC@{SOC}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!Subscribers@{Subscribers}|hyperpage}{26}
+\indexentry{Subscribers@{Subscribers}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Contest@{Contest}!Winners@{Winners}|hyperpage}{26}
+\indexentry{Winners@{Winners}!Contest@{Contest}|hyperpage}{26}
+\indexentry{Count@{Count}|hyperpage}{26}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!insertString@{insertString}|hyperpage}{27}
+\indexentry{insertString@{insertString}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!operator++@{operator++}|hyperpage}{27}
+\indexentry{operator++@{operator++}!Count@{Count}|hyperpage}{27}
+\indexentry{Count@{Count}!operator--@{operator--}|hyperpage}{28}
+\indexentry{operator--@{operator--}!Count@{Count}|hyperpage}{28}
+\indexentry{Count@{Count}!set@{set}|hyperpage}{28}
+\indexentry{set@{set}!Count@{Count}|hyperpage}{28}
+\indexentry{Count@{Count}!updateString@{updateString}|hyperpage}{28}
+\indexentry{updateString@{updateString}!Count@{Count}|hyperpage}{28}
+\indexentry{Count@{Count}!val@{val}|hyperpage}{28}
+\indexentry{val@{val}!Count@{Count}|hyperpage}{28}
+\indexentry{Count@{Count}!counter_@{counter\_\discretionary {-}{}{}}|hyperpage}{28}
+\indexentry{counter_@{counter\_\discretionary {-}{}{}}!Count@{Count}|hyperpage}{28}
+\indexentry{Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}!Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}!Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}!\nobreakspace  {}Counter_Guard@{$\sim $Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{\nobreakspace  {}Counter_Guard@{$\sim $Counter\_\discretionary {-}{}{}Guard}!Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}!counter_@{counter\_\discretionary {-}{}{}}|hyperpage}{29}
+\indexentry{counter_@{counter\_\discretionary {-}{}{}}!Counter_Guard@{Counter\_\discretionary {-}{}{}Guard}|hyperpage}{29}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{29}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}!CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{30}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}!CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{30}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}!getCRC@{getCRC}|hyperpage}{30}
+\indexentry{getCRC@{getCRC}!CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{30}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}!reflect@{reflect}|hyperpage}{30}
+\indexentry{reflect@{reflect}!CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{30}
+\indexentry{CRC_32@{CRC\_\discretionary {-}{}{}32}!crc32_table@{crc32\_\discretionary {-}{}{}table}|hyperpage}{30}
+\indexentry{crc32_table@{crc32\_\discretionary {-}{}{}table}!CRC_32@{CRC\_\discretionary {-}{}{}32}|hyperpage}{30}
+\indexentry{Day@{Day}|hyperpage}{31}
+\indexentry{default_avg_threshold@{default\_\-avg\_\-threshold}!Day@{Day}|hyperpage}{33}
+\indexentry{Day@{Day}!default_avg_threshold@{default\_\-avg\_\-threshold}|hyperpage}{33}
+\indexentry{default_estNoMsgs@{default\_\-estNoMsgs}!Day@{Day}|hyperpage}{33}
+\indexentry{Day@{Day}!default_estNoMsgs@{default\_\-estNoMsgs}|hyperpage}{33}
+\indexentry{min_estNoMsgs@{min\_\-estNoMsgs}!Day@{Day}|hyperpage}{33}
+\indexentry{Day@{Day}!min_estNoMsgs@{min\_\-estNoMsgs}|hyperpage}{33}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!assignPrizes@{assignPrizes}|hyperpage}{34}
+\indexentry{assignPrizes@{assignPrizes}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!calculateEstNoMsgs@{calculateEstNoMsgs}|hyperpage}{34}
+\indexentry{calculateEstNoMsgs@{calculateEstNoMsgs}!Day@{Day}|hyperpage}{34}
+\indexentry{Day@{Day}!executeDraw@{executeDraw}|hyperpage}{35}
+\indexentry{executeDraw@{executeDraw}!Day@{Day}|hyperpage}{35}
+\indexentry{Day@{Day}!getCounter@{getCounter}|hyperpage}{35}
+\indexentry{getCounter@{getCounter}!Day@{Day}|hyperpage}{35}
+\indexentry{Day@{Day}!getEstNoMsgs@{getEstNoMsgs}|hyperpage}{35}
+\indexentry{getEstNoMsgs@{getEstNoMsgs}!Day@{Day}|hyperpage}{35}
+\indexentry{Day@{Day}!getNoPrizes@{getNoPrizes}|hyperpage}{35}
+\indexentry{getNoPrizes@{getNoPrizes}!Day@{Day}|hyperpage}{35}
+\indexentry{Day@{Day}!getTimePeriod@{getTimePeriod}|hyperpage}{35}
+\indexentry{getTimePeriod@{getTimePeriod}!Day@{Day}|hyperpage}{35}
+\indexentry{Day@{Day}!getUniqueCounter@{getUniqueCounter}|hyperpage}{36}
+\indexentry{getUniqueCounter@{getUniqueCounter}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!insertString@{insertString}|hyperpage}{36}
+\indexentry{insertString@{insertString}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!isEmpty@{isEmpty}|hyperpage}{36}
+\indexentry{isEmpty@{isEmpty}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!setCounter@{setCounter}|hyperpage}{36}
+\indexentry{setCounter@{setCounter}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!setTimePeriod@{setTimePeriod}|hyperpage}{36}
+\indexentry{setTimePeriod@{setTimePeriod}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!updateString@{updateString}|hyperpage}{36}
+\indexentry{updateString@{updateString}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!Processor@{Processor}|hyperpage}{36}
+\indexentry{Processor@{Processor}!Day@{Day}|hyperpage}{36}
+\indexentry{Day@{Day}!counter@{counter}|hyperpage}{37}
+\indexentry{counter@{counter}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!day_period@{day\_\discretionary {-}{}{}period}|hyperpage}{37}
+\indexentry{day_period@{day\_\discretionary {-}{}{}period}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!DayMessages@{DayMessages}|hyperpage}{37}
+\indexentry{DayMessages@{DayMessages}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!empty@{empty}|hyperpage}{37}
+\indexentry{empty@{empty}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!estNoMsgs@{estNoMsgs}|hyperpage}{37}
+\indexentry{estNoMsgs@{estNoMsgs}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!parentContest@{parentContest}|hyperpage}{37}
+\indexentry{parentContest@{parentContest}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!prizes@{prizes}|hyperpage}{37}
+\indexentry{prizes@{prizes}!Day@{Day}|hyperpage}{37}
+\indexentry{Day@{Day}!unique_counter@{unique\_\discretionary {-}{}{}counter}|hyperpage}{37}
+\indexentry{unique_counter@{unique\_\discretionary {-}{}{}counter}!Day@{Day}|hyperpage}{37}
+\indexentry{giftDetails@{giftDetails}|hyperpage}{38}
+\indexentry{ID_NOGIFT@{ID\_\-NOGIFT}!giftDetails@{giftDetails}|hyperpage}{39}
+\indexentry{giftDetails@{giftDetails}!ID_NOGIFT@{ID\_\-NOGIFT}|hyperpage}{39}
+\indexentry{ID_MINUTEPRIZES@{ID\_\-MINUTEPRIZES}!giftDetails@{giftDetails}|hyperpage}{39}
+\indexentry{giftDetails@{giftDetails}!ID_MINUTEPRIZES@{ID\_\-MINUTEPRIZES}|hyperpage}{39}
+\indexentry{ID_HOURLYPRIZES@{ID\_\-HOURLYPRIZES}!giftDetails@{giftDetails}|hyperpage}{39}
+\indexentry{giftDetails@{giftDetails}!ID_HOURLYPRIZES@{ID\_\-HOURLYPRIZES}|hyperpage}{39}
+\indexentry{ID_DAILYPRIZES@{ID\_\-DAILYPRIZES}!giftDetails@{giftDetails}|hyperpage}{39}
+\indexentry{giftDetails@{giftDetails}!ID_DAILYPRIZES@{ID\_\-DAILYPRIZES}|hyperpage}{39}
+\indexentry{ID_WEEKLYPRIZES@{ID\_\-WEEKLYPRIZES}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!ID_WEEKLYPRIZES@{ID\_\-WEEKLYPRIZES}|hyperpage}{40}
+\indexentry{ID_MONTHLYPRIZES@{ID\_\-MONTHLYPRIZES}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!ID_MONTHLYPRIZES@{ID\_\-MONTHLYPRIZES}|hyperpage}{40}
+\indexentry{ID_USEDCODE@{ID\_\-USEDCODE}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!ID_USEDCODE@{ID\_\-USEDCODE}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!giftDetails@{giftDetails}|hyperpage}{40}
+\indexentry{giftDetails@{giftDetails}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!\nobreakspace  {}giftDetails@{$\sim $giftDetails}|hyperpage}{40}
+\indexentry{\nobreakspace  {}giftDetails@{$\sim $giftDetails}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!getCurrentQuantity@{getCurrentQuantity}|hyperpage}{40}
+\indexentry{getCurrentQuantity@{getCurrentQuantity}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{40}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!getGiftDuration@{getGiftDuration}|hyperpage}{41}
+\indexentry{getGiftDuration@{getGiftDuration}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!getGiftId@{getGiftId}|hyperpage}{41}
+\indexentry{getGiftId@{getGiftId}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!getInitialQuantity@{getInitialQuantity}|hyperpage}{41}
+\indexentry{getInitialQuantity@{getInitialQuantity}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!getName@{getName}|hyperpage}{41}
+\indexentry{getName@{getName}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!insertString@{insertString}|hyperpage}{41}
+\indexentry{insertString@{insertString}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!isEmpty@{isEmpty}|hyperpage}{41}
+\indexentry{isEmpty@{isEmpty}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!operator--@{operator--}|hyperpage}{41}
+\indexentry{operator--@{operator--}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{41}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!setCurrentQuantity@{setCurrentQuantity}|hyperpage}{42}
+\indexentry{setCurrentQuantity@{setCurrentQuantity}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!setInitialQuantity@{setInitialQuantity}|hyperpage}{42}
+\indexentry{setInitialQuantity@{setInitialQuantity}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!setName@{setName}|hyperpage}{42}
+\indexentry{setName@{setName}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!updateString@{updateString}|hyperpage}{42}
+\indexentry{updateString@{updateString}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!empty@{empty}|hyperpage}{42}
+\indexentry{empty@{empty}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!giftid@{giftid}|hyperpage}{42}
+\indexentry{giftid@{giftid}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!giftName@{giftName}|hyperpage}{42}
+\indexentry{giftName@{giftName}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{42}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!initial@{initial}|hyperpage}{43}
+\indexentry{initial@{initial}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{43}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!period@{period}|hyperpage}{43}
+\indexentry{period@{period}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{43}
+\indexentry{giftDetails@{gift\discretionary {-}{}{}Details}!remaining@{remaining}|hyperpage}{43}
+\indexentry{remaining@{remaining}!giftDetails@{gift\discretionary {-}{}{}Details}|hyperpage}{43}
+\indexentry{Logger@{Logger}|hyperpage}{43}
+\indexentry{Logger@{Logger}!Logger@{Logger}|hyperpage}{44}
+\indexentry{Logger@{Logger}!Logger@{Logger}|hyperpage}{44}
+\indexentry{Logger@{Logger}!\nobreakspace  {}Logger@{$\sim $Logger}|hyperpage}{44}
+\indexentry{\nobreakspace  {}Logger@{$\sim $Logger}!Logger@{Logger}|hyperpage}{44}
+\indexentry{Logger@{Logger}!close@{close}|hyperpage}{45}
+\indexentry{close@{close}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!getLogFileName@{getLogFileName}|hyperpage}{45}
+\indexentry{getLogFileName@{getLogFileName}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!logMsg@{logMsg}|hyperpage}{45}
+\indexentry{logMsg@{logMsg}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!logMsg_i@{logMsg\_\discretionary {-}{}{}i}|hyperpage}{45}
+\indexentry{logMsg_i@{logMsg\_\discretionary {-}{}{}i}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!open@{open}|hyperpage}{45}
+\indexentry{open@{open}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!setLogFileName@{setLogFileName}|hyperpage}{45}
+\indexentry{setLogFileName@{setLogFileName}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!svc@{svc}|hyperpage}{45}
+\indexentry{svc@{svc}!Logger@{Logger}|hyperpage}{45}
+\indexentry{Logger@{Logger}!activation_queue_@{activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}|hyperpage}{46}
+\indexentry{activation_queue_@{activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}!Logger@{Logger}|hyperpage}{46}
+\indexentry{Logger@{Logger}!logFile@{logFile}|hyperpage}{46}
+\indexentry{logFile@{logFile}!Logger@{Logger}|hyperpage}{46}
+\indexentry{Logger@{Logger}!logfilename_@{logfilename\_\discretionary {-}{}{}}|hyperpage}{46}
+\indexentry{logfilename_@{logfilename\_\discretionary {-}{}{}}!Logger@{Logger}|hyperpage}{46}
+\indexentry{Logger@{Logger}!mutex_@{mutex\_\discretionary {-}{}{}}|hyperpage}{46}
+\indexentry{mutex_@{mutex\_\discretionary {-}{}{}}!Logger@{Logger}|hyperpage}{46}
+\indexentry{Logger@{Logger}!out_@{out\_\discretionary {-}{}{}}|hyperpage}{46}
+\indexentry{out_@{out\_\discretionary {-}{}{}}!Logger@{Logger}|hyperpage}{46}
+\indexentry{logMsg_MO@{logMsg\_\discretionary {-}{}{}MO}|hyperpage}{46}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!logMsg_MO@{logMsg\_\discretionary {-}{}{}MO}|hyperpage}{47}
+\indexentry{logMsg_MO@{logMsg\_\discretionary {-}{}{}MO}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{47}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!\nobreakspace  {}logMsg_MO@{$\sim $logMsg\_\discretionary {-}{}{}MO}|hyperpage}{47}
+\indexentry{\nobreakspace  {}logMsg_MO@{$\sim $logMsg\_\discretionary {-}{}{}MO}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{47}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!call@{call}|hyperpage}{47}
+\indexentry{call@{call}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{47}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!future_result_@{future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}|hyperpage}{48}
+\indexentry{future_result_@{future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{48}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!logger_@{logger\_\discretionary {-}{}{}}|hyperpage}{48}
+\indexentry{logger_@{logger\_\discretionary {-}{}{}}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{48}
+\indexentry{logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}!msg_@{msg\_\discretionary {-}{}{}}|hyperpage}{48}
+\indexentry{msg_@{msg\_\discretionary {-}{}{}}!logMsg_MO@{log\discretionary {-}{}{}Msg\_\discretionary {-}{}{}MO}|hyperpage}{48}
+\indexentry{Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{48}
+\indexentry{Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}!Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{48}
+\indexentry{Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}!Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{48}
+\indexentry{Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}!\nobreakspace  {}Message_Block_Guard@{$\sim $Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{48}
+\indexentry{\nobreakspace  {}Message_Block_Guard@{$\sim $Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}!Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{48}
+\indexentry{Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}!mb_@{mb\_\discretionary {-}{}{}}|hyperpage}{49}
+\indexentry{mb_@{mb\_\discretionary {-}{}{}}!Message_Block_Guard@{Message\_\discretionary {-}{}{}Block\_\discretionary {-}{}{}Guard}|hyperpage}{49}
+\indexentry{partDetails@{partDetails}|hyperpage}{49}
+\indexentry{MSISDNSIZE@{MSISDNSIZE}!partDetails@{partDetails}|hyperpage}{51}
+\indexentry{partDetails@{partDetails}!MSISDNSIZE@{MSISDNSIZE}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!partDetails@{partDetails}|hyperpage}{51}
+\indexentry{partDetails@{partDetails}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!partDetails@{partDetails}|hyperpage}{51}
+\indexentry{partDetails@{partDetails}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!partDetails@{partDetails}|hyperpage}{51}
+\indexentry{partDetails@{partDetails}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!\nobreakspace  {}partDetails@{$\sim $partDetails}|hyperpage}{51}
+\indexentry{\nobreakspace  {}partDetails@{$\sim $partDetails}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!getGiftId@{getGiftId}|hyperpage}{51}
+\indexentry{getGiftId@{getGiftId}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!getMSISDN@{getMSISDN}|hyperpage}{51}
+\indexentry{getMSISDN@{getMSISDN}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{51}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!getMSISDNStr@{getMSISDNStr}|hyperpage}{52}
+\indexentry{getMSISDNStr@{getMSISDNStr}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!getTimestamp@{getTimestamp}|hyperpage}{52}
+\indexentry{getTimestamp@{getTimestamp}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!insertString@{insertString}|hyperpage}{52}
+\indexentry{insertString@{insertString}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!isEmpty@{isEmpty}|hyperpage}{52}
+\indexentry{isEmpty@{isEmpty}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!setGiftId@{setGiftId}|hyperpage}{52}
+\indexentry{setGiftId@{setGiftId}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!setMSISDN@{setMSISDN}|hyperpage}{52}
+\indexentry{setMSISDN@{setMSISDN}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{52}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!setTimestamp@{setTimestamp}|hyperpage}{53}
+\indexentry{setTimestamp@{setTimestamp}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!toHTMLString@{toHTMLString}|hyperpage}{53}
+\indexentry{toHTMLString@{toHTMLString}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!updateString@{updateString}|hyperpage}{53}
+\indexentry{updateString@{updateString}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!operator<<@{operator$<$$<$}|hyperpage}{53}
+\indexentry{operator<<@{operator$<$$<$}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!empty@{empty}|hyperpage}{53}
+\indexentry{empty@{empty}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!giftid@{giftid}|hyperpage}{53}
+\indexentry{giftid@{giftid}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!msisdn@{msisdn}|hyperpage}{53}
+\indexentry{msisdn@{msisdn}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{partDetails@{part\discretionary {-}{}{}Details}!timestamp@{timestamp}|hyperpage}{53}
+\indexentry{timestamp@{timestamp}!partDetails@{part\discretionary {-}{}{}Details}|hyperpage}{53}
+\indexentry{Processor@{Processor}|hyperpage}{54}
+\indexentry{Processor@{Processor}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!\nobreakspace  {}Processor@{$\sim $Processor}|hyperpage}{55}
+\indexentry{\nobreakspace  {}Processor@{$\sim $Processor}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!close@{close}|hyperpage}{55}
+\indexentry{close@{close}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!open@{open}|hyperpage}{55}
+\indexentry{open@{open}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!process@{process}|hyperpage}{55}
+\indexentry{process@{process}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!process_i@{process\_\discretionary {-}{}{}i}|hyperpage}{55}
+\indexentry{process_i@{process\_\discretionary {-}{}{}i}!Processor@{Processor}|hyperpage}{55}
+\indexentry{Processor@{Processor}!svc@{svc}|hyperpage}{56}
+\indexentry{svc@{svc}!Processor@{Processor}|hyperpage}{56}
+\indexentry{Processor@{Processor}!activation_queue_@{activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}|hyperpage}{56}
+\indexentry{activation_queue_@{activation\_\discretionary {-}{}{}queue\_\discretionary {-}{}{}}!Processor@{Processor}|hyperpage}{56}
+\indexentry{Processor@{Processor}!mutex_@{mutex\_\discretionary {-}{}{}}|hyperpage}{56}
+\indexentry{mutex_@{mutex\_\discretionary {-}{}{}}!Processor@{Processor}|hyperpage}{56}
+\indexentry{Processor@{Processor}!parentContest@{parentContest}|hyperpage}{56}
+\indexentry{parentContest@{parentContest}!Processor@{Processor}|hyperpage}{56}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{57}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!\nobreakspace  {}processor_MO@{$\sim $processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{\nobreakspace  {}processor_MO@{$\sim $processor\_\discretionary {-}{}{}MO}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!call@{call}|hyperpage}{58}
+\indexentry{call@{call}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!cmb_@{cmb\_\discretionary {-}{}{}}|hyperpage}{58}
+\indexentry{cmb_@{cmb\_\discretionary {-}{}{}}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!future_result_@{future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}|hyperpage}{58}
+\indexentry{future_result_@{future\_\discretionary {-}{}{}result\_\discretionary {-}{}{}}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{processor_MO@{processor\_\discretionary {-}{}{}MO}!processor_@{processor\_\discretionary {-}{}{}}|hyperpage}{58}
+\indexentry{processor_@{processor\_\discretionary {-}{}{}}!processor_MO@{processor\_\discretionary {-}{}{}MO}|hyperpage}{58}
+\indexentry{SQLiteConnection@{SQLiteConnection}|hyperpage}{58}
+\indexentry{transactions_threshold@{transactions\_\-threshold}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!transactions_threshold@{transactions\_\-threshold}|hyperpage}{61}
+\indexentry{max_conflicts@{max\_\-conflicts}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!max_conflicts@{max\_\-conflicts}|hyperpage}{61}
+\indexentry{doCommit@{doCommit}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!doCommit@{doCommit}|hyperpage}{61}
+\indexentry{dontCommit@{dontCommit}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!dontCommit@{dontCommit}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!SQLiteConnection@{SQLiteConnection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLiteConnection}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!\nobreakspace  {}SQLiteConnection@{$\sim $SQLiteConnection}|hyperpage}{61}
+\indexentry{\nobreakspace  {}SQLiteConnection@{$\sim $SQLiteConnection}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{61}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!beginTransaction@{beginTransaction}|hyperpage}{62}
+\indexentry{beginTransaction@{beginTransaction}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{62}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!changeLogFilename@{changeLogFilename}|hyperpage}{62}
+\indexentry{changeLogFilename@{changeLogFilename}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{62}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!commitTransaction@{commitTransaction}|hyperpage}{62}
+\indexentry{commitTransaction@{commitTransaction}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{62}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!disableTransactions@{disableTransactions}|hyperpage}{62}
+\indexentry{disableTransactions@{disableTransactions}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{62}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!enableTransactions@{enableTransactions}|hyperpage}{62}
+\indexentry{enableTransactions@{enableTransactions}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{62}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!existsIndex@{existsIndex}|hyperpage}{63}
+\indexentry{existsIndex@{existsIndex}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!existsTable@{existsTable}|hyperpage}{63}
+\indexentry{existsTable@{existsTable}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!getdb@{getdb}|hyperpage}{63}
+\indexentry{getdb@{getdb}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!getTransactions@{getTransactions}|hyperpage}{63}
+\indexentry{getTransactions@{getTransactions}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!isReady@{isReady}|hyperpage}{63}
+\indexentry{isReady@{isReady}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!logTransaction@{logTransaction}|hyperpage}{63}
+\indexentry{logTransaction@{logTransaction}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{63}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!pickFilename@{pickFilename}|hyperpage}{64}
+\indexentry{pickFilename@{pickFilename}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!reconnect@{reconnect}|hyperpage}{64}
+\indexentry{reconnect@{reconnect}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!transactionsEnabled@{transactionsEnabled}|hyperpage}{64}
+\indexentry{transactionsEnabled@{transactionsEnabled}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!SQLTable@{SQLTable}|hyperpage}{64}
+\indexentry{SQLTable@{SQLTable}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!conflicts@{conflicts}|hyperpage}{64}
+\indexentry{conflicts@{conflicts}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!DBname@{DBname}|hyperpage}{64}
+\indexentry{DBname@{DBname}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{64}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!logger@{logger}|hyperpage}{65}
+\indexentry{logger@{logger}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!sqlitedb@{sqlitedb}|hyperpage}{65}
+\indexentry{sqlitedb@{sqlitedb}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!transactioncmd@{transactioncmd}|hyperpage}{65}
+\indexentry{transactioncmd@{transactioncmd}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!transactions@{transactions}|hyperpage}{65}
+\indexentry{transactions@{transactions}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!transactions_enabled@{transactions\_\discretionary {-}{}{}enabled}|hyperpage}{65}
+\indexentry{transactions_enabled@{transactions\_\discretionary {-}{}{}enabled}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!transactions_log@{transactions\_\discretionary {-}{}{}log}|hyperpage}{65}
+\indexentry{transactions_log@{transactions\_\discretionary {-}{}{}log}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!use_transactions_log@{use\_\discretionary {-}{}{}transactions\_\discretionary {-}{}{}log}|hyperpage}{65}
+\indexentry{use_transactions_log@{use\_\discretionary {-}{}{}transactions\_\discretionary {-}{}{}log}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}!zErrMsg@{zErrMsg}|hyperpage}{65}
+\indexentry{zErrMsg@{zErrMsg}!SQLiteConnection@{SQLite\discretionary {-}{}{}Connection}|hyperpage}{65}
+\indexentry{SQLTable@{SQLTable}|hyperpage}{66}
+\indexentry{SQLTable@{SQLTable}!sqlmap@{sqlmap}|hyperpage}{70}
+\indexentry{sqlmap@{sqlmap}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!\nobreakspace  {}SQLTable@{$\sim $SQLTable}|hyperpage}{70}
+\indexentry{\nobreakspace  {}SQLTable@{$\sim $SQLTable}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!createIndices@{createIndices}|hyperpage}{70}
+\indexentry{createIndices@{createIndices}!SQLTable@{SQLTable}|hyperpage}{70}
+\indexentry{SQLTable@{SQLTable}!deleteObject@{deleteObject}|hyperpage}{71}
+\indexentry{deleteObject@{deleteObject}!SQLTable@{SQLTable}|hyperpage}{71}
+\indexentry{SQLTable@{SQLTable}!deleteObjects@{deleteObjects}|hyperpage}{71}
+\indexentry{deleteObjects@{deleteObjects}!SQLTable@{SQLTable}|hyperpage}{71}
+\indexentry{SQLTable@{SQLTable}!deleteObjects@{deleteObjects}|hyperpage}{71}
+\indexentry{deleteObjects@{deleteObjects}!SQLTable@{SQLTable}|hyperpage}{71}
+\indexentry{SQLTable@{SQLTable}!drop@{drop}|hyperpage}{71}
+\indexentry{drop@{drop}!SQLTable@{SQLTable}|hyperpage}{71}
+\indexentry{SQLTable@{SQLTable}!insertObject@{insertObject}|hyperpage}{71}
+\indexentry{insertObject@{insertObject}!SQLTable@{SQLTable}|hyperpage}{71}
+\indexentry{SQLTable@{SQLTable}!insertObjects@{insertObjects}|hyperpage}{72}
+\indexentry{insertObjects@{insertObjects}!SQLTable@{SQLTable}|hyperpage}{72}
+\indexentry{SQLTable@{SQLTable}!isReady@{isReady}|hyperpage}{72}
+\indexentry{isReady@{isReady}!SQLTable@{SQLTable}|hyperpage}{72}
+\indexentry{SQLTable@{SQLTable}!logMsg@{logMsg}|hyperpage}{72}
+\indexentry{logMsg@{logMsg}!SQLTable@{SQLTable}|hyperpage}{72}
+\indexentry{SQLTable@{SQLTable}!operator=@{operator=}|hyperpage}{72}
+\indexentry{operator=@{operator=}!SQLTable@{SQLTable}|hyperpage}{72}
+\indexentry{SQLTable@{SQLTable}!operator[]@{operator[]}|hyperpage}{72}
+\indexentry{operator[]@{operator[]}!SQLTable@{SQLTable}|hyperpage}{72}
+\indexentry{SQLTable@{SQLTable}!operator[]@{operator[]}|hyperpage}{73}
+\indexentry{operator[]@{operator[]}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectAllObjects@{selectAllObjects}|hyperpage}{73}
+\indexentry{selectAllObjects@{selectAllObjects}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectDistinctObjects@{selectDistinctObjects}|hyperpage}{73}
+\indexentry{selectDistinctObjects@{selectDistinctObjects}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectDistinctObjects@{selectDistinctObjects}|hyperpage}{73}
+\indexentry{selectDistinctObjects@{selectDistinctObjects}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectDistinctObjectsMap@{selectDistinctObjectsMap}|hyperpage}{73}
+\indexentry{selectDistinctObjectsMap@{selectDistinctObjectsMap}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectDistinctObjectsMap@{selectDistinctObjectsMap}|hyperpage}{73}
+\indexentry{selectDistinctObjectsMap@{selectDistinctObjectsMap}!SQLTable@{SQLTable}|hyperpage}{73}
+\indexentry{SQLTable@{SQLTable}!selectObject@{selectObject}|hyperpage}{74}
+\indexentry{selectObject@{selectObject}!SQLTable@{SQLTable}|hyperpage}{74}
+\indexentry{SQLTable@{SQLTable}!selectObject@{selectObject}|hyperpage}{74}
+\indexentry{selectObject@{selectObject}!SQLTable@{SQLTable}|hyperpage}{74}
+\indexentry{SQLTable@{SQLTable}!selectObjects@{selectObjects}|hyperpage}{74}
+\indexentry{selectObjects@{selectObjects}!SQLTable@{SQLTable}|hyperpage}{74}
+\indexentry{SQLTable@{SQLTable}!selectObjects@{selectObjects}|hyperpage}{74}
+\indexentry{selectObjects@{selectObjects}!SQLTable@{SQLTable}|hyperpage}{74}
+\indexentry{SQLTable@{SQLTable}!selectObjects@{selectObjects}|hyperpage}{74}
+\indexentry{selectObjects@{selectObjects}!SQLTable@{SQLTable}|hyperpage}{74}
+\indexentry{SQLTable@{SQLTable}!selectObjects@{selectObjects}|hyperpage}{75}
+\indexentry{selectObjects@{selectObjects}!SQLTable@{SQLTable}|hyperpage}{75}
+\indexentry{SQLTable@{SQLTable}!size@{size}|hyperpage}{75}
+\indexentry{size@{size}!SQLTable@{SQLTable}|hyperpage}{75}
+\indexentry{SQLTable@{SQLTable}!size@{size}|hyperpage}{75}
+\indexentry{size@{size}!SQLTable@{SQLTable}|hyperpage}{75}
+\indexentry{SQLTable@{SQLTable}!size@{size}|hyperpage}{75}
+\indexentry{size@{size}!SQLTable@{SQLTable}|hyperpage}{75}
+\indexentry{SQLTable@{SQLTable}!size@{size}|hyperpage}{75}
+\indexentry{size@{size}!SQLTable@{SQLTable}|hyperpage}{75}
+\indexentry{SQLTable@{SQLTable}!size@{size}|hyperpage}{76}
+\indexentry{size@{size}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sizeofDistinctObjects@{sizeofDistinctObjects}|hyperpage}{76}
+\indexentry{sizeofDistinctObjects@{sizeofDistinctObjects}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sizeofDistinctObjects@{sizeofDistinctObjects}|hyperpage}{76}
+\indexentry{sizeofDistinctObjects@{sizeofDistinctObjects}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sumColumn@{sumColumn}|hyperpage}{76}
+\indexentry{sumColumn@{sumColumn}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sumColumn@{sumColumn}|hyperpage}{76}
+\indexentry{sumColumn@{sumColumn}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sumColumn@{sumColumn}|hyperpage}{76}
+\indexentry{sumColumn@{sumColumn}!SQLTable@{SQLTable}|hyperpage}{76}
+\indexentry{SQLTable@{SQLTable}!sumColumn@{sumColumn}|hyperpage}{77}
+\indexentry{sumColumn@{sumColumn}!SQLTable@{SQLTable}|hyperpage}{77}
+\indexentry{SQLTable@{SQLTable}!updateObject@{updateObject}|hyperpage}{77}
+\indexentry{updateObject@{updateObject}!SQLTable@{SQLTable}|hyperpage}{77}
+\indexentry{SQLTable@{SQLTable}!updateObjects@{updateObjects}|hyperpage}{77}
+\indexentry{updateObjects@{updateObjects}!SQLTable@{SQLTable}|hyperpage}{77}
+\indexentry{SQLTable@{SQLTable}!dbcon@{dbcon}|hyperpage}{77}
+\indexentry{dbcon@{dbcon}!SQLTable@{SQLTable}|hyperpage}{77}
+\indexentry{SQLTable@{SQLTable}!fieldnames@{fieldnames}|hyperpage}{78}
+\indexentry{fieldnames@{fieldnames}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!fieldtypes@{fieldtypes}|hyperpage}{78}
+\indexentry{fieldtypes@{fieldtypes}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!hasPrimaryKey@{hasPrimaryKey}|hyperpage}{78}
+\indexentry{hasPrimaryKey@{hasPrimaryKey}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!indexname@{indexname}|hyperpage}{78}
+\indexentry{indexname@{indexname}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!indices@{indices}|hyperpage}{78}
+\indexentry{indices@{indices}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!ready@{ready}|hyperpage}{78}
+\indexentry{ready@{ready}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!tablename@{tablename}|hyperpage}{78}
+\indexentry{tablename@{tablename}!SQLTable@{SQLTable}|hyperpage}{78}
+\indexentry{SQLTable@{SQLTable}!tsname@{tsname}|hyperpage}{79}
+\indexentry{tsname@{tsname}!SQLTable@{SQLTable}|hyperpage}{79}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{79}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!counter_t@{counter\_\discretionary {-}{}{}t}|hyperpage}{80}
+\indexentry{counter_t@{counter\_\discretionary {-}{}{}t}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!inherited@{inherited}|hyperpage}{80}
+\indexentry{inherited@{inherited}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!size_t@{size\_\discretionary {-}{}{}t}|hyperpage}{80}
+\indexentry{size_t@{size\_\discretionary {-}{}{}t}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{default_pool_size_@{default\_\-pool\_\-size\_\-}!Thread_Pool@{Thread\_\-Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\-Pool}!default_pool_size_@{default\_\-pool\_\-size\_\-}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!enqueue@{enqueue}|hyperpage}{80}
+\indexentry{enqueue@{enqueue}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!start@{start}|hyperpage}{80}
+\indexentry{start@{start}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{80}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!stop@{stop}|hyperpage}{81}
+\indexentry{stop@{stop}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{81}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!svc@{svc}|hyperpage}{81}
+\indexentry{svc@{svc}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{81}
+\indexentry{Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}!active_threads_@{active\_\discretionary {-}{}{}threads\_\discretionary {-}{}{}}|hyperpage}{81}
+\indexentry{active_threads_@{active\_\discretionary {-}{}{}threads\_\discretionary {-}{}{}}!Thread_Pool@{Thread\_\discretionary {-}{}{}Pool}|hyperpage}{81}
+\indexentry{TimePeriod@{TimePeriod}|hyperpage}{81}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!TimePeriod@{TimePeriod}|hyperpage}{82}
+\indexentry{TimePeriod@{TimePeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{82}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!TimePeriod@{TimePeriod}|hyperpage}{82}
+\indexentry{TimePeriod@{TimePeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{82}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!TimePeriod@{TimePeriod}|hyperpage}{82}
+\indexentry{TimePeriod@{TimePeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{82}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!\nobreakspace  {}TimePeriod@{$\sim $TimePeriod}|hyperpage}{83}
+\indexentry{\nobreakspace  {}TimePeriod@{$\sim $TimePeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!dateInPeriod@{dateInPeriod}|hyperpage}{83}
+\indexentry{dateInPeriod@{dateInPeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!dateInPeriod@{dateInPeriod}|hyperpage}{83}
+\indexentry{dateInPeriod@{dateInPeriod}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!getBeginTS@{getBeginTS}|hyperpage}{83}
+\indexentry{getBeginTS@{getBeginTS}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!getEndTS@{getEndTS}|hyperpage}{83}
+\indexentry{getEndTS@{getEndTS}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!toString@{toString}|hyperpage}{83}
+\indexentry{toString@{toString}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{83}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!beginTimeStamp@{beginTimeStamp}|hyperpage}{84}
+\indexentry{beginTimeStamp@{beginTimeStamp}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{84}
+\indexentry{TimePeriod@{Time\discretionary {-}{}{}Period}!endTimeStamp@{endTimeStamp}|hyperpage}{84}
+\indexentry{endTimeStamp@{endTimeStamp}!TimePeriod@{Time\discretionary {-}{}{}Period}|hyperpage}{84}
+\indexentry{TimeStamp@{TimeStamp}|hyperpage}{84}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!TimeStamp@{TimeStamp}|hyperpage}{86}
+\indexentry{TimeStamp@{TimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{86}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!TimeStamp@{TimeStamp}|hyperpage}{86}
+\indexentry{TimeStamp@{TimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{86}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!TimeStamp@{TimeStamp}|hyperpage}{86}
+\indexentry{TimeStamp@{TimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{86}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!TimeStamp@{TimeStamp}|hyperpage}{86}
+\indexentry{TimeStamp@{TimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{86}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!\nobreakspace  {}TimeStamp@{$\sim $TimeStamp}|hyperpage}{86}
+\indexentry{\nobreakspace  {}TimeStamp@{$\sim $TimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{86}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!getTimeStamp@{getTimeStamp}|hyperpage}{87}
+\indexentry{getTimeStamp@{getTimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!nextDay@{nextDay}|hyperpage}{87}
+\indexentry{nextDay@{nextDay}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!nextMonth@{nextMonth}|hyperpage}{87}
+\indexentry{nextMonth@{nextMonth}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!nextWeek@{nextWeek}|hyperpage}{87}
+\indexentry{nextWeek@{nextWeek}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator"!=@{operator"!=}|hyperpage}{87}
+\indexentry{operator"!=@{operator"!=}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator"!=@{operator"!=}|hyperpage}{87}
+\indexentry{operator"!=@{operator"!=}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{87}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator++@{operator++}|hyperpage}{88}
+\indexentry{operator++@{operator++}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator<@{operator$<$}|hyperpage}{88}
+\indexentry{operator<@{operator$<$}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator<@{operator$<$}|hyperpage}{88}
+\indexentry{operator<@{operator$<$}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator==@{operator==}|hyperpage}{88}
+\indexentry{operator==@{operator==}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator==@{operator==}|hyperpage}{88}
+\indexentry{operator==@{operator==}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator>@{operator$>$}|hyperpage}{88}
+\indexentry{operator>@{operator$>$}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!operator>@{operator$>$}|hyperpage}{88}
+\indexentry{operator>@{operator$>$}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{88}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!previousDay@{previousDay}|hyperpage}{89}
+\indexentry{previousDay@{previousDay}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{89}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!setTimeStamp@{setTimeStamp}|hyperpage}{89}
+\indexentry{setTimeStamp@{setTimeStamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{89}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!toString@{toString}|hyperpage}{89}
+\indexentry{toString@{toString}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{89}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!timeinfo@{timeinfo}|hyperpage}{89}
+\indexentry{timeinfo@{timeinfo}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{89}
+\indexentry{TimeStamp@{Time\discretionary {-}{}{}Stamp}!timestamp@{timestamp}|hyperpage}{89}
+\indexentry{timestamp@{timestamp}!TimeStamp@{Time\discretionary {-}{}{}Stamp}|hyperpage}{89}
+\indexentry{client_acceptor.cpp@{client\_\discretionary {-}{}{}acceptor.cpp}|hyperpage}{90}
+\indexentry{client_acceptor.h@{client\_\discretionary {-}{}{}acceptor.h}|hyperpage}{90}
+\indexentry{client_acceptor.h@{client\_\discretionary {-}{}{}acceptor.h}!Client_Acceptor_Base@{Client\_\discretionary {-}{}{}Acceptor\_\discretionary {-}{}{}Base}|hyperpage}{90}
+\indexentry{Client_Acceptor_Base@{Client\_\discretionary {-}{}{}Acceptor\_\discretionary {-}{}{}Base}!client_acceptor.h@{client\_\discretionary {-}{}{}acceptor.h}|hyperpage}{90}
+\indexentry{client_handler.cpp@{client\_\discretionary {-}{}{}handler.cpp}|hyperpage}{90}
+\indexentry{client_handler.cpp@{client\_\discretionary {-}{}{}handler.cpp}!REGISTER_MASK@{REGISTER\_\discretionary {-}{}{}MASK}|hyperpage}{91}
+\indexentry{REGISTER_MASK@{REGISTER\_\discretionary {-}{}{}MASK}!client_handler.cpp@{client\_\discretionary {-}{}{}handler.cpp}|hyperpage}{91}
+\indexentry{client_handler.cpp@{client\_\discretionary {-}{}{}handler.cpp}!REMOVE_MASK@{REMOVE\_\discretionary {-}{}{}MASK}|hyperpage}{91}
+\indexentry{REMOVE_MASK@{REMOVE\_\discretionary {-}{}{}MASK}!client_handler.cpp@{client\_\discretionary {-}{}{}handler.cpp}|hyperpage}{91}
+\indexentry{client_handler.h@{client\_\discretionary {-}{}{}handler.h}|hyperpage}{91}
+\indexentry{config.h@{config.h}|hyperpage}{91}
+\indexentry{config.h@{config.h}!HAVE_TEMPLATE_REPOSITORY@{HAVE\_\discretionary {-}{}{}TEMPLATE\_\discretionary {-}{}{}REPOSITORY}|hyperpage}{91}
+\indexentry{HAVE_TEMPLATE_REPOSITORY@{HAVE\_\discretionary {-}{}{}TEMPLATE\_\discretionary {-}{}{}REPOSITORY}!config.h@{config.h}|hyperpage}{91}
+\indexentry{config.h@{config.h}!PACKAGE@{PACKAGE}|hyperpage}{91}
+\indexentry{PACKAGE@{PACKAGE}!config.h@{config.h}|hyperpage}{91}
+\indexentry{config.h@{config.h}!VERSION@{VERSION}|hyperpage}{91}
+\indexentry{VERSION@{VERSION}!config.h@{config.h}|hyperpage}{91}
+\indexentry{connectionmsgblock.cpp@{connectionmsgblock.cpp}|hyperpage}{92}
+\indexentry{connectionmsgblock.h@{connectionmsgblock.h}|hyperpage}{92}
+\indexentry{contest.cpp@{contest.cpp}|hyperpage}{92}
+\indexentry{contest.h@{contest.h}|hyperpage}{92}
+\indexentry{contest.h@{contest.h}!DBNAME@{DBNAME}|hyperpage}{93}
+\indexentry{DBNAME@{DBNAME}!contest.h@{contest.h}|hyperpage}{93}
+\indexentry{contest.h@{contest.h}!LOGFILENAME@{LOGFILENAME}|hyperpage}{93}
+\indexentry{LOGFILENAME@{LOGFILENAME}!contest.h@{contest.h}|hyperpage}{93}
+\indexentry{Count.h@{Count.h}|hyperpage}{93}
+\indexentry{Count.h@{Count.h}!counter_t@{counter\_\discretionary {-}{}{}t}|hyperpage}{94}
+\indexentry{counter_t@{counter\_\discretionary {-}{}{}t}!Count.h@{Count.h}|hyperpage}{94}
+\indexentry{crc_32.cpp@{crc\_\discretionary {-}{}{}32.cpp}|hyperpage}{94}
+\indexentry{crc_32.h@{crc\_\discretionary {-}{}{}32.h}|hyperpage}{94}
+\indexentry{day.cpp@{day.cpp}|hyperpage}{94}
+\indexentry{day.h@{day.h}|hyperpage}{94}
+\indexentry{giftdetails.cpp@{giftdetails.cpp}|hyperpage}{95}
+\indexentry{giftdetails.h@{giftdetails.h}|hyperpage}{95}
+\indexentry{logger.cpp@{logger.cpp}|hyperpage}{95}
+\indexentry{logger.h@{logger.h}|hyperpage}{95}
+\indexentry{logger.h@{logger.h}!output_t@{output\_\discretionary {-}{}{}t}|hyperpage}{96}
+\indexentry{output_t@{output\_\discretionary {-}{}{}t}!logger.h@{logger.h}|hyperpage}{96}
+\indexentry{OUTPUT_STDOUT@{OUTPUT\_\-STDOUT}!logger.h@{logger.h}|hyperpage}{96}
+\indexentry{logger.h@{logger.h}!OUTPUT_STDOUT@{OUTPUT\_\-STDOUT}|hyperpage}{96}
+\indexentry{OUTPUT_BOTH@{OUTPUT\_\-BOTH}!logger.h@{logger.h}|hyperpage}{96}
+\indexentry{logger.h@{logger.h}!OUTPUT_BOTH@{OUTPUT\_\-BOTH}|hyperpage}{96}
+\indexentry{OUTPUT_FILEONLY@{OUTPUT\_\-FILEONLY}!logger.h@{logger.h}|hyperpage}{96}
+\indexentry{logger.h@{logger.h}!OUTPUT_FILEONLY@{OUTPUT\_\-FILEONLY}|hyperpage}{96}
+\indexentry{logmsg_mo.cpp@{logmsg\_\discretionary {-}{}{}mo.cpp}|hyperpage}{96}
+\indexentry{logmsg_mo.h@{logmsg\_\discretionary {-}{}{}mo.h}|hyperpage}{96}
+\indexentry{main.cpp@{main.cpp}|hyperpage}{96}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{97}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{97}
+\indexentry{partdetails.cpp@{partdetails.cpp}|hyperpage}{97}
+\indexentry{partdetails.cpp@{partdetails.cpp}!operator<<@{operator$<$$<$}|hyperpage}{97}
+\indexentry{operator<<@{operator$<$$<$}!partdetails.cpp@{partdetails.cpp}|hyperpage}{97}
+\indexentry{partdetails.h@{partdetails.h}|hyperpage}{97}
+\indexentry{processor.cpp@{processor.cpp}|hyperpage}{98}
+\indexentry{processor.h@{processor.h}|hyperpage}{98}
+\indexentry{processor_mo.cpp@{processor\_\discretionary {-}{}{}mo.cpp}|hyperpage}{98}
+\indexentry{processor_mo.h@{processor\_\discretionary {-}{}{}mo.h}|hyperpage}{98}
+\indexentry{sqliteconnection.cpp@{sqliteconnection.cpp}|hyperpage}{98}
+\indexentry{sqliteconnection.h@{sqliteconnection.h}|hyperpage}{99}
+\indexentry{sqliteconnection.h@{sqliteconnection.h}!TRANSLOGPATH@{TRANSLOGPATH}|hyperpage}{99}
+\indexentry{TRANSLOGPATH@{TRANSLOGPATH}!sqliteconnection.h@{sqliteconnection.h}|hyperpage}{99}
+\indexentry{sqliteconnection.h@{sqliteconnection.h}!TRANSLOGSUFFIX@{TRANSLOGSUFFIX}|hyperpage}{99}
+\indexentry{TRANSLOGSUFFIX@{TRANSLOGSUFFIX}!sqliteconnection.h@{sqliteconnection.h}|hyperpage}{99}
+\indexentry{sqltable.cpp@{sqltable.cpp}|hyperpage}{99}
+\indexentry{sqltable.h@{sqltable.h}|hyperpage}{100}
+\indexentry{strtokenizer.cpp@{strtokenizer.cpp}|hyperpage}{100}
+\indexentry{strtokenizer.cpp@{strtokenizer.cpp}!strTokenizer@{strTokenizer}|hyperpage}{100}
+\indexentry{strTokenizer@{strTokenizer}!strtokenizer.cpp@{strtokenizer.cpp}|hyperpage}{100}
+\indexentry{strtokenizer.h@{strtokenizer.h}|hyperpage}{100}
+\indexentry{strtokenizer.h@{strtokenizer.h}!strTokenizer@{strTokenizer}|hyperpage}{101}
+\indexentry{strTokenizer@{strTokenizer}!strtokenizer.h@{strtokenizer.h}|hyperpage}{101}
+\indexentry{thread_pool.cpp@{thread\_\discretionary {-}{}{}pool.cpp}|hyperpage}{101}
+\indexentry{thread_pool.h@{thread\_\discretionary {-}{}{}pool.h}|hyperpage}{101}
+\indexentry{timeperiod.cpp@{timeperiod.cpp}|hyperpage}{101}
+\indexentry{timeperiod.h@{timeperiod.h}|hyperpage}{101}
+\indexentry{timestamp.cpp@{timestamp.cpp}|hyperpage}{102}
+\indexentry{timestamp.h@{timestamp.h}|hyperpage}{102}

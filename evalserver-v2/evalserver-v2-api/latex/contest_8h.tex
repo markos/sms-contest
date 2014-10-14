@@ -1,0 +1,62 @@
+\hypertarget{contest_8h}{
+\subsection{contest.h File Reference}
+\label{contest_8h}\index{contest.h@{contest.h}}
+}
+{\tt \#include $<$ace/Reactor.h$>$}\par
+{\tt \#include $<$ace/Timer\_\-Queue.h$>$}\par
+{\tt \#include $<$ace/Thread.h$>$}\par
+{\tt \#include $<$ace/Synch.h$>$}\par
+{\tt \#include $<$ace/Auto\_\-Ptr.h$>$}\par
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$set$>$}\par
+{\tt \#include $<$algorithm$>$}\par
+{\tt \#include \char`\"{}Count.h\char`\"{}}\par
+{\tt \#include \char`\"{}client\_\-acceptor.h\char`\"{}}\par
+{\tt \#include \char`\"{}connectionmsgblock.h\char`\"{}}\par
+{\tt \#include \char`\"{}day.h\char`\"{}}\par
+{\tt \#include \char`\"{}giftdetails.h\char`\"{}}\par
+{\tt \#include \char`\"{}logger.h\char`\"{}}\par
+{\tt \#include \char`\"{}processor.h\char`\"{}}\par
+{\tt \#include \char`\"{}sqliteconnection.h\char`\"{}}\par
+{\tt \#include \char`\"{}sqltable.h\char`\"{}}\par
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classContest}{Contest}
+\end{CompactItemize}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{contest_8h_a0}{DBNAME}\ \char`\"{}competition.db\char`\"{}
+\begin{CompactList}\small\item\em The filename of the SQLite database.\item\end{CompactList}\item 
+\#define \hyperlink{contest_8h_a1}{LOGFILENAME}\ \char`\"{}evalserver.log\char`\"{}
+\begin{CompactList}\small\item\em The filename of the logfile.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{contest_8h_a0}{
+\index{contest.h@{contest.h}!DBNAME@{DBNAME}}
+\index{DBNAME@{DBNAME}!contest.h@{contest.h}}
+\paragraph[DBNAME]{\setlength{\rightskip}{0pt plus 5cm}\#define DBNAME\ \char`\"{}competition.db\char`\"{}}\hfill}
+\label{contest_8h_a0}
+
+
+\begin{Desc}
+\item[Author: ]\par
+Konstantinos Margaritis \end{Desc}
+
+
+Definition at line 51 of file contest.h.
+
+Referenced by Contest::init\-DB().\hypertarget{contest_8h_a1}{
+\index{contest.h@{contest.h}!LOGFILENAME@{LOGFILENAME}}
+\index{LOGFILENAME@{LOGFILENAME}!contest.h@{contest.h}}
+\paragraph[LOGFILENAME]{\setlength{\rightskip}{0pt plus 5cm}\#define LOGFILENAME\ \char`\"{}evalserver.log\char`\"{}}\hfill}
+\label{contest_8h_a1}
+
+
+
+
+Definition at line 54 of file contest.h.
+
+Referenced by Contest::init\-Logger().

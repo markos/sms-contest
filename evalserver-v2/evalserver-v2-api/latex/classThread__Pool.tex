@@ -1,0 +1,170 @@
+\hypertarget{classThread__Pool}{
+\subsection{Thread\_\-Pool Class Reference}
+\label{classThread__Pool}\index{Thread_Pool@{Thread\_\-Pool}}
+}
+{\tt \#include $<$thread\_\-pool.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+This object creates a collection of thread objects that will do the processing from a queue of event handlers. The base thread object is ACE\_\-Task$<$$>$. 
+
+
+
+Definition at line 51 of file thread\_\-pool.h.\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+typedef ACE\_\-Task$<$ ACE\_\-MT\_\-SYNCH $>$ \hyperlink{classThread__Pool_Thread__Pools0}{inherited}
+\item 
+typedef ACE\_\-Atomic\_\-Op$<$ ACE\_\-Mutex, int $>$ \hyperlink{classThread__Pool_Thread__Pools1}{counter\_\-t}
+\item 
+enum \hyperlink{classThread__Pool_Thread__Pools3}{size\_\-t} \{ \hyperlink{classThread__Pool_Thread__Pools3Thread__Pools2}{default\_\-pool\_\-size\_\-} =  10
+ \}
+\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classThread__Pool_Thread__Poola0}{Thread\_\-Pool} (void)
+\begin{CompactList}\small\item\em Basic constructor.\item\end{CompactList}\item 
+int \hyperlink{classThread__Pool_Thread__Poola1}{start} (int pool\_\-size=default\_\-pool\_\-size\_\-)
+\item 
+virtual int \hyperlink{classThread__Pool_Thread__Poola2}{stop} (void)
+\begin{CompactList}\small\item\em Shut down the thread pool.\item\end{CompactList}\item 
+int \hyperlink{classThread__Pool_Thread__Poola3}{enqueue} (ACE\_\-Event\_\-Handler $\ast$handler)
+\end{CompactItemize}
+\subsubsection*{Protected Methods}
+\begin{CompactItemize}
+\item 
+int \hyperlink{classThread__Pool_Thread__Poolb0}{svc} (void)
+\end{CompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classThread__Pool_Thread__Pools1}{counter\_\-t} \hyperlink{classThread__Pool_Thread__Pooln0}{active\_\-threads\_\-}
+\end{CompactItemize}
+
+
+\subsubsection{Member Typedef Documentation}
+\hypertarget{classThread__Pool_Thread__Pools1}{
+\index{Thread_Pool@{Thread\_\-Pool}!counter_t@{counter\_\-t}}
+\index{counter_t@{counter\_\-t}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[counter\_\-t]{\setlength{\rightskip}{0pt plus 5cm}typedef ACE\_\-Atomic\_\-Op$<$ACE\_\-Mutex, int$>$ Thread\_\-Pool::counter\_\-t}\hfill}
+\label{classThread__Pool_Thread__Pools1}
+
+
+Another handy ACE template is ACE\_\-Atomic\_\-Op$<$$>$. When parameterized, this allows is to have a thread-safe counting object. The typical arithmetic operators are all internally thread-safe so that you can share it across threads without worrying about any contention issues. 
+
+Definition at line 84 of file thread\_\-pool.h.
+
+Referenced by Counter\_\-Guard::Counter\_\-Guard().\hypertarget{classThread__Pool_Thread__Pools0}{
+\index{Thread_Pool@{Thread\_\-Pool}!inherited@{inherited}}
+\index{inherited@{inherited}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[inherited]{\setlength{\rightskip}{0pt plus 5cm}typedef ACE\_\-Task$<$ACE\_\-MT\_\-SYNCH$>$ Thread\_\-Pool::inherited}\hfill}
+\label{classThread__Pool_Thread__Pools0}
+
+
+
+
+Definition at line 54 of file thread\_\-pool.h.
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classThread__Pool_Thread__Pools3}{
+\index{Thread_Pool@{Thread\_\-Pool}!size_t@{size\_\-t}}
+\index{size_t@{size\_\-t}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[size\_\-t]{\setlength{\rightskip}{0pt plus 5cm}enum Thread\_\-Pool::size\_\-t}\hfill}
+\label{classThread__Pool_Thread__Pools3}
+
+
+Provide an enumeration for the default pool size. By doing this, other objects can use the value when they want a default. \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{default_pool_size_@{default\_\-pool\_\-size\_\-}!Thread_Pool@{Thread\_\-Pool}}\index{Thread_Pool@{Thread\_\-Pool}!default_pool_size_@{default\_\-pool\_\-size\_\-}}\item[{\em 
+\hypertarget{classThread__Pool_Thread__Pools3Thread__Pools2}{
+{\em default\_\-pool\_\-size\_\-}}
+\label{classThread__Pool_Thread__Pools3Thread__Pools2}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 58 of file thread\_\-pool.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classThread__Pool_Thread__Poola0}{
+\index{Thread_Pool@{Thread\_\-Pool}!Thread_Pool@{Thread\_\-Pool}}
+\index{Thread_Pool@{Thread\_\-Pool}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[Thread\_\-Pool]{\setlength{\rightskip}{0pt plus 5cm}Thread\_\-Pool::Thread\_\-Pool (void)}\hfill}
+\label{classThread__Pool_Thread__Poola0}
+
+
+All we do here is initialize our active thread counter. 
+
+Definition at line 10 of file thread\_\-pool.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classThread__Pool_Thread__Poola3}{
+\index{Thread_Pool@{Thread\_\-Pool}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[enqueue]{\setlength{\rightskip}{0pt plus 5cm}int Thread\_\-Pool::enqueue (ACE\_\-Event\_\-Handler $\ast$ {\em handler})}\hfill}
+\label{classThread__Pool_Thread__Poola3}
+
+
+To use the thread pool, you have to put some unit of work into it. Since we're dealing with event handlers (or at least their derivatives), I've chosen to provide an \hyperlink{classThread__Pool_Thread__Poola3}{enqueue()} method that takes a pointer to an ACE\_\-Event\_\-Handler. The handler's handle\_\-input() method will be called, so your object has to know when it is being called by the thread pool. 
+
+Definition at line 50 of file thread\_\-pool.cpp.
+
+Referenced by Client\_\-Handler::handle\_\-input(), and stop().\hypertarget{classThread__Pool_Thread__Poola1}{
+\index{Thread_Pool@{Thread\_\-Pool}!start@{start}}
+\index{start@{start}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[start]{\setlength{\rightskip}{0pt plus 5cm}int Thread\_\-Pool::start (int {\em pool\_\-size} = default\_\-pool\_\-size\_\-)}\hfill}
+\label{classThread__Pool_Thread__Poola1}
+
+
+Starting the thread pool causes one or more threads to be activated. When activated, they all execute the \hyperlink{classThread__Pool_Thread__Poolb0}{svc()} method declared below. 
+
+Definition at line 19 of file thread\_\-pool.cpp.
+
+Referenced by Client\_\-Acceptor::open().\hypertarget{classThread__Pool_Thread__Poola2}{
+\index{Thread_Pool@{Thread\_\-Pool}!stop@{stop}}
+\index{stop@{stop}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[stop]{\setlength{\rightskip}{0pt plus 5cm}int Thread\_\-Pool::stop (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classThread__Pool_Thread__Poola2}
+
+
+
+
+Definition at line 27 of file thread\_\-pool.cpp.
+
+References active\_\-threads\_\-, and enqueue().
+
+Referenced by Client\_\-Acceptor::close().\hypertarget{classThread__Pool_Thread__Poolb0}{
+\index{Thread_Pool@{Thread\_\-Pool}!svc@{svc}}
+\index{svc@{svc}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[svc]{\setlength{\rightskip}{0pt plus 5cm}int Thread\_\-Pool::svc (void)\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classThread__Pool_Thread__Poolb0}
+
+
+Our \hyperlink{classThread__Pool_Thread__Poolb0}{svc()} method will dequeue the enqueued event handler objects and invoke the handle\_\-input() method on each. Since we're likely running in more than one thread, idle threads can take work from the queue while other threads are busy executing handle\_\-input() on some object. 
+
+Definition at line 162 of file thread\_\-pool.cpp.
+
+References active\_\-threads\_\-.
+
+\subsubsection{Field Documentation}
+\hypertarget{classThread__Pool_Thread__Pooln0}{
+\index{Thread_Pool@{Thread\_\-Pool}!active_threads_@{active\_\-threads\_\-}}
+\index{active_threads_@{active\_\-threads\_\-}!Thread_Pool@{Thread\_\-Pool}}
+\paragraph[active\_\-threads\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classThread__Pool_Thread__Pools1}{counter\_\-t} Thread\_\-Pool::active\_\-threads\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classThread__Pool_Thread__Pooln0}
+
+
+We use the atomic op to keep a count of the number of threads in which our \hyperlink{classThread__Pool_Thread__Poolb0}{svc()} method is running. This is particularly important when we want to close() it down! 
+
+Definition at line 98 of file thread\_\-pool.h.
+
+Referenced by stop(), and svc().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{thread__pool_8h}{thread\_\-pool.h}\item 
+\hyperlink{thread__pool_8cpp}{thread\_\-pool.cpp}\end{CompactItemize}

@@ -1,0 +1,743 @@
+\hypertarget{classContest}{
+\subsection{Contest Class Reference}
+\label{classContest}\index{Contest@{Contest}}
+}
+{\tt \#include $<$contest.h$>$}
+
+\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classContest_Contests11Contests0}{PORT\_\-NUM} =  10101
+ \}
+\begin{CompactList}\small\item\em The default port number on which the evalserver will listen on.\item\end{CompactList}\item 
+enum \{ \hyperlink{classContest_Contests12Contests1}{ID\_\-SOC} =  0, 
+\hyperlink{classContest_Contests12Contests2}{ID\_\-EOD} =  1, 
+\hyperlink{classContest_Contests12Contests3}{ID\_\-EOW} =  2, 
+\hyperlink{classContest_Contests12Contests4}{ID\_\-EOM} =  4, 
+\hyperlink{classContest_Contests12Contests5}{ID\_\-EOC} =  -1
+ \}
+\item 
+enum \{ \hyperlink{classContest_Contests13Contests6}{MINUTEPRIZES} =  1440, 
+\hyperlink{classContest_Contests13Contests7}{HOURLYPRIZES} =  24, 
+\hyperlink{classContest_Contests13Contests8}{DAILYPRIZES} =  1, 
+\hyperlink{classContest_Contests13Contests9}{WEEKLYPRIZES} =  1, 
+\hyperlink{classContest_Contests13Contests10}{MONTHLYPRIZES} =  1
+ \}
+\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classContest_Contesta0}{Contest} (char $\ast$hostname)
+\begin{CompactList}\small\item\em The Constructor. it will take as arguments the hostname and the port number to bind to.\item\end{CompactList}\item 
+\hyperlink{classContest_Contesta1}{$\sim$Contest} ()
+\begin{CompactList}\small\item\em The destructor. Clean up everything and write the final reports.\item\end{CompactList}\item 
+void \hyperlink{classContest_Contesta2}{init} ()
+\begin{CompactList}\small\item\em The \hyperlink{classContest_Contesta2}{init()} method is responsible for some setup that cannot happen in the constructor.\item\end{CompactList}\item 
+void \hyperlink{classContest_Contesta3}{shutdown} ()
+\begin{CompactList}\small\item\em Shutdown cleans up the stuff from \hyperlink{classContest_Contesta2}{init()}.\item\end{CompactList}\item 
+void \hyperlink{classContest_Contesta4}{prepareto\-Shutdown} ()
+\begin{CompactList}\small\item\em Sets the varible Ready\-To\-Shutdown to true.\item\end{CompactList}\item 
+virtual int \hyperlink{classContest_Contesta5}{handle\_\-timeout} (const ACE\_\-Time\_\-Value \&tv, const void $\ast$arg)
+\begin{CompactList}\small\item\em The method to handle timeouts.\item\end{CompactList}\item 
+int \hyperlink{classContest_Contesta6}{handle\_\-signal} (int signum, siginfo\_\-t $\ast$, ucontext\_\-t $\ast$)
+\begin{CompactList}\small\item\em Catch and handle signals.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta7}{init\-Timers} ()
+\begin{CompactList}\small\item\em Set up and schedule all timers, and their respective actions.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta8}{init\-Threads} (ACE\_\-INET\_\-Addr $\ast$\hyperlink{classContest_Contesto3}{iaddr})
+\begin{CompactList}\small\item\em Set up the thread creation engine.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta9}{init\-Signal} ()
+\begin{CompactList}\small\item\em Set up the signal handler to catch signals.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta10}{setup\-Prizes} ()
+\begin{CompactList}\small\item\em Allocate and initialize the Prizes map.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta11}{init\-DB} ()
+\begin{CompactList}\small\item\em Initialize Database Connection.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta12}{init\-Logger} ()
+\begin{CompactList}\small\item\em Initialize the logger object.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta13}{init\-Processor} ()
+\begin{CompactList}\small\item\em Initialize the \hyperlink{classProcessor}{Processor} object.\item\end{CompactList}\item 
+void \hyperlink{classContest_Contesta14}{start} ()
+\begin{CompactList}\small\item\em Basically a wrapper to handle\_\-events().\item\end{CompactList}\item 
+\hyperlink{classDay}{Day} $\ast$ \hyperlink{classContest_Contesta15}{get\-Current\-Day} ()
+\begin{CompactList}\small\item\em Return current day.\item\end{CompactList}\item 
+\hyperlink{classDay}{Day} $\ast$ \hyperlink{classContest_Contesta16}{get\-Last\-Day} ()
+\begin{CompactList}\small\item\em Return last day.\item\end{CompactList}\item 
+vector$<$ class \hyperlink{classDay}{Day} $>$ \& \hyperlink{classContest_Contesta17}{get\-Contest\-Days} ()
+\begin{CompactList}\small\item\em Return Contest\-Days vector.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesta18}{gift\-Is\-Given} (\hyperlink{classTimePeriod}{Time\-Period} tp, u\_\-int gid)
+\begin{CompactList}\small\item\em Return true if gift gid is given in period tp.\item\end{CompactList}\item 
+void \hyperlink{classContest_Contesta19}{log\-Msg} (string msg)
+\begin{CompactList}\small\item\em Wrapper around logger object's log\-Msg.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Data Fields}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classContest_Contestm0}{SOC}
+\begin{CompactList}\small\item\em Start of Contest Timestamp.\item\end{CompactList}\item 
+vector$<$ \hyperlink{classTimeStamp}{Time\-Stamp} $>$ \hyperlink{classContest_Contestm1}{EOD}
+\begin{CompactList}\small\item\em End-of-day Timer. There will be apprx. 90 of them (Oct 1, 2002 - Dec 31, 2002).\item\end{CompactList}\item 
+vector$<$ \hyperlink{classTimeStamp}{Time\-Stamp} $>$ \hyperlink{classContest_Contestm2}{EOW}
+\begin{CompactList}\small\item\em End-of-week Timer. Apprx 12 of them.\item\end{CompactList}\item 
+vector$<$ \hyperlink{classTimeStamp}{Time\-Stamp} $>$ \hyperlink{classContest_Contestm3}{EOM}
+\begin{CompactList}\small\item\em End-of-month Timer.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp}{Time\-Stamp} \hyperlink{classContest_Contestm4}{EOC}
+\begin{CompactList}\small\item\em End-of-contest Timer. Basically it will shutdown the program.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classContest_Contestm5}{current\_\-day}
+\begin{CompactList}\small\item\em Index variables to keep count of where we are.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classContest_Contestm6}{current\_\-week}
+\begin{CompactList}\small\item\em Index variables to keep count of where we are.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classContest_Contestm7}{current\_\-month}
+\begin{CompactList}\small\item\em Index variables to keep count of where we are.\item\end{CompactList}\item 
+\hyperlink{classSQLTable}{SQLTable}$<$ string, \hyperlink{classpartDetails}{part\-Details} $>$ \hyperlink{classContest_Contestm8}{Participants}
+\begin{CompactList}\small\item\em The Participants map; basically it will hold a log of every participation.\item\end{CompactList}\item 
+\hyperlink{classSQLTable}{SQLTable}$<$ string, \hyperlink{classpartDetails}{part\-Details} $>$ \hyperlink{classContest_Contestm9}{Winners}
+\begin{CompactList}\small\item\em Winners map is for search purposes only,.\item\end{CompactList}\item 
+\hyperlink{classSQLTable}{SQLTable}$<$ string, \hyperlink{classCount}{Count} $>$ \hyperlink{classContest_Contestm10}{Subscribers}
+\begin{CompactList}\small\item\em Subscribers is used to hold the unique MSISDNS and a counter for each.\item\end{CompactList}\item 
+\hyperlink{classSQLTable}{SQLTable}$<$ string, \hyperlink{classgiftDetails}{gift\-Details} $>$ \hyperlink{classContest_Contestm11}{Prizes}
+\begin{CompactList}\small\item\em A map of the gifts of the contest.\item\end{CompactList}\item 
+vector$<$ string $>$ \hyperlink{classContest_Contestm12}{Prize\-Names}
+\begin{CompactList}\small\item\em This one holds the names of the prizes.\item\end{CompactList}\item 
+\hyperlink{classSQLTable}{SQLTable}$<$ string, \hyperlink{classDay}{Day} $>$ \hyperlink{classContest_Contestm13}{Counters}
+\begin{CompactList}\small\item\em We also keep an SQL TABLE called COUNTERS for faster statistics.\item\end{CompactList}\item 
+\hyperlink{classLogger}{Logger} $\ast$ \hyperlink{classContest_Contestm14}{logger}
+\begin{CompactList}\small\item\em \hyperlink{classLogger}{Logger} object.\item\end{CompactList}\item 
+\hyperlink{classProcessor}{Processor} $\ast$ \hyperlink{classContest_Contestm15}{processor}
+\begin{CompactList}\small\item\em \hyperlink{classProcessor}{Processor} object.\item\end{CompactList}\item 
+\hyperlink{classSQLiteConnection}{SQLite\-Connection} $\ast$ \hyperlink{classContest_Contestm16}{dbconnection}
+\begin{CompactList}\small\item\em Database Connection Object.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+ACE\_\-Thread\_\-Mutex \hyperlink{classContest_Contesto0}{mutex\_\-}
+\begin{CompactList}\small\item\em A basic Thread\_\-Mutex class that will ensure safe access to data.\item\end{CompactList}\item 
+ACE\_\-Reactor \hyperlink{classContest_Contesto1}{reactor}
+\begin{CompactList}\small\item\em Reactor.\item\end{CompactList}\item 
+\hyperlink{classClient__Acceptor}{Client\_\-Acceptor} $\ast$ \hyperlink{classContest_Contesto2}{peer\_\-acceptor}
+\begin{CompactList}\small\item\em The thread pool acceptor.\item\end{CompactList}\item 
+ACE\_\-INET\_\-Addr $\ast$ \hyperlink{classContest_Contesto3}{iaddr}
+\begin{CompactList}\small\item\em The internet address to bind to.\item\end{CompactList}\item 
+vector$<$ class \hyperlink{classDay}{Day} $>$ \hyperlink{classContest_Contesto4}{Contest\-Days}
+\begin{CompactList}\small\item\em \hyperlink{classDay}{Day} objects vector.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesto5}{Ready\-To\-Shutdown}
+\begin{CompactList}\small\item\em The program will operate while this is false.\item\end{CompactList}\item 
+pid\_\-t \hyperlink{classContest_Contesto6}{basethreadpid}
+\begin{CompactList}\small\item\em We need to know the parent thread.\item\end{CompactList}\item 
+bool \hyperlink{classContest_Contesto7}{Setup\-Prizes}
+\begin{CompactList}\small\item\em If we are restarting (from a crash?) there is no need to setup the prizes again.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classContest_Contests11}{
+\paragraph["@1]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classContest_Contests11}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{PORT_NUM@{PORT\_\-NUM}!Contest@{Contest}}\index{Contest@{Contest}!PORT_NUM@{PORT\_\-NUM}}\item[{\em 
+\hypertarget{classContest_Contests11Contests0}{
+{\em PORT\_\-NUM}}
+\label{classContest_Contests11Contests0}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 83 of file contest.h.\hypertarget{classContest_Contests12}{
+\paragraph["@2]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classContest_Contests12}
+
+
+\hyperlink{classContest_Contesta5}{handle\_\-timeout()} receives one of ID\_\-\{SOC,EOC,EOD,EOW,EOM\} to signify the end of the respective timer. All these are set as arguments in schedule\_\-timer() in \hyperlink{classContest_Contesta7}{init\-Timers()}. \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{ID_SOC@{ID\_\-SOC}!Contest@{Contest}}\index{Contest@{Contest}!ID_SOC@{ID\_\-SOC}}\item[{\em 
+\hypertarget{classContest_Contests12Contests1}{
+{\em ID\_\-SOC}}
+\label{classContest_Contests12Contests1}
+}]\index{ID_EOD@{ID\_\-EOD}!Contest@{Contest}}\index{Contest@{Contest}!ID_EOD@{ID\_\-EOD}}\item[{\em 
+\hypertarget{classContest_Contests12Contests2}{
+{\em ID\_\-EOD}}
+\label{classContest_Contests12Contests2}
+}]\index{ID_EOW@{ID\_\-EOW}!Contest@{Contest}}\index{Contest@{Contest}!ID_EOW@{ID\_\-EOW}}\item[{\em 
+\hypertarget{classContest_Contests12Contests3}{
+{\em ID\_\-EOW}}
+\label{classContest_Contests12Contests3}
+}]\index{ID_EOM@{ID\_\-EOM}!Contest@{Contest}}\index{Contest@{Contest}!ID_EOM@{ID\_\-EOM}}\item[{\em 
+\hypertarget{classContest_Contests12Contests4}{
+{\em ID\_\-EOM}}
+\label{classContest_Contests12Contests4}
+}]\index{ID_EOC@{ID\_\-EOC}!Contest@{Contest}}\index{Contest@{Contest}!ID_EOC@{ID\_\-EOC}}\item[{\em 
+\hypertarget{classContest_Contests12Contests5}{
+{\em ID\_\-EOC}}
+\label{classContest_Contests12Contests5}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 88 of file contest.h.\hypertarget{classContest_Contests13}{
+\paragraph["@3]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classContest_Contests13}
+
+
+The quantity of the prizes in their respective periods. The minute/hour are rather specified as daily prizes with the quantity set accordingly. \begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{MINUTEPRIZES@{MINUTEPRIZES}!Contest@{Contest}}\index{Contest@{Contest}!MINUTEPRIZES@{MINUTEPRIZES}}\item[{\em 
+\hypertarget{classContest_Contests13Contests6}{
+{\em MINUTEPRIZES}}
+\label{classContest_Contests13Contests6}
+}]\index{HOURLYPRIZES@{HOURLYPRIZES}!Contest@{Contest}}\index{Contest@{Contest}!HOURLYPRIZES@{HOURLYPRIZES}}\item[{\em 
+\hypertarget{classContest_Contests13Contests7}{
+{\em HOURLYPRIZES}}
+\label{classContest_Contests13Contests7}
+}]\index{DAILYPRIZES@{DAILYPRIZES}!Contest@{Contest}}\index{Contest@{Contest}!DAILYPRIZES@{DAILYPRIZES}}\item[{\em 
+\hypertarget{classContest_Contests13Contests8}{
+{\em DAILYPRIZES}}
+\label{classContest_Contests13Contests8}
+}]\index{WEEKLYPRIZES@{WEEKLYPRIZES}!Contest@{Contest}}\index{Contest@{Contest}!WEEKLYPRIZES@{WEEKLYPRIZES}}\item[{\em 
+\hypertarget{classContest_Contests13Contests9}{
+{\em WEEKLYPRIZES}}
+\label{classContest_Contests13Contests9}
+}]\index{MONTHLYPRIZES@{MONTHLYPRIZES}!Contest@{Contest}}\index{Contest@{Contest}!MONTHLYPRIZES@{MONTHLYPRIZES}}\item[{\em 
+\hypertarget{classContest_Contests13Contests10}{
+{\em MONTHLYPRIZES}}
+\label{classContest_Contests13Contests10}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 94 of file contest.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classContest_Contesta0}{
+\index{Contest@{Contest}!Contest@{Contest}}
+\index{Contest@{Contest}!Contest@{Contest}}
+\paragraph[Contest]{\setlength{\rightskip}{0pt plus 5cm}Contest::Contest (char $\ast$ {\em hostname})}\hfill}
+\label{classContest_Contesta0}
+
+
+The constructor. It sets up the internet address to listen to, Initializes the random number generator with a seed, and sets up the timers of the Contest. The rest of the initialization is done in \hyperlink{classContest_Contesta2}{init()}. 
+
+Definition at line 18 of file contest.cpp.
+
+References basethreadpid, iaddr, init\-Logger(), init\-Processor(), init\-Timers(), log\-Msg(), PORT\_\-NUM, Ready\-To\-Shutdown, and Setup\-Prizes.\hypertarget{classContest_Contesta1}{
+\index{Contest@{Contest}!~Contest@{$\sim$Contest}}
+\index{~Contest@{$\sim$Contest}!Contest@{Contest}}
+\paragraph[$\sim$Contest]{\setlength{\rightskip}{0pt plus 5cm}Contest::$\sim$Contest ()}\hfill}
+\label{classContest_Contesta1}
+
+
+The destructor. Just a dummy, all the important stuff is done in \hyperlink{classContest_Contesta3}{shutdown()} 
+
+Definition at line 46 of file contest.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classContest_Contesta17}{
+\index{Contest@{Contest}!getContestDays@{getContestDays}}
+\index{getContestDays@{getContestDays}!Contest@{Contest}}
+\paragraph[getContestDays]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ class \hyperlink{classDay}{Day} $>$ \& Contest::get\-Contest\-Days ()}\hfill}
+\label{classContest_Contesta17}
+
+
+
+
+Definition at line 565 of file contest.cpp.
+
+References Contest\-Days.
+
+Referenced by Day::calculate\-Est\-No\-Msgs().\hypertarget{classContest_Contesta15}{
+\index{Contest@{Contest}!getCurrentDay@{getCurrentDay}}
+\index{getCurrentDay@{getCurrentDay}!Contest@{Contest}}
+\paragraph[getCurrentDay]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classDay}{Day} $\ast$ Contest::get\-Current\-Day ()}\hfill}
+\label{classContest_Contesta15}
+
+
+Returns a pointer to the current day of the contest 
+
+Definition at line 544 of file contest.cpp.
+
+References Contest\-Days, and current\_\-day.
+
+Referenced by Processor::process\_\-i().\hypertarget{classContest_Contesta16}{
+\index{Contest@{Contest}!getLastDay@{getLastDay}}
+\index{getLastDay@{getLastDay}!Contest@{Contest}}
+\paragraph[getLastDay]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classDay}{Day} $\ast$ Contest::get\-Last\-Day ()}\hfill}
+\label{classContest_Contesta16}
+
+
+Returns a pointer to the last day of the contest or NULL if the contest has just started (so that it has no last day) 
+
+Definition at line 556 of file contest.cpp.
+
+References Contest\-Days, and current\_\-day.\hypertarget{classContest_Contesta18}{
+\index{Contest@{Contest}!giftIsGiven@{giftIsGiven}}
+\index{giftIsGiven@{giftIsGiven}!Contest@{Contest}}
+\paragraph[giftIsGiven]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::gift\-Is\-Given (\hyperlink{classTimePeriod}{Time\-Period} {\em tp}, u\_\-int {\em gid})}\hfill}
+\label{classContest_Contesta18}
+
+
+Given a \hyperlink{classTimePeriod}{Time\-Period} object and a gift ID, it returns true if the gift is given in that period, false otherwise 
+
+Definition at line 573 of file contest.cpp.
+
+References Time\-Period::get\-Begin\-TS(), log\-Msg(), Prizes, and SQLTable$<$ string, gift\-Details $>$::select\-Objects().
+
+Referenced by Day::execute\-Draw().\hypertarget{classContest_Contesta6}{
+\index{Contest@{Contest}!handle_signal@{handle\_\-signal}}
+\index{handle_signal@{handle\_\-signal}!Contest@{Contest}}
+\paragraph[handle\_\-signal]{\setlength{\rightskip}{0pt plus 5cm}int Contest::handle\_\-signal (int {\em signum}, siginfo\_\-t $\ast$, ucontext\_\-t $\ast$)}\hfill}
+\label{classContest_Contesta6}
+
+
+This one is responsible for handling the signal INT, TERM and QUIT. The only reason we want these caught and handled is to know when the software is terminated on a user's command. The action is logged in evalserver.log. The only thing we do is set Ready\-To\-Shutdown to true. 
+
+Definition at line 237 of file contest.cpp.
+
+References basethreadpid, log\-Msg(), and prepareto\-Shutdown().\hypertarget{classContest_Contesta5}{
+\index{Contest@{Contest}!handle_timeout@{handle\_\-timeout}}
+\index{handle_timeout@{handle\_\-timeout}!Contest@{Contest}}
+\paragraph[handle\_\-timeout]{\setlength{\rightskip}{0pt plus 5cm}int Contest::handle\_\-timeout (const ACE\_\-Time\_\-Value \& {\em tv}, const void $\ast$ {\em argument})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classContest_Contesta5}
+
+
+\hyperlink{classContest_Contesta5}{handle\_\-timeout()} is called every time a timer is triggered. Because timers are given an argument, which in this case is an ID number regarding the kind of the timer (Start of Contest, End of Contest, End of \hyperlink{classDay}{Day}, End of Week, End of Month), handle\_\-timeout can prepare the necessary structures to create the next \hyperlink{classDay}{Day} object, or start/end the contest. Because this works in a multithreaded environment, we have included everything in an ACE\_\-Guard scope. At the beginning of the timeout handling all transactions are disabled and are re-enabled at the end. 
+
+Definition at line 148 of file contest.cpp.
+
+References SQLite\-Connection::change\-Log\-Filename(), Contest\-Days, current\_\-day, current\_\-month, current\_\-week, dbconnection, SQLite\-Connection::disable\-Transactions(), SQLite\-Connection::enable\-Transactions(), EOD, EOM, EOW, Time\-Period::get\-End\-TS(), ID\_\-EOC, ID\_\-EOD, ID\_\-EOM, ID\_\-EOW, ID\_\-SOC, init(), log\-Msg(), mutex\_\-, Time\-Stamp::next\-Day(), prepareto\-Shutdown(), SOC, and SQLite\-Connection::transactions\-Enabled().\hypertarget{classContest_Contesta2}{
+\index{Contest@{Contest}!init@{init}}
+\index{init@{init}!Contest@{Contest}}
+\paragraph[init]{\setlength{\rightskip}{0pt plus 5cm}void Contest::init ()}\hfill}
+\label{classContest_Contesta2}
+
+
+Contest initialization method. Some of the setup cannot happen in the constructor, or actually should not happen. The constructor initializes the object and the necessary parts of the Contest object, but does $\ast$not$\ast$ actually start the Contest. This happens when the SOC (Start Of Contest) timer is triggered. Then the sockets are created, the thread engine is initialized, the database connection is setup, and the prize pool is created. Also, the counters current\_\-day, current\_\-week, current\_\-month are set to zero. 
+
+Definition at line 60 of file contest.cpp.
+
+References current\_\-day, current\_\-month, current\_\-week, iaddr, init\-DB(), init\-Signal(), init\-Threads(), log\-Msg(), setup\-Prizes(), and Setup\-Prizes.
+
+Referenced by handle\_\-timeout().\hypertarget{classContest_Contesta11}{
+\index{Contest@{Contest}!initDB@{initDB}}
+\index{initDB@{initDB}!Contest@{Contest}}
+\paragraph[initDB]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-DB ()}\hfill}
+\label{classContest_Contesta11}
+
+
+Here we open the database connection and create the tables if we have to. When we create a table, we use two vector$<$string$>$ objects. fieldnames and fieldtypes for the names and types of the fields of the SQL table respectively. Then we initialize the \hyperlink{classSQLTable}{SQLTable} using the appropriate templates and we also pass the logger object as an argument, since we want to have one global logger. 
+
+Definition at line 631 of file contest.cpp.
+
+References Counters, dbconnection, DBNAME, SQLite\-Connection::enable\-Transactions(), SQLite\-Connection::exists\-Table(), SQLTable$<$ string, gift\-Details $>$::is\-Ready(), SQLTable$<$ string, Day $>$::is\-Ready(), SQLTable$<$ string, part\-Details $>$::is\-Ready(), SQLite\-Connection::is\-Ready(), logger, Participants, Prizes, Setup\-Prizes, and Winners.
+
+Referenced by init().\hypertarget{classContest_Contesta12}{
+\index{Contest@{Contest}!initLogger@{initLogger}}
+\index{initLogger@{initLogger}!Contest@{Contest}}
+\paragraph[initLogger]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-Logger (void)}\hfill}
+\label{classContest_Contesta12}
+
+
+init\-Logger creates and opens the logger object. The logger object is a thread that runs asynchronously to the other threads and does all the logging (that is all I/O that is relevant to logging). 
+
+Definition at line 603 of file contest.cpp.
+
+References LOGFILENAME, logger, Logger::open(), and OUTPUT\_\-BOTH.
+
+Referenced by Contest().\hypertarget{classContest_Contesta13}{
+\index{Contest@{Contest}!initProcessor@{initProcessor}}
+\index{initProcessor@{initProcessor}!Contest@{Contest}}
+\paragraph[initProcessor]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-Processor (void)}\hfill}
+\label{classContest_Contesta13}
+
+
+init\-Processor creates and opens the \hyperlink{classProcessor}{Processor} object. This is the object that the processing, that is the draw is done. 
+
+Definition at line 615 of file contest.cpp.
+
+References Processor::open(), and processor.
+
+Referenced by Contest().\hypertarget{classContest_Contesta9}{
+\index{Contest@{Contest}!initSignal@{initSignal}}
+\index{initSignal@{initSignal}!Contest@{Contest}}
+\paragraph[initSignal]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-Signal ()}\hfill}
+\label{classContest_Contesta9}
+
+
+Set up the signal handler to catch signals. The program should catch SIGINT (Ctrl-C), SIGQUIT (Ctrl-$\backslash$) and if possible SIGKILL and log the action before quiting. 
+
+Definition at line 405 of file contest.cpp.
+
+Referenced by init().\hypertarget{classContest_Contesta8}{
+\index{Contest@{Contest}!initThreads@{initThreads}}
+\index{initThreads@{initThreads}!Contest@{Contest}}
+\paragraph[initThreads]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-Threads (ACE\_\-INET\_\-Addr $\ast$ {\em iaddr})}\hfill}
+\label{classContest_Contesta8}
+
+
+Creates the acceptor object which uses the Strategy feature of ACE to create a thread per socket connection and runs svc() in that thread to process the connection. 
+
+Definition at line 387 of file contest.cpp.
+
+References iaddr, Client\_\-Acceptor::open(), and peer\_\-acceptor.
+
+Referenced by init().\hypertarget{classContest_Contesta7}{
+\index{Contest@{Contest}!initTimers@{initTimers}}
+\index{initTimers@{initTimers}!Contest@{Contest}}
+\paragraph[initTimers]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::init\-Timers ()}\hfill}
+\label{classContest_Contesta7}
+
+
+This method initializes the EOD, EOW, EOM, SOC, EOC \hyperlink{classTimeStamp}{Time\-Stamp} objects (or vectors of them) and registers these with the reactor instance. We also have to make sure that no timers overlap. That is, if a day timer overlaps with a week or month timer, we exclude the day timer from the registered timers in ACE, but NOT from the EOD vector. 
+
+Definition at line 275 of file contest.cpp.
+
+References EOC, EOD, EOM, EOW, Time\-Stamp::get\-Time\-Stamp(), ID\_\-EOC, ID\_\-EOD, ID\_\-EOM, ID\_\-EOW, ID\_\-SOC, log\-Msg(), Time\-Stamp::next\-Week(), Time\-Stamp::set\-Time\-Stamp(), SOC, start(), and Time\-Stamp::to\-String().
+
+Referenced by Contest().\hypertarget{classContest_Contesta19}{
+\index{Contest@{Contest}!logMsg@{logMsg}}
+\index{logMsg@{logMsg}!Contest@{Contest}}
+\paragraph[logMsg]{\setlength{\rightskip}{0pt plus 5cm}void Contest::log\-Msg (string {\em msg})}\hfill}
+\label{classContest_Contesta19}
+
+
+Instead of using directly the logmsg method from the logger object, we wrap it with another one, so that if it (the logger) is not available (at the start or the end of execution) we will still have a logging mechanism available via cout. 
+
+Definition at line 736 of file contest.cpp.
+
+References logger, and Logger::log\-Msg().
+
+Referenced by Contest(), gift\-Is\-Given(), handle\_\-signal(), handle\_\-timeout(), init(), init\-Timers(), setup\-Prizes(), and shutdown().\hypertarget{classContest_Contesta4}{
+\index{Contest@{Contest}!preparetoShutdown@{preparetoShutdown}}
+\index{preparetoShutdown@{preparetoShutdown}!Contest@{Contest}}
+\paragraph[preparetoShutdown]{\setlength{\rightskip}{0pt plus 5cm}void Contest::prepareto\-Shutdown ()}\hfill}
+\label{classContest_Contesta4}
+
+
+Just sets the Ready\-To\-Shutdown flag to true. 
+
+Definition at line 90 of file contest.cpp.
+
+References Ready\-To\-Shutdown.
+
+Referenced by handle\_\-signal(), and handle\_\-timeout().\hypertarget{classContest_Contesta10}{
+\index{Contest@{Contest}!setupPrizes@{setupPrizes}}
+\index{setupPrizes@{setupPrizes}!Contest@{Contest}}
+\paragraph[setupPrizes]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::setup\-Prizes (void)}\hfill}
+\label{classContest_Contesta10}
+
+
+Set up the prizes for the contest, give them identifiers and register them in the Prizes table (SQL) of the database. 
+
+Definition at line 425 of file contest.cpp.
+
+References DAILYPRIZES, EOC, EOD, EOM, EOW, gift\-Details::ID\_\-DAILYPRIZES, gift\-Details::ID\_\-MINUTEPRIZES, gift\-Details::ID\_\-MONTHLYPRIZES, gift\-Details::ID\_\-WEEKLYPRIZES, SQLTable$<$ string, gift\-Details $>$::insert\-Object(), gift\-Details::insert\-String(), log\-Msg(), MINUTEPRIZES, MONTHLYPRIZES, Prize\-Names, Prizes, SQLTable$<$ string, gift\-Details $>$::sum\-Column(), and WEEKLYPRIZES.
+
+Referenced by init().\hypertarget{classContest_Contesta3}{
+\index{Contest@{Contest}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Contest@{Contest}}
+\paragraph[shutdown]{\setlength{\rightskip}{0pt plus 5cm}void Contest::shutdown ()}\hfill}
+\label{classContest_Contesta3}
+
+
+The deallocation of resources happens here. It first shuts down the database connection, cancels all the (remaining) timers and deactivates the reactor. 
+
+Definition at line 98 of file contest.cpp.
+
+References dbconnection, EOC, Time\-Stamp::get\-Time\-Stamp(), iaddr, log\-Msg(), and SOC.
+
+Referenced by start().\hypertarget{classContest_Contesta14}{
+\index{Contest@{Contest}!start@{start}}
+\index{start@{start}!Contest@{Contest}}
+\paragraph[start]{\setlength{\rightskip}{0pt plus 5cm}void Contest::start ()}\hfill}
+\label{classContest_Contesta14}
+
+
+Basically calls the handle\_\-events() of the reactor which is responsible for handling all the events (socket connection, timer triggering) 
+
+Definition at line 373 of file contest.cpp.
+
+References Ready\-To\-Shutdown, and shutdown().
+
+Referenced by init\-Timers(), and main().
+
+\subsubsection{Field Documentation}
+\hypertarget{classContest_Contesto6}{
+\index{Contest@{Contest}!basethreadpid@{basethreadpid}}
+\index{basethreadpid@{basethreadpid}!Contest@{Contest}}
+\paragraph[basethreadpid]{\setlength{\rightskip}{0pt plus 5cm}pid\_\-t Contest::basethreadpid\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto6}
+
+
+
+
+Definition at line 76 of file contest.h.
+
+Referenced by Contest(), and handle\_\-signal().\hypertarget{classContest_Contesto4}{
+\index{Contest@{Contest}!ContestDays@{ContestDays}}
+\index{ContestDays@{ContestDays}!Contest@{Contest}}
+\paragraph[ContestDays]{\setlength{\rightskip}{0pt plus 5cm}vector$<$class \hyperlink{classDay}{Day}$>$ Contest::Contest\-Days\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto4}
+
+
+
+
+Definition at line 70 of file contest.h.
+
+Referenced by get\-Contest\-Days(), get\-Current\-Day(), get\-Last\-Day(), and handle\_\-timeout().\hypertarget{classContest_Contestm13}{
+\index{Contest@{Contest}!Counters@{Counters}}
+\index{Counters@{Counters}!Contest@{Contest}}
+\paragraph[Counters]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLTable}{SQLTable}$<$string, \hyperlink{classDay}{Day}$>$ Contest::Counters}\hfill}
+\label{classContest_Contestm13}
+
+
+
+
+Definition at line 142 of file contest.h.
+
+Referenced by Day::Day(), init\-DB(), and Processor::process\_\-i().\hypertarget{classContest_Contestm5}{
+\index{Contest@{Contest}!current_day@{current\_\-day}}
+\index{current_day@{current\_\-day}!Contest@{Contest}}
+\paragraph[current\_\-day]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Contest::current\_\-day}\hfill}
+\label{classContest_Contestm5}
+
+
+
+
+Definition at line 109 of file contest.h.
+
+Referenced by get\-Current\-Day(), get\-Last\-Day(), handle\_\-timeout(), and init().\hypertarget{classContest_Contestm7}{
+\index{Contest@{Contest}!current_month@{current\_\-month}}
+\index{current_month@{current\_\-month}!Contest@{Contest}}
+\paragraph[current\_\-month]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Contest::current\_\-month}\hfill}
+\label{classContest_Contestm7}
+
+
+
+
+Definition at line 109 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), Day::execute\-Draw(), handle\_\-timeout(), and init().\hypertarget{classContest_Contestm6}{
+\index{Contest@{Contest}!current_week@{current\_\-week}}
+\index{current_week@{current\_\-week}!Contest@{Contest}}
+\paragraph[current\_\-week]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Contest::current\_\-week}\hfill}
+\label{classContest_Contestm6}
+
+
+
+
+Definition at line 109 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), Day::execute\-Draw(), handle\_\-timeout(), and init().\hypertarget{classContest_Contestm16}{
+\index{Contest@{Contest}!dbconnection@{dbconnection}}
+\index{dbconnection@{dbconnection}!Contest@{Contest}}
+\paragraph[dbconnection]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLiteConnection}{SQLite\-Connection}$\ast$ Contest::dbconnection}\hfill}
+\label{classContest_Contestm16}
+
+
+
+
+Definition at line 196 of file contest.h.
+
+Referenced by handle\_\-timeout(), init\-DB(), Processor::process\_\-i(), and shutdown().\hypertarget{classContest_Contestm4}{
+\index{Contest@{Contest}!EOC@{EOC}}
+\index{EOC@{EOC}!Contest@{Contest}}
+\paragraph[EOC]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} Contest::EOC}\hfill}
+\label{classContest_Contestm4}
+
+
+
+
+Definition at line 106 of file contest.h.
+
+Referenced by init\-Timers(), setup\-Prizes(), and shutdown().\hypertarget{classContest_Contestm1}{
+\index{Contest@{Contest}!EOD@{EOD}}
+\index{EOD@{EOD}!Contest@{Contest}}
+\paragraph[EOD]{\setlength{\rightskip}{0pt plus 5cm}vector$<$\hyperlink{classTimeStamp}{Time\-Stamp}$>$ Contest::EOD}\hfill}
+\label{classContest_Contestm1}
+
+
+
+
+Definition at line 100 of file contest.h.
+
+Referenced by handle\_\-timeout(), init\-Timers(), and setup\-Prizes().\hypertarget{classContest_Contestm3}{
+\index{Contest@{Contest}!EOM@{EOM}}
+\index{EOM@{EOM}!Contest@{Contest}}
+\paragraph[EOM]{\setlength{\rightskip}{0pt plus 5cm}vector$<$\hyperlink{classTimeStamp}{Time\-Stamp}$>$ Contest::EOM}\hfill}
+\label{classContest_Contestm3}
+
+
+
+
+Definition at line 104 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), Day::execute\-Draw(), handle\_\-timeout(), init\-Timers(), and setup\-Prizes().\hypertarget{classContest_Contestm2}{
+\index{Contest@{Contest}!EOW@{EOW}}
+\index{EOW@{EOW}!Contest@{Contest}}
+\paragraph[EOW]{\setlength{\rightskip}{0pt plus 5cm}vector$<$\hyperlink{classTimeStamp}{Time\-Stamp}$>$ Contest::EOW}\hfill}
+\label{classContest_Contestm2}
+
+
+
+
+Definition at line 102 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), Day::execute\-Draw(), handle\_\-timeout(), init\-Timers(), and setup\-Prizes().\hypertarget{classContest_Contesto3}{
+\index{Contest@{Contest}!iaddr@{iaddr}}
+\index{iaddr@{iaddr}!Contest@{Contest}}
+\paragraph[iaddr]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-INET\_\-Addr$\ast$ Contest::iaddr\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto3}
+
+
+
+
+Definition at line 67 of file contest.h.
+
+Referenced by Contest(), init(), init\-Threads(), and shutdown().\hypertarget{classContest_Contestm14}{
+\index{Contest@{Contest}!logger@{logger}}
+\index{logger@{logger}!Contest@{Contest}}
+\paragraph[logger]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classLogger}{Logger}$\ast$ Contest::logger}\hfill}
+\label{classContest_Contestm14}
+
+
+
+
+Definition at line 190 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), Day::calculate\-Est\-No\-Msgs(), Day::Day(), init\-DB(), init\-Logger(), log\-Msg(), Client\_\-Handler::process(), and Processor::process\_\-i().\hypertarget{classContest_Contesto0}{
+\index{Contest@{Contest}!mutex_@{mutex\_\-}}
+\index{mutex_@{mutex\_\-}!Contest@{Contest}}
+\paragraph[mutex\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Thread\_\-Mutex Contest::mutex\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto0}
+
+
+
+
+Definition at line 58 of file contest.h.
+
+Referenced by handle\_\-timeout().\hypertarget{classContest_Contestm8}{
+\index{Contest@{Contest}!Participants@{Participants}}
+\index{Participants@{Participants}!Contest@{Contest}}
+\paragraph[Participants]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLTable}{SQLTable}$<$string, \hyperlink{classpartDetails}{part\-Details}$>$ Contest::Participants}\hfill}
+\label{classContest_Contestm8}
+
+
+
+
+Definition at line 127 of file contest.h.
+
+Referenced by init\-DB(), and Processor::process\_\-i().\hypertarget{classContest_Contesto2}{
+\index{Contest@{Contest}!peer_acceptor@{peer\_\-acceptor}}
+\index{peer_acceptor@{peer\_\-acceptor}!Contest@{Contest}}
+\paragraph[peer\_\-acceptor]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classClient__Acceptor}{Client\_\-Acceptor}$\ast$ Contest::peer\_\-acceptor\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto2}
+
+
+
+
+Definition at line 64 of file contest.h.
+
+Referenced by init\-Threads().\hypertarget{classContest_Contestm12}{
+\index{Contest@{Contest}!PrizeNames@{PrizeNames}}
+\index{PrizeNames@{PrizeNames}!Contest@{Contest}}
+\paragraph[PrizeNames]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ Contest::Prize\-Names}\hfill}
+\label{classContest_Contestm12}
+
+
+
+
+Definition at line 139 of file contest.h.
+
+Referenced by setup\-Prizes().\hypertarget{classContest_Contestm11}{
+\index{Contest@{Contest}!Prizes@{Prizes}}
+\index{Prizes@{Prizes}!Contest@{Contest}}
+\paragraph[Prizes]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLTable}{SQLTable}$<$string, \hyperlink{classgiftDetails}{gift\-Details}$>$ Contest::Prizes}\hfill}
+\label{classContest_Contestm11}
+
+
+
+
+Definition at line 136 of file contest.h.
+
+Referenced by Day::assign\-Prizes(), gift\-Is\-Given(), init\-DB(), Processor::process\_\-i(), and setup\-Prizes().\hypertarget{classContest_Contestm15}{
+\index{Contest@{Contest}!processor@{processor}}
+\index{processor@{processor}!Contest@{Contest}}
+\paragraph[processor]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classProcessor}{Processor}$\ast$ Contest::processor}\hfill}
+\label{classContest_Contestm15}
+
+
+
+
+Definition at line 193 of file contest.h.
+
+Referenced by init\-Processor(), and Client\_\-Handler::process().\hypertarget{classContest_Contesto1}{
+\index{Contest@{Contest}!reactor@{reactor}}
+\index{reactor@{reactor}!Contest@{Contest}}
+\paragraph[reactor]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Reactor Contest::reactor\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto1}
+
+
+
+
+Definition at line 61 of file contest.h.\hypertarget{classContest_Contesto5}{
+\index{Contest@{Contest}!ReadyToShutdown@{ReadyToShutdown}}
+\index{ReadyToShutdown@{ReadyToShutdown}!Contest@{Contest}}
+\paragraph[ReadyToShutdown]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::Ready\-To\-Shutdown\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto5}
+
+
+
+
+Definition at line 73 of file contest.h.
+
+Referenced by Contest(), prepareto\-Shutdown(), and start().\hypertarget{classContest_Contesto7}{
+\index{Contest@{Contest}!SetupPrizes@{SetupPrizes}}
+\index{SetupPrizes@{SetupPrizes}!Contest@{Contest}}
+\paragraph[SetupPrizes]{\setlength{\rightskip}{0pt plus 5cm}bool Contest::Setup\-Prizes\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classContest_Contesto7}
+
+
+
+
+Definition at line 79 of file contest.h.
+
+Referenced by Contest(), init(), and init\-DB().\hypertarget{classContest_Contestm0}{
+\index{Contest@{Contest}!SOC@{SOC}}
+\index{SOC@{SOC}!Contest@{Contest}}
+\paragraph[SOC]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimeStamp}{Time\-Stamp} Contest::SOC}\hfill}
+\label{classContest_Contestm0}
+
+
+
+
+Definition at line 98 of file contest.h.
+
+Referenced by handle\_\-timeout(), init\-Timers(), and shutdown().\hypertarget{classContest_Contestm10}{
+\index{Contest@{Contest}!Subscribers@{Subscribers}}
+\index{Subscribers@{Subscribers}!Contest@{Contest}}
+\paragraph[Subscribers]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLTable}{SQLTable}$<$string, \hyperlink{classCount}{Count}$>$ Contest::Subscribers}\hfill}
+\label{classContest_Contestm10}
+
+
+
+
+Definition at line 133 of file contest.h.\hypertarget{classContest_Contestm9}{
+\index{Contest@{Contest}!Winners@{Winners}}
+\index{Winners@{Winners}!Contest@{Contest}}
+\paragraph[Winners]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classSQLTable}{SQLTable}$<$string, \hyperlink{classpartDetails}{part\-Details}$>$ Contest::Winners}\hfill}
+\label{classContest_Contestm9}
+
+
+
+
+Definition at line 130 of file contest.h.
+
+Referenced by init\-DB(), and Processor::process\_\-i().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{contest_8h}{contest.h}\item 
+\hyperlink{contest_8cpp}{contest.cpp}\end{CompactItemize}

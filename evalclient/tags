@@ -1,0 +1,354 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5	//
+conf.change.pl	/home/markos/Source/evalclient/admin/conf.change.pl	1;"	F
+insert_main_loop	/home/markos/Source/evalclient/admin/conf.change.pl	96;"	s
+insert_main_loop_250	/home/markos/Source/evalclient/admin/conf.change.pl	106;"	s
+insert_main_loop_213	/home/markos/Source/evalclient/admin/conf.change.pl	134;"	s
+debianrules	/home/markos/Source/evalclient/admin/debianrules	1;"	F
+depcomp	/home/markos/Source/evalclient/admin/depcomp	1;"	F
+install-sh	/home/markos/Source/evalclient/admin/install-sh	1;"	F
+ltcf-c.sh	/home/markos/Source/evalclient/admin/ltcf-c.sh	1;"	F
+ltcf-cxx.sh	/home/markos/Source/evalclient/admin/ltcf-cxx.sh	1;"	F
+ltcf-gcj.sh	/home/markos/Source/evalclient/admin/ltcf-gcj.sh	1;"	F
+ltconfig	/home/markos/Source/evalclient/admin/ltconfig	1;"	F
+dlopen	/home/markos/Source/evalclient/admin/ltconfig	1608;"	f
+dlopen	/home/markos/Source/evalclient/admin/ltconfig	1655;"	f
+dlopen	/home/markos/Source/evalclient/admin/ltconfig	1694;"	f
+dld_link	/home/markos/Source/evalclient/admin/ltconfig	1733;"	f
+shl_load	/home/markos/Source/evalclient/admin/ltconfig	1780;"	f
+shl_load	/home/markos/Source/evalclient/admin/ltconfig	1821;"	f
+ltmain.sh	/home/markos/Source/evalclient/admin/ltmain.sh	1;"	F
+missing	/home/markos/Source/evalclient/admin/missing	1;"	F
+mkinstalldirs	/home/markos/Source/evalclient/admin/mkinstalldirs	1;"	F
+ylwrap	/home/markos/Source/evalclient/admin/ylwrap	1;"	F
+clientobject.cpp	/home/markos/Source/evalclient/evalclient/clientobject.cpp	1;"	F
+clientObject	/home/markos/Source/evalclient/evalclient/clientobject.cpp	20;"	f	class:clientObject
+~clientObject	/home/markos/Source/evalclient/evalclient/clientobject.cpp	22;"	f	class:clientObject
+init	/home/markos/Source/evalclient/evalclient/clientobject.cpp	25;"	f	class:clientObject
+clientobject.h	/home/markos/Source/evalclient/evalclient/clientobject.h	1;"	F
+CLIENTOBJECT_H	/home/markos/Source/evalclient/evalclient/clientobject.h	20;"	d
+clientObject	/home/markos/Source/evalclient/evalclient/clientobject.h	30;"	c
+clientObject	/home/markos/Source/evalclient/evalclient/clientobject.h	32;"	p	class:clientObject
+~clientObject	/home/markos/Source/evalclient/evalclient/clientobject.h	33;"	p	class:clientObject
+init	/home/markos/Source/evalclient/evalclient/clientobject.h	34;"	p	class:clientObject
+connectionhandler.cpp	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	1;"	F
+ID_CRC_CORRECT	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	20;"	d	file:
+responseID	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	22;"	g	file:
+ID_CRC_OK	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	22;"	e	enum:responseID	file:
+ID_CRC_ERROR	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	22;"	e	enum:responseID	file:
+Crypt	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	24;"	f
+connectionHandler	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	118;"	f	class:connectionHandler
+~connectionHandler	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	130;"	f	class:connectionHandler
+open	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	136;"	f	class:connectionHandler
+setBuffer	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	151;"	f	class:connectionHandler
+handle_timeout	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	160;"	f	class:connectionHandler
+handle_input	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	171;"	f	class:connectionHandler
+sendBuffer	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	229;"	f	class:connectionHandler
+process_input	/home/markos/Source/evalclient/evalclient/connectionhandler.cpp	237;"	f	class:connectionHandler
+connectionhandler.h	/home/markos/Source/evalclient/evalclient/connectionhandler.h	1;"	F
+CONNECTIONHANDLER_H	/home/markos/Source/evalclient/evalclient/connectionhandler.h	19;"	d
+connectionHandler	/home/markos/Source/evalclient/evalclient/connectionhandler.h	42;"	c	inherits:ACE_Svc_Handler
+readyToShutdown	/home/markos/Source/evalclient/evalclient/connectionhandler.h	45;"	m	class:connectionHandler
+connectionHandler	/home/markos/Source/evalclient/evalclient/connectionhandler.h	47;"	p	class:connectionHandler
+open	/home/markos/Source/evalclient/evalclient/connectionhandler.h	52;"	p	class:connectionHandler
+handle_input	/home/markos/Source/evalclient/evalclient/connectionhandler.h	59;"	p	class:connectionHandler
+handle_timeout	/home/markos/Source/evalclient/evalclient/connectionhandler.h	61;"	p	class:connectionHandler
+setPart	/home/markos/Source/evalclient/evalclient/connectionhandler.h	67;"	f	class:connectionHandler
+setBuffer	/home/markos/Source/evalclient/evalclient/connectionhandler.h	77;"	p	class:connectionHandler
+sendBuffer	/home/markos/Source/evalclient/evalclient/connectionhandler.h	82;"	p	class:connectionHandler
+process_input	/home/markos/Source/evalclient/evalclient/connectionhandler.h	89;"	p	class:connectionHandler
+~connectionHandler	/home/markos/Source/evalclient/evalclient/connectionhandler.h	92;"	p	class:connectionHandler
+buffer	/home/markos/Source/evalclient/evalclient/connectionhandler.h	98;"	m	class:connectionHandler
+response	/home/markos/Source/evalclient/evalclient/connectionhandler.h	104;"	m	class:connectionHandler
+counter	/home/markos/Source/evalclient/evalclient/connectionhandler.h	109;"	m	class:connectionHandler
+status	/home/markos/Source/evalclient/evalclient/connectionhandler.h	114;"	m	class:connectionHandler
+_time	/home/markos/Source/evalclient/evalclient/connectionhandler.h	119;"	m	class:connectionHandler
+_code	/home/markos/Source/evalclient/evalclient/connectionhandler.h	120;"	m	class:connectionHandler
+_msdn	/home/markos/Source/evalclient/evalclient/connectionhandler.h	121;"	m	class:connectionHandler
+connectionmsgblock.cpp	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	1;"	F
+connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	12;"	f	class:connectionMsgBlock
+connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	39;"	f	class:connectionMsgBlock
+getDataSize	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	46;"	f	class:connectionMsgBlock
+operator ==	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	50;"	f	class:connectionMsgBlock
+getData	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	62;"	f	class:connectionMsgBlock
+~connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	66;"	f	class:connectionMsgBlock
+retrieveCRC	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	70;"	f	class:connectionMsgBlock
+isValid	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	77;"	f	class:connectionMsgBlock
+getParticipant	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	87;"	f	class:connectionMsgBlock
+getParticipantStr	/home/markos/Source/evalclient/evalclient/connectionmsgblock.cpp	117;"	f	class:connectionMsgBlock
+connectionmsgblock.h	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	1;"	F
+CONNECTIONMSGBLOCK_H	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	11;"	d
+DATASIZE	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	24;"	d
+DATA_WO_CRC	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	25;"	d
+CRC_OFFSET	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	26;"	d
+connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	28;"	c
+crc32	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	29;"	m	class:connectionMsgBlock
+data	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	30;"	m	class:connectionMsgBlock
+connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	32;"	p	class:connectionMsgBlock
+connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	33;"	p	class:connectionMsgBlock
+~connectionMsgBlock	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	34;"	p	class:connectionMsgBlock
+getDataSize	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	36;"	p	class:connectionMsgBlock
+retrieveCRC	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	37;"	p	class:connectionMsgBlock
+isValid	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	38;"	p	class:connectionMsgBlock
+operator ==	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	39;"	p	class:connectionMsgBlock
+getData	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	40;"	p	class:connectionMsgBlock
+getParticipant	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	41;"	p	class:connectionMsgBlock
+getParticipantStr	/home/markos/Source/evalclient/evalclient/connectionmsgblock.h	42;"	p	class:connectionMsgBlock
+crc_32.cpp	/home/markos/Source/evalclient/evalclient/crc_32.cpp	1;"	F
+CRC_32	/home/markos/Source/evalclient/evalclient/crc_32.cpp	24;"	f	class:CRC_32
+reflect	/home/markos/Source/evalclient/evalclient/crc_32.cpp	42;"	f	class:CRC_32
+getCRC	/home/markos/Source/evalclient/evalclient/crc_32.cpp	58;"	f	class:CRC_32
+crc_32.h	/home/markos/Source/evalclient/evalclient/crc_32.h	1;"	F
+CRC_32_H	/home/markos/Source/evalclient/evalclient/crc_32.h	19;"	d
+CRC_32	/home/markos/Source/evalclient/evalclient/crc_32.h	35;"	c
+crc32_table	/home/markos/Source/evalclient/evalclient/crc_32.h	38;"	m	class:CRC_32
+reflect	/home/markos/Source/evalclient/evalclient/crc_32.h	41;"	p	class:CRC_32
+CRC_32	/home/markos/Source/evalclient/evalclient/crc_32.h	45;"	p	class:CRC_32
+getCRC	/home/markos/Source/evalclient/evalclient/crc_32.h	48;"	p	class:CRC_32
+evalsim.cpp	/home/markos/Source/evalclient/evalclient/evalsim.cpp	1;"	F
+_RND	/home/markos/Source/evalclient/evalclient/evalsim.cpp	1;"	d	file:
+makeRandomLong	/home/markos/Source/evalclient/evalclient/evalsim.cpp	14;"	f
+main	/home/markos/Source/evalclient/evalclient/evalsim.cpp	23;"	f
+main.cpp	/home/markos/Source/evalclient/evalclient/main.cpp	1;"	F
+PORT_NO	/home/markos/Source/evalclient/evalclient/main.cpp	39;"	d	file:
+evalConnector	/home/markos/Source/evalclient/evalclient/main.cpp	41;"	t	file:
+main	/home/markos/Source/evalclient/evalclient/main.cpp	43;"	f
+partdetails.cpp	/home/markos/Source/evalclient/evalclient/partdetails.cpp	1;"	F
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.cpp	14;"	f	class:partDetails
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.cpp	19;"	f	class:partDetails
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.cpp	25;"	f	class:partDetails
+~partDetails	/home/markos/Source/evalclient/evalclient/partdetails.cpp	37;"	f	class:partDetails
+operator <<	/home/markos/Source/evalclient/evalclient/partdetails.cpp	40;"	f
+setMSDN	/home/markos/Source/evalclient/evalclient/partdetails.cpp	47;"	f	class:partDetails
+getMSDN	/home/markos/Source/evalclient/evalclient/partdetails.cpp	51;"	f	class:partDetails
+getMSDNStr	/home/markos/Source/evalclient/evalclient/partdetails.cpp	55;"	f	class:partDetails
+sizeofMSDN	/home/markos/Source/evalclient/evalclient/partdetails.cpp	59;"	f	class:partDetails
+setTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.cpp	63;"	f	class:partDetails
+getTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.cpp	67;"	f	class:partDetails
+setGiftId	/home/markos/Source/evalclient/evalclient/partdetails.cpp	71;"	f	class:partDetails
+getGiftId	/home/markos/Source/evalclient/evalclient/partdetails.cpp	75;"	f	class:partDetails
+getStringTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.cpp	79;"	f	class:partDetails
+insertString	/home/markos/Source/evalclient/evalclient/partdetails.cpp	85;"	f	class:partDetails
+updateString	/home/markos/Source/evalclient/evalclient/partdetails.cpp	92;"	f	class:partDetails
+toHTMLString	/home/markos/Source/evalclient/evalclient/partdetails.cpp	101;"	f	class:partDetails
+isEmpty	/home/markos/Source/evalclient/evalclient/partdetails.cpp	114;"	f	class:partDetails
+partdetails.h	/home/markos/Source/evalclient/evalclient/partdetails.h	1;"	F
+PARTDETAILS_H	/home/markos/Source/evalclient/evalclient/partdetails.h	11;"	d
+MSDNSIZE	/home/markos/Source/evalclient/evalclient/partdetails.h	23;"	d
+NO_GIFT	/home/markos/Source/evalclient/evalclient/partdetails.h	24;"	d
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.h	30;"	c
+msdn	/home/markos/Source/evalclient/evalclient/partdetails.h	32;"	m	class:partDetails
+timestamp	/home/markos/Source/evalclient/evalclient/partdetails.h	33;"	m	class:partDetails
+giftid	/home/markos/Source/evalclient/evalclient/partdetails.h	34;"	m	class:partDetails
+empty	/home/markos/Source/evalclient/evalclient/partdetails.h	35;"	m	class:partDetails
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.h	37;"	p	class:partDetails
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.h	38;"	p	class:partDetails
+partDetails	/home/markos/Source/evalclient/evalclient/partdetails.h	39;"	p	class:partDetails
+~partDetails	/home/markos/Source/evalclient/evalclient/partdetails.h	41;"	p	class:partDetails
+operator <<	/home/markos/Source/evalclient/evalclient/partdetails.h	43;"	p	class:partDetails
+setMSDN	/home/markos/Source/evalclient/evalclient/partdetails.h	44;"	p	class:partDetails
+getMSDN	/home/markos/Source/evalclient/evalclient/partdetails.h	45;"	p	class:partDetails
+getMSDNStr	/home/markos/Source/evalclient/evalclient/partdetails.h	46;"	p	class:partDetails
+sizeofMSDN	/home/markos/Source/evalclient/evalclient/partdetails.h	47;"	p	class:partDetails
+setTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.h	48;"	p	class:partDetails
+getTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.h	49;"	p	class:partDetails
+setGiftId	/home/markos/Source/evalclient/evalclient/partdetails.h	50;"	p	class:partDetails
+getGiftId	/home/markos/Source/evalclient/evalclient/partdetails.h	51;"	p	class:partDetails
+getStringTimestamp	/home/markos/Source/evalclient/evalclient/partdetails.h	52;"	p	class:partDetails
+insertString	/home/markos/Source/evalclient/evalclient/partdetails.h	53;"	p	class:partDetails
+updateString	/home/markos/Source/evalclient/evalclient/partdetails.h	54;"	p	class:partDetails
+toHTMLString	/home/markos/Source/evalclient/evalclient/partdetails.h	55;"	p	class:partDetails
+isEmpty	/home/markos/Source/evalclient/evalclient/partdetails.h	56;"	p	class:partDetails
+timeperiod.cpp	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	1;"	F
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	12;"	f	class:timePeriod
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	17;"	f	class:timePeriod
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	21;"	f	class:timePeriod
+~timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	25;"	f	class:timePeriod
+dateInPeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	28;"	f	class:timePeriod
+dateInPeriod	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	35;"	f	class:timePeriod
+getBeginTS	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	42;"	f	class:timePeriod
+getEndTS	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	46;"	f	class:timePeriod
+toString	/home/markos/Source/evalclient/evalclient/timeperiod.cpp	50;"	f	class:timePeriod
+timeperiod.h	/home/markos/Source/evalclient/evalclient/timeperiod.h	1;"	F
+TIMEPERIOD_H	/home/markos/Source/evalclient/evalclient/timeperiod.h	11;"	d
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	21;"	c
+beginTimeStamp	/home/markos/Source/evalclient/evalclient/timeperiod.h	22;"	m	class:timePeriod
+endTimeStamp	/home/markos/Source/evalclient/evalclient/timeperiod.h	22;"	m	class:timePeriod
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	24;"	p	class:timePeriod
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	25;"	p	class:timePeriod
+timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	26;"	p	class:timePeriod
+~timePeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	27;"	p	class:timePeriod
+getBeginTS	/home/markos/Source/evalclient/evalclient/timeperiod.h	29;"	p	class:timePeriod
+getEndTS	/home/markos/Source/evalclient/evalclient/timeperiod.h	30;"	p	class:timePeriod
+dateInPeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	31;"	p	class:timePeriod
+dateInPeriod	/home/markos/Source/evalclient/evalclient/timeperiod.h	32;"	p	class:timePeriod
+toString	/home/markos/Source/evalclient/evalclient/timeperiod.h	33;"	p	class:timePeriod
+timestamp.cpp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	1;"	F
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	12;"	f	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	28;"	f	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	36;"	f	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	44;"	f	class:TimeStamp
+~TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	52;"	f	class:TimeStamp
+operator ++	/home/markos/Source/evalclient/evalclient/timestamp.cpp	55;"	f	class:TimeStamp
+operator <	/home/markos/Source/evalclient/evalclient/timestamp.cpp	60;"	f	class:TimeStamp
+operator <	/home/markos/Source/evalclient/evalclient/timestamp.cpp	67;"	f	class:TimeStamp
+operator >	/home/markos/Source/evalclient/evalclient/timestamp.cpp	74;"	f	class:TimeStamp
+operator >	/home/markos/Source/evalclient/evalclient/timestamp.cpp	81;"	f	class:TimeStamp
+operator ==	/home/markos/Source/evalclient/evalclient/timestamp.cpp	88;"	f	class:TimeStamp
+operator ==	/home/markos/Source/evalclient/evalclient/timestamp.cpp	95;"	f	class:TimeStamp
+operator !=	/home/markos/Source/evalclient/evalclient/timestamp.cpp	102;"	f	class:TimeStamp
+operator !=	/home/markos/Source/evalclient/evalclient/timestamp.cpp	109;"	f	class:TimeStamp
+getTimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	116;"	f	class:TimeStamp
+setTimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.cpp	120;"	f	class:TimeStamp
+nextDay	/home/markos/Source/evalclient/evalclient/timestamp.cpp	128;"	f	class:TimeStamp
+previousDay	/home/markos/Source/evalclient/evalclient/timestamp.cpp	132;"	f	class:TimeStamp
+nextWeek	/home/markos/Source/evalclient/evalclient/timestamp.cpp	136;"	f	class:TimeStamp
+nextMonth	/home/markos/Source/evalclient/evalclient/timestamp.cpp	140;"	f	class:TimeStamp
+toString	/home/markos/Source/evalclient/evalclient/timestamp.cpp	144;"	f	class:TimeStamp
+timestamp.h	/home/markos/Source/evalclient/evalclient/timestamp.h	1;"	F
+TIMESTAMP_H	/home/markos/Source/evalclient/evalclient/timestamp.h	11;"	d
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	24;"	c
+timeinfo	/home/markos/Source/evalclient/evalclient/timestamp.h	26;"	m	class:TimeStamp
+timestamp	/home/markos/Source/evalclient/evalclient/timestamp.h	27;"	m	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	29;"	p	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	30;"	p	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	31;"	p	class:TimeStamp
+TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	32;"	p	class:TimeStamp
+~TimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	33;"	p	class:TimeStamp
+operator ++	/home/markos/Source/evalclient/evalclient/timestamp.h	35;"	p	class:TimeStamp
+operator >	/home/markos/Source/evalclient/evalclient/timestamp.h	36;"	p	class:TimeStamp
+operator >	/home/markos/Source/evalclient/evalclient/timestamp.h	37;"	p	class:TimeStamp
+operator <	/home/markos/Source/evalclient/evalclient/timestamp.h	38;"	p	class:TimeStamp
+operator <	/home/markos/Source/evalclient/evalclient/timestamp.h	39;"	p	class:TimeStamp
+operator ==	/home/markos/Source/evalclient/evalclient/timestamp.h	40;"	p	class:TimeStamp
+operator ==	/home/markos/Source/evalclient/evalclient/timestamp.h	41;"	p	class:TimeStamp
+operator !=	/home/markos/Source/evalclient/evalclient/timestamp.h	42;"	p	class:TimeStamp
+operator !=	/home/markos/Source/evalclient/evalclient/timestamp.h	43;"	p	class:TimeStamp
+getTimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	45;"	p	class:TimeStamp
+setTimeStamp	/home/markos/Source/evalclient/evalclient/timestamp.h	46;"	p	class:TimeStamp
+nextDay	/home/markos/Source/evalclient/evalclient/timestamp.h	47;"	p	class:TimeStamp
+previousDay	/home/markos/Source/evalclient/evalclient/timestamp.h	48;"	p	class:TimeStamp
+nextWeek	/home/markos/Source/evalclient/evalclient/timestamp.h	49;"	p	class:TimeStamp
+nextMonth	/home/markos/Source/evalclient/evalclient/timestamp.h	50;"	p	class:TimeStamp
+toString	/home/markos/Source/evalclient/evalclient/timestamp.h	51;"	p	class:TimeStamp
+giftdetails.cpp	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	1;"	F
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	13;"	f	class:giftDetails
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	19;"	f	class:giftDetails
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	25;"	f	class:giftDetails
+~giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	40;"	f	class:giftDetails
+getGiftId	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	43;"	f	class:giftDetails
+getName	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	47;"	f	class:giftDetails
+getInitialQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	51;"	f	class:giftDetails
+getCurrentQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	55;"	f	class:giftDetails
+setCurrentQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	59;"	f	class:giftDetails
+operator --	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	63;"	f	class:giftDetails
+setInitialQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	68;"	f	class:giftDetails
+setName	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	72;"	f	class:giftDetails
+getGiftDuration	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	78;"	f	class:giftDetails
+insertString	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	96;"	f	class:giftDetails
+updateString	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	107;"	f	class:giftDetails
+isEmpty	/home/markos/Source/evalclient/evalclient/giftdetails.cpp	118;"	f	class:giftDetails
+giftdetails.h	/home/markos/Source/evalclient/evalclient/giftdetails.h	1;"	F
+GIFTDETAILS_H	/home/markos/Source/evalclient/evalclient/giftdetails.h	11;"	d
+ID_HOURLYPRIZES	/home/markos/Source/evalclient/evalclient/giftdetails.h	26;"	v
+ID_DAILYPRIZES	/home/markos/Source/evalclient/evalclient/giftdetails.h	27;"	v
+ID_WEEKLYPRIZES	/home/markos/Source/evalclient/evalclient/giftdetails.h	28;"	v
+ID_MONTHLYPRIZES	/home/markos/Source/evalclient/evalclient/giftdetails.h	29;"	v
+ID_USEDCODE	/home/markos/Source/evalclient/evalclient/giftdetails.h	30;"	v
+giftType	/home/markos/Source/evalclient/evalclient/giftdetails.h	32;"	g
+Hourly	/home/markos/Source/evalclient/evalclient/giftdetails.h	32;"	e	enum:giftType
+Daily	/home/markos/Source/evalclient/evalclient/giftdetails.h	32;"	e	enum:giftType
+Weekly	/home/markos/Source/evalclient/evalclient/giftdetails.h	32;"	e	enum:giftType
+Monthly	/home/markos/Source/evalclient/evalclient/giftdetails.h	32;"	e	enum:giftType
+PrizeNames	/home/markos/Source/evalclient/evalclient/giftdetails.h	35;"	v
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.h	37;"	c
+giftid	/home/markos/Source/evalclient/evalclient/giftdetails.h	38;"	m	class:giftDetails
+giftName	/home/markos/Source/evalclient/evalclient/giftdetails.h	39;"	m	class:giftDetails
+period	/home/markos/Source/evalclient/evalclient/giftdetails.h	40;"	m	class:giftDetails
+initial	/home/markos/Source/evalclient/evalclient/giftdetails.h	41;"	m	class:giftDetails
+remaining	/home/markos/Source/evalclient/evalclient/giftdetails.h	42;"	m	class:giftDetails
+empty	/home/markos/Source/evalclient/evalclient/giftdetails.h	43;"	m	class:giftDetails
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.h	46;"	p	class:giftDetails
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.h	47;"	p	class:giftDetails
+giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.h	48;"	p	class:giftDetails
+~giftDetails	/home/markos/Source/evalclient/evalclient/giftdetails.h	49;"	p	class:giftDetails
+getGiftId	/home/markos/Source/evalclient/evalclient/giftdetails.h	51;"	p	class:giftDetails
+getName	/home/markos/Source/evalclient/evalclient/giftdetails.h	52;"	p	class:giftDetails
+getInitialQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.h	53;"	p	class:giftDetails
+getCurrentQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.h	54;"	p	class:giftDetails
+setCurrentQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.h	55;"	p	class:giftDetails
+operator --	/home/markos/Source/evalclient/evalclient/giftdetails.h	56;"	p	class:giftDetails
+setName	/home/markos/Source/evalclient/evalclient/giftdetails.h	57;"	p	class:giftDetails
+setInitialQuantity	/home/markos/Source/evalclient/evalclient/giftdetails.h	58;"	p	class:giftDetails
+insertString	/home/markos/Source/evalclient/evalclient/giftdetails.h	59;"	p	class:giftDetails
+updateString	/home/markos/Source/evalclient/evalclient/giftdetails.h	60;"	p	class:giftDetails
+isEmpty	/home/markos/Source/evalclient/evalclient/giftdetails.h	61;"	p	class:giftDetails
+getGiftDuration	/home/markos/Source/evalclient/evalclient/giftdetails.h	64;"	p	class:giftDetails
+strtokenizer.cpp	/home/markos/Source/evalclient/evalclient/strtokenizer.cpp	1;"	F
+strTokenizer	/home/markos/Source/evalclient/evalclient/strtokenizer.cpp	20;"	f
+strtokenizer.h	/home/markos/Source/evalclient/evalclient/strtokenizer.h	1;"	F
+STRTOKENIZER_H	/home/markos/Source/evalclient/evalclient/strtokenizer.h	24;"	d
+strTokenizer	/home/markos/Source/evalclient/evalclient/strtokenizer.h	26;"	p
+MimeCodes.h	/home/markos/Source/evalclient/evalclient/MimeCodes.h	1;"	F
+MIME_CODES_H	/home/markos/Source/evalclient/evalclient/MimeCodes.h	6;"	d
+MimeCoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	14;"	c
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	17;"	p	class:MimeCoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	18;"	p	class:MimeCoder
+Base64Encoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	25;"	c	inherits:MimeCoder
+Base64Encoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	28;"	f	class:Base64Encoder
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	29;"	p	class:Base64Encoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	30;"	p	class:Base64Encoder
+itsLinePos	/home/markos/Source/evalclient/evalclient/MimeCodes.h	32;"	m	class:Base64Encoder
+itsCurr3	/home/markos/Source/evalclient/evalclient/MimeCodes.h	33;"	m	class:Base64Encoder
+its3Len	/home/markos/Source/evalclient/evalclient/MimeCodes.h	34;"	m	class:Base64Encoder
+EncodeCurr3	/home/markos/Source/evalclient/evalclient/MimeCodes.h	35;"	p	class:Base64Encoder
+Base64Decoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	39;"	c	inherits:MimeCoder
+Base64Decoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	42;"	f	class:Base64Decoder
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	43;"	p	class:Base64Decoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	44;"	p	class:Base64Decoder
+itsEnded	/home/markos/Source/evalclient/evalclient/MimeCodes.h	46;"	m	class:Base64Decoder
+itsCurr4	/home/markos/Source/evalclient/evalclient/MimeCodes.h	47;"	m	class:Base64Decoder
+its4Len	/home/markos/Source/evalclient/evalclient/MimeCodes.h	48;"	m	class:Base64Decoder
+itsErrNum	/home/markos/Source/evalclient/evalclient/MimeCodes.h	49;"	m	class:Base64Decoder
+DecodeCurr4	/home/markos/Source/evalclient/evalclient/MimeCodes.h	50;"	p	class:Base64Decoder
+base64_encode	/home/markos/Source/evalclient/evalclient/MimeCodes.h	54;"	f
+base64_decode	/home/markos/Source/evalclient/evalclient/MimeCodes.h	61;"	f
+QpEncoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	71;"	c	inherits:MimeCoder
+QpEncoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	74;"	f	class:QpEncoder
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	75;"	p	class:QpEncoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	76;"	p	class:QpEncoder
+itsLinePos	/home/markos/Source/evalclient/evalclient/MimeCodes.h	78;"	m	class:QpEncoder
+itsPrevCh	/home/markos/Source/evalclient/evalclient/MimeCodes.h	79;"	m	class:QpEncoder
+QpDecoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	83;"	c	inherits:MimeCoder
+QpDecoder	/home/markos/Source/evalclient/evalclient/MimeCodes.h	86;"	f	class:QpDecoder
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	87;"	p	class:QpDecoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	88;"	p	class:QpDecoder
+itsHexLen	/home/markos/Source/evalclient/evalclient/MimeCodes.h	90;"	m	class:QpDecoder
+itsHex	/home/markos/Source/evalclient/evalclient/MimeCodes.h	91;"	m	class:QpDecoder
+qp_encode	/home/markos/Source/evalclient/evalclient/MimeCodes.h	95;"	f
+qp_decode	/home/markos/Source/evalclient/evalclient/MimeCodes.h	102;"	f
+___	/home/markos/Source/evalclient/evalclient/MimeCodes.h	109;"	d
+cLineLen	/home/markos/Source/evalclient/evalclient/MimeCodes.h	111;"	v
+cBase64Codes	/home/markos/Source/evalclient/evalclient/MimeCodes.h	116;"	v
+CR	/home/markos/Source/evalclient/evalclient/MimeCodes.h	118;"	v
+LF	/home/markos/Source/evalclient/evalclient/MimeCodes.h	119;"	v
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	122;"	f	class:Base64Encoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	147;"	f	class:Base64Encoder
+EncodeCurr3	/home/markos/Source/evalclient/evalclient/MimeCodes.h	158;"	f	class:Base64Encoder
+XX	/home/markos/Source/evalclient/evalclient/MimeCodes.h	177;"	d
+cIndex64	/home/markos/Source/evalclient/evalclient/MimeCodes.h	179;"	v
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	199;"	f	class:Base64Decoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	225;"	f	class:Base64Decoder
+DecodeCurr4	/home/markos/Source/evalclient/evalclient/MimeCodes.h	236;"	f	class:Base64Decoder
+cBasisHex	/home/markos/Source/evalclient/evalclient/MimeCodes.h	266;"	v
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	269;"	f	class:QpEncoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	321;"	f	class:QpEncoder
+cIndexHex	/home/markos/Source/evalclient/evalclient/MimeCodes.h	338;"	v
+Filter	/home/markos/Source/evalclient/evalclient/MimeCodes.h	358;"	f	class:QpDecoder
+Finish	/home/markos/Source/evalclient/evalclient/MimeCodes.h	388;"	f	class:QpDecoder
+XX	/home/markos/Source/evalclient/evalclient/MimeCodes.h	397;"	d
+main	/home/markos/Source/evalclient/evalclient/MimeCodes.h	405;"	f

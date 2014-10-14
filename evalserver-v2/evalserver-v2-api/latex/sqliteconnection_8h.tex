@@ -1,0 +1,54 @@
+\hypertarget{sqliteconnection_8h}{
+\subsection{sqliteconnection.h File Reference}
+\label{sqliteconnection_8h}\index{sqliteconnection.h@{sqliteconnection.h}}
+}
+{\tt \#include $<$ace/Synch.h$>$}\par
+{\tt \#include $<$ace/Task.h$>$}\par
+{\tt \#include $<$ace/Future.h$>$}\par
+{\tt \#include $<$ace/Activation\_\-Queue.h$>$}\par
+{\tt \#include $<$ace/Method\_\-Object.h$>$}\par
+{\tt \#include $<$sqlite.h$>$}\par
+{\tt \#include $<$sstream$>$}\par
+{\tt \#include $<$map$>$}\par
+{\tt \#include $<$vector$>$}\par
+{\tt \#include $<$algorithm$>$}\par
+{\tt \#include \char`\"{}logger.h\char`\"{}}\par
+{\tt \#include \char`\"{}timestamp.h\char`\"{}}\par
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classSQLiteConnection}{SQLite\-Connection}
+\begin{CompactList}\small\item\em Provide a C++ class for the C API of SQLite.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{sqliteconnection_8h_a0}{TRANSLOGPATH}\ \char`\"{}Transaction\-Logs/\char`\"{}
+\item 
+\#define \hyperlink{sqliteconnection_8h_a1}{TRANSLOGSUFFIX}\ \char`\"{}.sql\char`\"{}
+\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{sqliteconnection_8h_a0}{
+\index{sqliteconnection.h@{sqliteconnection.h}!TRANSLOGPATH@{TRANSLOGPATH}}
+\index{TRANSLOGPATH@{TRANSLOGPATH}!sqliteconnection.h@{sqliteconnection.h}}
+\paragraph[TRANSLOGPATH]{\setlength{\rightskip}{0pt plus 5cm}\#define TRANSLOGPATH\ \char`\"{}Transaction\-Logs/\char`\"{}}\hfill}
+\label{sqliteconnection_8h_a0}
+
+
+
+
+Definition at line 49 of file sqliteconnection.h.
+
+Referenced by SQLite\-Connection::pick\-Filename().\hypertarget{sqliteconnection_8h_a1}{
+\index{sqliteconnection.h@{sqliteconnection.h}!TRANSLOGSUFFIX@{TRANSLOGSUFFIX}}
+\index{TRANSLOGSUFFIX@{TRANSLOGSUFFIX}!sqliteconnection.h@{sqliteconnection.h}}
+\paragraph[TRANSLOGSUFFIX]{\setlength{\rightskip}{0pt plus 5cm}\#define TRANSLOGSUFFIX\ \char`\"{}.sql\char`\"{}}\hfill}
+\label{sqliteconnection_8h_a1}
+
+
+
+
+Definition at line 50 of file sqliteconnection.h.
+
+Referenced by SQLite\-Connection::pick\-Filename().

@@ -1,0 +1,444 @@
+\hypertarget{classDay}{
+\subsection{Day Class Reference}
+\label{classDay}\index{Day@{Day}}
+}
+{\tt \#include $<$day.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+The day class is used for the following reasons:\begin{CompactItemize}
+\item 
+Hold statistical information for the participations daily.\item 
+Hold the array of prizes to be given daily.\item 
+execute the actual draw of the competition, that is decide whether this participation wins or not, and what.\par
+ There are three possible ways to create a Day object, using three possible constructors. The first \hyperlink{classDay_Daya2}{Day()} is just a dummy constructor that just creates an empty shell to be populated later. It is not usable. The second takes a string representation of a Day's details, actually the result from an SQL SELECT command in the COUNTERS table, so that it can construct the Day again. It's only used in statistics. The third constructor, takes the time period, a flag to signify whether we are at the start of a new week or month, and performs the following actions:\item 
+Estimate the number of the participations for the particular day.\item 
+Assign the prizes in fixed positions in an array that holds the messages.\item 
+provide a method to be called from the \hyperlink{classProcessor}{Processor} object, to execute the actual draw of the competition.\par
+ The class Day is also used as a template class for \hyperlink{classSQLTable}{SQLTable}$<$$>$. For this reason, we have created two methods \hyperlink{classDay_Daya13}{insert\-String()} and \hyperlink{classDay_Daya14}{update\-String()}, that return the daily counters as strings representations, to be used in the insert$\ast$ and update$\ast$ \hyperlink{classSQLTable}{SQLTable} methods respectively. About the Day\-Messages vector: This one has a \char`\"{}current index\char`\"{} variable, a cursor, that moves forward one position for each participation. At the start of the day, this vector is cleared and resized to hold the estimated messages for this day. For each participation, it picks the value at the current position and returns it to the participant. The value is either 0 (for no prize), or the id of the prize itself. \end{CompactItemize}
+
+
+
+
+Definition at line 63 of file day.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classDay_Daya0}{Day} (class \hyperlink{classContest}{Contest} $\ast$my\-Contest, \hyperlink{classTimeStamp}{Time\-Stamp} \&ts)
+\begin{CompactList}\small\item\em The class constructor.\item\end{CompactList}\item 
+\hyperlink{classDay_Daya1}{Day} (string daystr)
+\begin{CompactList}\small\item\em Class constructor for \hyperlink{classSQLTable}{SQLTable}$<$$>$ support.\item\end{CompactList}\item 
+\hyperlink{classDay_Daya2}{Day} ()
+\begin{CompactList}\small\item\em dummy constructor that just creates an empty structure\item\end{CompactList}\item 
+\hyperlink{classTimePeriod}{Time\-Period} \hyperlink{classDay_Daya3}{get\-Time\-Period} ()
+\begin{CompactList}\small\item\em return the current day \hyperlink{classTimePeriod}{Time\-Period} object\item\end{CompactList}\item 
+void \hyperlink{classDay_Daya4}{set\-Time\-Period} (\hyperlink{classTimePeriod}{Time\-Period} \&tp)
+\begin{CompactList}\small\item\em Sets the time period.\item\end{CompactList}\item 
+void \hyperlink{classDay_Daya5}{assign\-Prizes} ()
+\begin{CompactList}\small\item\em Assign the prizes to the Day\-Messages.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Daya6}{calculate\-Est\-No\-Msgs} ()
+\begin{CompactList}\small\item\em Calculate estimated Number of Messages for this day.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Daya7}{get\-Est\-No\-Msgs} ()
+\begin{CompactList}\small\item\em Return estimated Number of Messages for this day.\item\end{CompactList}\item 
+bool \hyperlink{classDay_Daya8}{execute\-Draw} (\hyperlink{classpartDetails}{part\-Details} \&pd)
+\begin{CompactList}\small\item\em Execute draw for the given \hyperlink{classpartDetails}{part\-Details} object.\item\end{CompactList}\item 
+void \hyperlink{classDay_Daya9}{set\-Counter} (u\_\-int \&val)
+\begin{CompactList}\small\item\em Set counter.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Daya10}{get\-Counter} ()
+\begin{CompactList}\small\item\em return counter\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Daya11}{get\-Unique\-Counter} ()
+\begin{CompactList}\small\item\em return unique counter\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Daya12}{get\-No\-Prizes} ()
+\begin{CompactList}\small\item\em return no of prizes\item\end{CompactList}\item 
+string \hyperlink{classDay_Daya13}{insert\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class.\item\end{CompactList}\item 
+string \hyperlink{classDay_Daya14}{update\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class.\item\end{CompactList}\item 
+bool \hyperlink{classDay_Daya15}{is\-Empty} ()
+\begin{CompactList}\small\item\em boolean method to be used in \hyperlink{classSQLTable}{SQLTable}$<$$>$ methods\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classDay_Dayu3Dayu0}{default\_\-avg\_\-threshold} =  5
+ \}
+\begin{CompactList}\small\item\em An enumerator object for the calculation of the estimated number of messages.\item\end{CompactList}\item 
+enum \{ \hyperlink{classDay_Dayu4Dayu1}{default\_\-est\-No\-Msgs} =  10000, 
+\hyperlink{classDay_Dayu4Dayu2}{min\_\-est\-No\-Msgs} =  1600
+ \}
+\begin{CompactList}\small\item\em Enumeration objects for the default and minimum number of est. number of messages.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classDay_Dayo0}{parent\-Contest}
+\begin{CompactList}\small\item\em A pointer to the \hyperlink{classContest}{Contest} part of which is this.\item\end{CompactList}\item 
+vector$<$ u\_\-int $>$ \hyperlink{classDay_Dayo1}{Day\-Messages}
+\begin{CompactList}\small\item\em The vector that holds the Prizes that are given to the participants.\item\end{CompactList}\item 
+\hyperlink{classCount}{Count} \hyperlink{classDay_Dayo2}{counter}
+\begin{CompactList}\small\item\em Counter of the current number of participants.\item\end{CompactList}\item 
+\hyperlink{classCount}{Count} \hyperlink{classDay_Dayo3}{unique\_\-counter}
+\begin{CompactList}\small\item\em The unique players for today.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Dayo4}{est\-No\-Msgs}
+\begin{CompactList}\small\item\em The estimated number of messages for this day.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classDay_Dayo5}{prizes}
+\begin{CompactList}\small\item\em The number of prizes won so far in the current day.\item\end{CompactList}\item 
+\hyperlink{classTimePeriod}{Time\-Period} \hyperlink{classDay_Dayo6}{day\_\-period}
+\begin{CompactList}\small\item\em The current day period.\item\end{CompactList}\item 
+bool \hyperlink{classDay_Dayo7}{empty}
+\begin{CompactList}\small\item\em boolean for \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Friends}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classDay_Dayl0}{Processor}
+\begin{CompactList}\small\item\em The \hyperlink{classProcessor}{Processor} is a friend class and can access the private members of Day.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classDay_Dayu3}{
+\paragraph["@4]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayu3}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{default_avg_threshold@{default\_\-avg\_\-threshold}!Day@{Day}}\index{Day@{Day}!default_avg_threshold@{default\_\-avg\_\-threshold}}\item[{\em 
+\hypertarget{classDay_Dayu3Dayu0}{
+{\em default\_\-avg\_\-threshold}}
+\label{classDay_Dayu3Dayu0}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 66 of file day.h.\hypertarget{classDay_Dayu4}{
+\paragraph["@5]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayu4}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{default_estNoMsgs@{default\_\-estNoMsgs}!Day@{Day}}\index{Day@{Day}!default_estNoMsgs@{default\_\-estNoMsgs}}\item[{\em 
+\hypertarget{classDay_Dayu4Dayu1}{
+{\em default\_\-est\-No\-Msgs}}
+\label{classDay_Dayu4Dayu1}
+}]\index{min_estNoMsgs@{min\_\-estNoMsgs}!Day@{Day}}\index{Day@{Day}!min_estNoMsgs@{min\_\-estNoMsgs}}\item[{\em 
+\hypertarget{classDay_Dayu4Dayu2}{
+{\em min\_\-est\-No\-Msgs}}
+\label{classDay_Dayu4Dayu2}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 69 of file day.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classDay_Daya0}{
+\index{Day@{Day}!Day@{Day}}
+\index{Day@{Day}!Day@{Day}}
+\paragraph[Day]{\setlength{\rightskip}{0pt plus 5cm}Day::Day (class \hyperlink{classContest}{Contest} $\ast$ {\em my\-Contest}, \hyperlink{classTimeStamp}{Time\-Stamp} \& {\em start\_\-ts})}\hfill}
+\label{classDay_Daya0}
+
+
+The Day constructor. It takes the \hyperlink{classContest}{Contest} object pointer, the starting \hyperlink{classTimeStamp}{Time\-Stamp}. It estimates the number of messages for the specific time period and resizes the Day\-Messages vector. Firstly, it checks the COUNTERS table to see if a record for the particular day already exists, and if so, retrieves the counters from the table. Then the system will continue from the previous state. Otherwise it will try to estimate the number of messages for this day using \hyperlink{classDay_Daya6}{calculate\-Est\-No\-Msgs()}. Whatever the case it will have a valid value for est\-No\-Msgs and will resize Day\-Messages vector with that size. Then it will assign the available prizes (taking into account the COUNTERS variable prizes) into random positions in Day\-Messages. 
+
+Definition at line 29 of file day.cpp.
+
+References assign\-Prizes(), calculate\-Est\-No\-Msgs(), counter, Contest::Counters, day\_\-period, Day\-Messages, est\-No\-Msgs, Time\-Period::get\-Begin\-TS(), get\-Counter(), get\-Est\-No\-Msgs(), get\-No\-Prizes(), Time\-Stamp::get\-Time\-Stamp(), get\-Unique\-Counter(), SQLTable$<$ string, Day $>$::insert\-Object(), is\-Empty(), Contest::logger, Logger::log\-Msg(), Time\-Stamp::next\-Day(), parent\-Contest, prizes, Count::set(), Time\-Stamp::to\-String(), Time\-Period::to\-String(), and unique\_\-counter.\hypertarget{classDay_Daya1}{
+\index{Day@{Day}!Day@{Day}}
+\index{Day@{Day}!Day@{Day}}
+\paragraph[Day]{\setlength{\rightskip}{0pt plus 5cm}Day::Day (string {\em daystr})}\hfill}
+\label{classDay_Daya1}
+
+
+Take a string representation of the variables in the COUNTERS table, counter, unique\_\-counter, est\-No\-Msgs and prizes, and resets the day, setting the empty boolean to true as well. 
+
+Definition at line 75 of file day.cpp.
+
+References counter, empty, est\-No\-Msgs, prizes, Count::set(), str\-Tokenizer(), and unique\_\-counter.\hypertarget{classDay_Daya2}{
+\index{Day@{Day}!Day@{Day}}
+\index{Day@{Day}!Day@{Day}}
+\paragraph[Day]{\setlength{\rightskip}{0pt plus 5cm}Day::Day ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classDay_Daya2}
+
+
+
+
+Definition at line 105 of file day.h.
+
+References empty.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classDay_Daya5}{
+\index{Day@{Day}!assignPrizes@{assignPrizes}}
+\index{assignPrizes@{assignPrizes}!Day@{Day}}
+\paragraph[assignPrizes]{\setlength{\rightskip}{0pt plus 5cm}void Day::assign\-Prizes ()}\hfill}
+\label{classDay_Daya5}
+
+
+\hyperlink{classDay_Daya5}{assign\-Prizes()} is responsible for attaching a gift to a position in the Day\-Messages vector. Basically, Day\-Messages is a vector whose current position will give the next given prize. Since probabilities are floating point numbers and we have to correspond these to gift ids, we have to iterate over all available presents for this day and assign them to the Day\-Messages vector. Espessially for the weekly and monthly gifts, we don't force them to be assigned in the first n-1 days of their respective periods but we do force them to be assigned in the last day. 
+
+Definition at line 103 of file day.cpp.
+
+References Contest::current\_\-month, Contest::current\_\-week, Time\-Period::date\-In\-Period(), day\_\-period, Day\-Messages, Contest::EOM, Contest::EOW, Time\-Period::get\-Begin\-TS(), gift\-Details::ID\_\-MONTHLYPRIZES, gift\-Details::ID\_\-NOGIFT, gift\-Details::ID\_\-WEEKLYPRIZES, Contest::logger, Logger::log\-Msg(), parent\-Contest, Time\-Stamp::previous\-Day(), Contest::Prizes, and SQLTable$<$ string, gift\-Details $>$::select\-Objects().
+
+Referenced by Day().\hypertarget{classDay_Daya6}{
+\index{Day@{Day}!calculateEstNoMsgs@{calculateEstNoMsgs}}
+\index{calculateEstNoMsgs@{calculateEstNoMsgs}!Day@{Day}}
+\paragraph[calculateEstNoMsgs]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::calculate\-Est\-No\-Msgs ()}\hfill}
+\label{classDay_Daya6}
+
+
+Calculates an average of the past \{default\_\-avg\_\-threshold\} days' counters, and returns the result. If the \hyperlink{classContest}{Contest} has just started then it returns \{default\_\-est\-No\-Msgs\}, and if the result of 0.8 $\ast$ average is less than \{min\_\-est\-No\-Msgs\} it returns \{min\_\-est\-No\-Msgs\} instead. 
+
+Definition at line 194 of file day.cpp.
+
+References default\_\-avg\_\-threshold, default\_\-est\-No\-Msgs, Contest::get\-Contest\-Days(), Contest::logger, Logger::log\-Msg(), min\_\-est\-No\-Msgs, and parent\-Contest.
+
+Referenced by Day().\hypertarget{classDay_Daya8}{
+\index{Day@{Day}!executeDraw@{executeDraw}}
+\index{executeDraw@{executeDraw}!Day@{Day}}
+\paragraph[executeDraw]{\setlength{\rightskip}{0pt plus 5cm}bool Day::execute\-Draw (\hyperlink{classpartDetails}{part\-Details} \& {\em pd})}\hfill}
+\label{classDay_Daya8}
+
+
+The actual draw engine is here. Given a \hyperlink{classpartDetails}{part\-Details} object which holds information on the code, the MSISDN, and the timestamp, fill the appropriate gift id in this object. We take the gift id from the current value in Day\-Messages vector in the position pointed to by counter, if of course, counter is less than the size of Day\-Messages. If it is bigger, then the prize won is nothing. At the end a check is made to confirm that we don't give extra prizes. 
+
+Definition at line 243 of file day.cpp.
+
+References counter, Contest::current\_\-month, Contest::current\_\-week, day\_\-period, Day\-Messages, Contest::EOM, Contest::EOW, part\-Details::get\-Gift\-Id(), Contest::gift\-Is\-Given(), gift\-Details::ID\_\-DAILYPRIZES, gift\-Details::ID\_\-HOURLYPRIZES, gift\-Details::ID\_\-MONTHLYPRIZES, gift\-Details::ID\_\-NOGIFT, gift\-Details::ID\_\-WEEKLYPRIZES, parent\-Contest, part\-Details::set\-Gift\-Id(), and Count::val().
+
+Referenced by Processor::process\_\-i().\hypertarget{classDay_Daya10}{
+\index{Day@{Day}!getCounter@{getCounter}}
+\index{getCounter@{getCounter}!Day@{Day}}
+\paragraph[getCounter]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::get\-Counter ()}\hfill}
+\label{classDay_Daya10}
+
+
+Returns the current value of the counter 
+
+Definition at line 296 of file day.cpp.
+
+References counter, and Count::val().
+
+Referenced by Day().\hypertarget{classDay_Daya7}{
+\index{Day@{Day}!getEstNoMsgs@{getEstNoMsgs}}
+\index{getEstNoMsgs@{getEstNoMsgs}!Day@{Day}}
+\paragraph[getEstNoMsgs]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::get\-Est\-No\-Msgs ()}\hfill}
+\label{classDay_Daya7}
+
+
+
+
+Definition at line 183 of file day.cpp.
+
+References est\-No\-Msgs.
+
+Referenced by Day().\hypertarget{classDay_Daya12}{
+\index{Day@{Day}!getNoPrizes@{getNoPrizes}}
+\index{getNoPrizes@{getNoPrizes}!Day@{Day}}
+\paragraph[getNoPrizes]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::get\-No\-Prizes ()}\hfill}
+\label{classDay_Daya12}
+
+
+Returns the current value 
+
+Definition at line 319 of file day.cpp.
+
+References prizes.
+
+Referenced by Day().\hypertarget{classDay_Daya3}{
+\index{Day@{Day}!getTimePeriod@{getTimePeriod}}
+\index{getTimePeriod@{getTimePeriod}!Day@{Day}}
+\paragraph[getTimePeriod]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimePeriod}{Time\-Period} Day::get\-Time\-Period ()}\hfill}
+\label{classDay_Daya3}
+
+
+
+
+Definition at line 173 of file day.cpp.
+
+References day\_\-period.
+
+Referenced by Processor::process\_\-i().\hypertarget{classDay_Daya11}{
+\index{Day@{Day}!getUniqueCounter@{getUniqueCounter}}
+\index{getUniqueCounter@{getUniqueCounter}!Day@{Day}}
+\paragraph[getUniqueCounter]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::get\-Unique\-Counter ()}\hfill}
+\label{classDay_Daya11}
+
+
+Returns the current value of the counter 
+
+Definition at line 312 of file day.cpp.
+
+References unique\_\-counter, and Count::val().
+
+Referenced by Day().\hypertarget{classDay_Daya13}{
+\index{Day@{Day}!insertString@{insertString}}
+\index{insertString@{insertString}!Day@{Day}}
+\paragraph[insertString]{\setlength{\rightskip}{0pt plus 5cm}string Day::insert\-String ()}\hfill}
+\label{classDay_Daya13}
+
+
+returns a string suitable to be used in insert$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 328 of file day.cpp.
+
+References counter, est\-No\-Msgs, prizes, unique\_\-counter, and Count::val().\hypertarget{classDay_Daya15}{
+\index{Day@{Day}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Day@{Day}}
+\paragraph[isEmpty]{\setlength{\rightskip}{0pt plus 5cm}bool Day::is\-Empty ()}\hfill}
+\label{classDay_Daya15}
+
+
+This is to check if a Day object has been created with the dummy constructor \hyperlink{classDay_Daya2}{Day()}. 
+
+Definition at line 356 of file day.cpp.
+
+References empty.
+
+Referenced by Day().\hypertarget{classDay_Daya9}{
+\index{Day@{Day}!setCounter@{setCounter}}
+\index{setCounter@{setCounter}!Day@{Day}}
+\paragraph[setCounter]{\setlength{\rightskip}{0pt plus 5cm}void Day::set\-Counter (u\_\-int \& {\em val})}\hfill}
+\label{classDay_Daya9}
+
+
+Sets the value of the counter. Used for recovery purposes. 
+
+Definition at line 303 of file day.cpp.
+
+References counter, Count::set(), and Count::val().\hypertarget{classDay_Daya4}{
+\index{Day@{Day}!setTimePeriod@{setTimePeriod}}
+\index{setTimePeriod@{setTimePeriod}!Day@{Day}}
+\paragraph[setTimePeriod]{\setlength{\rightskip}{0pt plus 5cm}void Day::set\-Time\-Period (\hyperlink{classTimePeriod}{Time\-Period} \& {\em tp})}\hfill}
+\label{classDay_Daya4}
+
+
+
+
+Definition at line 178 of file day.cpp.
+
+References day\_\-period.\hypertarget{classDay_Daya14}{
+\index{Day@{Day}!updateString@{updateString}}
+\index{updateString@{updateString}!Day@{Day}}
+\paragraph[updateString]{\setlength{\rightskip}{0pt plus 5cm}string Day::update\-String ()}\hfill}
+\label{classDay_Daya14}
+
+
+returns a string suitable to be used in update$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 342 of file day.cpp.
+
+References counter, est\-No\-Msgs, prizes, unique\_\-counter, and Count::val().
+
+Referenced by Processor::process\_\-i().
+
+\subsubsection{Friends And Related Function Documentation}
+\hypertarget{classDay_Dayl0}{
+\index{Day@{Day}!Processor@{Processor}}
+\index{Processor@{Processor}!Day@{Day}}
+\paragraph[Processor]{\setlength{\rightskip}{0pt plus 5cm}friend class Processor\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}\hfill}
+\label{classDay_Dayl0}
+
+
+
+
+Definition at line 78 of file day.h.
+
+\subsubsection{Field Documentation}
+\hypertarget{classDay_Dayo2}{
+\index{Day@{Day}!counter@{counter}}
+\index{counter@{counter}!Day@{Day}}
+\paragraph[counter]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classCount}{Count} Day::counter\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo2}
+
+
+
+
+Definition at line 81 of file day.h.
+
+Referenced by Day(), execute\-Draw(), get\-Counter(), insert\-String(), Processor::process\_\-i(), set\-Counter(), and update\-String().\hypertarget{classDay_Dayo6}{
+\index{Day@{Day}!day_period@{day\_\-period}}
+\index{day_period@{day\_\-period}!Day@{Day}}
+\paragraph[day\_\-period]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimePeriod}{Time\-Period} Day::day\_\-period\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo6}
+
+
+
+
+Definition at line 93 of file day.h.
+
+Referenced by assign\-Prizes(), Day(), execute\-Draw(), get\-Time\-Period(), and set\-Time\-Period().\hypertarget{classDay_Dayo1}{
+\index{Day@{Day}!DayMessages@{DayMessages}}
+\index{DayMessages@{DayMessages}!Day@{Day}}
+\paragraph[DayMessages]{\setlength{\rightskip}{0pt plus 5cm}vector$<$u\_\-int$>$ Day::Day\-Messages\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo1}
+
+
+
+
+Definition at line 75 of file day.h.
+
+Referenced by assign\-Prizes(), Day(), and execute\-Draw().\hypertarget{classDay_Dayo7}{
+\index{Day@{Day}!empty@{empty}}
+\index{empty@{empty}!Day@{Day}}
+\paragraph[empty]{\setlength{\rightskip}{0pt plus 5cm}bool Day::empty\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo7}
+
+
+
+
+Definition at line 96 of file day.h.
+
+Referenced by Day(), and is\-Empty().\hypertarget{classDay_Dayo4}{
+\index{Day@{Day}!estNoMsgs@{estNoMsgs}}
+\index{estNoMsgs@{estNoMsgs}!Day@{Day}}
+\paragraph[estNoMsgs]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::est\-No\-Msgs\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo4}
+
+
+
+
+Definition at line 87 of file day.h.
+
+Referenced by Day(), get\-Est\-No\-Msgs(), insert\-String(), and update\-String().\hypertarget{classDay_Dayo0}{
+\index{Day@{Day}!parentContest@{parentContest}}
+\index{parentContest@{parentContest}!Day@{Day}}
+\paragraph[parentContest]{\setlength{\rightskip}{0pt plus 5cm}class \hyperlink{classContest}{Contest}$\ast$ Day::parent\-Contest\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo0}
+
+
+
+
+Definition at line 72 of file day.h.
+
+Referenced by assign\-Prizes(), calculate\-Est\-No\-Msgs(), Day(), and execute\-Draw().\hypertarget{classDay_Dayo5}{
+\index{Day@{Day}!prizes@{prizes}}
+\index{prizes@{prizes}!Day@{Day}}
+\paragraph[prizes]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int Day::prizes\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo5}
+
+
+
+
+Definition at line 90 of file day.h.
+
+Referenced by Day(), get\-No\-Prizes(), insert\-String(), Processor::process\_\-i(), and update\-String().\hypertarget{classDay_Dayo3}{
+\index{Day@{Day}!unique_counter@{unique\_\-counter}}
+\index{unique_counter@{unique\_\-counter}!Day@{Day}}
+\paragraph[unique\_\-counter]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classCount}{Count} Day::unique\_\-counter\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classDay_Dayo3}
+
+
+
+
+Definition at line 84 of file day.h.
+
+Referenced by Day(), get\-Unique\-Counter(), insert\-String(), Processor::process\_\-i(), and update\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{day_8h}{day.h}\item 
+\hyperlink{day_8cpp}{day.cpp}\end{CompactItemize}

@@ -1,0 +1,232 @@
+\hypertarget{classconnectionMsgBlock}{
+\subsection{connection\-Msg\-Block Class Reference}
+\label{classconnectionMsgBlock}\index{connectionMsgBlock@{connectionMsgBlock}}
+}
+{\tt \#include $<$connectionmsgblock.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+The information that is exchanged between the evalclient and the evalserver programs, is encapsulated in a connection\-Msg\-Block structure. This structure is of the following form:
+
+\begin{CompactItemize}
+\item 
+partiticipation code (type long long: 8 bytes)\item 
+timestamp (type time\_\-t: 4 bytes)\item 
+MSISDN (string (not null terminated) : \hyperlink{classpartDetails_partDetailss1partDetailss0}{part\-Details::MSISDNSIZE}, 13 bytes)\item 
+prize id (unsigned char: 1 byte)\item 
+Checksum of the structure (CRC32 : 4 bytes)\end{CompactItemize}
+Methods are provided to check for the validity of the structure, and the retrieval of the information inside the block. 
+
+
+
+Definition at line 38 of file connectionmsgblock.h.\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks0}{DATASIZE} =  29, 
+\hyperlink{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks1}{DATA\_\-WO\_\-CRC} =  25, 
+\hyperlink{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks2}{CRC\_\-OFFSET} =  25
+ \}
+\begin{CompactList}\small\item\em These enums give a more insightful view of the data positions inside the block.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classconnectionMsgBlock_connectionMsgBlocka0}{connection\-Msg\-Block} (long long code, class \hyperlink{classpartDetails}{part\-Details} \&pd)
+\begin{CompactList}\small\item\em This constructor takes the code and the \hyperlink{classpartDetails}{part\-Details} object, and creates a message block.\item\end{CompactList}\item 
+\hyperlink{classconnectionMsgBlock_connectionMsgBlocka1}{connection\-Msg\-Block} (unsigned char $\ast$\hyperlink{classconnectionMsgBlock_connectionMsgBlocko1}{data})
+\begin{CompactList}\small\item\em This constructor takes a buffer and creates a message block WITH the right CRC.\item\end{CompactList}\item 
+\hyperlink{classconnectionMsgBlock_connectionMsgBlocka2}{$\sim$connection\-Msg\-Block} ()
+\begin{CompactList}\small\item\em Default destructor, just deallocates memory for the buffer data.\item\end{CompactList}\item 
+int \hyperlink{classconnectionMsgBlock_connectionMsgBlocka3}{retrieve\-CRC} ()
+\begin{CompactList}\small\item\em Retrieve the CRC from the buffer.\item\end{CompactList}\item 
+bool \hyperlink{classconnectionMsgBlock_connectionMsgBlocka4}{is\-Valid} ()
+\begin{CompactList}\small\item\em Checks for the validity of the message block.\item\end{CompactList}\item 
+bool \hyperlink{classconnectionMsgBlock_connectionMsgBlocka5}{operator==} (connection\-Msg\-Block \&cmb)
+\begin{CompactList}\small\item\em Compares two message blocks.\item\end{CompactList}\item 
+unsigned char $\ast$ \hyperlink{classconnectionMsgBlock_connectionMsgBlocka6}{get\-Data} ()
+\begin{CompactList}\small\item\em Returns the raw buffer of the message block.\item\end{CompactList}\item 
+pair$<$ long long, \hyperlink{classpartDetails}{part\-Details} $>$ \hyperlink{classconnectionMsgBlock_connectionMsgBlocka7}{get\-Participant} ()
+\begin{CompactList}\small\item\em Returns a pair containing the code (as a long long) and the corresponding \hyperlink{classpartDetails}{part\-Details}.\item\end{CompactList}\item 
+pair$<$ string, \hyperlink{classpartDetails}{part\-Details} $>$ \hyperlink{classconnectionMsgBlock_connectionMsgBlocka8}{get\-Participant\-Str} ()
+\begin{CompactList}\small\item\em Returns a pair containing the code (as a string) and the corresponding \hyperlink{classpartDetails}{part\-Details}.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCRC__32}{CRC\_\-32} \hyperlink{classconnectionMsgBlock_connectionMsgBlocko0}{crc32}
+\begin{CompactList}\small\item\em The object used to calculate the CRC of the message block.\item\end{CompactList}\item 
+unsigned char $\ast$ \hyperlink{classconnectionMsgBlock_connectionMsgBlocko1}{data}
+\begin{CompactList}\small\item\em Pointer to the data holding the message block (size: DATASIZE).\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocks3}{
+\paragraph["@0]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocks3}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{DATASIZE@{DATASIZE}!connectionMsgBlock@{connectionMsgBlock}}\index{connectionMsgBlock@{connectionMsgBlock}!DATASIZE@{DATASIZE}}\item[{\em 
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks0}{
+{\em DATASIZE}}
+\label{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks0}
+}]\index{DATA_WO_CRC@{DATA\_\-WO\_\-CRC}!connectionMsgBlock@{connectionMsgBlock}}\index{connectionMsgBlock@{connectionMsgBlock}!DATA_WO_CRC@{DATA\_\-WO\_\-CRC}}\item[{\em 
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks1}{
+{\em DATA\_\-WO\_\-CRC}}
+\label{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks1}
+}]\index{CRC_OFFSET@{CRC\_\-OFFSET}!connectionMsgBlock@{connectionMsgBlock}}\index{connectionMsgBlock@{connectionMsgBlock}!CRC_OFFSET@{CRC\_\-OFFSET}}\item[{\em 
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks2}{
+{\em CRC\_\-OFFSET}}
+\label{classconnectionMsgBlock_connectionMsgBlocks3connectionMsgBlocks2}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 46 of file connectionmsgblock.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocka0}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!connectionMsgBlock@{connectionMsgBlock}}
+\index{connectionMsgBlock@{connectionMsgBlock}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[connectionMsgBlock]{\setlength{\rightskip}{0pt plus 5cm}connection\-Msg\-Block::connection\-Msg\-Block (long long {\em code}, class \hyperlink{classpartDetails}{part\-Details} \& {\em pd})}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka0}
+
+
+This constructor constructs a message block, given the components separetely. It takes the code (long long type) and the \hyperlink{classpartDetails}{part\-Details} object containing the rest of the data (must be created beforehand). It then puts the data into place and calculates the CRC for the block. The result is a valid connection\-Msg\-Block object. 
+
+Definition at line 20 of file connectionmsgblock.cpp.
+
+References crc32, data, DATA\_\-WO\_\-CRC, DATASIZE, CRC\_\-32::get\-CRC(), and part\-Details::MSISDNSIZE.\hypertarget{classconnectionMsgBlock_connectionMsgBlocka1}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!connectionMsgBlock@{connectionMsgBlock}}
+\index{connectionMsgBlock@{connectionMsgBlock}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[connectionMsgBlock]{\setlength{\rightskip}{0pt plus 5cm}connection\-Msg\-Block::connection\-Msg\-Block (unsigned char $\ast$ {\em newdata})}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka1}
+
+
+This constructor constructs a message block from the raw data. It takes an existing buffer (without the CRC part) and appends the correct CRC. 
+
+Definition at line 53 of file connectionmsgblock.cpp.
+
+References crc32, CRC\_\-OFFSET, data, DATA\_\-WO\_\-CRC, DATASIZE, and CRC\_\-32::get\-CRC().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka2}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!~connectionMsgBlock@{$\sim$connectionMsgBlock}}
+\index{~connectionMsgBlock@{$\sim$connectionMsgBlock}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[$\sim$connectionMsgBlock]{\setlength{\rightskip}{0pt plus 5cm}connection\-Msg\-Block::$\sim$connection\-Msg\-Block ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka2}
+
+
+The destructor has no other purpose than to deallocate the memory used by the buffer. 
+
+Definition at line 91 of file connectionmsgblock.cpp.
+
+References data.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocka6}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!getData@{getData}}
+\index{getData@{getData}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[getData]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ connection\-Msg\-Block::get\-Data ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka6}
+
+
+Returns the buffer holding the data 
+
+Definition at line 82 of file connectionmsgblock.cpp.
+
+References data.
+
+Referenced by operator==().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka7}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!getParticipant@{getParticipant}}
+\index{getParticipant@{getParticipant}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[getParticipant]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ long long, \hyperlink{classpartDetails}{part\-Details} $>$ connection\-Msg\-Block::get\-Participant ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka7}
+
+
+This method returns a pair object containing the code and respective \hyperlink{classpartDetails}{part\-Details} object of the current connection\-Msg\-Block object. The code is of type long long. 
+
+Definition at line 129 of file connectionmsgblock.cpp.
+
+References data, part\-Details::MSISDNSIZE, part\-Details::set\-Gift\-Id(), part\-Details::set\-MSISDN(), and part\-Details::set\-Timestamp().
+
+Referenced by get\-Participant\-Str().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka8}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!getParticipantStr@{getParticipantStr}}
+\index{getParticipantStr@{getParticipantStr}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[getParticipantStr]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ string, \hyperlink{classpartDetails}{part\-Details} $>$ connection\-Msg\-Block::get\-Participant\-Str ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka8}
+
+
+This is similar to \hyperlink{classconnectionMsgBlock_connectionMsgBlocka7}{get\-Participant()}. Likewise, it returns a pair object containing the code and respective \hyperlink{classpartDetails}{part\-Details} object of the current connection\-Msg\-Block object. This time the code is of type string. 
+
+Definition at line 166 of file connectionmsgblock.cpp.
+
+References get\-Participant().
+
+Referenced by Processor::process\_\-i().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka4}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!isValid@{isValid}}
+\index{isValid@{isValid}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[isValid]{\setlength{\rightskip}{0pt plus 5cm}bool connection\-Msg\-Block::is\-Valid ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka4}
+
+
+Validity of the object is checked by calculating the CRC of the data in the buffer and comparing it to the CRC \_\-in\_\- the buffer. Returns true if these are equal. 
+
+Definition at line 113 of file connectionmsgblock.cpp.
+
+References crc32, data, DATA\_\-WO\_\-CRC, CRC\_\-32::get\-CRC(), and retrieve\-CRC().
+
+Referenced by Client\_\-Handler::process().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka5}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!operator==@{operator==}}
+\index{operator==@{operator==}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[operator==]{\setlength{\rightskip}{0pt plus 5cm}bool connection\-Msg\-Block::operator== (connection\-Msg\-Block \& {\em cmb})}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka5}
+
+
+Compares two connection\-Msg\-Blocks (using the operator==) It compares the buffers AND the crcs of each object. Returns true if the objects are equal. 
+
+Definition at line 66 of file connectionmsgblock.cpp.
+
+References data, DATASIZE, get\-Data(), and retrieve\-CRC().\hypertarget{classconnectionMsgBlock_connectionMsgBlocka3}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!retrieveCRC@{retrieveCRC}}
+\index{retrieveCRC@{retrieveCRC}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[retrieveCRC]{\setlength{\rightskip}{0pt plus 5cm}int connection\-Msg\-Block::retrieve\-CRC ()}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocka3}
+
+
+Retrieves the CRC of the current object, as held in the buffer. 
+
+Definition at line 100 of file connectionmsgblock.cpp.
+
+References CRC\_\-OFFSET, and data.
+
+Referenced by is\-Valid(), and operator==().
+
+\subsubsection{Field Documentation}
+\hypertarget{classconnectionMsgBlock_connectionMsgBlocko0}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!crc32@{crc32}}
+\index{crc32@{crc32}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[crc32]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classCRC__32}{CRC\_\-32} connection\-Msg\-Block::crc32\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocko0}
+
+
+
+
+Definition at line 40 of file connectionmsgblock.h.
+
+Referenced by connection\-Msg\-Block(), and is\-Valid().\hypertarget{classconnectionMsgBlock_connectionMsgBlocko1}{
+\index{connectionMsgBlock@{connection\-Msg\-Block}!data@{data}}
+\index{data@{data}!connectionMsgBlock@{connection\-Msg\-Block}}
+\paragraph[data]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ connection\-Msg\-Block::data\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classconnectionMsgBlock_connectionMsgBlocko1}
+
+
+
+
+Definition at line 43 of file connectionmsgblock.h.
+
+Referenced by connection\-Msg\-Block(), get\-Data(), get\-Participant(), is\-Valid(), operator==(), retrieve\-CRC(), and $\sim$connection\-Msg\-Block().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{connectionmsgblock_8h}{connectionmsgblock.h}\item 
+\hyperlink{connectionmsgblock_8cpp}{connectionmsgblock.cpp}\end{CompactItemize}

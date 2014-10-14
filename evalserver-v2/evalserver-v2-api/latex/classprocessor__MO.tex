@@ -1,0 +1,106 @@
+\hypertarget{classprocessor__MO}{
+\subsection{processor\_\-MO Class Reference}
+\label{classprocessor__MO}\index{processor_MO@{processor\_\-MO}}
+}
+{\tt \#include $<$processor\_\-mo.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+The philosophy behind Method Objects is described in ACE Tutorial and the C++ NP. In practice, a method object returns a future object containing the result object of the actual implementation method that is called in \hyperlink{classprocessor__MO_processor__MOa2}{call()}.
+
+The processor\_\-MO class is the method object that is queued by the \hyperlink{classProcessor}{Processor}. When ready, the processor object (or actually its svc() method) calls the \hyperlink{classprocessor__MO_processor__MOa2}{call()} method in the MO object which in turn calls the process\_\-i() method of the \hyperlink{classProcessor}{Processor}. 
+
+
+
+Definition at line 33 of file processor\_\-mo.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classprocessor__MO_processor__MOa0}{processor\_\-MO} (\hyperlink{classProcessor}{Processor} $\ast$processor, \hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$cmb, ACE\_\-Future$<$ int $>$ \&future\_\-result)
+\begin{CompactList}\small\item\em The default Constructor, takes a pointer to the \hyperlink{classProcessor}{Processor}, the message block and a future object.\item\end{CompactList}\item 
+virtual \hyperlink{classprocessor__MO_processor__MOa1}{$\sim$processor\_\-MO} ()
+\begin{CompactList}\small\item\em Dummy destructor.\item\end{CompactList}\item 
+virtual int \hyperlink{classprocessor__MO_processor__MOa2}{call} (void)
+\begin{CompactList}\small\item\em The \hyperlink{classprocessor__MO_processor__MOa2}{call()} method will be called by the svc() of the \hyperlink{classLogger}{Logger} Active Object.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classProcessor}{Processor} $\ast$ \hyperlink{classprocessor__MO_processor__MOo0}{processor\_\-}
+\begin{CompactList}\small\item\em Pointer to the \hyperlink{classProcessor}{Processor} object.\item\end{CompactList}\item 
+\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$ \hyperlink{classprocessor__MO_processor__MOo1}{cmb\_\-}
+\begin{CompactList}\small\item\em Pointer to the \hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block}.\item\end{CompactList}\item 
+ACE\_\-Future$<$ int $>$ \hyperlink{classprocessor__MO_processor__MOo2}{future\_\-result\_\-}
+\begin{CompactList}\small\item\em The ACE Future object that is returned.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classprocessor__MO_processor__MOa0}{
+\index{processor_MO@{processor\_\-MO}!processor_MO@{processor\_\-MO}}
+\index{processor_MO@{processor\_\-MO}!processor_MO@{processor\_\-MO}}
+\paragraph[processor\_\-MO]{\setlength{\rightskip}{0pt plus 5cm}processor\_\-MO::processor\_\-MO (\hyperlink{classProcessor}{Processor} $\ast$ {\em processor}, \hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$ {\em cmb}, ACE\_\-Future$<$ int $>$ \& {\em future\_\-result})}\hfill}
+\label{classprocessor__MO_processor__MOa0}
+
+
+The default constructor. It just initializes the member variables of the object (processor\_\-, cmb\_\- and future\_\-result\_\-). 
+
+Definition at line 18 of file processor\_\-mo.cpp.\hypertarget{classprocessor__MO_processor__MOa1}{
+\index{processor_MO@{processor\_\-MO}!~processor_MO@{$\sim$processor\_\-MO}}
+\index{~processor_MO@{$\sim$processor\_\-MO}!processor_MO@{processor\_\-MO}}
+\paragraph[$\sim$processor\_\-MO]{\setlength{\rightskip}{0pt plus 5cm}processor\_\-MO::$\sim$processor\_\-MO ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classprocessor__MO_processor__MOa1}
+
+
+Dummy destructor, we don't allocate anything dynamically. 
+
+Definition at line 28 of file processor\_\-mo.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classprocessor__MO_processor__MOa2}{
+\index{processor_MO@{processor\_\-MO}!call@{call}}
+\index{call@{call}!processor_MO@{processor\_\-MO}}
+\paragraph[call]{\setlength{\rightskip}{0pt plus 5cm}int processor\_\-MO::call (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classprocessor__MO_processor__MOa2}
+
+
+We don't have a lot to do. We just create a future object containing the result of process\_\-i(). What this means is that the processor\_\-MO will finish immediately, but the result (the return value of \hyperlink{classprocessor__MO_processor__MOa2}{call()}) will remain uninitialized until the \hyperlink{classProcessor}{Processor} object MO queue actually reaches this object. 
+
+Definition at line 39 of file processor\_\-mo.cpp.
+
+References future\_\-result\_\-.
+
+\subsubsection{Field Documentation}
+\hypertarget{classprocessor__MO_processor__MOo1}{
+\index{processor_MO@{processor\_\-MO}!cmb_@{cmb\_\-}}
+\index{cmb_@{cmb\_\-}!processor_MO@{processor\_\-MO}}
+\paragraph[cmb\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block}$\ast$ processor\_\-MO::cmb\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classprocessor__MO_processor__MOo1}
+
+
+
+
+Definition at line 48 of file processor\_\-mo.h.\hypertarget{classprocessor__MO_processor__MOo2}{
+\index{processor_MO@{processor\_\-MO}!future_result_@{future\_\-result\_\-}}
+\index{future_result_@{future\_\-result\_\-}!processor_MO@{processor\_\-MO}}
+\paragraph[future\_\-result\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Future$<$int$>$ processor\_\-MO::future\_\-result\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classprocessor__MO_processor__MOo2}
+
+
+
+
+Definition at line 51 of file processor\_\-mo.h.
+
+Referenced by call().\hypertarget{classprocessor__MO_processor__MOo0}{
+\index{processor_MO@{processor\_\-MO}!processor_@{processor\_\-}}
+\index{processor_@{processor\_\-}!processor_MO@{processor\_\-MO}}
+\paragraph[processor\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classProcessor}{Processor}$\ast$ processor\_\-MO::processor\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classprocessor__MO_processor__MOo0}
+
+
+
+
+Definition at line 45 of file processor\_\-mo.h.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{processor__mo_8h}{processor\_\-mo.h}\item 
+\hyperlink{processor__mo_8cpp}{processor\_\-mo.cpp}\end{CompactItemize}

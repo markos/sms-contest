@@ -1,0 +1,36 @@
+\hypertarget{client__acceptor_8h}{
+\subsection{client\_\-acceptor.h File Reference}
+\label{client__acceptor_8h}\index{client_acceptor.h@{client\_\-acceptor.h}}
+}
+{\tt \#include \char`\"{}ace/Acceptor.h\char`\"{}}\par
+{\tt \#include \char`\"{}ace/SOCK\_\-Acceptor.h\char`\"{}}\par
+{\tt \#include \char`\"{}client\_\-handler.h\char`\"{}}\par
+{\tt \#include \char`\"{}thread\_\-pool.h\char`\"{}}\par
+\subsubsection*{Namespaces}
+\begin{CompactItemize}
+\item 
+namespace \hyperlink{namespacestd}{std}
+\end{CompactItemize}
+\subsubsection*{Data Structures}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classClient__Acceptor}{Client\_\-Acceptor}
+\end{CompactItemize}
+\subsubsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef ACE\_\-Acceptor$<$ \hyperlink{classClient__Handler}{Client\_\-Handler}, ACE\_\-SOCK\_\-ACCEPTOR $>$ \hyperlink{client__acceptor_8h_a0}{Client\_\-Acceptor\_\-Base}
+\begin{CompactList}\small\item\em The ACE Acceptor that is used in evalserver.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Typedef Documentation}
+\hypertarget{client__acceptor_8h_a0}{
+\index{client_acceptor.h@{client\_\-acceptor.h}!Client_Acceptor_Base@{Client\_\-Acceptor\_\-Base}}
+\index{Client_Acceptor_Base@{Client\_\-Acceptor\_\-Base}!client_acceptor.h@{client\_\-acceptor.h}}
+\paragraph[Client\_\-Acceptor\_\-Base]{\setlength{\rightskip}{0pt plus 5cm}typedef ACE\_\-Acceptor$<$\hyperlink{classClient__Handler}{Client\_\-Handler}, ACE\_\-SOCK\_\-ACCEPTOR$>$ Client\_\-Acceptor\_\-Base}\hfill}
+\label{client__acceptor_8h_a0}
+
+
+Parameterize the ACE\_\-Acceptor$<$$>$ such that it will listen for socket connection attempts and create \hyperlink{classClient__Handler}{Client\_\-Handler} objects when they happen. In Tutorial 001, we wrote the basic acceptor logic on our own before we realized that ACE\_\-Acceptor$<$$>$ was available. You'll get spoiled using the ACE templates because they take away a lot of the tedious details! 
+
+Definition at line 47 of file client\_\-acceptor.h.

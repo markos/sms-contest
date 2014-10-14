@@ -1,0 +1,40 @@
+\hypertarget{client__handler_8cpp}{
+\subsection{client\_\-handler.cpp File Reference}
+\label{client__handler_8cpp}\index{client_handler.cpp@{client\_\-handler.cpp}}
+}
+{\tt \#include \char`\"{}client\_\-acceptor.h\char`\"{}}\par
+{\tt \#include \char`\"{}client\_\-handler.h\char`\"{}}\par
+{\tt \#include \char`\"{}contest.h\char`\"{}}\par
+\subsubsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{client__handler_8cpp_a0}{REGISTER\_\-MASK}\ ACE\_\-Event\_\-Handler::READ\_\-MASK
+\item 
+\#define \hyperlink{client__handler_8cpp_a1}{REMOVE\_\-MASK}\ (ACE\_\-Event\_\-Handler::READ\_\-MASK $|$ ACE\_\-Event\_\-Handler::DONT\_\-CALL)
+\end{CompactItemize}
+
+
+\subsubsection{Define Documentation}
+\hypertarget{client__handler_8cpp_a0}{
+\index{client_handler.cpp@{client\_\-handler.cpp}!REGISTER_MASK@{REGISTER\_\-MASK}}
+\index{REGISTER_MASK@{REGISTER\_\-MASK}!client_handler.cpp@{client\_\-handler.cpp}}
+\paragraph[REGISTER\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define REGISTER\_\-MASK\ ACE\_\-Event\_\-Handler::READ\_\-MASK}\hfill}
+\label{client__handler_8cpp_a0}
+
+
+We're going to be registering and unregistering a couple of times. To make sure that we use the same flags every time, I've created these handy macros. 
+
+Definition at line 14 of file client\_\-handler.cpp.
+
+Referenced by Client\_\-Handler::handle\_\-input(), and Client\_\-Handler::open().\hypertarget{client__handler_8cpp_a1}{
+\index{client_handler.cpp@{client\_\-handler.cpp}!REMOVE_MASK@{REMOVE\_\-MASK}}
+\index{REMOVE_MASK@{REMOVE\_\-MASK}!client_handler.cpp@{client\_\-handler.cpp}}
+\paragraph[REMOVE\_\-MASK]{\setlength{\rightskip}{0pt plus 5cm}\#define REMOVE\_\-MASK\ (ACE\_\-Event\_\-Handler::READ\_\-MASK $|$ ACE\_\-Event\_\-Handler::DONT\_\-CALL)}\hfill}
+\label{client__handler_8cpp_a1}
+
+
+
+
+Definition at line 15 of file client\_\-handler.cpp.
+
+Referenced by Client\_\-Handler::destroy(), and Client\_\-Handler::handle\_\-input().

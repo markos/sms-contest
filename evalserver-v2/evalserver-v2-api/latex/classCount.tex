@@ -1,0 +1,160 @@
+\hypertarget{classCount}{
+\subsection{Count Class Reference}
+\label{classCount}\index{Count@{Count}}
+}
+{\tt \#include $<$Count.h$>$}
+
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCount_Counta0}{Count} ()
+\item 
+\hyperlink{classCount_Counta1}{Count} (\hyperlink{Count_8h_a0}{counter\_\-t} \&counter)
+\item 
+\hyperlink{classCount_Counta2}{Count} (string str)
+\item 
+void \hyperlink{classCount_Counta3}{operator++} (int)
+\item 
+void \hyperlink{classCount_Counta4}{operator--} (int)
+\item 
+unsigned int \hyperlink{classCount_Counta5}{val} ()
+\item 
+void \hyperlink{classCount_Counta6}{set} (unsigned int val)
+\item 
+string \hyperlink{classCount_Counta7}{insert\-String} ()
+\item 
+string \hyperlink{classCount_Counta8}{update\-String} ()
+\end{CompactItemize}
+\subsubsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{Count_8h_a0}{counter\_\-t} \hyperlink{classCount_Countn0}{counter\_\-}
+\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classCount_Counta0}{
+\index{Count@{Count}!Count@{Count}}
+\index{Count@{Count}!Count@{Count}}
+\paragraph[Count]{\setlength{\rightskip}{0pt plus 5cm}Count::Count ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta0}
+
+
+A simple initializing constructor, just sets counter\_\- to 0. 
+
+Definition at line 47 of file Count.h.
+
+References counter\_\-.\hypertarget{classCount_Counta1}{
+\index{Count@{Count}!Count@{Count}}
+\index{Count@{Count}!Count@{Count}}
+\paragraph[Count]{\setlength{\rightskip}{0pt plus 5cm}Count::Count (\hyperlink{Count_8h_a0}{counter\_\-t} \& {\em counter})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta1}
+
+
+The copy constructor. 
+
+Definition at line 51 of file Count.h.
+
+References counter\_\-, and counter\_\-t.\hypertarget{classCount_Counta2}{
+\index{Count@{Count}!Count@{Count}}
+\index{Count@{Count}!Count@{Count}}
+\paragraph[Count]{\setlength{\rightskip}{0pt plus 5cm}Count::Count (string {\em str})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta2}
+
+
+A constructor that takes a number in a string and converts to an integer. 
+
+Definition at line 56 of file Count.h.
+
+References counter\_\-.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classCount_Counta7}{
+\index{Count@{Count}!insertString@{insertString}}
+\index{insertString@{insertString}!Count@{Count}}
+\paragraph[insertString]{\setlength{\rightskip}{0pt plus 5cm}string Count::insert\-String ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta7}
+
+
+This method exists so that Count object can be used as a templated class for the insert$\ast$ methods in \hyperlink{classSQLTable}{SQLTable}. What it basically does is return a string representation of its contents. 
+
+Definition at line 81 of file Count.h.
+
+References counter\_\-.\hypertarget{classCount_Counta3}{
+\index{Count@{Count}!operator++@{operator++}}
+\index{operator++@{operator++}!Count@{Count}}
+\paragraph[operator++]{\setlength{\rightskip}{0pt plus 5cm}void Count::operator++ (int)\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta3}
+
+
+Overloaded ++ operator, increases counter\_\- by 1. 
+
+Definition at line 62 of file Count.h.
+
+References counter\_\-.\hypertarget{classCount_Counta4}{
+\index{Count@{Count}!operator--@{operator--}}
+\index{operator--@{operator--}!Count@{Count}}
+\paragraph[operator--]{\setlength{\rightskip}{0pt plus 5cm}void Count::operator-- (int)\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta4}
+
+
+Overloaded -- operator, decreases counter\_\- by 1. 
+
+Definition at line 66 of file Count.h.
+
+References counter\_\-.\hypertarget{classCount_Counta6}{
+\index{Count@{Count}!set@{set}}
+\index{set@{set}!Count@{Count}}
+\paragraph[set]{\setlength{\rightskip}{0pt plus 5cm}void Count::set (unsigned int {\em val})\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta6}
+
+
+Sets value of counter\_\- to given val. 
+
+Definition at line 74 of file Count.h.
+
+References counter\_\-, and val().
+
+Referenced by Day::Day(), and Day::set\-Counter().\hypertarget{classCount_Counta8}{
+\index{Count@{Count}!updateString@{updateString}}
+\index{updateString@{updateString}!Count@{Count}}
+\paragraph[updateString]{\setlength{\rightskip}{0pt plus 5cm}string Count::update\-String ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta8}
+
+
+This method exists so that Count object can be used as a templated class for the update$\ast$ methods in \hyperlink{classSQLTable}{SQLTable}. Like the \hyperlink{classCount_Counta7}{insert\-String()} method it returns a string that should contain the part of the command to update the counter value in the SQL table. 
+
+Definition at line 94 of file Count.h.
+
+References counter\_\-.\hypertarget{classCount_Counta5}{
+\index{Count@{Count}!val@{val}}
+\index{val@{val}!Count@{Count}}
+\paragraph[val]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Count::val ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}\hfill}
+\label{classCount_Counta5}
+
+
+Retrieves current value of counter\_\-. 
+
+Definition at line 70 of file Count.h.
+
+References counter\_\-.
+
+Referenced by Day::execute\-Draw(), Day::get\-Counter(), Day::get\-Unique\-Counter(), Day::insert\-String(), set(), Day::set\-Counter(), and Day::update\-String().
+
+\subsubsection{Field Documentation}
+\hypertarget{classCount_Countn0}{
+\index{Count@{Count}!counter_@{counter\_\-}}
+\index{counter_@{counter\_\-}!Count@{Count}}
+\paragraph[counter\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{Count_8h_a0}{counter\_\-t} Count::counter\_\-\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}\hfill}
+\label{classCount_Countn0}
+
+
+The actual counter object. It is of type ACE\_\-Atomic\_\-Op using templates ACE\_\-Mutex and unsigned int 
+
+Definition at line 43 of file Count.h.
+
+Referenced by Count(), insert\-String(), operator++(), operator--(), set(), update\-String(), and val().
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+\hyperlink{Count_8h}{Count.h}\end{CompactItemize}

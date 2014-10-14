@@ -1,0 +1,390 @@
+\hypertarget{classgiftDetails}{
+\subsection{gift\-Details Class Reference}
+\label{classgiftDetails}\index{giftDetails@{giftDetails}}
+}
+{\tt \#include $<$giftdetails.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+This class provides an easy way to hold prize information, and is been used for the value part of the SQL table PRIZES that is been used, and provides access to info, such as the prize id, its name, the initial quantity, remaining and the actual period for which it is available. 
+
+
+
+Definition at line 33 of file giftdetails.h.\subsubsection*{Public Types}
+\begin{CompactItemize}
+\item 
+enum \{ \hyperlink{classgiftDetails_giftDetailss7giftDetailss0}{ID\_\-NOGIFT} =  0, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss1}{ID\_\-MINUTEPRIZES} =  1, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss2}{ID\_\-HOURLYPRIZES} =  2, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss3}{ID\_\-DAILYPRIZES} =  3, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss4}{ID\_\-WEEKLYPRIZES} =  4, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss5}{ID\_\-MONTHLYPRIZES} =  5, 
+\hyperlink{classgiftDetails_giftDetailss7giftDetailss6}{ID\_\-USEDCODE} =  10
+ \}
+\begin{CompactList}\small\item\em These enums are used to distinguish the types of the prizes.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classgiftDetails_giftDetailsa0}{gift\-Details} ()
+\begin{CompactList}\small\item\em dummy constructor that just creates an empty structure.\item\end{CompactList}\item 
+\hyperlink{classgiftDetails_giftDetailsa1}{gift\-Details} (int gid, string newgift\-Name, \hyperlink{classTimePeriod}{Time\-Period} tp, int init\-Q, int rem)
+\begin{CompactList}\small\item\em Default constructor.\item\end{CompactList}\item 
+\hyperlink{classgiftDetails_giftDetailsa2}{gift\-Details} (string giftstr)
+\begin{CompactList}\small\item\em Constructor that uses a string representation of the parameters to create the object.\item\end{CompactList}\item 
+\hyperlink{classgiftDetails_giftDetailsa3}{$\sim$gift\-Details} ()
+\begin{CompactList}\small\item\em Dummy destructor.\item\end{CompactList}\item 
+u\_\-int \hyperlink{classgiftDetails_giftDetailsa4}{get\-Gift\-Id} ()
+\begin{CompactList}\small\item\em Returns the id of the prize, usually one of the enums ID\_\-$\ast$.\item\end{CompactList}\item 
+string \hyperlink{classgiftDetails_giftDetailsa5}{get\-Name} ()
+\begin{CompactList}\small\item\em Returns the name of prize as a string.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classgiftDetails_giftDetailsa6}{get\-Initial\-Quantity} ()
+\begin{CompactList}\small\item\em Returns the initial quantity of the current prize.\item\end{CompactList}\item 
+size\_\-t \hyperlink{classgiftDetails_giftDetailsa7}{get\-Current\-Quantity} ()
+\begin{CompactList}\small\item\em Returns the current quantity (available prizes).\item\end{CompactList}\item 
+void \hyperlink{classgiftDetails_giftDetailsa8}{set\-Current\-Quantity} (int cur\-Q)
+\begin{CompactList}\small\item\em Sets current quantity to the given number.\item\end{CompactList}\item 
+void \hyperlink{classgiftDetails_giftDetailsa9}{operator--} (int)
+\begin{CompactList}\small\item\em The operator-- decreases the current quantity of the prize by 1.\item\end{CompactList}\item 
+void \hyperlink{classgiftDetails_giftDetailsa10}{set\-Name} (string name)
+\begin{CompactList}\small\item\em Sets the name to the given string.\item\end{CompactList}\item 
+void \hyperlink{classgiftDetails_giftDetailsa11}{set\-Initial\-Quantity} (int init\-Q)
+\begin{CompactList}\small\item\em Sets the initial quantity to the given number.\item\end{CompactList}\item 
+string \hyperlink{classgiftDetails_giftDetailsa12}{insert\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class.\item\end{CompactList}\item 
+string \hyperlink{classgiftDetails_giftDetailsa13}{update\-String} ()
+\begin{CompactList}\small\item\em This is for the \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class.\item\end{CompactList}\item 
+bool \hyperlink{classgiftDetails_giftDetailsa14}{is\-Empty} ()
+\begin{CompactList}\small\item\em boolean method to be used in \hyperlink{classSQLTable}{SQLTable}$<$$>$ methods\item\end{CompactList}\item 
+u\_\-int \hyperlink{classgiftDetails_giftDetailsa15}{get\-Gift\-Duration} ()
+\begin{CompactList}\small\item\em Return duration of specific gift.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+u\_\-int \hyperlink{classgiftDetails_giftDetailso0}{giftid}
+\begin{CompactList}\small\item\em The prize id.\item\end{CompactList}\item 
+string \hyperlink{classgiftDetails_giftDetailso1}{gift\-Name}
+\begin{CompactList}\small\item\em The prize name.\item\end{CompactList}\item 
+\hyperlink{classTimePeriod}{Time\-Period} \hyperlink{classgiftDetails_giftDetailso2}{period}
+\begin{CompactList}\small\item\em A \hyperlink{classTimePeriod}{Time\-Period} during which the prizes will be available.\item\end{CompactList}\item 
+int \hyperlink{classgiftDetails_giftDetailso3}{initial}
+\begin{CompactList}\small\item\em Initial quantity of the prizes.\item\end{CompactList}\item 
+int \hyperlink{classgiftDetails_giftDetailso4}{remaining}
+\begin{CompactList}\small\item\em Current quantity of the prizes.\item\end{CompactList}\item 
+bool \hyperlink{classgiftDetails_giftDetailso5}{empty}
+\begin{CompactList}\small\item\em boolean for \hyperlink{classSQLTable}{SQLTable}$<$$>$ template class\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Member Enumeration Documentation}
+\hypertarget{classgiftDetails_giftDetailss7}{
+\paragraph["@6]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hfill}
+\label{classgiftDetails_giftDetailss7}
+
+
+\begin{Desc}
+\item[Enumeration values: ]\par
+\begin{description}
+\index{ID_NOGIFT@{ID\_\-NOGIFT}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_NOGIFT@{ID\_\-NOGIFT}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss0}{
+{\em ID\_\-NOGIFT}}
+\label{classgiftDetails_giftDetailss7giftDetailss0}
+}]\index{ID_MINUTEPRIZES@{ID\_\-MINUTEPRIZES}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_MINUTEPRIZES@{ID\_\-MINUTEPRIZES}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss1}{
+{\em ID\_\-MINUTEPRIZES}}
+\label{classgiftDetails_giftDetailss7giftDetailss1}
+}]\index{ID_HOURLYPRIZES@{ID\_\-HOURLYPRIZES}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_HOURLYPRIZES@{ID\_\-HOURLYPRIZES}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss2}{
+{\em ID\_\-HOURLYPRIZES}}
+\label{classgiftDetails_giftDetailss7giftDetailss2}
+}]\index{ID_DAILYPRIZES@{ID\_\-DAILYPRIZES}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_DAILYPRIZES@{ID\_\-DAILYPRIZES}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss3}{
+{\em ID\_\-DAILYPRIZES}}
+\label{classgiftDetails_giftDetailss7giftDetailss3}
+}]\index{ID_WEEKLYPRIZES@{ID\_\-WEEKLYPRIZES}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_WEEKLYPRIZES@{ID\_\-WEEKLYPRIZES}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss4}{
+{\em ID\_\-WEEKLYPRIZES}}
+\label{classgiftDetails_giftDetailss7giftDetailss4}
+}]\index{ID_MONTHLYPRIZES@{ID\_\-MONTHLYPRIZES}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_MONTHLYPRIZES@{ID\_\-MONTHLYPRIZES}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss5}{
+{\em ID\_\-MONTHLYPRIZES}}
+\label{classgiftDetails_giftDetailss7giftDetailss5}
+}]\index{ID_USEDCODE@{ID\_\-USEDCODE}!giftDetails@{giftDetails}}\index{giftDetails@{giftDetails}!ID_USEDCODE@{ID\_\-USEDCODE}}\item[{\em 
+\hypertarget{classgiftDetails_giftDetailss7giftDetailss6}{
+{\em ID\_\-USEDCODE}}
+\label{classgiftDetails_giftDetailss7giftDetailss6}
+}]\end{description}
+\end{Desc}
+
+
+
+Definition at line 54 of file giftdetails.h.
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classgiftDetails_giftDetailsa0}{
+\index{giftDetails@{gift\-Details}!giftDetails@{giftDetails}}
+\index{giftDetails@{giftDetails}!giftDetails@{gift\-Details}}
+\paragraph[giftDetails]{\setlength{\rightskip}{0pt plus 5cm}gift\-Details::gift\-Details ()}\hfill}
+\label{classgiftDetails_giftDetailsa0}
+
+
+Dummy constructor. Just creates an empty object. 
+
+Definition at line 17 of file giftdetails.cpp.
+
+References empty.\hypertarget{classgiftDetails_giftDetailsa1}{
+\index{giftDetails@{gift\-Details}!giftDetails@{giftDetails}}
+\index{giftDetails@{giftDetails}!giftDetails@{gift\-Details}}
+\paragraph[giftDetails]{\setlength{\rightskip}{0pt plus 5cm}gift\-Details::gift\-Details (int {\em gid}, string {\em newgift\-Name}, \hyperlink{classTimePeriod}{Time\-Period} {\em tp}, int {\em init\-Q}, int {\em rem})}\hfill}
+\label{classgiftDetails_giftDetailsa1}
+
+
+The default constructor creates a gift\-Details object given the parameters. Apart from initializing the variables, it also sets empty to false. 
+
+Definition at line 28 of file giftdetails.cpp.
+
+References empty.\hypertarget{classgiftDetails_giftDetailsa2}{
+\index{giftDetails@{gift\-Details}!giftDetails@{giftDetails}}
+\index{giftDetails@{giftDetails}!giftDetails@{gift\-Details}}
+\paragraph[giftDetails]{\setlength{\rightskip}{0pt plus 5cm}gift\-Details::gift\-Details (string {\em gstr})}\hfill}
+\label{classgiftDetails_giftDetailsa2}
+
+
+This constructor creates a gift\-Details object, given a string representation of the parameters. These must comma-separated and with the following order:\begin{CompactItemize}
+\item 
+giftid\item 
+name\item 
+start of period\item 
+end of period\item 
+initial quantity\item 
+current quantity \end{CompactItemize}
+
+
+Definition at line 46 of file giftdetails.cpp.
+
+References empty, giftid, period, set\-Current\-Quantity(), set\-Initial\-Quantity(), set\-Name(), and str\-Tokenizer().\hypertarget{classgiftDetails_giftDetailsa3}{
+\index{giftDetails@{gift\-Details}!~giftDetails@{$\sim$giftDetails}}
+\index{~giftDetails@{$\sim$giftDetails}!giftDetails@{gift\-Details}}
+\paragraph[$\sim$giftDetails]{\setlength{\rightskip}{0pt plus 5cm}gift\-Details::$\sim$gift\-Details ()}\hfill}
+\label{classgiftDetails_giftDetailsa3}
+
+
+Dummy destructor 
+
+Definition at line 65 of file giftdetails.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classgiftDetails_giftDetailsa7}{
+\index{giftDetails@{gift\-Details}!getCurrentQuantity@{getCurrentQuantity}}
+\index{getCurrentQuantity@{getCurrentQuantity}!giftDetails@{gift\-Details}}
+\paragraph[getCurrentQuantity]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t gift\-Details::get\-Current\-Quantity ()}\hfill}
+\label{classgiftDetails_giftDetailsa7}
+
+
+Return the current quantity of the current prize. 
+
+Definition at line 96 of file giftdetails.cpp.
+
+References remaining.\hypertarget{classgiftDetails_giftDetailsa15}{
+\index{giftDetails@{gift\-Details}!getGiftDuration@{getGiftDuration}}
+\index{getGiftDuration@{getGiftDuration}!giftDetails@{gift\-Details}}
+\paragraph[getGiftDuration]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int gift\-Details::get\-Gift\-Duration ()}\hfill}
+\label{classgiftDetails_giftDetailsa15}
+
+
+Returns the duration that a specific gift is available in days. 
+
+Definition at line 138 of file giftdetails.cpp.
+
+References ID\_\-DAILYPRIZES, ID\_\-HOURLYPRIZES, ID\_\-MINUTEPRIZES, ID\_\-MONTHLYPRIZES, and ID\_\-WEEKLYPRIZES.\hypertarget{classgiftDetails_giftDetailsa4}{
+\index{giftDetails@{gift\-Details}!getGiftId@{getGiftId}}
+\index{getGiftId@{getGiftId}!giftDetails@{gift\-Details}}
+\paragraph[getGiftId]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int gift\-Details::get\-Gift\-Id ()}\hfill}
+\label{classgiftDetails_giftDetailsa4}
+
+
+Return the prize id 
+
+Definition at line 72 of file giftdetails.cpp.
+
+References giftid.\hypertarget{classgiftDetails_giftDetailsa6}{
+\index{giftDetails@{gift\-Details}!getInitialQuantity@{getInitialQuantity}}
+\index{getInitialQuantity@{getInitialQuantity}!giftDetails@{gift\-Details}}
+\paragraph[getInitialQuantity]{\setlength{\rightskip}{0pt plus 5cm}size\_\-t gift\-Details::get\-Initial\-Quantity ()}\hfill}
+\label{classgiftDetails_giftDetailsa6}
+
+
+Return the initial quantity of the current prize. 
+
+Definition at line 88 of file giftdetails.cpp.
+
+References initial.\hypertarget{classgiftDetails_giftDetailsa5}{
+\index{giftDetails@{gift\-Details}!getName@{getName}}
+\index{getName@{getName}!giftDetails@{gift\-Details}}
+\paragraph[getName]{\setlength{\rightskip}{0pt plus 5cm}string gift\-Details::get\-Name ()}\hfill}
+\label{classgiftDetails_giftDetailsa5}
+
+
+Return the name of the prize as a string object 
+
+Definition at line 80 of file giftdetails.cpp.
+
+References gift\-Name.\hypertarget{classgiftDetails_giftDetailsa12}{
+\index{giftDetails@{gift\-Details}!insertString@{insertString}}
+\index{insertString@{insertString}!giftDetails@{gift\-Details}}
+\paragraph[insertString]{\setlength{\rightskip}{0pt plus 5cm}string gift\-Details::insert\-String ()}\hfill}
+\label{classgiftDetails_giftDetailsa12}
+
+
+returns a string suitable to be used in insert$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 162 of file giftdetails.cpp.
+
+References Time\-Period::get\-Begin\-TS(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), gift\-Name, initial, period, and remaining.
+
+Referenced by Contest::setup\-Prizes().\hypertarget{classgiftDetails_giftDetailsa14}{
+\index{giftDetails@{gift\-Details}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!giftDetails@{gift\-Details}}
+\paragraph[isEmpty]{\setlength{\rightskip}{0pt plus 5cm}bool gift\-Details::is\-Empty ()}\hfill}
+\label{classgiftDetails_giftDetailsa14}
+
+
+This is to check if a gift\-Details object has been created with the dummy constructor \hyperlink{classgiftDetails_giftDetailsa0}{gift\-Details()}. 
+
+Definition at line 194 of file giftdetails.cpp.
+
+References empty.\hypertarget{classgiftDetails_giftDetailsa9}{
+\index{giftDetails@{gift\-Details}!operator--@{operator--}}
+\index{operator--@{operator--}!giftDetails@{gift\-Details}}
+\paragraph[operator--]{\setlength{\rightskip}{0pt plus 5cm}void gift\-Details::operator-- (int)}\hfill}
+\label{classgiftDetails_giftDetailsa9}
+
+
+Overloads the -- operator for this class. It decreases the current quantity of this prize by 1. 
+
+Definition at line 113 of file giftdetails.cpp.
+
+References remaining.\hypertarget{classgiftDetails_giftDetailsa8}{
+\index{giftDetails@{gift\-Details}!setCurrentQuantity@{setCurrentQuantity}}
+\index{setCurrentQuantity@{setCurrentQuantity}!giftDetails@{gift\-Details}}
+\paragraph[setCurrentQuantity]{\setlength{\rightskip}{0pt plus 5cm}void gift\-Details::set\-Current\-Quantity (int {\em cur\-Q})}\hfill}
+\label{classgiftDetails_giftDetailsa8}
+
+
+Sets the current quantity of the current prize to the given number cur\-Q 
+
+Definition at line 104 of file giftdetails.cpp.
+
+References remaining.
+
+Referenced by gift\-Details().\hypertarget{classgiftDetails_giftDetailsa11}{
+\index{giftDetails@{gift\-Details}!setInitialQuantity@{setInitialQuantity}}
+\index{setInitialQuantity@{setInitialQuantity}!giftDetails@{gift\-Details}}
+\paragraph[setInitialQuantity]{\setlength{\rightskip}{0pt plus 5cm}void gift\-Details::set\-Initial\-Quantity (int {\em init\-Q})}\hfill}
+\label{classgiftDetails_giftDetailsa11}
+
+
+Sets the initial quantity of the current prize to the given number init\-Q 
+
+Definition at line 122 of file giftdetails.cpp.
+
+References initial.
+
+Referenced by gift\-Details().\hypertarget{classgiftDetails_giftDetailsa10}{
+\index{giftDetails@{gift\-Details}!setName@{setName}}
+\index{setName@{setName}!giftDetails@{gift\-Details}}
+\paragraph[setName]{\setlength{\rightskip}{0pt plus 5cm}void gift\-Details::set\-Name (string {\em name})}\hfill}
+\label{classgiftDetails_giftDetailsa10}
+
+
+Sets the name of the prize to the given name 
+
+Definition at line 130 of file giftdetails.cpp.
+
+References gift\-Name.
+
+Referenced by gift\-Details().\hypertarget{classgiftDetails_giftDetailsa13}{
+\index{giftDetails@{gift\-Details}!updateString@{updateString}}
+\index{updateString@{updateString}!giftDetails@{gift\-Details}}
+\paragraph[updateString]{\setlength{\rightskip}{0pt plus 5cm}string gift\-Details::update\-String ()}\hfill}
+\label{classgiftDetails_giftDetailsa13}
+
+
+returns a string suitable to be used in update$\ast$ methods of \hyperlink{classSQLTable}{SQLTable}. 
+
+Definition at line 178 of file giftdetails.cpp.
+
+References Time\-Period::get\-Begin\-TS(), Time\-Period::get\-End\-TS(), Time\-Stamp::get\-Time\-Stamp(), gift\-Name, initial, period, and remaining.
+
+\subsubsection{Field Documentation}
+\hypertarget{classgiftDetails_giftDetailso5}{
+\index{giftDetails@{gift\-Details}!empty@{empty}}
+\index{empty@{empty}!giftDetails@{gift\-Details}}
+\paragraph[empty]{\setlength{\rightskip}{0pt plus 5cm}bool gift\-Details::empty\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso5}
+
+
+
+
+Definition at line 50 of file giftdetails.h.
+
+Referenced by gift\-Details(), and is\-Empty().\hypertarget{classgiftDetails_giftDetailso0}{
+\index{giftDetails@{gift\-Details}!giftid@{giftid}}
+\index{giftid@{giftid}!giftDetails@{gift\-Details}}
+\paragraph[giftid]{\setlength{\rightskip}{0pt plus 5cm}u\_\-int gift\-Details::giftid\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso0}
+
+
+
+
+Definition at line 35 of file giftdetails.h.
+
+Referenced by get\-Gift\-Id(), and gift\-Details().\hypertarget{classgiftDetails_giftDetailso1}{
+\index{giftDetails@{gift\-Details}!giftName@{giftName}}
+\index{giftName@{giftName}!giftDetails@{gift\-Details}}
+\paragraph[giftName]{\setlength{\rightskip}{0pt plus 5cm}string gift\-Details::gift\-Name\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso1}
+
+
+
+
+Definition at line 38 of file giftdetails.h.
+
+Referenced by get\-Name(), insert\-String(), set\-Name(), and update\-String().\hypertarget{classgiftDetails_giftDetailso3}{
+\index{giftDetails@{gift\-Details}!initial@{initial}}
+\index{initial@{initial}!giftDetails@{gift\-Details}}
+\paragraph[initial]{\setlength{\rightskip}{0pt plus 5cm}int gift\-Details::initial\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso3}
+
+
+
+
+Definition at line 44 of file giftdetails.h.
+
+Referenced by get\-Initial\-Quantity(), insert\-String(), set\-Initial\-Quantity(), and update\-String().\hypertarget{classgiftDetails_giftDetailso2}{
+\index{giftDetails@{gift\-Details}!period@{period}}
+\index{period@{period}!giftDetails@{gift\-Details}}
+\paragraph[period]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classTimePeriod}{Time\-Period} gift\-Details::period\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso2}
+
+
+
+
+Definition at line 41 of file giftdetails.h.
+
+Referenced by gift\-Details(), insert\-String(), and update\-String().\hypertarget{classgiftDetails_giftDetailso4}{
+\index{giftDetails@{gift\-Details}!remaining@{remaining}}
+\index{remaining@{remaining}!giftDetails@{gift\-Details}}
+\paragraph[remaining]{\setlength{\rightskip}{0pt plus 5cm}int gift\-Details::remaining\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classgiftDetails_giftDetailso4}
+
+
+
+
+Definition at line 47 of file giftdetails.h.
+
+Referenced by get\-Current\-Quantity(), insert\-String(), operator--(), set\-Current\-Quantity(), and update\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{giftdetails_8h}{giftdetails.h}\item 
+\hyperlink{giftdetails_8cpp}{giftdetails.cpp}\end{CompactItemize}

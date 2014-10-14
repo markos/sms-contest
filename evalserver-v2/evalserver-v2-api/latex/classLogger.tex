@@ -1,0 +1,220 @@
+\hypertarget{classLogger}{
+\subsection{Logger Class Reference}
+\label{classLogger}\index{Logger@{Logger}}
+}
+{\tt \#include $<$logger.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+This class offers a totally independent way to keep logs in a program. It allows asynchronous logging to the stdout and/or a file (timestamped). It runs in a separate thread and uses ACE's queueing mechanisms to avoid thrashing of concurrently written messages. Its use is simple, just call the logmsg() method with a string or a char $\ast$ object. 
+
+
+
+Definition at line 44 of file logger.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classLogger_Loggera0}{Logger} (\hyperlink{logger_8h_a3}{output\_\-t} out=OUTPUT\_\-BOTH, string logfilename=\char`\"{}\char`\"{})
+\begin{CompactList}\small\item\em The standard constructor, can be called with no arguments.\item\end{CompactList}\item 
+virtual \hyperlink{classLogger_Loggera1}{$\sim$Logger} ()
+\begin{CompactList}\small\item\em Typical destructor.\item\end{CompactList}\item 
+virtual int \hyperlink{classLogger_Loggera2}{open} (void $\ast$)
+\begin{CompactList}\small\item\em Virtual open, starts the thread and opens the file.\item\end{CompactList}\item 
+virtual int \hyperlink{classLogger_Loggera3}{close} (u\_\-long flags=0)
+\begin{CompactList}\small\item\em Virtual close, stops the thread and closes the file.\item\end{CompactList}\item 
+virtual int \hyperlink{classLogger_Loggera4}{svc} (void)
+\begin{CompactList}\small\item\em This method handles the dequeueing of the messages.\item\end{CompactList}\item 
+void \hyperlink{classLogger_Loggera5}{set\-Log\-File\-Name} (string filename)
+\begin{CompactList}\small\item\em Changes the filename of the logfile.\item\end{CompactList}\item 
+string \hyperlink{classLogger_Loggera6}{get\-Log\-File\-Name} ()
+\begin{CompactList}\small\item\em Returns the filename of the logfile.\item\end{CompactList}\item 
+ACE\_\-Future$<$ u\_\-long $>$ \hyperlink{classLogger_Loggera7}{log\-Msg} (string msg)
+\begin{CompactList}\small\item\em Log a message.\item\end{CompactList}\item 
+u\_\-long \hyperlink{classLogger_Loggera8}{log\-Msg\_\-i} (string msg)
+\begin{CompactList}\small\item\em Actual implementation of the Logger.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{logger_8h_a3}{output\_\-t} \hyperlink{classLogger_Loggero0}{out\_\-}
+\begin{CompactList}\small\item\em Specify the output method.\item\end{CompactList}\item 
+string \hyperlink{classLogger_Loggero1}{logfilename\_\-}
+\begin{CompactList}\small\item\em The filename to write the logs into.\item\end{CompactList}\item 
+ofstream \hyperlink{classLogger_Loggero2}{log\-File}
+\begin{CompactList}\small\item\em The standard C++ ofstream of the logfile.\item\end{CompactList}\item 
+ACE\_\-Thread\_\-Mutex \hyperlink{classLogger_Loggero3}{mutex\_\-}
+\begin{CompactList}\small\item\em The mutex mechanism, we use ACE's Guard.\item\end{CompactList}\item 
+ACE\_\-Activation\_\-Queue \hyperlink{classLogger_Loggero4}{activation\_\-queue\_\-}
+\begin{CompactList}\small\item\em The queue to keep the method objects.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classLogger_Loggera0}{
+\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\paragraph[Logger]{\setlength{\rightskip}{0pt plus 5cm}Logger::Logger (\hyperlink{logger_8h_a3}{output\_\-t} {\em out} = OUTPUT\_\-BOTH, string {\em logfilename} = \char`\"{}\char`\"{})}\hfill}
+\label{classLogger_Loggera0}
+
+
+The constructor. It's simple in form and its only important function, other than to set the member variables of the object, is to open the logfile for writing (if it is specified in out\_\-). 
+
+Definition at line 19 of file logger.cpp.
+
+References log\-File, logfilename\_\-, out\_\-, OUTPUT\_\-BOTH, OUTPUT\_\-FILEONLY, and output\_\-t.\hypertarget{classLogger_Loggera1}{
+\index{Logger@{Logger}!~Logger@{$\sim$Logger}}
+\index{~Logger@{$\sim$Logger}!Logger@{Logger}}
+\paragraph[$\sim$Logger]{\setlength{\rightskip}{0pt plus 5cm}Logger::$\sim$Logger ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classLogger_Loggera1}
+
+
+The destructor just calls the method \hyperlink{classLogger_Loggera3}{close()}. 
+
+Definition at line 30 of file logger.cpp.
+
+References close().
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classLogger_Loggera3}{
+\index{Logger@{Logger}!close@{close}}
+\index{close@{close}!Logger@{Logger}}
+\paragraph[close]{\setlength{\rightskip}{0pt plus 5cm}int Logger::close (u\_\-long {\em flags} = 0)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classLogger_Loggera3}
+
+
+Called when the active object is destroyed. Just closes the file if it is open. 
+
+Definition at line 47 of file logger.cpp.
+
+References log\-File, out\_\-, OUTPUT\_\-BOTH, and OUTPUT\_\-FILEONLY.
+
+Referenced by $\sim$Logger().\hypertarget{classLogger_Loggera6}{
+\index{Logger@{Logger}!getLogFileName@{getLogFileName}}
+\index{getLogFileName@{getLogFileName}!Logger@{Logger}}
+\paragraph[getLogFileName]{\setlength{\rightskip}{0pt plus 5cm}string Logger::get\-Log\-File\-Name ()}\hfill}
+\label{classLogger_Loggera6}
+
+
+
+
+Definition at line 93 of file logger.cpp.
+
+References logfilename\_\-.\hypertarget{classLogger_Loggera7}{
+\index{Logger@{Logger}!logMsg@{logMsg}}
+\index{logMsg@{logMsg}!Logger@{Logger}}
+\paragraph[logMsg]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Future$<$ u\_\-long $>$ Logger::log\-Msg (string {\em msg})}\hfill}
+\label{classLogger_Loggera7}
+
+
+This method is called asynchronously. It logs the message. It actually creates a future object that will hold the result of the action and puts the method object (of type \hyperlink{classlogMsg__MO}{log\-Msg\_\-MO}) to the activation\_\-queue\_\- of the Logger object. This in turn is handled by \hyperlink{classLogger_Loggera4}{svc()} and the actual logging method \hyperlink{classLogger_Loggera8}{log\-Msg\_\-i()} is called to do the logging. 
+
+Definition at line 106 of file logger.cpp.
+
+References activation\_\-queue\_\-.
+
+Referenced by Day::assign\-Prizes(), Day::calculate\-Est\-No\-Msgs(), SQLite\-Connection::commit\-Transaction(), Day::Day(), SQLTable$<$ key, data $>$::log\-Msg(), Contest::log\-Msg(), SQLite\-Connection::log\-Transaction(), Client\_\-Handler::process(), Processor::process\_\-i(), SQLite\-Connection::reconnect(), and SQLite\-Connection::SQLite\-Connection().\hypertarget{classLogger_Loggera8}{
+\index{Logger@{Logger}!logMsg_i@{logMsg\_\-i}}
+\index{logMsg_i@{logMsg\_\-i}!Logger@{Logger}}
+\paragraph[logMsg\_\-i]{\setlength{\rightskip}{0pt plus 5cm}u\_\-long Logger::log\-Msg\_\-i (string {\em msg})}\hfill}
+\label{classLogger_Loggera8}
+
+
+The actual method to do the logging. It uses ACE\_\-DEBUG to write the content to stdout, and timestamped C++ stream I/O for the file. 
+
+Definition at line 119 of file logger.cpp.
+
+References log\-File, mutex\_\-, out\_\-, OUTPUT\_\-BOTH, OUTPUT\_\-FILEONLY, and OUTPUT\_\-STDOUT.\hypertarget{classLogger_Loggera2}{
+\index{Logger@{Logger}!open@{open}}
+\index{open@{open}!Logger@{Logger}}
+\paragraph[open]{\setlength{\rightskip}{0pt plus 5cm}int Logger::open (void $\ast$)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classLogger_Loggera2}
+
+
+The \hyperlink{classLogger_Loggera2}{open()} method where the active object is activated Create a detached thread to handle the logging. 
+
+Definition at line 38 of file logger.cpp.
+
+Referenced by Contest::init\-Logger(), and SQLite\-Connection::SQLite\-Connection().\hypertarget{classLogger_Loggera5}{
+\index{Logger@{Logger}!setLogFileName@{setLogFileName}}
+\index{setLogFileName@{setLogFileName}!Logger@{Logger}}
+\paragraph[setLogFileName]{\setlength{\rightskip}{0pt plus 5cm}void Logger::set\-Log\-File\-Name (string {\em filename})}\hfill}
+\label{classLogger_Loggera5}
+
+
+Set the log filename to the given one. Also, close and reopen the logfile with the new filename. 
+
+Definition at line 83 of file logger.cpp.
+
+References log\-File, logfilename\_\-, out\_\-, OUTPUT\_\-BOTH, and OUTPUT\_\-FILEONLY.
+
+Referenced by SQLite\-Connection::change\-Log\-Filename().\hypertarget{classLogger_Loggera4}{
+\index{Logger@{Logger}!svc@{svc}}
+\index{svc@{svc}!Logger@{Logger}}
+\paragraph[svc]{\setlength{\rightskip}{0pt plus 5cm}int Logger::svc (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classLogger_Loggera4}
+
+
+The \hyperlink{classLogger_Loggera4}{svc()} method is the one that does all the work. The thread created will run in an infinite loop waiting for method objects to be enqueued on the private activation queue. Once a method object is inserted in the queue the thread wakes up dequeues the object and then invokes the call() method on the object it just dequeued. If there are no method objects on the activation queue the task blocks and falls asleep. 
+
+Definition at line 63 of file logger.cpp.
+
+\subsubsection{Field Documentation}
+\hypertarget{classLogger_Loggero4}{
+\index{Logger@{Logger}!activation_queue_@{activation\_\-queue\_\-}}
+\index{activation_queue_@{activation\_\-queue\_\-}!Logger@{Logger}}
+\paragraph[activation\_\-queue\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Activation\_\-Queue Logger::activation\_\-queue\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classLogger_Loggero4}
+
+
+
+
+Definition at line 86 of file logger.h.
+
+Referenced by log\-Msg().\hypertarget{classLogger_Loggero2}{
+\index{Logger@{Logger}!logFile@{logFile}}
+\index{logFile@{logFile}!Logger@{Logger}}
+\paragraph[logFile]{\setlength{\rightskip}{0pt plus 5cm}ofstream Logger::log\-File\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classLogger_Loggero2}
+
+
+
+
+Definition at line 52 of file logger.h.
+
+Referenced by close(), Logger(), log\-Msg\_\-i(), and set\-Log\-File\-Name().\hypertarget{classLogger_Loggero1}{
+\index{Logger@{Logger}!logfilename_@{logfilename\_\-}}
+\index{logfilename_@{logfilename\_\-}!Logger@{Logger}}
+\paragraph[logfilename\_\-]{\setlength{\rightskip}{0pt plus 5cm}string Logger::logfilename\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classLogger_Loggero1}
+
+
+
+
+Definition at line 49 of file logger.h.
+
+Referenced by get\-Log\-File\-Name(), Logger(), and set\-Log\-File\-Name().\hypertarget{classLogger_Loggero3}{
+\index{Logger@{Logger}!mutex_@{mutex\_\-}}
+\index{mutex_@{mutex\_\-}!Logger@{Logger}}
+\paragraph[mutex\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Thread\_\-Mutex Logger::mutex\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classLogger_Loggero3}
+
+
+
+
+Definition at line 83 of file logger.h.
+
+Referenced by log\-Msg\_\-i().\hypertarget{classLogger_Loggero0}{
+\index{Logger@{Logger}!out_@{out\_\-}}
+\index{out_@{out\_\-}!Logger@{Logger}}
+\paragraph[out\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{logger_8h_a3}{output\_\-t} Logger::out\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classLogger_Loggero0}
+
+
+
+
+Definition at line 46 of file logger.h.
+
+Referenced by close(), Logger(), log\-Msg\_\-i(), and set\-Log\-File\-Name().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{logger_8h}{logger.h}\item 
+\hyperlink{logger_8cpp}{logger.cpp}\end{CompactItemize}

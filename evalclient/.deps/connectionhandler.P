@@ -1,0 +1,563 @@
+connectionhandler.o: connectionhandler.cpp connectionhandler.h \
+ /usr/include/ace/Svc_Handler.h /usr/include/ace/pre.h \
+ /usr/include/ace/Synch_Options.h /usr/include/ace/ACE.h \
+ /usr/include/ace/OS.h /usr/include/ace/config-all.h \
+ /usr/include/ace/config.h /usr/include/ace/config-linux.h \
+ /usr/include/ace/config-linux-common.h /usr/include/features.h \
+ /usr/include/sys/cdefs.h /usr/include/gnu/stubs.h \
+ /usr/include/ace/config-g++-common.h /usr/include/ace/post.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/types.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/stddef.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/sched.h \
+ /usr/include/time.h /usr/include/bits/time.h /usr/include/signal.h \
+ /usr/include/bits/sigset.h /usr/include/bits/initspin.h \
+ /usr/include/bits/sigthread.h /usr/include/ace/ACE_export.h \
+ /usr/include/ace/svc_export.h /usr/include/ace/ace_wchar.h \
+ /usr/include/ace/ace_wchar.inl /usr/include/ace/OS_Errno.h \
+ /usr/include/ace/OS_Export.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/ace/OS_Errno.inl \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/new \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/exception \
+ /usr/include/ace/OS_Dirent.h /usr/include/sys/types.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/sys/sysmacros.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/dirent.h \
+ /usr/include/bits/dirent.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/ace/OS_Dirent.inl /usr/include/ace/OS_String.h \
+ /usr/include/ace/OS_String.inl /usr/include/memory.h \
+ /usr/include/string.h /usr/include/stdlib.h /usr/include/alloca.h \
+ /usr/include/ctype.h /usr/include/ace/OS_Memory.h \
+ /usr/include/ace/OS_Memory.inl /usr/include/ace/OS_TLI.h \
+ /usr/include/ace/OS_TLI.inl /usr/include/ace/Min_Max.h \
+ /usr/include/bits/signum.h /usr/include/bits/siginfo.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/sigaction.h \
+ /usr/include/bits/sigcontext.h /usr/include/asm/sigcontext.h \
+ /usr/include/bits/sigstack.h /usr/include/sys/time.h \
+ /usr/include/sys/stat.h /usr/include/bits/stat.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/stdarg.h \
+ /usr/include/assert.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/bits/wchar.h /usr/include/gconv.h \
+ /usr/include/bits/stdio_lim.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/new.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/limits.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix2_lim.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/include/float.h \
+ /usr/include/ace/streams.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iostream.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/streambuf.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/fstream.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iomanip.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/strstream.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/strfile.h \
+ /usr/include/ace/Basic_Types.h /usr/include/ace/Basic_Types.i \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/bits/uio.h /usr/include/bits/socket.h \
+ /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm/sockios.h /usr/include/netdb.h \
+ /usr/include/netinet/in.h /usr/include/stdint.h \
+ /usr/include/bits/in.h /usr/include/bits/byteswap.h \
+ /usr/include/rpc/netdb.h /usr/include/bits/netdb.h \
+ /usr/include/net/if.h /usr/include/arpa/inet.h \
+ /usr/include/netinet/tcp.h /usr/include/sys/ipc.h \
+ /usr/include/bits/ipc.h /usr/include/sys/shm.h \
+ /usr/include/bits/shm.h /usr/include/sys/sem.h \
+ /usr/include/bits/sem.h /usr/include/sys/file.h \
+ /usr/include/sys/resource.h /usr/include/bits/resource.h \
+ /usr/include/sys/wait.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/pwd.h \
+ /usr/include/sys/ioctl.h /usr/include/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm/ioctl.h \
+ /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
+ /usr/include/sys/termios.h /usr/include/termios.h \
+ /usr/include/bits/termios.h /usr/include/aio.h \
+ /usr/include/sys/param.h /usr/include/linux/param.h \
+ /usr/include/asm/param.h /usr/include/sys/un.h \
+ /usr/include/ucontext.h /usr/include/sys/ucontext.h \
+ /usr/include/poll.h /usr/include/sys/poll.h /usr/include/bits/poll.h \
+ /usr/include/dlfcn.h /usr/include/bits/dlfcn.h \
+ /usr/include/sys/mman.h /usr/include/bits/mman.h \
+ /usr/include/sys/msg.h /usr/include/bits/msq.h \
+ /usr/include/sys/utsname.h /usr/include/bits/utsname.h \
+ /usr/include/syslog.h /usr/include/sys/syslog.h \
+ /usr/include/ace/Trace.h /usr/include/ace/OS.i /usr/include/malloc.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/bits/syscall.h /usr/include/ace/Flag_Manip.h \
+ /usr/include/ace/Flag_Manip.i /usr/include/ace/Handle_Ops.h \
+ /usr/include/ace/Handle_Ops.i /usr/include/ace/Lib_Find.h \
+ /usr/include/ace/Lib_Find.i /usr/include/ace/Init_ACE.h \
+ /usr/include/ace/Init_ACE.i /usr/include/ace/Sock_Connect.h \
+ /usr/include/ace/Sock_Connect.i /usr/include/ace/ACE.i \
+ /usr/include/ace/Synch_Options.i /usr/include/ace/Task.h \
+ /usr/include/ace/Service_Object.h /usr/include/ace/Shared_Object.h \
+ /usr/include/ace/Shared_Object.i /usr/include/ace/Event_Handler.h \
+ /usr/include/ace/Event_Handler.i /usr/include/ace/Service_Object.i \
+ /usr/include/ace/Thread_Manager.h /usr/include/ace/Thread.h \
+ /usr/include/ace/Thread_Adapter.h \
+ /usr/include/ace/Base_Thread_Adapter.h \
+ /usr/include/ace/OS_Log_Msg_Attributes.h \
+ /usr/include/ace/OS_Log_Msg_Attributes.inl \
+ /usr/include/ace/Base_Thread_Adapter.inl \
+ /usr/include/ace/Thread_Adapter.inl /usr/include/ace/Thread.i \
+ /usr/include/ace/Synch.h /usr/include/ace/Synch.i \
+ /usr/include/ace/Synch_T.h /usr/include/ace/Synch_T.i \
+ /usr/include/ace/Atomic_Op.i /usr/include/ace/Synch_T.cpp \
+ /usr/include/ace/Log_Msg.h /usr/include/ace/Log_Record.h \
+ /usr/include/ace/Log_Priority.h /usr/include/ace/Log_Record.i \
+ /usr/include/ace/Unbounded_Queue.h /usr/include/ace/Node.h \
+ /usr/include/ace/Node.cpp /usr/include/ace/Unbounded_Queue.inl \
+ /usr/include/ace/Unbounded_Queue.cpp /usr/include/ace/Malloc_Base.h \
+ /usr/include/ace/Containers.h /usr/include/ace/Containers.i \
+ /usr/include/ace/Containers_T.h /usr/include/ace/Array_Base.h \
+ /usr/include/ace/Array_Base.inl /usr/include/ace/Array_Base.cpp \
+ /usr/include/ace/Unbounded_Set.h /usr/include/ace/Unbounded_Set.inl \
+ /usr/include/ace/Unbounded_Set.cpp /usr/include/ace/Containers_T.i \
+ /usr/include/ace/Containers_T.cpp /usr/include/ace/Free_List.h \
+ /usr/include/ace/Free_List.i /usr/include/ace/Free_List.cpp \
+ /usr/include/ace/Singleton.h /usr/include/ace/Singleton.i \
+ /usr/include/ace/Singleton.cpp /usr/include/ace/Object_Manager.h \
+ /usr/include/ace/Object_Manager.i /usr/include/ace/Managed_Object.h \
+ /usr/include/ace/Managed_Object.i /usr/include/ace/Managed_Object.cpp \
+ /usr/include/ace/Thread_Manager.i /usr/include/ace/Task.i \
+ /usr/include/ace/Task_T.h /usr/include/ace/Message_Queue.h \
+ /usr/include/ace/Message_Block.h /usr/include/ace/Malloc.h \
+ /usr/include/ace/Malloc.i /usr/include/ace/Malloc_T.h \
+ /usr/include/ace/Malloc_Allocator.h \
+ /usr/include/ace/Malloc_Allocator.i /usr/include/ace/Malloc_T.i \
+ /usr/include/ace/Malloc_T.cpp /usr/include/ace/Memory_Pool.h \
+ /usr/include/ace/Signal.h /usr/include/ace/Signal.i \
+ /usr/include/ace/Mem_Map.h /usr/include/ace/Mem_Map.i \
+ /usr/include/ace/SV_Semaphore_Complex.h \
+ /usr/include/ace/SV_Semaphore_Simple.h \
+ /usr/include/ace/SV_Semaphore_Simple.i \
+ /usr/include/ace/SV_Semaphore_Complex.i \
+ /usr/include/ace/Memory_Pool.i /usr/include/ace/Message_Block.i \
+ /usr/include/ace/Message_Block_T.h /usr/include/ace/Message_Block_T.i \
+ /usr/include/ace/Message_Block_T.cpp /usr/include/ace/IO_Cntl_Msg.h \
+ /usr/include/ace/Message_Queue_T.h /usr/include/ace/Message_Queue_T.i \
+ /usr/include/ace/Message_Queue_T.cpp /usr/include/ace/Strategies.h \
+ /usr/include/ace/Strategies_T.h /usr/include/ace/Service_Config.h \
+ /usr/include/ace/SString.h /usr/include/ace/SString.i \
+ /usr/include/ace/Service_Config.i /usr/include/ace/Reactor.h \
+ /usr/include/ace/Handle_Set.h /usr/include/ace/Handle_Set.i \
+ /usr/include/ace/Timer_Queue.h /usr/include/ace/Timer_Queue_T.h \
+ /usr/include/ace/Test_and_Set.h /usr/include/ace/Test_and_Set.i \
+ /usr/include/ace/Test_and_Set.cpp /usr/include/ace/Timer_Queue_T.i \
+ /usr/include/ace/Timer_Queue_T.cpp /usr/include/ace/Reactor.i \
+ /usr/include/ace/Reactor_Impl.h /usr/include/ace/Svc_Conf_Tokens.h \
+ /usr/include/ace/Hash_Map_Manager.h /usr/include/ace/Functor.h \
+ /usr/include/ace/Functor.i /usr/include/ace/Functor_T.h \
+ /usr/include/ace/Functor_T.i /usr/include/ace/Functor_T.cpp \
+ /usr/include/ace/Hash_Map_Manager_T.h \
+ /usr/include/ace/Hash_Map_Manager_T.i \
+ /usr/include/ace/Hash_Map_Manager_T.cpp \
+ /usr/include/ace/Strategies_T.i /usr/include/ace/Strategies_T.cpp \
+ /usr/include/ace/Service_Repository.h \
+ /usr/include/ace/Service_Types.h /usr/include/ace/Service_Types.i \
+ /usr/include/ace/Service_Repository.i /usr/include/ace/WFMO_Reactor.h \
+ /usr/include/ace/Process_Mutex.h /usr/include/ace/Process_Mutex.inl \
+ /usr/include/ace/WFMO_Reactor.i /usr/include/ace/Strategies.i \
+ /usr/include/ace/Message_Queue.i /usr/include/ace/Task_T.i \
+ /usr/include/ace/Task_T.cpp /usr/include/ace/Module.h \
+ /usr/include/ace/Module.i /usr/include/ace/Module.cpp \
+ /usr/include/ace/Stream_Modules.h /usr/include/ace/Stream_Modules.cpp \
+ /usr/include/ace/Svc_Handler.cpp /usr/include/ace/Dynamic.h \
+ /usr/include/ace/Dynamic.i /usr/include/ace/SOCK_Acceptor.h \
+ /usr/include/ace/SOCK_Stream.h /usr/include/ace/SOCK_IO.h \
+ /usr/include/ace/SOCK.h /usr/include/ace/Addr.h \
+ /usr/include/ace/Addr.i /usr/include/ace/IPC_SAP.h \
+ /usr/include/ace/IPC_SAP.i /usr/include/ace/SOCK.i \
+ /usr/include/ace/SOCK_IO.i /usr/include/ace/INET_Addr.h \
+ /usr/include/ace/INET_Addr.i /usr/include/ace/SOCK_Stream.i \
+ /usr/include/ace/Time_Value.h /usr/include/ace/SOCK_Acceptor.i \
+ /usr/include/ace/SOCK_Connector.h /usr/include/ace/SOCK_Connector.i \
+ connectionmsgblock.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/vector \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_algobase.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_config.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_relops.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_pair.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/type_traits.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_iterator.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_alloc.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_construct.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_uninitialized.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_vector.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_bvector.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iostream \
+ partdetails.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/string \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/bastring.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cstddef \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/straits.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cctype \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cstring \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/alloc.h \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iterator \
+ /usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/bastring.cc \
+ crc_32.h
+connectionhandler.cpp :
+connectionhandler.h :
+/usr/include/ace/Svc_Handler.h :
+/usr/include/ace/pre.h :
+/usr/include/ace/Synch_Options.h :
+/usr/include/ace/ACE.h :
+/usr/include/ace/OS.h :
+/usr/include/ace/config-all.h :
+/usr/include/ace/config.h :
+/usr/include/ace/config-linux.h :
+/usr/include/ace/config-linux-common.h :
+/usr/include/features.h :
+/usr/include/sys/cdefs.h :
+/usr/include/gnu/stubs.h :
+/usr/include/ace/config-g++-common.h :
+/usr/include/ace/post.h :
+/usr/include/pthread.h :
+/usr/include/sched.h :
+/usr/include/bits/types.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/stddef.h :
+/usr/include/bits/pthreadtypes.h :
+/usr/include/bits/sched.h :
+/usr/include/time.h :
+/usr/include/bits/time.h :
+/usr/include/signal.h :
+/usr/include/bits/sigset.h :
+/usr/include/bits/initspin.h :
+/usr/include/bits/sigthread.h :
+/usr/include/ace/ACE_export.h :
+/usr/include/ace/svc_export.h :
+/usr/include/ace/ace_wchar.h :
+/usr/include/ace/ace_wchar.inl :
+/usr/include/ace/OS_Errno.h :
+/usr/include/ace/OS_Export.h :
+/usr/include/errno.h :
+/usr/include/bits/errno.h :
+/usr/include/linux/errno.h :
+/usr/include/asm/errno.h :
+/usr/include/ace/OS_Errno.inl :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/new :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/exception :
+/usr/include/ace/OS_Dirent.h :
+/usr/include/sys/types.h :
+/usr/include/endian.h :
+/usr/include/bits/endian.h :
+/usr/include/sys/select.h :
+/usr/include/bits/select.h :
+/usr/include/sys/sysmacros.h :
+/usr/include/unistd.h :
+/usr/include/bits/posix_opt.h :
+/usr/include/bits/confname.h :
+/usr/include/getopt.h :
+/usr/include/dirent.h :
+/usr/include/bits/dirent.h :
+/usr/include/bits/posix1_lim.h :
+/usr/include/bits/local_lim.h :
+/usr/include/linux/limits.h :
+/usr/include/ace/OS_Dirent.inl :
+/usr/include/ace/OS_String.h :
+/usr/include/ace/OS_String.inl :
+/usr/include/memory.h :
+/usr/include/string.h :
+/usr/include/stdlib.h :
+/usr/include/alloca.h :
+/usr/include/ctype.h :
+/usr/include/ace/OS_Memory.h :
+/usr/include/ace/OS_Memory.inl :
+/usr/include/ace/OS_TLI.h :
+/usr/include/ace/OS_TLI.inl :
+/usr/include/ace/Min_Max.h :
+/usr/include/bits/signum.h :
+/usr/include/bits/siginfo.h :
+/usr/include/bits/wordsize.h :
+/usr/include/bits/sigaction.h :
+/usr/include/bits/sigcontext.h :
+/usr/include/asm/sigcontext.h :
+/usr/include/bits/sigstack.h :
+/usr/include/sys/time.h :
+/usr/include/sys/stat.h :
+/usr/include/bits/stat.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/stdarg.h :
+/usr/include/assert.h :
+/usr/include/stdio.h :
+/usr/include/libio.h :
+/usr/include/_G_config.h :
+/usr/include/wchar.h :
+/usr/include/bits/wchar.h :
+/usr/include/gconv.h :
+/usr/include/bits/stdio_lim.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/new.h :
+/usr/include/fcntl.h :
+/usr/include/bits/fcntl.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/limits.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/syslimits.h :
+/usr/include/limits.h :
+/usr/include/bits/posix2_lim.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/include/float.h :
+/usr/include/ace/streams.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iostream.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/streambuf.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/fstream.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iomanip.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/strstream.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/strfile.h :
+/usr/include/ace/Basic_Types.h :
+/usr/include/ace/Basic_Types.i :
+/usr/include/sys/socket.h :
+/usr/include/sys/uio.h :
+/usr/include/bits/uio.h :
+/usr/include/bits/socket.h :
+/usr/include/bits/sockaddr.h :
+/usr/include/asm/socket.h :
+/usr/include/asm/sockios.h :
+/usr/include/netdb.h :
+/usr/include/netinet/in.h :
+/usr/include/stdint.h :
+/usr/include/bits/in.h :
+/usr/include/bits/byteswap.h :
+/usr/include/rpc/netdb.h :
+/usr/include/bits/netdb.h :
+/usr/include/net/if.h :
+/usr/include/arpa/inet.h :
+/usr/include/netinet/tcp.h :
+/usr/include/sys/ipc.h :
+/usr/include/bits/ipc.h :
+/usr/include/sys/shm.h :
+/usr/include/bits/shm.h :
+/usr/include/sys/sem.h :
+/usr/include/bits/sem.h :
+/usr/include/sys/file.h :
+/usr/include/sys/resource.h :
+/usr/include/bits/resource.h :
+/usr/include/sys/wait.h :
+/usr/include/bits/waitflags.h :
+/usr/include/bits/waitstatus.h :
+/usr/include/pwd.h :
+/usr/include/sys/ioctl.h :
+/usr/include/bits/ioctls.h :
+/usr/include/asm/ioctls.h :
+/usr/include/asm/ioctl.h :
+/usr/include/bits/ioctl-types.h :
+/usr/include/sys/ttydefaults.h :
+/usr/include/sys/termios.h :
+/usr/include/termios.h :
+/usr/include/bits/termios.h :
+/usr/include/aio.h :
+/usr/include/sys/param.h :
+/usr/include/linux/param.h :
+/usr/include/asm/param.h :
+/usr/include/sys/un.h :
+/usr/include/ucontext.h :
+/usr/include/sys/ucontext.h :
+/usr/include/poll.h :
+/usr/include/sys/poll.h :
+/usr/include/bits/poll.h :
+/usr/include/dlfcn.h :
+/usr/include/bits/dlfcn.h :
+/usr/include/sys/mman.h :
+/usr/include/bits/mman.h :
+/usr/include/sys/msg.h :
+/usr/include/bits/msq.h :
+/usr/include/sys/utsname.h :
+/usr/include/bits/utsname.h :
+/usr/include/syslog.h :
+/usr/include/sys/syslog.h :
+/usr/include/ace/Trace.h :
+/usr/include/ace/OS.i :
+/usr/include/malloc.h :
+/usr/include/sys/syscall.h :
+/usr/include/asm/unistd.h :
+/usr/include/bits/syscall.h :
+/usr/include/ace/Flag_Manip.h :
+/usr/include/ace/Flag_Manip.i :
+/usr/include/ace/Handle_Ops.h :
+/usr/include/ace/Handle_Ops.i :
+/usr/include/ace/Lib_Find.h :
+/usr/include/ace/Lib_Find.i :
+/usr/include/ace/Init_ACE.h :
+/usr/include/ace/Init_ACE.i :
+/usr/include/ace/Sock_Connect.h :
+/usr/include/ace/Sock_Connect.i :
+/usr/include/ace/ACE.i :
+/usr/include/ace/Synch_Options.i :
+/usr/include/ace/Task.h :
+/usr/include/ace/Service_Object.h :
+/usr/include/ace/Shared_Object.h :
+/usr/include/ace/Shared_Object.i :
+/usr/include/ace/Event_Handler.h :
+/usr/include/ace/Event_Handler.i :
+/usr/include/ace/Service_Object.i :
+/usr/include/ace/Thread_Manager.h :
+/usr/include/ace/Thread.h :
+/usr/include/ace/Thread_Adapter.h :
+/usr/include/ace/Base_Thread_Adapter.h :
+/usr/include/ace/OS_Log_Msg_Attributes.h :
+/usr/include/ace/OS_Log_Msg_Attributes.inl :
+/usr/include/ace/Base_Thread_Adapter.inl :
+/usr/include/ace/Thread_Adapter.inl :
+/usr/include/ace/Thread.i :
+/usr/include/ace/Synch.h :
+/usr/include/ace/Synch.i :
+/usr/include/ace/Synch_T.h :
+/usr/include/ace/Synch_T.i :
+/usr/include/ace/Atomic_Op.i :
+/usr/include/ace/Synch_T.cpp :
+/usr/include/ace/Log_Msg.h :
+/usr/include/ace/Log_Record.h :
+/usr/include/ace/Log_Priority.h :
+/usr/include/ace/Log_Record.i :
+/usr/include/ace/Unbounded_Queue.h :
+/usr/include/ace/Node.h :
+/usr/include/ace/Node.cpp :
+/usr/include/ace/Unbounded_Queue.inl :
+/usr/include/ace/Unbounded_Queue.cpp :
+/usr/include/ace/Malloc_Base.h :
+/usr/include/ace/Containers.h :
+/usr/include/ace/Containers.i :
+/usr/include/ace/Containers_T.h :
+/usr/include/ace/Array_Base.h :
+/usr/include/ace/Array_Base.inl :
+/usr/include/ace/Array_Base.cpp :
+/usr/include/ace/Unbounded_Set.h :
+/usr/include/ace/Unbounded_Set.inl :
+/usr/include/ace/Unbounded_Set.cpp :
+/usr/include/ace/Containers_T.i :
+/usr/include/ace/Containers_T.cpp :
+/usr/include/ace/Free_List.h :
+/usr/include/ace/Free_List.i :
+/usr/include/ace/Free_List.cpp :
+/usr/include/ace/Singleton.h :
+/usr/include/ace/Singleton.i :
+/usr/include/ace/Singleton.cpp :
+/usr/include/ace/Object_Manager.h :
+/usr/include/ace/Object_Manager.i :
+/usr/include/ace/Managed_Object.h :
+/usr/include/ace/Managed_Object.i :
+/usr/include/ace/Managed_Object.cpp :
+/usr/include/ace/Thread_Manager.i :
+/usr/include/ace/Task.i :
+/usr/include/ace/Task_T.h :
+/usr/include/ace/Message_Queue.h :
+/usr/include/ace/Message_Block.h :
+/usr/include/ace/Malloc.h :
+/usr/include/ace/Malloc.i :
+/usr/include/ace/Malloc_T.h :
+/usr/include/ace/Malloc_Allocator.h :
+/usr/include/ace/Malloc_Allocator.i :
+/usr/include/ace/Malloc_T.i :
+/usr/include/ace/Malloc_T.cpp :
+/usr/include/ace/Memory_Pool.h :
+/usr/include/ace/Signal.h :
+/usr/include/ace/Signal.i :
+/usr/include/ace/Mem_Map.h :
+/usr/include/ace/Mem_Map.i :
+/usr/include/ace/SV_Semaphore_Complex.h :
+/usr/include/ace/SV_Semaphore_Simple.h :
+/usr/include/ace/SV_Semaphore_Simple.i :
+/usr/include/ace/SV_Semaphore_Complex.i :
+/usr/include/ace/Memory_Pool.i :
+/usr/include/ace/Message_Block.i :
+/usr/include/ace/Message_Block_T.h :
+/usr/include/ace/Message_Block_T.i :
+/usr/include/ace/Message_Block_T.cpp :
+/usr/include/ace/IO_Cntl_Msg.h :
+/usr/include/ace/Message_Queue_T.h :
+/usr/include/ace/Message_Queue_T.i :
+/usr/include/ace/Message_Queue_T.cpp :
+/usr/include/ace/Strategies.h :
+/usr/include/ace/Strategies_T.h :
+/usr/include/ace/Service_Config.h :
+/usr/include/ace/SString.h :
+/usr/include/ace/SString.i :
+/usr/include/ace/Service_Config.i :
+/usr/include/ace/Reactor.h :
+/usr/include/ace/Handle_Set.h :
+/usr/include/ace/Handle_Set.i :
+/usr/include/ace/Timer_Queue.h :
+/usr/include/ace/Timer_Queue_T.h :
+/usr/include/ace/Test_and_Set.h :
+/usr/include/ace/Test_and_Set.i :
+/usr/include/ace/Test_and_Set.cpp :
+/usr/include/ace/Timer_Queue_T.i :
+/usr/include/ace/Timer_Queue_T.cpp :
+/usr/include/ace/Reactor.i :
+/usr/include/ace/Reactor_Impl.h :
+/usr/include/ace/Svc_Conf_Tokens.h :
+/usr/include/ace/Hash_Map_Manager.h :
+/usr/include/ace/Functor.h :
+/usr/include/ace/Functor.i :
+/usr/include/ace/Functor_T.h :
+/usr/include/ace/Functor_T.i :
+/usr/include/ace/Functor_T.cpp :
+/usr/include/ace/Hash_Map_Manager_T.h :
+/usr/include/ace/Hash_Map_Manager_T.i :
+/usr/include/ace/Hash_Map_Manager_T.cpp :
+/usr/include/ace/Strategies_T.i :
+/usr/include/ace/Strategies_T.cpp :
+/usr/include/ace/Service_Repository.h :
+/usr/include/ace/Service_Types.h :
+/usr/include/ace/Service_Types.i :
+/usr/include/ace/Service_Repository.i :
+/usr/include/ace/WFMO_Reactor.h :
+/usr/include/ace/Process_Mutex.h :
+/usr/include/ace/Process_Mutex.inl :
+/usr/include/ace/WFMO_Reactor.i :
+/usr/include/ace/Strategies.i :
+/usr/include/ace/Message_Queue.i :
+/usr/include/ace/Task_T.i :
+/usr/include/ace/Task_T.cpp :
+/usr/include/ace/Module.h :
+/usr/include/ace/Module.i :
+/usr/include/ace/Module.cpp :
+/usr/include/ace/Stream_Modules.h :
+/usr/include/ace/Stream_Modules.cpp :
+/usr/include/ace/Svc_Handler.cpp :
+/usr/include/ace/Dynamic.h :
+/usr/include/ace/Dynamic.i :
+/usr/include/ace/SOCK_Acceptor.h :
+/usr/include/ace/SOCK_Stream.h :
+/usr/include/ace/SOCK_IO.h :
+/usr/include/ace/SOCK.h :
+/usr/include/ace/Addr.h :
+/usr/include/ace/Addr.i :
+/usr/include/ace/IPC_SAP.h :
+/usr/include/ace/IPC_SAP.i :
+/usr/include/ace/SOCK.i :
+/usr/include/ace/SOCK_IO.i :
+/usr/include/ace/INET_Addr.h :
+/usr/include/ace/INET_Addr.i :
+/usr/include/ace/SOCK_Stream.i :
+/usr/include/ace/Time_Value.h :
+/usr/include/ace/SOCK_Acceptor.i :
+/usr/include/ace/SOCK_Connector.h :
+/usr/include/ace/SOCK_Connector.i :
+connectionmsgblock.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/vector :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_algobase.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_config.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_relops.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_pair.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/type_traits.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_iterator.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_alloc.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_construct.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_uninitialized.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_vector.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/stl_bvector.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iostream :
+partdetails.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/string :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/bastring.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cstddef :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/straits.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cctype :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/cstring :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/alloc.h :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/iterator :
+/usr/lib/gcc-lib/i386-linux/2.95.4/../../../../include/g++-3/std/bastring.cc :
+crc_32.h :

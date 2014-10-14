@@ -1,0 +1,343 @@
+\hypertarget{classTimeStamp}{
+\subsection{Time\-Stamp Class Reference}
+\label{classTimeStamp}\index{TimeStamp@{TimeStamp}}
+}
+{\tt \#include $<$timestamp.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+Since we are keeping all timing information in UNIX timestamp form, we have created a class to handle time and date information in that form. This class allows a creation of an object given a date, a timeinfo struct, a timestamp. It also allows simple arithmetic operations and comparisons to be performed between Time\-Stamp objects. One of the most useful methods is the \hyperlink{classTimeStamp_TimeStampa20}{to\-String()} which returns a string representation in short or long form. 
+
+
+
+Definition at line 34 of file timestamp.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTimeStamp_TimeStampa0}{Time\-Stamp} (const Time\-Stamp \&source)
+\begin{CompactList}\small\item\em The copy constructor.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp_TimeStampa1}{Time\-Stamp} (int year, int month, int mday, int hour=0, int mins=0, int secs=0)
+\begin{CompactList}\small\item\em Construct a Time\-Stamp object given a date.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp_TimeStampa2}{Time\-Stamp} (struct tm $\ast$\hyperlink{classTimeStamp_TimeStampo0}{timeinfo})
+\begin{CompactList}\small\item\em Construct a Time\-Stamp given a timeinfo structure.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp_TimeStampa3}{Time\-Stamp} (time\_\-t ts=0)
+\begin{CompactList}\small\item\em Construct a Time\-Stamp object given a UNIX timestamp.\item\end{CompactList}\item 
+\hyperlink{classTimeStamp_TimeStampa4}{$\sim$Time\-Stamp} ()
+\begin{CompactList}\small\item\em Typical destructor.\item\end{CompactList}\item 
+void \hyperlink{classTimeStamp_TimeStampa5}{operator++} (int)
+\begin{CompactList}\small\item\em Add a day to the current timestamp.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa6}{operator$>$} (time\_\-t ts)
+\begin{CompactList}\small\item\em Comparison operator between current Time\-Stamp and an integer.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa7}{operator$>$} (Time\-Stamp ts)
+\begin{CompactList}\small\item\em Comparison operator between current and another Time\-Stamp object.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa8}{operator$<$} (time\_\-t ts)
+\begin{CompactList}\small\item\em Comparison operator between current Time\-Stamp and an integer.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa9}{operator$<$} (Time\-Stamp ts)
+\begin{CompactList}\small\item\em Comparison operator between current and another Time\-Stamp object.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa10}{operator==} (Time\-Stamp ts)
+\begin{CompactList}\small\item\em Equality operator between current and another Time\-Stamp object.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa11}{operator==} (time\_\-t ts)
+\begin{CompactList}\small\item\em Comparison operator between current Time\-Stamp and an integer.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa12}{operator!=} (Time\-Stamp ts)
+\begin{CompactList}\small\item\em Difference operator between current and another Time\-Stamp object.\item\end{CompactList}\item 
+bool \hyperlink{classTimeStamp_TimeStampa13}{operator!=} (time\_\-t ts)
+\begin{CompactList}\small\item\em Comparison operator between current Time\-Stamp and an integer.\item\end{CompactList}\item 
+const time\_\-t \hyperlink{classTimeStamp_TimeStampa14}{get\-Time\-Stamp} ()
+\begin{CompactList}\small\item\em Returns the current timestamp in time\_\-t format.\item\end{CompactList}\item 
+void \hyperlink{classTimeStamp_TimeStampa15}{set\-Time\-Stamp} (time\_\-t ts)
+\begin{CompactList}\small\item\em Sets current timestamp to the given value.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classTimeStamp_TimeStampa16}{next\-Day} ()
+\begin{CompactList}\small\item\em Returns the current timestamp + 1 day in time\_\-t format.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classTimeStamp_TimeStampa17}{previous\-Day} ()
+\begin{CompactList}\small\item\em Returns the current timestamp - 1 day in time\_\-t format.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classTimeStamp_TimeStampa18}{next\-Week} ()
+\begin{CompactList}\small\item\em Returns the current timestamp + 1 week in time\_\-t format.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classTimeStamp_TimeStampa19}{next\-Month} ()
+\begin{CompactList}\small\item\em Returns the current timestamp + 1 month in time\_\-t format.\item\end{CompactList}\item 
+string \hyperlink{classTimeStamp_TimeStampa20}{to\-String} (bool is\-Short=false)
+\begin{CompactList}\small\item\em Returns a string representation (short or long form).\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+tm \hyperlink{classTimeStamp_TimeStampo0}{timeinfo}
+\begin{CompactList}\small\item\em Internally the class keeps time information in a timeinfo struct.\item\end{CompactList}\item 
+time\_\-t \hyperlink{classTimeStamp_TimeStampo1}{timestamp}
+\begin{CompactList}\small\item\em ... and a unix timestamp.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classTimeStamp_TimeStampa0}{
+\index{TimeStamp@{Time\-Stamp}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[TimeStamp]{\setlength{\rightskip}{0pt plus 5cm}Time\-Stamp::Time\-Stamp (const Time\-Stamp \& {\em source})}\hfill}
+\label{classTimeStamp_TimeStampa0}
+
+
+The copy constructor 
+
+Definition at line 62 of file timestamp.cpp.
+
+References timeinfo, and timestamp.\hypertarget{classTimeStamp_TimeStampa1}{
+\index{TimeStamp@{Time\-Stamp}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[TimeStamp]{\setlength{\rightskip}{0pt plus 5cm}Time\-Stamp::Time\-Stamp (int {\em year}, int {\em month}, int {\em mday}, int {\em hour} = 0, int {\em mins} = 0, int {\em secs} = 0)}\hfill}
+\label{classTimeStamp_TimeStampa1}
+
+
+The default constructor, creates a Time\-Stamp object given the actual date as parameters. You may omit the hour, mins and secs. 
+
+Definition at line 17 of file timestamp.cpp.
+
+References timeinfo, and timestamp.\hypertarget{classTimeStamp_TimeStampa2}{
+\index{TimeStamp@{Time\-Stamp}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[TimeStamp]{\setlength{\rightskip}{0pt plus 5cm}Time\-Stamp::Time\-Stamp (struct tm $\ast$ {\em ti})}\hfill}
+\label{classTimeStamp_TimeStampa2}
+
+
+Another constructor, it can use a timeinfo structure to create the Time\-Stamp. 
+
+Definition at line 37 of file timestamp.cpp.
+
+References timeinfo, and timestamp.\hypertarget{classTimeStamp_TimeStampa3}{
+\index{TimeStamp@{Time\-Stamp}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[TimeStamp]{\setlength{\rightskip}{0pt plus 5cm}Time\-Stamp::Time\-Stamp (time\_\-t {\em ts} = 0)}\hfill}
+\label{classTimeStamp_TimeStampa3}
+
+
+This constructor uses the actual timestamp (number of seconds since Jan 1, 1970) to create the Time\-Stamp object. 
+
+Definition at line 50 of file timestamp.cpp.
+
+References timeinfo, and timestamp.\hypertarget{classTimeStamp_TimeStampa4}{
+\index{TimeStamp@{Time\-Stamp}!~TimeStamp@{$\sim$TimeStamp}}
+\index{~TimeStamp@{$\sim$TimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[$\sim$TimeStamp]{\setlength{\rightskip}{0pt plus 5cm}Time\-Stamp::$\sim$Time\-Stamp ()}\hfill}
+\label{classTimeStamp_TimeStampa4}
+
+
+Dummy destructor. 
+
+Definition at line 74 of file timestamp.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classTimeStamp_TimeStampa14}{
+\index{TimeStamp@{Time\-Stamp}!getTimeStamp@{getTimeStamp}}
+\index{getTimeStamp@{getTimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[getTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}const time\_\-t Time\-Stamp::get\-Time\-Stamp ()}\hfill}
+\label{classTimeStamp_TimeStampa14}
+
+
+Returns the UNIX timestamp of the current object 
+
+Definition at line 196 of file timestamp.cpp.
+
+References timestamp.
+
+Referenced by Day::Day(), Contest::init\-Timers(), gift\-Details::insert\-String(), operator!=(), operator$<$(), operator==(), operator$>$(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects(), SQLTable$<$ key, data $>$::select\-Distinct\-Objects\-Map(), SQLTable$<$ key, data $>$::select\-Objects(), Contest::shutdown(), SQLTable$<$ key, data $>$::size(), SQLTable$<$ key, data $>$::sizeof\-Distinct\-Objects(), SQLTable$<$ key, data $>$::sum\-Column(), and gift\-Details::update\-String().\hypertarget{classTimeStamp_TimeStampa16}{
+\index{TimeStamp@{Time\-Stamp}!nextDay@{nextDay}}
+\index{nextDay@{nextDay}!TimeStamp@{Time\-Stamp}}
+\paragraph[nextDay]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t Time\-Stamp::next\-Day ()}\hfill}
+\label{classTimeStamp_TimeStampa16}
+
+
+Returns the UNIX timestamp of the next day of the current object, that is 24 hours from the timestamp of this object. Note: In contrast to the operator++ and --, this method does not change the current object but creates a copy of it. 
+
+Definition at line 222 of file timestamp.cpp.
+
+References timeinfo.
+
+Referenced by Day::Day(), and Contest::handle\_\-timeout().\hypertarget{classTimeStamp_TimeStampa19}{
+\index{TimeStamp@{Time\-Stamp}!nextMonth@{nextMonth}}
+\index{nextMonth@{nextMonth}!TimeStamp@{Time\-Stamp}}
+\paragraph[nextMonth]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t Time\-Stamp::next\-Month ()}\hfill}
+\label{classTimeStamp_TimeStampa19}
+
+
+Returns the UNIX timestamp of the next month of the current object, that is 1 month after the timestamp of this object. This is better than adding 30 days, because it also takes care of shorter months such as February. The same notes apply as in \hyperlink{classTimeStamp_TimeStampa16}{next\-Day()}. 
+
+Definition at line 290 of file timestamp.cpp.
+
+References timeinfo.\hypertarget{classTimeStamp_TimeStampa18}{
+\index{TimeStamp@{Time\-Stamp}!nextWeek@{nextWeek}}
+\index{nextWeek@{nextWeek}!TimeStamp@{Time\-Stamp}}
+\paragraph[nextWeek]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t Time\-Stamp::next\-Week ()}\hfill}
+\label{classTimeStamp_TimeStampa18}
+
+
+Returns the UNIX timestamp of the next week of the current object, that is 7 days after the timestamp of this object. The same notes apply as in \hyperlink{classTimeStamp_TimeStampa16}{next\-Day()}. 
+
+Definition at line 266 of file timestamp.cpp.
+
+References timeinfo.
+
+Referenced by Contest::init\-Timers().\hypertarget{classTimeStamp_TimeStampa13}{
+\index{TimeStamp@{Time\-Stamp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator"!=]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator!= (time\_\-t {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa13}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the non-equality operator!=. 
+
+Definition at line 185 of file timestamp.cpp.
+
+References timestamp.\hypertarget{classTimeStamp_TimeStampa12}{
+\index{TimeStamp@{Time\-Stamp}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator"!=]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator!= (Time\-Stamp {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa12}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the non-equality operator!=. 
+
+Definition at line 172 of file timestamp.cpp.
+
+References get\-Time\-Stamp(), and timestamp.\hypertarget{classTimeStamp_TimeStampa5}{
+\index{TimeStamp@{Time\-Stamp}!operator++@{operator++}}
+\index{operator++@{operator++}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator++]{\setlength{\rightskip}{0pt plus 5cm}void Time\-Stamp::operator++ (int)}\hfill}
+\label{classTimeStamp_TimeStampa5}
+
+
+We have overloaded the ++ operator to increase the date by one day. 
+
+Definition at line 81 of file timestamp.cpp.
+
+References timeinfo, and timestamp.\hypertarget{classTimeStamp_TimeStampa9}{
+\index{TimeStamp@{Time\-Stamp}!operator<@{operator$<$}}
+\index{operator<@{operator$<$}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator$<$]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator$<$ (Time\-Stamp {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa9}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the operator$<$ 
+
+Definition at line 107 of file timestamp.cpp.
+
+References get\-Time\-Stamp(), and timestamp.\hypertarget{classTimeStamp_TimeStampa8}{
+\index{TimeStamp@{Time\-Stamp}!operator<@{operator$<$}}
+\index{operator<@{operator$<$}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator$<$]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator$<$ (time\_\-t {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa8}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the operator$<$ 
+
+Definition at line 94 of file timestamp.cpp.
+
+References timestamp.\hypertarget{classTimeStamp_TimeStampa11}{
+\index{TimeStamp@{Time\-Stamp}!operator==@{operator==}}
+\index{operator==@{operator==}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator==]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator== (time\_\-t {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa11}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the equality operator==. 
+
+Definition at line 159 of file timestamp.cpp.
+
+References timestamp.\hypertarget{classTimeStamp_TimeStampa10}{
+\index{TimeStamp@{Time\-Stamp}!operator==@{operator==}}
+\index{operator==@{operator==}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator==]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator== (Time\-Stamp {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa10}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the equality operator==. 
+
+Definition at line 146 of file timestamp.cpp.
+
+References get\-Time\-Stamp(), and timestamp.\hypertarget{classTimeStamp_TimeStampa7}{
+\index{TimeStamp@{Time\-Stamp}!operator>@{operator$>$}}
+\index{operator>@{operator$>$}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator$>$]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator$>$ (Time\-Stamp {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa7}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the operator$>$ 
+
+Definition at line 133 of file timestamp.cpp.
+
+References get\-Time\-Stamp(), and timestamp.\hypertarget{classTimeStamp_TimeStampa6}{
+\index{TimeStamp@{Time\-Stamp}!operator>@{operator$>$}}
+\index{operator>@{operator$>$}!TimeStamp@{Time\-Stamp}}
+\paragraph[operator$>$]{\setlength{\rightskip}{0pt plus 5cm}bool Time\-Stamp::operator$>$ (time\_\-t {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa6}
+
+
+A Time\-Stamp may be compared to another Time\-Stamp object or a UNIX timestamp (which is of time\_\-t). This overloads the operator$>$ 
+
+Definition at line 120 of file timestamp.cpp.
+
+References timestamp.\hypertarget{classTimeStamp_TimeStampa17}{
+\index{TimeStamp@{Time\-Stamp}!previousDay@{previousDay}}
+\index{previousDay@{previousDay}!TimeStamp@{Time\-Stamp}}
+\paragraph[previousDay]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t Time\-Stamp::previous\-Day ()}\hfill}
+\label{classTimeStamp_TimeStampa17}
+
+
+Returns the UNIX timestamp of the previous day of the current object, that is 24 hours before the timestamp of this object. The same notes apply as in \hyperlink{classTimeStamp_TimeStampa16}{next\-Day()}. 
+
+Definition at line 244 of file timestamp.cpp.
+
+References timeinfo.
+
+Referenced by Day::assign\-Prizes().\hypertarget{classTimeStamp_TimeStampa15}{
+\index{TimeStamp@{Time\-Stamp}!setTimeStamp@{setTimeStamp}}
+\index{setTimeStamp@{setTimeStamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[setTimeStamp]{\setlength{\rightskip}{0pt plus 5cm}void Time\-Stamp::set\-Time\-Stamp (time\_\-t {\em ts})}\hfill}
+\label{classTimeStamp_TimeStampa15}
+
+
+Sets the timestamp of the current object to the given one. Instead of just copying the timestamp, it also synchronizes the timeinfo structure as well. 
+
+Definition at line 206 of file timestamp.cpp.
+
+References timeinfo, and timestamp.
+
+Referenced by Contest::init\-Timers().\hypertarget{classTimeStamp_TimeStampa20}{
+\index{TimeStamp@{Time\-Stamp}!toString@{toString}}
+\index{toString@{toString}!TimeStamp@{Time\-Stamp}}
+\paragraph[toString]{\setlength{\rightskip}{0pt plus 5cm}string Time\-Stamp::to\-String (bool {\em is\-Short} = false)}\hfill}
+\label{classTimeStamp_TimeStampa20}
+
+
+Returns a string representation of the current Time\-Stamp object. If is\-Short is set to false, the representation will be analytical (just as the output of the command date), while if it is true, the string will be of the form YYYYMMDD. This is very useful in filenames and in statistics. 
+
+Definition at line 314 of file timestamp.cpp.
+
+References timeinfo, and timestamp.
+
+Referenced by Day::Day(), Contest::init\-Timers(), operator$<$$<$(), Processor::process\_\-i(), and Time\-Period::to\-String().
+
+\subsubsection{Field Documentation}
+\hypertarget{classTimeStamp_TimeStampo0}{
+\index{TimeStamp@{Time\-Stamp}!timeinfo@{timeinfo}}
+\index{timeinfo@{timeinfo}!TimeStamp@{Time\-Stamp}}
+\paragraph[timeinfo]{\setlength{\rightskip}{0pt plus 5cm}struct tm Time\-Stamp::timeinfo\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classTimeStamp_TimeStampo0}
+
+
+
+
+Definition at line 37 of file timestamp.h.
+
+Referenced by next\-Day(), next\-Month(), next\-Week(), operator++(), previous\-Day(), set\-Time\-Stamp(), Time\-Stamp(), and to\-String().\hypertarget{classTimeStamp_TimeStampo1}{
+\index{TimeStamp@{Time\-Stamp}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!TimeStamp@{Time\-Stamp}}
+\paragraph[timestamp]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t Time\-Stamp::timestamp\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classTimeStamp_TimeStampo1}
+
+
+
+
+Definition at line 40 of file timestamp.h.
+
+Referenced by get\-Time\-Stamp(), operator!=(), operator++(), operator$<$(), operator==(), operator$>$(), set\-Time\-Stamp(), Time\-Stamp(), and to\-String().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{timestamp_8h}{timestamp.h}\item 
+\hyperlink{timestamp_8cpp}{timestamp.cpp}\end{CompactItemize}

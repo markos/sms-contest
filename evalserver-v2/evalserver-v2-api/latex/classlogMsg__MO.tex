@@ -1,0 +1,106 @@
+\hypertarget{classlogMsg__MO}{
+\subsection{log\-Msg\_\-MO Class Reference}
+\label{classlogMsg__MO}\index{logMsg_MO@{logMsg\_\-MO}}
+}
+{\tt \#include $<$logmsg\_\-mo.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+The philosophy behind Method Objects is described in ACE Tutorial and the C++ NP. In practice, a method object returns a future object containing the result object of the actual implementation method that is called in \hyperlink{classlogMsg__MO_logMsg__MOa2}{call()}.
+
+The log\-Msg\_\-MO class is the method object that is queued by the logger. When ready, the logger object (or actually its svc() method) calls the \hyperlink{classlogMsg__MO_logMsg__MOa2}{call()} method in the MO object which in turn calls the log\-Msg\_\-i() method of the \hyperlink{classLogger}{Logger}. 
+
+
+
+Definition at line 32 of file logmsg\_\-mo.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classlogMsg__MO_logMsg__MOa0}{log\-Msg\_\-MO} (\hyperlink{classLogger}{Logger} $\ast$logger, string msg, ACE\_\-Future$<$ u\_\-long $>$ \&future\_\-result)
+\begin{CompactList}\small\item\em The default Constructor, takes a pointer to the logger, the msg string and a future object.\item\end{CompactList}\item 
+virtual \hyperlink{classlogMsg__MO_logMsg__MOa1}{$\sim$log\-Msg\_\-MO} ()
+\begin{CompactList}\small\item\em Destructor.\item\end{CompactList}\item 
+virtual int \hyperlink{classlogMsg__MO_logMsg__MOa2}{call} (void)
+\begin{CompactList}\small\item\em The \hyperlink{classlogMsg__MO_logMsg__MOa2}{call()} method will be called by the svc() of the \hyperlink{classLogger}{Logger} Active Object.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classLogger}{Logger} $\ast$ \hyperlink{classlogMsg__MO_logMsg__MOo0}{logger\_\-}
+\begin{CompactList}\small\item\em Pointer to the \hyperlink{classLogger}{Logger} object.\item\end{CompactList}\item 
+string \hyperlink{classlogMsg__MO_logMsg__MOo1}{msg\_\-}
+\begin{CompactList}\small\item\em The message to be logged.\item\end{CompactList}\item 
+ACE\_\-Future$<$ u\_\-long $>$ \hyperlink{classlogMsg__MO_logMsg__MOo2}{future\_\-result\_\-}
+\begin{CompactList}\small\item\em The ACE Future object that is returned.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classlogMsg__MO_logMsg__MOa0}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!logMsg_MO@{logMsg\_\-MO}}
+\index{logMsg_MO@{logMsg\_\-MO}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[logMsg\_\-MO]{\setlength{\rightskip}{0pt plus 5cm}log\-Msg\_\-MO::log\-Msg\_\-MO (\hyperlink{classLogger}{Logger} $\ast$ {\em logger}, string {\em msg}, ACE\_\-Future$<$ u\_\-long $>$ \& {\em future\_\-result})}\hfill}
+\label{classlogMsg__MO_logMsg__MOa0}
+
+
+The default constructor. It just initializes the member variables of the object (logger\_\-, msg\_\- and future\_\-result\_\-). 
+
+Definition at line 17 of file logmsg\_\-mo.cpp.\hypertarget{classlogMsg__MO_logMsg__MOa1}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!~logMsg_MO@{$\sim$logMsg\_\-MO}}
+\index{~logMsg_MO@{$\sim$logMsg\_\-MO}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[$\sim$logMsg\_\-MO]{\setlength{\rightskip}{0pt plus 5cm}log\-Msg\_\-MO::$\sim$log\-Msg\_\-MO ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classlogMsg__MO_logMsg__MOa1}
+
+
+Dummy destructor, we don't allocate anything dynamically. 
+
+Definition at line 26 of file logmsg\_\-mo.cpp.
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classlogMsg__MO_logMsg__MOa2}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!call@{call}}
+\index{call@{call}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[call]{\setlength{\rightskip}{0pt plus 5cm}int log\-Msg\_\-MO::call (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classlogMsg__MO_logMsg__MOa2}
+
+
+We don't have a lot to do. We just create a future object containing the result of log\-Msg\_\-i(). What this means is that the log\-Msg\_\-MO will finish immediately, but the result (the return value of \hyperlink{classlogMsg__MO_logMsg__MOa2}{call()}) will remain uninitialized until the \hyperlink{classLogger}{Logger} object MO queue actually reaches this object. 
+
+Definition at line 37 of file logmsg\_\-mo.cpp.
+
+References future\_\-result\_\-.
+
+\subsubsection{Field Documentation}
+\hypertarget{classlogMsg__MO_logMsg__MOo2}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!future_result_@{future\_\-result\_\-}}
+\index{future_result_@{future\_\-result\_\-}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[future\_\-result\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Future$<$u\_\-long$>$ log\-Msg\_\-MO::future\_\-result\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classlogMsg__MO_logMsg__MOo2}
+
+
+
+
+Definition at line 50 of file logmsg\_\-mo.h.
+
+Referenced by call().\hypertarget{classlogMsg__MO_logMsg__MOo0}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!logger_@{logger\_\-}}
+\index{logger_@{logger\_\-}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[logger\_\-]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classLogger}{Logger}$\ast$ log\-Msg\_\-MO::logger\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classlogMsg__MO_logMsg__MOo0}
+
+
+
+
+Definition at line 44 of file logmsg\_\-mo.h.\hypertarget{classlogMsg__MO_logMsg__MOo1}{
+\index{logMsg_MO@{log\-Msg\_\-MO}!msg_@{msg\_\-}}
+\index{msg_@{msg\_\-}!logMsg_MO@{log\-Msg\_\-MO}}
+\paragraph[msg\_\-]{\setlength{\rightskip}{0pt plus 5cm}string log\-Msg\_\-MO::msg\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classlogMsg__MO_logMsg__MOo1}
+
+
+
+
+Definition at line 47 of file logmsg\_\-mo.h.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{logmsg__mo_8h}{logmsg\_\-mo.h}\item 
+\hyperlink{logmsg__mo_8cpp}{logmsg\_\-mo.cpp}\end{CompactItemize}

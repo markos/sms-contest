@@ -1,0 +1,169 @@
+\hypertarget{classProcessor}{
+\subsection{Processor Class Reference}
+\label{classProcessor}\index{Processor@{Processor}}
+}
+{\tt \#include $<$processor.h$>$}
+
+
+
+\subsubsection{Detailed Description}
+This class works in exactly the same way as \hyperlink{classLogger}{Logger}. Its use is slightly different, in that it is called from \hyperlink{classClient__Handler}{Client\_\-Handler} to process the messages that are sent to the server, calls \hyperlink{classDay_Daya8}{Day::execute\-Draw()} on the object and returns the result to the handler, which in turn returns it to evalclient and closes the connection. 
+
+
+
+Definition at line 37 of file processor.h.\subsubsection*{Public Methods}
+\begin{CompactItemize}
+\item 
+\hyperlink{classProcessor_Processora0}{Processor} (\hyperlink{classContest}{Contest} $\ast$my\-Contest)
+\begin{CompactList}\small\item\em The standard constructor is passed a pointer to the parent \hyperlink{classContest}{Contest} object.\item\end{CompactList}\item 
+virtual \hyperlink{classProcessor_Processora1}{$\sim$Processor} ()
+\begin{CompactList}\small\item\em Typical destructor.\item\end{CompactList}\item 
+virtual int \hyperlink{classProcessor_Processora2}{open} (void $\ast$)
+\begin{CompactList}\small\item\em Virtual open, starts the thread in which the processing takes place.\item\end{CompactList}\item 
+virtual int \hyperlink{classProcessor_Processora3}{close} (u\_\-long flags=0)
+\begin{CompactList}\small\item\em Closes the thread.\item\end{CompactList}\item 
+virtual int \hyperlink{classProcessor_Processora4}{svc} (void)
+\begin{CompactList}\small\item\em This method handles the dequeueing of the messages.\item\end{CompactList}\item 
+ACE\_\-Future$<$ int $>$ \hyperlink{classProcessor_Processora5}{process} (\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$cmb)
+\begin{CompactList}\small\item\em Process the message, or rather queue it for processing.\item\end{CompactList}\item 
+int \hyperlink{classProcessor_Processora6}{process\_\-i} (\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$cmb)
+\begin{CompactList}\small\item\em Actual implementation of the processing method.\item\end{CompactList}\end{CompactItemize}
+\subsubsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classContest}{Contest} $\ast$ \hyperlink{classProcessor_Processoro0}{parent\-Contest}
+\begin{CompactList}\small\item\em Pointer to the parent \hyperlink{classContest}{Contest} object.\item\end{CompactList}\item 
+ACE\_\-Thread\_\-Mutex \hyperlink{classProcessor_Processoro1}{mutex\_\-}
+\begin{CompactList}\small\item\em The mutex mechanism, we use ACE's Guard.\item\end{CompactList}\item 
+ACE\_\-Activation\_\-Queue \hyperlink{classProcessor_Processoro2}{activation\_\-queue\_\-}
+\begin{CompactList}\small\item\em The queue to keep the method objects.\item\end{CompactList}\end{CompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classProcessor_Processora0}{
+\index{Processor@{Processor}!Processor@{Processor}}
+\index{Processor@{Processor}!Processor@{Processor}}
+\paragraph[Processor]{\setlength{\rightskip}{0pt plus 5cm}Processor::Processor (\hyperlink{classContest}{Contest} $\ast$ {\em contest})}\hfill}
+\label{classProcessor_Processora0}
+
+
+The constructor just initializes the \hyperlink{classContest}{Contest} pointer. 
+
+Definition at line 18 of file processor.cpp.\hypertarget{classProcessor_Processora1}{
+\index{Processor@{Processor}!~Processor@{$\sim$Processor}}
+\index{~Processor@{$\sim$Processor}!Processor@{Processor}}
+\paragraph[$\sim$Processor]{\setlength{\rightskip}{0pt plus 5cm}Processor::$\sim$Processor ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classProcessor_Processora1}
+
+
+Dummy destructor just calls \hyperlink{classProcessor_Processora3}{close()}. 
+
+Definition at line 25 of file processor.cpp.
+
+References close().
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classProcessor_Processora3}{
+\index{Processor@{Processor}!close@{close}}
+\index{close@{close}!Processor@{Processor}}
+\paragraph[close]{\setlength{\rightskip}{0pt plus 5cm}int Processor::close (u\_\-long {\em flags} = 0)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classProcessor_Processora3}
+
+
+Called when the active object is destroyed. A no-op actually. 
+
+Definition at line 43 of file processor.cpp.
+
+Referenced by $\sim$Processor().\hypertarget{classProcessor_Processora2}{
+\index{Processor@{Processor}!open@{open}}
+\index{open@{open}!Processor@{Processor}}
+\paragraph[open]{\setlength{\rightskip}{0pt plus 5cm}int Processor::open (void $\ast$)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classProcessor_Processora2}
+
+
+The \hyperlink{classProcessor_Processora2}{open()} method where the active object is activated Create a detached thread to handle the processing. 
+
+Definition at line 34 of file processor.cpp.
+
+Referenced by Contest::init\-Processor().\hypertarget{classProcessor_Processora5}{
+\index{Processor@{Processor}!process@{process}}
+\index{process@{process}!Processor@{Processor}}
+\paragraph[process]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Future$<$ int $>$ Processor::process (\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$ {\em cmb})}\hfill}
+\label{classProcessor_Processora5}
+
+
+This method is called asynchronously. It processes the message It actually creates a future object that will hold the result of the action and puts the method object (of type \hyperlink{classprocessor__MO}{processor\_\-MO}) to the activation\_\-queue\_\- of the Processor object. This in turn is handled by \hyperlink{classProcessor_Processora4}{svc()} and the actual processing method \hyperlink{classProcessor_Processora6}{process\_\-i()} is called to do the processing. 
+
+Definition at line 80 of file processor.cpp.
+
+References activation\_\-queue\_\-.
+
+Referenced by Client\_\-Handler::process().\hypertarget{classProcessor_Processora6}{
+\index{Processor@{Processor}!process_i@{process\_\-i}}
+\index{process_i@{process\_\-i}!Processor@{Processor}}
+\paragraph[process\_\-i]{\setlength{\rightskip}{0pt plus 5cm}int Processor::process\_\-i (\hyperlink{classconnectionMsgBlock}{connection\-Msg\-Block} $\ast$ {\em cmb})}\hfill}
+\label{classProcessor_Processora6}
+
+
+The actual method to do the processing. It keeps everything inside an ACE Guard scope for safety reasons. This one is actually a very important method so we'll do a more thorough analysis:\begin{CompactItemize}
+\item 
+First the message is converted into a string and is checked in the Participants table if it exists. If so ID\_\-USEDCODE is returned.\item 
+If we proceed, we have to know the current day, so we use get\-Current\-Day() from \hyperlink{classContest}{Contest} object.\item 
+Increase counter by 1.\item 
+We check if this MSISDN has been used in this day already and if so we increase unique\_\-counter as well.\item 
+Now that we have a valid \hyperlink{classpartDetails}{part\-Details} object we call \hyperlink{classDay_Daya8}{Day::execute\-Draw} on this and we have the result of the draw in the same \hyperlink{classpartDetails}{part\-Details} object.\item 
+If it is a prize, we disable transactions, insert the record in the CODES and WINNINGCODES tables, update the PRIZES table and re-enable the transactions.\item 
+We also update the COUNTERS table, do some logging and return the id of the prize to the calling function/method (\hyperlink{classClient__Handler_Client__Handlerb0}{Client\_\-Handler::svc()} actually). \end{CompactItemize}
+
+
+Definition at line 108 of file processor.cpp.
+
+References SQLite\-Connection::commit\-Transaction(), Day::counter, Contest::Counters, Contest::dbconnection, Day::execute\-Draw(), Time\-Period::get\-Begin\-TS(), Contest::get\-Current\-Day(), connection\-Msg\-Block::get\-Participant\-Str(), Day::get\-Time\-Period(), gift\-Details::ID\_\-USEDCODE, SQLTable$<$ string, part\-Details $>$::insert\-Object(), part\-Details::is\-Empty(), Contest::logger, Logger::log\-Msg(), parent\-Contest, Contest::Participants, Day::prizes, Contest::Prizes, SQLTable$<$ string, part\-Details $>$::select\-Object(), SQLTable$<$ string, part\-Details $>$::size(), Time\-Stamp::to\-String(), Day::unique\_\-counter, SQLTable$<$ string, Day $>$::update\-Object(), SQLTable$<$ string, gift\-Details $>$::update\-Object(), Day::update\-String(), and Contest::Winners.\hypertarget{classProcessor_Processora4}{
+\index{Processor@{Processor}!svc@{svc}}
+\index{svc@{svc}!Processor@{Processor}}
+\paragraph[svc]{\setlength{\rightskip}{0pt plus 5cm}int Processor::svc (void)\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}\hfill}
+\label{classProcessor_Processora4}
+
+
+The \hyperlink{classProcessor_Processora4}{svc()} method is the one that does all the work. The thread created will run in an infinite loop waiting for method objects to be enqueued on the private activation queue. Once a method object is inserted in the queue the thread wakes up dequeues the object and then invokes the call() method on the object it just dequeued. If there are no method objects on the activation queue the task blocks and falls asleep. 
+
+Definition at line 56 of file processor.cpp.
+
+\subsubsection{Field Documentation}
+\hypertarget{classProcessor_Processoro2}{
+\index{Processor@{Processor}!activation_queue_@{activation\_\-queue\_\-}}
+\index{activation_queue_@{activation\_\-queue\_\-}!Processor@{Processor}}
+\paragraph[activation\_\-queue\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Activation\_\-Queue Processor::activation\_\-queue\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classProcessor_Processoro2}
+
+
+
+
+Definition at line 68 of file processor.h.
+
+Referenced by process().\hypertarget{classProcessor_Processoro1}{
+\index{Processor@{Processor}!mutex_@{mutex\_\-}}
+\index{mutex_@{mutex\_\-}!Processor@{Processor}}
+\paragraph[mutex\_\-]{\setlength{\rightskip}{0pt plus 5cm}ACE\_\-Thread\_\-Mutex Processor::mutex\_\-\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classProcessor_Processoro1}
+
+
+
+
+Definition at line 65 of file processor.h.\hypertarget{classProcessor_Processoro0}{
+\index{Processor@{Processor}!parentContest@{parentContest}}
+\index{parentContest@{parentContest}!Processor@{Processor}}
+\paragraph[parentContest]{\setlength{\rightskip}{0pt plus 5cm}\hyperlink{classContest}{Contest}$\ast$ Processor::parent\-Contest\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}\hfill}
+\label{classProcessor_Processoro0}
+
+
+
+
+Definition at line 62 of file processor.h.
+
+Referenced by process\_\-i().
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{processor_8h}{processor.h}\item 
+\hyperlink{processor_8cpp}{processor.cpp}\end{CompactItemize}
